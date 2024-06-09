@@ -1,0 +1,375 @@
+[border-cut="nav-window"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(0 0,calc(100% - 0.80em) 0,100% 0.80em,100% 100%,0.80em 100%,0 calc(100% - 0.80em),0 0,2px  2px ,2px calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(0.80em + 0.83px),calc(100% - 0.80em - 0.83px) 2px,2px 2px);
+
+	}
+
+[border-cut="top-right-bottom-left"]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(0 0, calc(100% - 2.00em) 0, 
+    100% 2.00em, 100% 100%, 2.00em 100%, 
+    0 calc(100% - 2.00em), 0 0, 1px 1px, 1px 
+    calc(100% - 2.00em - 0.41px), 
+    calc(2.00em + 0.41px) 
+    calc(100% - 1px), 
+    calc(100% - 1px) 
+    calc(100% - 1px), 
+    calc(100% - 1px) 
+    calc(2.00em + 0.41px), 
+    calc(100% - 2.00em - 0.41px) 1px, 1px 1px);
+}
+
+  [border-cut="top-right"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #8b5cf6;
+    clip-path: polygon(0 0,calc(100% - 0.80em) 
+    0,100% 0.80em,100% 100%,0 100%,0 0,1px  1px ,1px 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(0.80em + 0.83px),calc(100% - 0.80em - 0.83px) 1px,1px 1px);
+	}
+  
+  [border-cut="nav-bar"]::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+  	clip-path: polygon(0 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%,0 0,2px  2px ,2px calc(100% - 2px),calc(100% - 0.80em - 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 0.80em - 0.83px),calc(100% - 2px) 2px,2px 2px);
+    transition: background 300 ease;
+	}
+  
+  [border-cut="top-right-black"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(0 0,calc(100% - 2.00em) 
+    0,100% 2.00em,100% 100%,0 100%,0 0,1px  1px ,1px 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(2.00em + 0.83px),calc(100% - 2.00em - 0.83px) 1px,1px 1px);
+	}
+  
+  [border-cut="bottom-right-purple"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #8b5cf6;
+  	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.00em),
+    calc(100% - 1.00em) 100%, 0 100%, 0 0, 1px  1px ,1px 
+    calc(100% - 1px), calc(100% - 1.00em - 0.83px) 
+    calc(100% - 1px), calc(100% - 1px) calc(100% - 1.00em - 0.83px),
+    calc(100% - 1px) 1px, 1px 1px);
+	} 
+  [border-cut="bottom-right-black"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+  	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.00em),
+    calc(100% - 2.00em) 100%, 0 100%, 0 0, 1px  1px ,1px 
+    calc(100% - 1px), calc(100% - 2.00em - 0.83px) 
+    calc(100% - 1px), calc(100% - 2px) calc(100% - 2.00em - 0.83px),
+    calc(100% - 1px) 1px, 1px 1px);
+	} 
+  
+  [border-cut="bottom-left"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(0 0,100% 0,100% 100%,0.80em 100%,0 
+    calc(100% - 0.80em),0 0,1px  1px ,1px 
+    calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) 
+    calc(100% - 1px),calc(100% - 1px) calc(100% - 1px),calc(100% - 1px) 1px,1px 1px);
+	} 
+  [border-cut="bottom-left-white"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fafafa;
+    clip-path: polygon(0 0,100% 0,100% 100%,0.80em 100%,0 
+    calc(100% - 0.80em),0 0,1px  1px ,1px 
+    calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) 
+    calc(100% - 1px),calc(100% - 1px) calc(100% - 1px),calc(100% - 1px) 1px,1px 1px);
+	} 
+  [border-cut="bottom-left-bold-purple"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #8b5cf6;
+    clip-path: polygon(0 0,100% 0,100% 100%,0.80em 100%,0 
+    calc(100% - 0.80em),0 0,2px  2px ,2px 
+    calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) 
+    calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) 2px,2px 2px);
+	} 
+
+  [border-cut="top-and-bottom-about"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: rgba(255, 255, 255, 0.5);
+     clip-path: polygon(
+        0 2.00em,2.00em 0,100% 0,100% calc(100% - 2.00em),
+        calc(100% - 2.00em) 100%,0 100%,0 2.00em,1px  
+        calc(2.00em + 0.41px),1px calc(100% - 1px),
+        calc(100% - 2.00em - 0.41px) calc(100% - 1px),
+        calc(100% - 1px) calc(100% - 2.00em - 0.41px),
+        calc(100% - 1px) 1px,calc(2.00em + 0.41px) 1px,1px calc(2.00em + 0.41px));
+
+  }
+
+  [border-cut="top-and-bottom-contact"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: #8b5cf6;
+     clip-path: polygon(
+        0 2.00em,2.00em 0,100% 0,100% calc(100% - 2.00em),
+        calc(100% - 2.00em) 100%,0 100%,0 2.00em,.8px  
+        calc(2.00em + 0.41px),.8px calc(100% - .8px),
+        calc(100% - 2.00em - 0.41px) calc(100% - .8px),
+        calc(100% - .8px) calc(100% - 2.00em - 0.41px),
+        calc(100% - .8px) 1px,calc(2.00em + 0.41px) .8px,.8px calc(2.00em + 0.41px));
+
+  }
+
+  [border-cut="top-and-bottom-white"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: #fafafa;
+     clip-path: polygon(
+        0 2.00em,2.00em 0,100% 0,100% calc(100% - 2.00em),
+        calc(100% - 2.00em) 100%,0 100%,0 2.00em,1px  
+        calc(2.00em + 0.41px),1px calc(100% - 1px),
+        calc(100% - 2.00em - 0.41px) calc(100% - 1px),
+        calc(100% - 1px) calc(100% - 2.00em - 0.41px),
+        calc(100% - 1px) 1px,calc(2.00em + 0.41px) 1px,1px calc(2.00em + 0.41px));
+
+  }
+
+  [border-cut="top-left-angled"]::before {
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: rgba(255, 255, 255, 0.5);
+     clip-path: polygon(
+        0 2.00em,2.00em 0,100% 0,100% calc(100% - 2.00em),
+        calc(100% - 2.00em) 100%,0 100%,0 2.00em,1px  
+        calc(2.00em + 0.41px),1px calc(100% - 1px),
+        calc(100% - 2.00em - 0.41px) calc(100% - 1px),
+        calc(100% - 1px) calc(100% - 2.00em - 0.41px),
+        calc(100% - 1px) 1px,calc(2.00em + 0.41px) 1px,1px calc(2.00em + 0.41px));
+}
+
+
+  [border-cut="bottom-left-purple"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #8b5cf6;
+    clip-path: polygon(0 0,100% 0,100% 100%,0.80em 100%,0 
+    calc(100% - 0.80em),0 0,1px  1px ,1px 
+    calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(100% - 1px),calc(100% - 1px) 1px,1px 1px);
+	} 
+
+  [border-cut="bottom-left-black"]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(0 0,100% 0,100% 100%,2.00em 100%,0 
+    calc(100% - 2.00em),0 0,1px  1px ,1px 
+    calc(100% - 2.00em - 0.83px),calc(2.00em + 0.83px) 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(100% - 1px),calc(100% - 1px) 1px,1px 1px);
+} 
+
+
+  
+  [client-border]::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(9, 7, 6, 0.2);
+  	clip-path: polygon(0 0,100% 0,100% calc(100% - 0.00em),calc(100% - 0.00em) 100%,0 100%,0 0,2px  2px ,2px calc(100% - 2px),calc(100% - 0.00em - 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 0.00em - 0.83px),calc(100% - 2px) 2px,2px 2px);
+
+	} 
+  
+  [corner-cut="top-right"]{
+  	clip-path: polygon(0 0,calc(100% - 0.10em) 0,100% 0.10em,100% 100%,0 100%);
+  }
+  
+  [corner-cut="bottom-right"]{
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 0.10em),calc(100% - 0.80em) 100%,0 100%);
+  }  
+  
+  [corner-cut="top"]{
+  	clip-path: polygon(0 2.00em,2.00em 0,calc(100% - 2.00em) 0,100% 2.00em,100% 100%,0 100%);
+  }
+  
+  [corner-cut="all"]{
+  clip-path: polygon(0 2.00em,2.00em 0,calc(100% - 2.00em) 0,100% 2.00em,100% calc(100% - 2.00em),calc(100% - 2.00em) 100%,2.00em 100%,0 calc(100% - 2.00em));
+  }
+  
+  [corner-cut="project-slide"]{
+  clip-path: polygon(0 0,calc(100% - 2.00em) 0,100% 2.00em,100% 100%,2.00em 100%,0 calc(100% - 2.00em));
+  }  
+  
+  [corner-cut="cursor"]{
+  clip-path: polygon(0 0.80em,0.80em 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%);
+  }  
+  
+  [border-cut="project-line"]::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  clip-path: polygon(0 0,calc(100% - 2.00em) 0,100% 2.00em,100% 100%,2.00em 100%,0 calc(100% - 2.00em),0 0,2px  2px ,2px calc(100% - 2.00em - 0.83px),calc(2.00em + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(2.00em + 0.83px),calc(100% - 2.00em - 0.83px) 2px,2px 2px);
+  }
+  
+  [border-cut="top-left-bottom-right"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: rgba(255, 255, 255, 0.5);
+     clip-path: polygon(0 2.25em,2.25em 0,100% 0,100% 
+     calc(100% - 2.25em),calc(100% - 2.25em) 100%,0 100%,0 2.25em,1px  
+     calc(2.25em + 0.41px),1px calc(100% - 1px),calc(100% - 2.25em - 0.41px) 
+     calc(100% - 1px),calc(100% - 1px) 
+     calc(100% - 2.25em - 0.41px),calc(100% - 1px) 1px,calc(2.25em + 0.41px) 1px,1px 
+     calc(2.25em + 0.41px));
+
+  }
+
+  [border-cut="frame-toolkit"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: rgba(255, 255, 255, 0.5);
+     clip-path: polygon(0 2.0em,2.0em 0,100% 0,100% 
+     calc(100% - 2.0em),calc(100% - 2.0em) 100%,0 100%,0 2.0em,1px  
+     calc(2.0em + 0.41px),1px calc(100% - 1px),calc(100% - 2.0em - 0.41px) 
+     calc(100% - 1px),calc(100% - 1px) 
+     calc(100% - 2.0em - 0.41px),calc(100% - 1px) 1px,calc(2.0em + 0.41px) 1px,1px 
+     calc(2.0em + 0.41px));
+
+  }
+
+  [border-cut="frame-toolkit-purple"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: #8b5cf6;
+     clip-path: polygon(0 1.0em,1.0em 0,100% 0,100% 
+     calc(100% - 1.0em),calc(100% - 1.0em) 100%,0 100%,0 1.0em,1px  
+     calc(1.0em + 0.41px),1px calc(100% - 1px),calc(100% - 1.0em - 0.41px) 
+     calc(100% - 1px),calc(100% - 1px) 
+     calc(100% - 1.0em - 0.41px),calc(100% - 1px) 1px,calc(1.0em + 0.41px) 1px,1px 
+     calc(1.0em + 0.41px));
+
+  }
+
+  
+
+  [border-cut="top-left"]::before {
+    content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  clip-path: polygon(0px 2.25em, 2.25em 0px, 100% 0px, 100.00% 498px, 392px 100%, 0px 100%, 0px 2.25em, 1px calc(2.25em + 0.41px), 1px calc(100% - 1px), calc(100% - 2.25em - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 2.25em - 0.41px), calc(100% - 1px) 1px, calc(2.25em + 0.41px) 1px, 1px calc(2.25em + 0.41px));
+}
+
+  
+  [border-cut="footer-btm"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: rgba(255, 255, 255, 0.5);
+    clip-path: polygon(0 0,calc(100% - 2.00em) 
+    0,100% 2.00em,100% 100%,2.00em 100%,0 
+    calc(100% - 2.00em),0 0,1px  1px ,1px 
+    calc(100% - 2.00em - 0.41px),calc(2.00em + 0.41px) 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(100% - 1px),calc(100% - 1px) 
+    calc(2.00em + 0.41px),calc(100% - 2.00em - 0.41px) 1px,1px 1px);
+
+  }
+
+  [border-cut="footer-btm-white"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: #e9d5ff;
+    clip-path: polygon(0 0,calc(100% - 2.00em) 
+    0,100% 2.00em,100% 100%,2.00em 100%,0 
+    calc(100% - 2.00em),0 0,2px  2px ,2px 
+    calc(100% - 2.00em - 0.41px),calc(2.00em + 0.41px) 
+    calc(100% - 2px),calc(100% - 2px) 
+    calc(100% - 2px),calc(100% - 2px) 
+    calc(2.00em + 0.41px),calc(100% - 2.00em - 0.41px) 2px,2px 2px);
+
+  }
+  [border-cut="footer-btm-dark"]::before{
+    content: "";
+  	position: absolute;
+  	inset: 0;
+  	background: #8b5cf6;
+    clip-path: polygon(0 0,calc(100% - 2.00em) 
+    0,100% 2.00em,100% 100%,2.00em 100%,0 
+    calc(100% - 2.00em),0 0,2px  2px ,2px 
+    calc(100% - 2.00em - 0.41px),calc(2.00em + 0.41px) 
+    calc(100% - 2px),calc(100% - 2px) 
+    calc(100% - 2px),calc(100% - 2px) 
+    calc(2.00em + 0.41px),calc(100% - 2.00em - 0.41px) 2px,2px 2px);
+    
+  }
+
+  .border-cut-projects::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #e9d5ff; /* White background */
+    z-index: -1;
+    clip-path: polygon(
+        0 0, 
+        calc(100% - 1.86em) 0, 
+        100% 1.86em, 
+        100% 100%, 
+        1.86em 100%, 
+        0 calc(100% - 1.86em)
+    );
+}
+
+.main-btn {
+    /*-webkit-clip-path: polygon(0 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%);*/
+    -webkit-clip-path: polygon(0 0em,0em 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%);
+    transition: 0.6s cubic-bezier(.19, 1, .22, 1);
+  }
+  
+  .main-btn:hover {
+    -webkit-clip-path: polygon(0 0.80em,0.80em 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%);
+  }
+
+.next-btn {
+    /* Simple rectangle by default */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0.80em 100%, 0 calc(100% - 0.80em));
+    transition: -webkit-clip-path 0.6s cubic-bezier(.19, 1, .22, 1);
+}
+
+.next-btn:hover {
+    /* Angled bottom-left and top-right corners on hover */
+    -webkit-clip-path: polygon(0 0, calc(100% - 0.80em) 0, 100% 0.80em, 100% 100%, 0.80em 100%, 0 calc(100% - 0.80em));
+}
+

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Changa:wght@200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --ease: cubic-bezier(0.24,1,0.36,1);
+    --duration: 0.4s;
+    --transition: var(--duration) var(--ease);
+    --transition-slow: 0.7s var(--ease);
+}
+
+@font-face {
+    font-family: 'morganite-med';
+    src:  url('./assets/fonts/Morganite-Medium.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+}
+
+@font-face {
+    font-family: 'morganite-semibold';
+    src:  url('./assets/fonts/Morganite-SemiBold.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+}
+
+@font-face {
+    font-family: 'morganite-bold';
+    src:  url('./assets/fonts/Morganite-Bold.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+}
+@font-face {
+    font-family: 'morganite-ExtraBold';
+    src:  url('./assets/fonts/Morganite-ExtraBold.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+}
+
+.morganite {
+  font-family: 'morganite';
+}
+.morganite-semibold {
+  font-family: 'morganite-semibold';
+}
+.morganite-bold {
+  font-family: 'morganite-bold';
+}
+.morganite-extra-bold {
+   font-family: 'morganite-ExtraBold';
+}
+
+/* ============= SCROLL BAR CUSTOMIZATION ============== */
+/* This will style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+/* This will style the actual scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #cea1fe;
+  border-radius: 5px;
+  height: 20px;
+}
+
+/* This will change the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ceacf2;
+}
+
+/* This styles the overall scrollbar (width, height) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*=========== MOTION TEXT ===========*/
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes rotateIcon {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.rotating-icon {
+  animation: rotateIcon 3s linear infinite;
+}
+
+
+.motion-text {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: slideLeft 10s linear infinite;
+}
+
+.motion-text2 {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: slideRight 30s linear infinite;
+}
+
+/* =============== ROTATING TEXT ================ */
+.rotating-text-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #d4d4d8;
+}
+
+.rotating-text-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+/* === CSS FOR 'COPIED' TEXT VISIBILITY IN CONTACT SECTION === */
+.copiedTextVisible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+}
+
+.copiedTextHidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s ease-in-out; /* Delay hiding until after fade */
+}
+
+
+@layer base {
+    body {
+        @apply w-full m-0 p-0 box-border rounded-2xl bg-zinc-950 font-grotesk
+      }
+
+    a {
+      @apply cursor-pointer;
+    }
+}
+
+@layer utilities {
+    .text-logo {
+      @apply text-zinc-50 text-[3.9rem] font-grotesk font-[400] tracking-wide uppercase
+    }
+
+    .text-small {
+      @apply font-roboto text-zinc-400 text-[1.2rem] font-[300]  tracking-wide
+    }
+
+    .text-small-darkx {
+      @apply font-roboto text-zinc-950 text-[1.2rem] font-[500]  tracking-wide
+    }
+
+    .text-xsmall {
+      @apply font-grotesk text-zinc-400 text-[.95rem] lg:text-[1.1rem] font-[100] 
+    }
+
+    .text-xsmall-grotesk {
+      @apply font-grotesk text-zinc-400 text-[1rem] font-[300] 
+    }
+
+    .text-xsmall-white {
+      @apply font-grotesk text-zinc-50 text-[1rem] font-[300] uppercase
+    }
+
+    .text-xsmall-purple {
+      @apply font-grotesk text-violet-500 text-[1.1rem] font-[100] leading-[18px] uppercase
+    }
+
+    .text-xxsmall {
+      @apply font-grotesk text-zinc-500 text-[.78rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
+    }
+   
+    .text-xxsmall-min {
+      @apply font-grotesk text-zinc-400 text-[.88rem] font-[300] tracking-wider
+    }
+
+    .text-xxsmall-black {
+      @apply font-roboto text-zinc-950 text-[.8rem] font-[500] tracking-wider uppercase
+    }
+
+    .text-xxsmall-white {
+      @apply font-grotesk text-zinc-50 text-[.78rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
+    }
+    
+    .text-xxsmall-purple {
+      @apply font-grotesk text-violet-600 text-[.8rem] font-[400] tracking-wider
+    }
+
+
+    .text-xxxsmall {
+      @apply font-grotesk text-zinc-50 text-[.7rem] font-[400] tracking-wider uppercase
+    }
+    .text-xxxsmall-black {
+      @apply font-grotesk text-zinc-950 text-[.76rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
+    }
+
+    
+
+    .text-small-purple {
+      @apply font-roboto text-violet-500 text-lg font-[500]  tracking-wide uppercase
+    }
+    
+
+    .title-h2{
+      @apply text-zinc-50 font-grotesk text-[1.24rem] 2xl:text-6xl font-[400] uppercase tracking-wider
+    }
+
+    .title-h3{
+      @apply text-zinc-300 font-grotesk text-[.82rem] 2xl:text-[1.25rem] font-[300] uppercase tracking-wider
+    }
+
+    .title-xsmall {
+      @apply text-zinc-300 font-roboto text-[1rem] font-[300] uppercase tracking-wider
+    }
+
+    .xxsm-title {
+      @apply morganite-bold text-[3rem] leading-[88%] font-[900] uppercase text-zinc-300 
+
+    }
+    .xsm-title {
+      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-violet-500
+
+    }
+
+    .xsm-title-w {
+      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-50
+
+    }
+    .sm-title {
+      @apply morganite-bold text-[6.2rem]  leading-[120px] uppercase text-violet-500
+
+    }
+
+    .sm-title-white {
+      @apply morganite-bold text-[6rem]  leading-[140px] uppercase text-zinc-50
+
+    }
+    .med-title {
+      @apply morganite-bold text-[8rem]  leading-[120px] uppercase text-violet-500
+
+    }
+    .reg-title {
+      @apply morganite-bold text-[12rem] font-[600] leading-[130px]  text-violet-500
+
+    }
+    .big-title {
+      @apply  morganite-bold  2xl:text-[19.7rem] font-[400] leading-[130px]  text-violet-500
+
+    }
+    .big-title2 {
+      @apply morganite-bold text-[6rem] 2xl:text-[18rem] font-[500] leading-[20px] 2xl:leading-[170px] tracking-[3px] uppercase 
+        text-violet-500
+
+    }
+    .bigger-title {
+      @apply  morganite-bold text-[21vw]  uppercase text-violet-500 leading-[300px]
+
+    }
+    .xl-title {
+      @apply morganite-bold  text-[23.52vw]  uppercase text-violet-500 font-[100] p-0 leading-[140px]
+
+    }
+
+}
