@@ -4,9 +4,10 @@ import { Link } from 'react-scroll';
 const HeroBtn = () => {
     return (
          <button border-cut="bottom-right-purple"
-            className="w-[86vw] 2xl:w-[18vw] group relative  h-12 ">
+            className="w-[86vw] sm:w-[68%] 2xl:w-[13.8vw] group relative h-12 sm:h-11 lg:h-8 flex justify-center 
+                items-center">
             <Link to={"work"}
-                className="group relative overflow-hidden text-xsmall-purple tracking-widest">
+                className="group relative overflow-hidden text-xxsmall-purple tracking-widest">
                 <span className="relative inline-flex">
                     <span className="duration-700 [transition-delay:0.02s] 
                     group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-300">

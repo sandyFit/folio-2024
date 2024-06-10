@@ -41,23 +41,27 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="index" className='w-full min-h-screen flex flex-col bg-zinc-950 relative'>
+        <section id="index" className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 sm:px-8 md:px-12 
+        2xl:px-16'>
             <button className="">
                 <img src="/square-brackets.svg" alt="" className='absolute top-[2.5rem] 2xl:top-7 right-6 2xl:right-16' />
                 <span className='w-[.9rem] h-[1rem] rounded bg-violet-500 absolute right-[1.9rem] 
                     2xl:right-[4.376rem] top-[2.7rem] 2xl:top-[2rem]'></span>
             </button>
-            <div border-cut="bottom-right-black" className="flex flex-col mt-6 justify-center items-center">
+
+            <div border-cut="bottom-right-black" className="w-full flex flex-col mt-6 justify-center items-center">
                 <div className="w-full flex flex-col justify-center items-center mt-48 ">
-                    <h1 className='big-title2 [word-spacing:0.1em] hero-content hero-title' style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%);' }}>
+                    <h1 className='big-title2 [word-spacing:0.1em] hero-content hero-title'
+                        style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%);' }}>
                         trish ramos
                     </h1>
-                    <div className='w-[94%] 2xl:w-[48vw] flex justify-center items-center mt-8 hero-content'>
-                        <p className="title-h3 uppercase w-full ml-3">
+                    <div className='w-full 2xl:w-[48vw] flex justify-center items-center mt-10 sm:mt-12 lg:mt-8 hero-content'>
+                        <p className="title-h3 uppercase w-full ml-0 lg:ml-3">
                             Frontend developer with a designer's eye. Currently seeking job opportunities where I can innovate & collaborate.
                         </p>
                     </div>
-                    <div className="w-[86vw] 2xl:w-[48vw] flex justify-end mt-4 relative hero-content">
+                    <div className="w-[86vw] sm:w-[68vw] lg:w-[48vw] flex sm:justify-center lg:justify-end mt-4 
+                        ml-0 md:ml-[rem] relative hero-content">
                         <HeroBtn />
                     </div>
                 </div>
@@ -66,8 +70,8 @@ const Hero = () => {
             <article className="w-full flex flex-col justify-center items-center relative mt-24 2xl:mt-36 hero-content">
                 <div className="w-full flex flex-col justify-center items-center relative ">
                     <div className="w-full flex flex-col 2xl:flex-row justify-center items-center 2xl:justify-between 
-                        text-xxsmall uppercase px-6 2xl:px-16 gap-1">
-                        <span className='gris whitespace-nowrap'>
+                        text-xxsmall uppercase  gap-1">
+                        <span className='whitespace-nowrap'>
                             based in <span className='text-xxsmall-white ml-1.5'> colombia</span>
                         </span>
                         <span className='hidden 2xl:flex text-xxsmall-white'>
@@ -78,7 +82,7 @@ const Hero = () => {
                         </span>
                     </div>
 
-                    <span className='2xl:hidden flex mt-20 text-xsmall-white'>
+                    <span className='2xl:hidden flex mt-16 lg:mt-20 text-xsmall-white'>
                         [<ScrollBtn />]
                     </span>
                 </div>

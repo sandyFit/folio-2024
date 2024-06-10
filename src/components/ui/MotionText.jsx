@@ -5,7 +5,7 @@ const MotionText = ({ text }) => {
     const repetitions = Array(3).fill(null);
 
     return (
-        <div className="w-full h-3 z-10 flex justify-center items-center overflow-hidden">
+        <div className="w-full  z-10 flex justify-center items-center overflow-hidden">
             <h2 className="motion-text w-full">
                 {repetitions.map((_, index) => (
                 <span key={index} className="text-xxsmall-white mx-3">

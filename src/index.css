@@ -38,8 +38,22 @@
           font-style: normal;
 }
 
-.morganite {
-  font-family: 'morganite';
+@font-face {
+    font-family: 'charlottenburg-circles';
+    src:  url('./assets/fonts/Charlottenburg_W-Circles.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+}
+
+@font-face {
+    font-family: 'charlottenburg-classic';
+    src:  url('./assets/fonts/Charlottenburg_W-Classic.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+}
+
+.morganite-med {
+  font-family: 'morganite-med';
 }
 .morganite-semibold {
   font-family: 'morganite-semibold';
@@ -49,6 +63,12 @@
 }
 .morganite-extra-bold {
    font-family: 'morganite-ExtraBold';
+}
+.charlot-circles {
+   font-family: 'charlottenburg-circles';
+}
+.charlot-classic {
+   font-family: 'charlottenburg-classic';
 }
 
 /* ============= SCROLL BAR CUSTOMIZATION ============== */
@@ -124,6 +144,38 @@
     animation: slideRight 30s linear infinite;
 }
 
+/* ========== SLIDING TEXT FROM LEFT & RIGHT ==========*/
+@keyframes slideInTextFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTextFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.textSlidingLeft {
+  animation: slideInTextFromLeft 1s ease-out forwards;
+}
+
+.textSlidingRight {
+  animation: slideInTextFromRight 1s ease-out forwards;
+}
+
+
 /* =============== ROTATING TEXT ================ */
 .rotating-text-container {
   position: relative;
@@ -178,15 +230,15 @@
     }
 
     .text-small {
-      @apply font-roboto text-zinc-400 text-[1.2rem] font-[300]  tracking-wide
+      @apply font-grotesk text-zinc-400 text-[1.2rem] font-[300]  tracking-wide
     }
 
     .text-small-darkx {
-      @apply font-roboto text-zinc-950 text-[1.2rem] font-[500]  tracking-wide
+      @apply font-grotesk text-zinc-950 text-[1.2rem] font-[500]  tracking-wide
     }
 
     .text-xsmall {
-      @apply font-grotesk text-zinc-400 text-[.95rem] lg:text-[1.1rem] font-[100] 
+      @apply font-grotesk text-zinc-400 text-[.9rem] sm:text-[1rem] lg:text-[1.1rem] font-[100] 
     }
 
     .text-xsmall-grotesk {
@@ -194,15 +246,15 @@
     }
 
     .text-xsmall-white {
-      @apply font-grotesk text-zinc-50 text-[1rem] font-[300] uppercase
+      @apply font-grotesk text-zinc-50 text-[.8rem]  lg:text-[1rem] font-[300] uppercase
     }
 
     .text-xsmall-purple {
-      @apply font-grotesk text-violet-500 text-[1rem] lg:text-[1.1rem] font-[100] leading-[18px] uppercase
+      @apply font-grotesk text-violet-500 text-[1rem] sm:text-[.8rem]  lg:text-[1.1rem] font-[100] leading-[18px] uppercase
     }
 
     .text-xxsmall {
-      @apply font-grotesk text-zinc-500 text-[.78rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
+      @apply font-grotesk text-zinc-500 text-[.78rem] sm:text-[.9rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
     }
    
     .text-xxsmall-min {
@@ -214,7 +266,7 @@
     }
 
     .text-xxsmall-white {
-      @apply font-grotesk text-zinc-50 text-[.78rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
+      @apply font-grotesk text-zinc-50 text-[.78rem] sm:text-[.9rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
     }
     
     .text-xxsmall-purple {
@@ -237,11 +289,11 @@
     
 
     .title-h2{
-      @apply text-zinc-50 font-grotesk text-[1.24rem] 2xl:text-6xl font-[400] uppercase tracking-wider
+      @apply text-zinc-50 font-grotesk text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] 2xl:text-6xl font-[400] uppercase tracking-wider
     }
 
     .title-h3{
-      @apply text-zinc-300 font-grotesk text-[.82rem] 2xl:text-[1.25rem] font-[300] uppercase tracking-wider
+      @apply text-zinc-300 font-grotesk text-[.8rem] sm:text-[1rem] 2xl:text-[1.25rem] font-[300] uppercase tracking-wider
     }
 
     .title-xsmall {
@@ -271,7 +323,7 @@
 
     }
     .med-title {
-      @apply morganite-bold text-[8rem]  leading-[120px] uppercase text-violet-500
+      @apply morganite-bold text-[8rem] sm:text-[10rem] leading-[70px] sm:leading-[90px]  text-violet-500
 
     }
     .reg-title {
@@ -279,11 +331,11 @@
 
     }
     .big-title {
-      @apply  morganite-bold  2xl:text-[19.7rem] font-[400] leading-[130px]  text-violet-500
+      @apply  morganite-bold text-8xl 2xl:text-[19.6rem] font-[400] leading-[90px]  text-violet-500
 
     }
     .big-title2 {
-      @apply morganite-bold text-[6rem] 2xl:text-[18rem] font-[500] leading-[20px] 2xl:leading-[170px] tracking-[3px] uppercase 
+      @apply morganite-bold text-[5.8rem]  md:text-[9.15rem] 2xl:text-[12rem] font-[100] leading-[20px] 2xl:leading-[160px] tracking-[3px] uppercase 
         text-violet-500
 
     }

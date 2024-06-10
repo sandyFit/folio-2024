@@ -10,7 +10,7 @@ const Projects = () => {
     return (
         <section id='work' data-cursor-color='#d946ef'         
             className='w-full min-h-screen flex flex-col justify-center items-start bg-zinc-950 relative'>
-            <div className="w-full flex flex-col items-start px-6 2xl:px-16" border-cut="footer-btm">                    
+            <div className="w-full flex flex-col items-start px-6 sm:px-8 2xl:px-16" border-cut="footer-btm">                    
                <div className="flex justify-between relative mt-28 lg:mt-32">
                     <div className='title-h2 relative '>
                         <TextShimmerEffect text={"⋙ These projects are"}/>
@@ -22,27 +22,28 @@ const Projects = () => {
                         <TextShimmerEffect text={"lasting impression."}/>
                     </div>
 
-                    <div className="absolute top-[8.2rem] left-[28.5rem]">
+                    <div className="hidden lg:absolute top-[8.2rem] left-[28.5rem]">
                         <HappyFace />
                     </div>
                     
                     
-                    <span className='absolute top-[6.2rem] left-[32rem] text-zinc-50 text-8xl'>
+                    <span className='hidden lg:absolute top-[6.2rem] left-[32rem] text-zinc-50 text-8xl'>
                         ⁕
                     </span>
                         
                     
                     
-                    <div className="hidden lg:flex flex-col text-right morganite-extra-bold text-[4rem] lg:text-[26rem] font-[500] leading-[130px]
+                    <div className="hidden lg:flex flex-col text-right morganite-extra-bold text-[4rem] 
+                        lg:text-[26rem] font-[500] leading-[130px]
                         text-zinc-700 text-opacity-40 relative">                   
                         <span className='absolute bottom-[5.4rem] -right-[36rem] '>
                             Work
                         </span>                      
                     </div>
 
-                    <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] lg:text-[26rem] font-[500] leading-[130px]
-                        text-zinc-700 text-opacity-40 relative">                   
-                        <span className='absolute bottom-[12rem] right-52 '>
+                    <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] sm:text-[5rem]
+                        lg:text-[26rem] font-[500] leading-[130px] text-zinc-700 text-opacity-40 ">                   
+                        <span className='absolute bottom-[12rem] sm:bottom-[13.8rem] left-0'>
                             Work
                         </span>                      
                     </div>

@@ -10,7 +10,7 @@ const About = () => {
             id="info"
             className='w-full min-h-screen flex flex-col justify-center items-start bg-zinc-950 relative pb-20'
         >
-            <div className="flex flex-col px-6 2xl:px-16" border-cut="top-and-bottom-about">
+            <div className="flex flex-col px-6 sm:px-8 2xl:px-16" border-cut="top-and-bottom-about">
                 <article className="flex flex-col items-start mt-28 lg:mt-32">
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative'>
@@ -33,10 +33,10 @@ const About = () => {
                             <span className=''>Info</span>
                         </div>
 
-                        <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] lg:text-[26rem] 
-                            font-[500] leading-[130px]
-                        text-zinc-700 text-opacity-40 relative">                   
-                        <span className='absolute bottom-[10rem] right-56 '>
+                        <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] sm:text-[5rem] 
+                            lg:text-[26rem] font-[500] leading-[130px]
+                        text-zinc-700 text-opacity-40 ">                   
+                        <span className='absolute bottom-[11.5rem] left-0 '>
                             Info
                         </span>                      
                     </div>
@@ -65,7 +65,7 @@ const About = () => {
                     </div>
                 </article>
 
-                <article className="flex flex-col w-full lg:w-[55%] justify-end mt-8 lg:mt-12 lg:ml-auto relative">
+                <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-12 lg:ml-auto relative">
                     <div border-cut="frame-toolkit" className="flex justify-center w-full h-[8%] py-4">
                         <p className='font-grotesk text-xl lg:text-6xl font-[900] text-zinc-50  tracking-widest uppercase'>
                             core tools
