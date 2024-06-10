@@ -11,7 +11,7 @@ const About = () => {
             className='w-full min-h-screen flex flex-col justify-center items-start bg-zinc-950 relative pb-20'
         >
             <div className="flex flex-col px-6 2xl:px-16" border-cut="top-and-bottom-about">
-                <article className="flex flex-col items-start mt-16 lg:mt-32">
+                <article className="flex flex-col items-start mt-28 lg:mt-32">
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative'>
                             <TextShimmerEffect text={"⋙ I'm a graphic designer"} />
@@ -32,6 +32,14 @@ const About = () => {
                         <div className="hidden lg:flex flex-col text-right morganite-extra-bold text-[28rem] font-[500] leading-[260px] text-zinc-700 text-opacity-40 absolute -right-[36rem] bottom-10">
                             <span className=''>Info</span>
                         </div>
+
+                        <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] lg:text-[26rem] 
+                            font-[500] leading-[130px]
+                        text-zinc-700 text-opacity-40 relative">                   
+                        <span className='absolute bottom-[10rem] right-56 '>
+                            Info
+                        </span>                      
+                    </div>
                     </div>
 
                     <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">

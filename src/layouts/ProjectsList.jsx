@@ -63,16 +63,16 @@ const ProjectsList = () => {
                                         </div>
                                     </div>
                                     {openProjectIndex === index && (
-                                        <div className="w-full flex flex-col pl-1 lg:pl-6">
+                                        <div className="w-full lg:w-[90%] flex flex-col pl-1 lg:pl-6">
                                             <div className="w-full flex">
                                                 <img
                                                     src="/img/hero.png"
                                                     alt="Radiant Website"
-                                                    className='w-[65vw] lg:w-[44.6vw] bg-cover sticky top-16 left-[10%] 
+                                                    className='w-full bg-cover sticky top-16 left-[10%] 
                                                     py-[1.375rem]  z-[5]'
                                                 />
                                             </div>
-                                            <div className="flex flex-col justify-end w-[65vw] lg:w-[44.6vw] mt-auto ">
+                                            <div className="flex flex-col justify-end w-full mt-auto ">
                                                 <p className="w-full text-xsmall" dangerouslySetInnerHTML={{ __html: project.description }} />
                                                 <h4 className="text-xsmall-white mt-6">Technologies:</h4>
                                                 <p className="text-xsmall" dangerouslySetInnerHTML={{ __html: project.technologies }} />
@@ -83,7 +83,7 @@ const ProjectsList = () => {
                                             </div>
                                         </div>
                                     )}
-                                </div>
+                                </div>                               
                             </div>
                         </li>
                     ))}

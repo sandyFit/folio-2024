@@ -11,8 +11,8 @@ const Projects = () => {
         <section id='work' data-cursor-color='#d946ef'         
             className='w-full min-h-screen flex flex-col justify-center items-start bg-zinc-950 relative'>
             <div className="w-full flex flex-col items-start px-6 2xl:px-16" border-cut="footer-btm">                    
-               <div className="flex justify-between relative mt-16 2xl:mt-32">
-                    <div className='title-h2 relative'>
+               <div className="flex justify-between relative mt-28 lg:mt-32">
+                    <div className='title-h2 relative '>
                         <TextShimmerEffect text={"⋙ These projects are"}/>
                         <TextShimmerEffect text={"Crafted with Care & a"}/>
                         <TextShimmerEffect text={"Dash of Flair. "} />                     
@@ -33,9 +33,16 @@ const Projects = () => {
                         
                     
                     
-                    <div className="hidden lg:flex flex-col text-right morganite-extra-bold text-[26rem] font-[500] leading-[130px]
+                    <div className="hidden lg:flex flex-col text-right morganite-extra-bold text-[4rem] lg:text-[26rem] font-[500] leading-[130px]
                         text-zinc-700 text-opacity-40 relative">                   
-                        <span className='absolute bottom-[5.4rem] -right-[36rem]'>
+                        <span className='absolute bottom-[5.4rem] -right-[36rem] '>
+                            Work
+                        </span>                      
+                    </div>
+
+                    <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] lg:text-[26rem] font-[500] leading-[130px]
+                        text-zinc-700 text-opacity-40 relative">                   
+                        <span className='absolute bottom-[12rem] right-52 '>
                             Work
                         </span>                      
                     </div>

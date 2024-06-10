@@ -198,7 +198,7 @@
     }
 
     .text-xsmall-purple {
-      @apply font-grotesk text-violet-500 text-[1.1rem] font-[100] leading-[18px] uppercase
+      @apply font-grotesk text-violet-500 text-[1rem] lg:text-[1.1rem] font-[100] leading-[18px] uppercase
     }
 
     .text-xxsmall {
@@ -218,7 +218,7 @@
     }
     
     .text-xxsmall-purple {
-      @apply font-grotesk text-violet-600 text-[.8rem] font-[400] tracking-wider
+      @apply font-grotesk text-violet-600 uppercase text-[.8rem] font-[400] tracking-wider
     }
 
 
