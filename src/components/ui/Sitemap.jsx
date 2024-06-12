@@ -23,7 +23,7 @@ const SiteLink = ({ name }) => (
                 <span
                     key={index}
                     className={`duration-700 [transition-delay:${index * 0.02}s] group-hover:[transform:rotateY(360deg)] 
-                    group-hover:text-violet-500`}
+                    group-hover:text-cyan-300`}
                 >
                     {char === ' ' ? '\u00A0' : char}
                 </span>

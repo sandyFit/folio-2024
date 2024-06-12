@@ -2,7 +2,7 @@ import React from 'react'
 
 const BottomLeftOutlineBtn = () => {
     return (
-        <button border-cut="bottom-left-purple"
+        <button border-cut="bottom-left-cyan"
             className="group relative px-[1.45rem] lg:px-10 h-7 lg:h-9 mt-6 flex items-center ">
             <a to={"work"}
                 className="group relative overflow-hidden text-xxsmall-purple lg:text-xsmall-purple tracking-widest">

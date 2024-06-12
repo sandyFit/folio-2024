@@ -27,55 +27,55 @@ const ScrollBtn = () => {
         <button className="w-[42vw] sm:w-[36vw] 2xl:w-[12vw] group relative">
             <Link to={"work"} className="group relative overflow-hidden text-xxsmall-white tracking-widest">
                 <span className="relative inline-flex">
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         s
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         c
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         r
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         o
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         l
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         l
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         &nbsp;
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         t
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         o
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         &nbsp;
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         e
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         x
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         p
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         l
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         o
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         r
                     </span>
-                    <span className="turning-text group-hover:text-violet-500">
+                    <span className="turning-text group-hover:text-cyan-300">
                         e
                     </span>
                 </span>

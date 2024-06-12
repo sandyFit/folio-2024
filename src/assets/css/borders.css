@@ -29,7 +29,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: #8b5cf6;
+    background: #67e8f9;
     clip-path: polygon(0 0,calc(100% - 0.80em) 
     0,100% 0.80em,100% 100%,0 100%,0 0,1px  1px ,1px 
     calc(100% - 1px),calc(100% - 1px) 
@@ -172,11 +172,11 @@
 }
 
 
-  [border-cut="bottom-left-purple"]::before{
+  [border-cut="bottom-left-cyan"]::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: #8b5cf6;
+    background: #67e8f9;
     clip-path: polygon(0 0,100% 0,100% 100%,0.80em 100%,0 
     calc(100% - 0.80em),0 0,1px  1px ,1px 
     calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) 

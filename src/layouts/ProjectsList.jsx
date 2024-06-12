@@ -23,18 +23,18 @@ const ProjectsList = () => {
                 <ul className="flex flex-col items-start lg:items-end relative w-[40%] lg:w-[40vw] projects">
                     {projects.map((project, index) => (
                         <li key={index} className={`flex flex-grow relative pb-12 ${openProjectIndex === index ? 'expanded' : ''}`}>
-                            <div className="absolute left-0 top-0 w-full h-[1px] bg-violet-500 transition-all 
+                            <div className="absolute left-0 top-0 w-full h-[1px] bg-cyan-300 transition-all 
                                 duration-[var(--duration)] ease-[var(--ease)]"></div>
                             <div className="flex w-full cursor-pointer">
                                 <div className="flex relative">
                                     <svg width="6rem" height="5rem" viewBox="0 0 60 50" xmlns="http://www.w3.org/2000/svg"
                                         className='hidden lg:block'>
-                                        <polygon points="0,0 60,0 60,50 15,50 0,34" style={{ fill: '#8b5cf6', stroke: 'none', strokeWidth: 1 }} />
+                                        <polygon points="0,0 60,0 60,50 15,50 0,34" style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
                                     </svg>
 
                                     <svg width="3.5rem" height="2.6rem" viewBox="0 0 60 45" xmlns="http://www.w3.org/2000/svg"
                                         className='block lg:hidden' preserveAspectRatio="xMidYMid meet">
-                                        <polygon points="0,0 60,0 60,45 15,45 0,30" style={{ fill: '#8b5cf6', stroke: 'none', strokeWidth: 1 }} />
+                                        <polygon points="0,0 60,0 60,45 15,45 0,30" style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
                                     </svg>
 
 

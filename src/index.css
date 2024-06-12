@@ -79,14 +79,14 @@
 
 /* This will style the actual scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background-color: #cea1fe;
+  background-color: #67e8f9;
   border-radius: 5px;
   height: 20px;
 }
 
 /* This will change the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ceacf2;
+  background-color: #06b6d4;
 }
 
 /* This styles the overall scrollbar (width, height) */
@@ -213,10 +213,15 @@
   transition: opacity .5s ease-in-out; /* Delay hiding until after fade */
 }
 
+.app-title {
+    background: linear-gradient(135deg, rgba(252, 165, 165, 1) 0%, rgba(103, 232, 249, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 @layer base {
     body {
-        @apply w-full m-0 p-0 box-border rounded-2xl bg-zinc-950 font-grotesk
+        @apply w-full m-0 p-0 box-border rounded-2xl bg-zinc-950 font-inter
       }
 
     a {
@@ -226,91 +231,125 @@
 
 @layer utilities {
     .text-logo {
-      @apply text-zinc-50 text-[3.9rem] font-grotesk font-[400] tracking-wide uppercase
+      @apply text-zinc-50 text-[3.9rem] font-inter font-[400] tracking-wide uppercase
     }
 
     .text-small {
-      @apply font-grotesk text-zinc-400 text-[1.2rem] font-[300]  tracking-wide
+      @apply font-inter text-zinc-400 text-[1.2rem] font-[300]  tracking-wide
     }
 
     .text-small-darkx {
-      @apply font-grotesk text-zinc-950 text-[1.2rem] font-[500]  tracking-wide
+      @apply font-inter text-zinc-950 text-[1.2rem] font-[500]  tracking-wide
     }
 
     .text-xsmall {
-      @apply font-grotesk text-zinc-400 text-[.9rem] sm:text-[1rem] lg:text-[1.1rem] font-[100] 
+      @apply font-inter text-zinc-400 text-[.8rem] sm:text-[1rem] lg:text-[1rem] font-[300] 
     }
 
-    .text-xsmall-grotesk {
-      @apply font-grotesk text-zinc-400 text-[1rem] font-[300] 
-    }
 
     .text-xsmall-white {
-      @apply font-grotesk text-zinc-50 text-[.8rem]  lg:text-[1rem] font-[300] uppercase
+      @apply font-inter text-cyan-300 text-[.8rem]  lg:text-[1rem] font-[400] uppercase
     }
 
     .text-xsmall-purple {
-      @apply font-grotesk text-violet-500 text-[1rem] sm:text-[.8rem]  lg:text-[1.1rem] font-[100] leading-[18px] uppercase
+      @apply font-inter text-cyan-300 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
     }
 
     .text-xxsmall {
-      @apply font-grotesk text-zinc-500 text-[.78rem] sm:text-[.9rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
+      @apply font-inter text-cyan-300 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] tracking-wider uppercase
     }
    
     .text-xxsmall-min {
-      @apply font-grotesk text-zinc-400 text-[.88rem] font-[300] tracking-wider
+      @apply font-inter text-zinc-400 text-[.88rem] font-[300] tracking-wider
     }
 
     .text-xxsmall-black {
-      @apply font-roboto text-zinc-950 text-[.8rem] font-[500] tracking-wider uppercase
+      @apply font-inter text-zinc-950 text-[.7rem] font-[500] tracking-wider uppercase
     }
 
     .text-xxsmall-white {
-      @apply font-grotesk text-zinc-50 text-[.78rem] sm:text-[.9rem] 2xl:text-[1rem] font-[100] tracking-wider uppercase
+      @apply font-inter text-zinc-50 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] tracking-wider uppercase
     }
     
     .text-xxsmall-purple {
-      @apply font-grotesk text-violet-600 uppercase text-[.8rem] font-[400] tracking-wider
+      @apply font-inter text-cyan-300 uppercase text-[.7rem] font-[400] tracking-wider
     }
 
 
     .text-xxxsmall {
-      @apply font-grotesk text-zinc-50 text-[.7rem] font-[400] tracking-wider uppercase
+      @apply font-inter text-zinc-50 text-[.7rem] font-[400] tracking-wider uppercase
     }
     .text-xxxsmall-black {
-      @apply font-grotesk text-zinc-950 text-[.76rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
+      @apply font-inter text-zinc-950 text-[.76rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
     }
 
     
 
     .text-small-purple {
-      @apply font-roboto text-violet-500 text-lg font-[500]  tracking-wide uppercase
+      @apply font-inter text-violet-500 text-lg font-[500]  tracking-wide uppercase
     }
     
 
-    .title-h2{
-      @apply text-zinc-50 font-grotesk text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] 2xl:text-6xl font-[400] uppercase tracking-wider
+    .title-h1 {
+      @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
+        2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
+    }
+    .title-h1-w {
+      @apply text-zinc-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
+        2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
     }
 
-    .title-h3{
-      @apply text-zinc-300 font-grotesk text-[.8rem] sm:text-[1rem] 2xl:text-[1.25rem] font-[300] uppercase tracking-wider
+    .title-h1-thin {
+      @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
+        2xl:text-[9.5rem] italic font-[200] uppercase -tracking-[.3rem]
+    }
+
+    .title-h2{
+      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
+        2xl:text-[3.6rem] font-[400] uppercase tracking-wider
+    }
+
+   
+
+    .title-thin {
+      @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
+        2xl:text-[4.102rem] font-[100] italic uppercase tracking-wider
+    }
+    
+    .title-h2-thin {
+      @apply text-zinc-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
+        2xl:text-[3.6rem] font-[100] italic uppercase tracking-wider
+    }
+
+     .title-h3 {
+      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[45px]
+        2xl:text-[2.5rem] font-[400] uppercase tracking-wider
+    }
+    .title-h3-thin {
+      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[45px]
+        2xl:text-[2.5rem] font-[100] italic uppercase tracking-wider
     }
 
     .title-xsmall {
-      @apply text-zinc-300 font-roboto text-[1rem] font-[300] uppercase tracking-wider
+      @apply text-cyan-300 font-inter text-[1rem] font-[300] uppercase tracking-wider
     }
 
     .xxsm-title {
-      @apply morganite-bold text-[3rem] leading-[88%] font-[900] uppercase text-zinc-300 
+      @apply morganite-bold text-[3rem] leading-[88%] font-[900] uppercase text-cyan-300 
+
+    }
+
+    .xxsm-title-purple {
+      @apply morganite-bold text-[3.5rem] leading-[88%] font-[900] uppercase text-violet-500 
 
     }
     .xsm-title {
-      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-violet-500
+      @apply morganite-bold text-[2rem] lg:text-[4.5rem] leading-[88%] font-[900] uppercase  text-cyan-300
 
     }
 
     .xsm-title-w {
-      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-50
+      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
 
     }
     .sm-title {
@@ -331,12 +370,12 @@
 
     }
     .big-title {
-      @apply  morganite-bold text-8xl 2xl:text-[19.6rem] font-[400] leading-[90px]  text-violet-500
+      @apply  morganite-bold text-8xl 2xl:text-[19.6rem] font-[400] leading-[90px] text-cyan-300
 
     }
     .big-title2 {
-      @apply morganite-bold text-[5.8rem]  md:text-[9.15rem] 2xl:text-[12rem] font-[100] leading-[20px] 2xl:leading-[160px] tracking-[3px] uppercase 
-        text-violet-500
+      @apply morganite-bold text-[5.8rem]  md:text-[9.15rem] 2xl:text-[21.4rem] font-[100] leading-[20px] 2xl:leading-[160px] tracking-[3px] uppercase 
+        text-cyan-300
 
     }
     .bigger-title {

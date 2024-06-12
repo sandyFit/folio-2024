@@ -3,6 +3,8 @@ import TextShimmerEffect from '../components/featured/TextShimmerEffect';
 import '../assets/css/borders.css';
 import ToolTable from '../components/ui/ToolTable';
 import CodeIcon from '../components/ui/CodeIcon';
+import Header from '../components/ui/Header';
+
 
 const About = () => {
     return (
@@ -10,16 +12,21 @@ const About = () => {
             id="info"
             className='w-full min-h-screen flex flex-col justify-center items-start bg-zinc-950 relative pb-20'
         >
-            <div className="flex flex-col px-6 sm:px-8 2xl:px-16" border-cut="top-and-bottom-about">
-                <article className="flex flex-col items-start mt-28 lg:mt-32">
+            <div className="flex flex-col px-6 sm:px-8 2xl:px-16"
+                border-cut="top-and-bottom-about">
+                
+                 <Header title='info' />
+                <article className="flex flex-col items-start mt-28 lg:mt-16">
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative'>
-                            <TextShimmerEffect text={"⋙ I'm a graphic designer"} />
-                            <TextShimmerEffect text={"turned frontend"} />
-                            <TextShimmerEffect text={"developer."} />
-                            <TextShimmerEffect text={"∎ keenly focused on "} />
-                            <TextShimmerEffect text={"translating design "} />
-                            <TextShimmerEffect text={"into code."} />
+                            ⋙ graphic designer turned <br/>
+                            <span className="title-h2-thin">
+                                frontend developer. <br/>
+                            </span>
+                            ∎ keenly focused on translating <br/>
+                            <span className="title-h2-thin">
+                                design into code.
+                            </span>
                         </div>
 
                         <span className="hidden lg:absolute top-[8.5rem] left-[23.5rem] text-zinc-50 text-8xl">
@@ -27,19 +34,7 @@ const About = () => {
                         </span>
                         <span className="hidden lg:absolute top-[6.3rem] left-[26.8rem] text-zinc-50 text-8xl">
                             ⁕
-                        </span>
-
-                        <div className="hidden lg:flex flex-col text-right morganite-extra-bold text-[28rem] font-[500] leading-[260px] text-zinc-700 text-opacity-40 absolute -right-[36rem] bottom-10">
-                            <span className=''>Info</span>
-                        </div>
-
-                        <div className="lg:hidden flex flex-col text-right morganite-extra-bold text-[4rem] sm:text-[5rem] 
-                            lg:text-[26rem] font-[500] leading-[130px]
-                        text-zinc-700 text-opacity-40 ">                   
-                        <span className='absolute bottom-[11.5rem] left-0 '>
-                            Info
-                        </span>                      
-                    </div>
+                        </span>                   
                     </div>
 
                     <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
@@ -67,11 +62,14 @@ const About = () => {
 
                 <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-12 lg:ml-auto relative">
                     <div border-cut="frame-toolkit" className="flex justify-center w-full h-[8%] py-4">
-                        <p className='font-grotesk text-xl lg:text-6xl font-[900] text-zinc-50  tracking-widest uppercase'>
-                            core tools
-                        </p>
+                        <span className='title-h2 tracking-widest uppercase'>
+                            core 
+                            <span className="title-h2-thin ml-4">
+                                tools
+                            </span>
+                        </span>
                     </div>
-                    <div className="flex w-full border-[1px] border-violet-500 bg-violet-500">
+                    <div className="flex w-full border-[1px] border-cyan-300 bg-cyan-300">
                         <p className='text-xxxsmall-black px-2 lg:px-8 py-3'>
                             I value the fundamentals of web development, yet I remain eager to explore new
                             frameworks and solutions that can boost efficiency and productivity. <br />

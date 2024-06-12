@@ -47,36 +47,37 @@ const Hero = () => {
             2xl:px-16 overflow-hidden'>
             
             <div border-cut="bottom-right-black"
-                className="grid grid-cols-12 mt-44 px-16">
+                className="grid grid-cols-12 mt-40 px-16">
                 <div className="absolute left-16 top-[6.5rem] w-[92%] h-[2px] bg-zinc-800 transition-all 
                             duration-[var(--duration)] ease-[var(--ease)]"></div>
                 
-                <h1 className="big-title2 col-span-9 col-start-1 textSlidingLeft overflow-hidden">
-                    _Frontend developer
+                <h1 className="title-h1-w col-span-9 col-start-1 textSlidingLeft overflow-hidden">
+                    _Frontend 
                 </h1>
 
-                <p className="big-title2 col-span-9 col-start-4 row-start-2 grid place-content-end textSlidingRight overflow-hidden">
-                    with a designer's eye
+                <p className="title-h1 col-span-9 col-start-4 row-start-5 grid place-content-end mt-7
+                    textSlidingRight overflow-hidden">
+                    developer_
                 </p>
 
                 <div className="w-[15vw] absolute bottom-40 right-[63rem]">
                     <img src="/img/me-bn.png" alt="" />
                 </div>
+
+                <div className="grid title-thin col-span-10 col-start-5 row-start-6 ml-6 mt-4 textSlidingRight">
+                    with a designer's eye
+                </div>
             
-                <div className='text-[.84rem] uppercase text-zinc-300 col-span-4 col-start-7 row-start-4 
-                    grid place-content-end mt-8'>                  
+                <div className='text-[.84rem] uppercase text-zinc-300 col-span-3 col-start-7 row-start-3 
+                    grid place-content-end mt-8 glass-card '>                  
                     <TextShimmerHero text={'Currently seeking opportunities to'}/>
                     <TextShimmerHero text={'innovate and collaborate on web'}/>
-                    <TextShimmerHero text={'development projects.'}/>
-                    
-                    
+                    <TextShimmerHero text={'development projects.'}/>                               
                 </div>
-                {/* <div className="w-full col-span-2 col-start-11 row-start-5 mt-2 relative hero-content">
-                    <HeroBtn/>
-                </div> */}
+                
             </div>
 
-            <article className="w-full grid grid-cols-1 relative mt-24  2xl:mt-[rem] hero-content">               
+            <article className="w-full grid grid-cols-1 relative mt-24 hero-content">               
                 <div className="w-full grid grid-cols-3 place-content-between 
                     text-xxsmall uppercase  gap-1">
                     <span className='col-span-1 col-start-1 place-self-start whitespace-nowrap'>

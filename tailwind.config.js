@@ -116,6 +116,10 @@ export default {
 
       },
 
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(135deg, rgba(254, 202, 202, 1) 0%, rgba(165, 243, 252, 1) 100%)',
+      },
+
       screens: {
         'xs': '320px',
         'sm': '380px',

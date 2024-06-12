@@ -10,7 +10,6 @@ import SplitType from 'split-type';
 
 import Header from '../components/ui/Header';
 import { HiOutlineHeart } from 'react-icons/hi2';
-import ScrollBtn from '../components/buttons/ScrollBtn';
 
 const TextNav = () => {
     const [isCopied, setIsCopied] = useState(false);
@@ -63,23 +62,16 @@ const TextNav = () => {
                 <Header title='reach out'/>
 
                 <div className="flex flex-col mt-1 lg:mt-10 relative flex-grow">
-                    {/* <div className="w-full grid grid-cols-1 lg:grid-cols-12 place-content-start mt-[-1.8rem]">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-12 place-content-between mt-[-1.8rem]">
                         <div className="col-span-3 row-start-1 lg:row-start-auto lg:col-start-10 flex justify-end">
                             <Socials />
                         </div>
                         
-                        
-                    </div>
-
-                    <button className="relative mt-28 lg:mt-20">
-                        <img src="/square-brackets.svg" alt="" className='absolute bottom-24 right-0' />
-                        <span className='w-[.9rem] h-[1rem] rounded bg-cyan-300 absolute bottom-[6.3rem] 
-                            right-[.376rem]'></span>
-                    </button> */}
-
-                    <div className="flex flex-col items-start">
                         <article 
                             className="grid grid-cols-12 relative">
+                            {/* <h1 className='big-title2 col-span-6 col-start-1 row-start-7 '>
+                            trish ramos
+                            </h1> */}
                             <span className='title-h3 col-span-4 col-start-6 row-start-2 mt-40 whitespace-nowrap'>
                                 ⋙ frontend developer with a <br/>sharp  eye for design.<br/>
                                 ∎ currentry seeking  opportunities                   
@@ -98,8 +90,13 @@ const TextNav = () => {
                                 <TimeZone/>
                             </span>
                             <span className='absolute -bottom-24 left-[36.5rem] flex justify-center text-xxsmall-white'>
-                                   
-                                </span>                            
+                                    <span className='right-60'>[<ScrollBtn />]</span>
+                                </span>
+
+
+                            <div className="grid w-[22rem] col-span-2 col-start-2 row-start-1 row-end-12 mt-32">
+                                <img src="/img/me-bn.png" alt="" />
+                            </div>
                         </article>
                     </div>
                 </div>
