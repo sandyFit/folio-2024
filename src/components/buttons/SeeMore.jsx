@@ -21,7 +21,7 @@ const SeeMore = ({ isOpen, handleToggle }) => {
                 {isOpen ? (
                     <span className='text-[3rem] absolute right-[1.78rem] -top-[1.4rem]'>-</span> 
                 ) : (
-                        <span className='text-[2.1rem] absolute right-[1.8rem] -top-[.65rem]'>+</span>
+                        <span className='text-[2.1rem] absolute right-[1.72rem] -top-[.65rem]'>+</span>
                 )
                 }
             </div>

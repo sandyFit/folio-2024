@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll';
 import '../assets/css/borders.css';
 import TimeZone from '../components/ui/TimeZone';
+import MobileMenu from '../components/ui/MobileMenu';
 
 
 
@@ -11,19 +12,15 @@ const TextNav = () => {
         <section 
             className='w-full h-[80px] absolute top-0 z-20 flex justify-between px-6 sm:px-8 md:px-12 2xl:px-16
                 '>     
-            <div className="w-full grid grid-cols-1 place-content-between mt-6 2xl:mt-8 ">
-                <div className="grid grid-cols-7 place-content-between w-full relative ">
-                    {/* <div className="hidden lg:flex w-full ">
-                        <TimeZone/>
-                    </div> */}
-
-                    <h2 className='xsm-title col-span-1 col-start-1'>
+            <div className="w-full grid grid-cols-1 place-content-between mt-9 lg:mt-12">
+                <div className="grid grid-cols-12 place-content-between items-center w-full relative ">
+                    <h3 className='xsm-title col-span-5 lg:col-span-3 col-start-1'>
                         Trish Ramos
-                    </h2>
+                    </h3>
 
-                    <div className='col-span-2 col-start-6 w-full flex justify-end relative ml-16'>       
+                    <div className='hidden lg:flex col-span-5 col-start-9 w-full justify-end relative ml-16'>       
                         <ul className='w-[68%] 2xl:w-full flex justify-between gap-2 2xl:gap-2
-                            xxsm-title mr-20 mt-12 2xl:mt-4'>               
+                            xsm-title mr-20 '>               
                             <Link to={"projects"} className="group relative overflow-hidden ">
                                 <span className="relative inline-flex ">
                                     <span className="duration-700 [transition-delay:0.02s] 
@@ -58,8 +55,8 @@ const TextNav = () => {
                                     group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-50">
                                         s
                                     </span>
-                                    ,
                                     
+                                    ,
                                 </span>
                             </Link>
 
@@ -133,17 +130,21 @@ const TextNav = () => {
                                 </span>
                             </Link>
 
-                            <button className="ml-8">
-                                <img src="/square-brackets.svg" alt="" className='absolute top-[2.5rem] 2xl:top-7 right-6 2xl:right-16' />
-                                <span className='w-[.9rem] h-[1rem] rounded bg-cyan-300 absolute right-[1.9rem] 
-                                    2xl:right-[4.376rem] top-[2.7rem] 2xl:top-[2rem]'></span>
+                            <button className=''>
+                                <MobileMenu/>
+                            </button>
+
+                            <button className="hidden lg:block ml-12">
+                                <img src="/big-brackets.svg" alt="" className='absolute bottom-2 right-5' />
+                                <span className='w-[1rem] h-[1.1rem] rounded bg-cyan-300 absolute 
+                                    right-[1.9rem] 2xl:right-[4.376rem] top-[2.7rem] 2xl:top-[1.4rem]'></span>
                             </button>
                         </ul>
                     </div>
                 </div>  
             </div>  
-            <div className="absolute left-16 top-[6.8rem] w-[92%] h-[2px] bg-zinc-800 transition-all 
-                        duration-[var(--duration)] ease-[var(--ease)]"></div>
+            <div className="absolute left-6 lg:left-16 top-[5rem] lg:top-[6.8rem] w-[86%] lg:w-[92%] 
+                h-[2px] bg-zinc-800 transition-all duration-[var(--duration)] ease-[var(--ease)]"></div>
         </section>
     )
 }

@@ -73,11 +73,11 @@ const TextNav = () => {
                             trish ramos
                             </h1> */}
                             <span className='title-h3 col-span-4 col-start-6 row-start-2 mt-40 whitespace-nowrap'>
-                                ⋙ frontend developer with a <br/>sharp  eye for design.<br/>
-                                ∎ currentry seeking  opportunities                   
+                                ⋙ Whether you're looking for someone to join your.<br/>
+                                team full-time or just need an extra                 
                             </span>
                             <span className='title-h3-thin col-span-4 col-start-6 row-start-3 z-10 whitespace-nowrap'>
-                                to innovate & collaborate on web
+                                pair of creative hands for a project — I'm all ears and hands!
                             </span>
                             <span className='title-h3 col-span-4 col-start-6 row-start-4  whitespace-nowrap'>
                             development projects.                   

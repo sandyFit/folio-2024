@@ -16,9 +16,9 @@ const About = () => {
                 border-cut="top-and-bottom-about">
                 
                  <Header title='info' />
-                <article className="flex flex-col items-start mt-28 lg:mt-16">
+                <article className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
-                        <div className='title-h2 relative'>
+                        <div className='title-h2 relative hidden lg:block'>
                             ⋙ graphic designer turned <br/>
                             <span className="title-h2-thin">
                                 frontend developer. <br/>
@@ -26,6 +26,17 @@ const About = () => {
                             ∎ keenly focused on translating <br/>
                             <span className="title-h2-thin">
                                 design into code.
+                            </span>
+                        </div>
+
+                        <div className='title-h2-mobile  relative block lg:hidden whitespace-nowrap'>
+                            ⋙ graphic designer turned <br/>
+                            <span className="title-h2-mobile italic font-[100]">
+                                frontend developer. <br/>
+                            </span>
+                            ∎ keenly focused on<br/> translating 
+                            <span className="title-h2-mobile italic font-[100] ml-2">
+                                design into<br/> code.
                             </span>
                         </div>
 
@@ -62,15 +73,15 @@ const About = () => {
 
                 <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-12 lg:ml-auto relative">
                     <div border-cut="frame-toolkit" className="flex justify-center w-full h-[8%] py-4">
-                        <span className='title-h2 tracking-widest uppercase'>
+                        <span className='title-h2-mobile lg:title-h2 tracking-widest uppercase'>
                             core 
-                            <span className="title-h2-thin ml-4">
+                            <span className="title-h2-mobile lg:title-h2-thin font-[100] italic ml-2">
                                 tools
                             </span>
                         </span>
                     </div>
                     <div className="flex w-full border-[1px] border-cyan-300 bg-cyan-300">
-                        <p className='text-xxxsmall-black px-2 lg:px-8 py-3'>
+                        <p className='text-xxxsmall-black pl-3 pr-2 lg:px-8 py-3'>
                             I value the fundamentals of web development, yet I remain eager to explore new
                             frameworks and solutions that can boost efficiency and productivity. <br />
                             My current toolkit, which is centered around the JAMstack architecture, includes:

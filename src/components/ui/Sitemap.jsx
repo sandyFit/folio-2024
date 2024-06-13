@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const links = [
     { name: 'index' },
-    { name: 'work' },
+    { name: 'projects' },
     { name: "info" },
     { name: "cv" },
     

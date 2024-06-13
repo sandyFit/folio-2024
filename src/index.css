@@ -175,6 +175,31 @@
   animation: slideInTextFromRight 1s ease-out forwards;
 }
 
+/* =============== UP BUTTON ================ */
+.hidden-btn {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.5s cubic-bezier(.19, 1, .22, 1), transform 0.3s ease-in-out;
+}
+
+.visible-btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s cubic-bezier(.19, 1, .22, 1), transform 0.3s ease-in-out;
+}
+
+/* =============== PROJECT LIST SMOOTH OPENING ================ */
+.project-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.project-content.expanded {
+    max-height: 1000px; /* A large enough value to ensure content fits */
+    opacity: 1;
+}
 
 /* =============== ROTATING TEXT ================ */
 .rotating-text-container {
@@ -260,7 +285,7 @@
     }
    
     .text-xxsmall-min {
-      @apply font-inter text-zinc-400 text-[.88rem] font-[300] tracking-wider
+      @apply font-inter text-zinc-400 text-[.78rem] lg:text-[.88rem] font-[300] tracking-wider
     }
 
     .text-xxsmall-black {
@@ -270,17 +295,13 @@
     .text-xxsmall-white {
       @apply font-inter text-zinc-50 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] tracking-wider uppercase
     }
-    
-    .text-xxsmall-purple {
-      @apply font-inter text-cyan-300 uppercase text-[.7rem] font-[400] tracking-wider
-    }
-
+   
 
     .text-xxxsmall {
       @apply font-inter text-zinc-50 text-[.7rem] font-[400] tracking-wider uppercase
     }
     .text-xxxsmall-black {
-      @apply font-inter text-zinc-950 text-[.76rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
+      @apply font-inter text-zinc-950 text-[.7rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
     }
 
     
@@ -289,6 +310,7 @@
       @apply font-inter text-violet-500 text-lg font-[500]  tracking-wide uppercase
     }
     
+    /* ====== TITLES ====== */
 
     .title-h1 {
       @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
@@ -305,11 +327,13 @@
     }
 
     .title-h2{
-      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
+      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem]  lg:leading-[60px]
         2xl:text-[3.6rem] font-[400] uppercase tracking-wider
     }
 
-   
+   .title-h2-mobile {
+      @apply text-[1.2rem] text-zinc-300 uppercase
+   }
 
     .title-thin {
       @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
@@ -330,37 +354,34 @@
         2xl:text-[2.5rem] font-[100] italic uppercase tracking-wider
     }
 
-    .title-xsmall {
-      @apply text-cyan-300 font-inter text-[1rem] font-[300] uppercase tracking-wider
+    .title-h4 {
+      @apply morganite-bold text-[2.8rem] lg:text-[5.5rem] font-[600] uppercase tracking-wide  text-cyan-300 leading-[88%]
     }
 
-    .xxsm-title {
-      @apply morganite-bold text-[3rem] leading-[88%] font-[900] uppercase text-cyan-300 
-
+    .btn-title {
+      @apply font-inter text-cyan-300 uppercase text-[.7rem] font-[400] tracking-wider
     }
 
-    .xxsm-title-purple {
-      @apply morganite-bold text-[3.5rem] leading-[88%] font-[900] uppercase text-violet-500 
-
-    }
     .xsm-title {
-      @apply morganite-bold text-[2rem] lg:text-[4.5rem] leading-[88%] font-[900] uppercase  text-cyan-300
+      @apply morganite-bold text-[2.5rem] lg:text-[4rem] font-[500] uppercase  text-cyan-300 leading-[88%]
+
+    }
+
+    .sm-title {
+      @apply morganite-bold text-[2.18rem] lg:text-[4.7rem] font-[400] uppercase tracking-wide  text-cyan-300 leading-[88%]
+    }
+
+    .xsm-title-d {
+      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
 
     }
 
     .xsm-title-w {
-      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
+      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-500
 
     }
-    .sm-title {
-      @apply morganite-bold text-[6.2rem]  leading-[120px] uppercase text-violet-500
-
-    }
-
-    .sm-title-white {
-      @apply morganite-bold text-[6rem]  leading-[140px] uppercase text-zinc-50
-
-    }
+    
+  
     .med-title {
       @apply morganite-bold text-[8rem] sm:text-[10rem] leading-[70px] sm:leading-[90px]  text-violet-500
 
@@ -369,22 +390,14 @@
       @apply morganite-bold text-[12rem] font-[600] leading-[130px]  text-violet-500
 
     }
+    
     .big-title {
-      @apply  morganite-bold text-8xl 2xl:text-[19.6rem] font-[400] leading-[90px] text-cyan-300
-
-    }
-    .big-title2 {
-      @apply morganite-bold text-[5.8rem]  md:text-[9.15rem] 2xl:text-[21.4rem] font-[100] leading-[20px] 2xl:leading-[160px] tracking-[3px] uppercase 
+      @apply morganite-bold text-[7.8rem]  md:text-[9.15rem] 2xl:text-[22.2vw] font-[100] leading-[98px] 
+        2xl:leading-[160px] tracking-[3px] uppercase 
         text-cyan-300
 
     }
-    .bigger-title {
-      @apply  morganite-bold text-[21vw]  uppercase text-violet-500 leading-[300px]
-
-    }
-    .xl-title {
-      @apply morganite-bold  text-[23.52vw]  uppercase text-violet-500 font-[100] p-0 leading-[140px]
-
-    }
+    
+   
 
 }

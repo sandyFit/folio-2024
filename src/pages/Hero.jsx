@@ -49,34 +49,32 @@ const Hero = () => {
             className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 sm:px-8 md:px-12 
                 2xl:px-16'>
 
-            {/* <div className="absolute left-16 top-[6.5rem] w-[92%] h-[2px] bg-zinc-800 transition-all 
-                            duration-[var(--duration)] ease-[var(--ease)]"></div> */}
             <div border-cut="bottom-right-black" className="grid">
 
-                <div className="flex flex-col mt-1 lg:mt-36 relative flex-grow">
+                <div className="flex flex-col mt-1 lg:mt-40 relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-12 place-content-between ">
                         
                         
-                        <article className="col-span-3 row-start-2 lg:col-start-1 flex flex-col mr-12
-                            items-start uppercase text-zinc-300 mt-4 lg:mt-[-1.2rem]">
-                            <span className='w-full text-[.8rem] uppercase text-zinc-400'>
+                        <article className="w-full col-span-5 lg:col-span-3 row-start-2 col-start-1 flex flex-col 
+                            mr-12 items-start uppercase text-zinc-300 mt-24 lg:mt-[-1.8rem]">
+                            <span className='w-full text-[.72rem] lg:text-[.8rem] uppercase text-zinc-400 text-justify'>
                                 Designer & Developer based in colombia. Currently
-                                seeking roles or opportunities to innovate & collaborate in web development projects.
-
+                                seeking roles or opportunities to innovate & collaborate on web development projects.
+                                <br/>
                                 <a href='mailto:sandy07r@gmail.com' className="relative text-zinc-50 font-[400]
                                     after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px] after:w-full 
                                     after:origin-bottom after:scale-x-0 after:bg-zinc-50 after:transition-transform 
                                     after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
-                                    hover:after:scale-x-100 ml-2">
+                                    hover:after:scale-x-100">
                                     Let's connect
                                 </a>.
                             </span>
                         </article>
                     </div>
                
-                    <div className="grid items-start mt-60">
+                    <div className="grid items-start mt-20 lg:mt-64">
                         <article className='grid grid-cols-12'>
-                            <h1 className="big-title2 col-span-12">
+                            <h1 className="big-title col-span-12">
                                 frontend developer 
                             </h1>
                         </article>
@@ -84,15 +82,18 @@ const Hero = () => {
                 </div>
             </div>
 
-            <article className="mt-auto w-full h-[5.5rem] lg:h-[3rem] pb-6  flex items-center">
-                <div className="grid grid-cols-12 w-full place-content-between">
-                    <div className="text-xxsmall col-span-2 col-start-1 flex items-center">
-                        based in <span className='text-xxsmall-white ml-1.5'> colombia</span>
+            <article className="mt-auto w-full lg:h-[3rem] pb-6 flex items-center">
+                <div className="grid grid-cols-12 w-full place-content-center lg:place-content-between">
+                    <div className="text-xxsmall col-span-2 col-start-1 row-start-1  flex items-center">
+                        portfolio
+                        <span className='text-xxsmall-white ml-1.5'> &copy;{new Date().getFullYear()}</span>
                     </div>
-                    <div className="text-xxsmall col-span-2 col-start-6 flex items-center justify-center">
+                    <div className="text-xxsmall col-span-2 col-start-6 row-start-4 lg:row-start-1 mt-32 lg:mt-0 
+                        mb-2 lg:mb-0 flex items-center justify-center">
                         [<ScrollBtn />]
                     </div>
-                    <div className="col-span-3 col-start-10 flex items-center justify-end text-xxsmall">
+                    <div className="col-span-3 col-start-10 row-start-1 flex items-center 
+                        justify-end text-xxsmall">
                         <TimeZone/>
                     </div>
                 </div>
