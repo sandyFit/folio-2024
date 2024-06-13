@@ -53,11 +53,11 @@ const Hero = () => {
 
                 <div className="flex flex-col mt-1 lg:mt-40 relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-12 place-content-between ">
-                        
-                        
+                                                
                         <article className="w-full col-span-5 lg:col-span-3 row-start-2 col-start-1 flex flex-col 
-                            mr-12 items-start uppercase text-zinc-300 mt-24 lg:mt-[-1.8rem]">
-                            <span className='w-full text-[.72rem] lg:text-[.8rem] uppercase text-zinc-400 text-justify'>
+                            mr-12 items-center uppercase text-zinc-300 mt-24 lg:mt-[-1.8rem]">
+                            <span className='w-full text-[.72rem] lg:text-[.8rem]  uppercase text-zinc-400 
+                                text-justify'>
                                 Designer & Developer based in colombia. Currently
                                 seeking roles or opportunities to innovate & collaborate on web development projects.
                                 <br/>
@@ -71,10 +71,14 @@ const Hero = () => {
                             </span>
                         </article>
                     </div>
-               
-                    <div className="grid items-start mt-20 lg:mt-64">
-                        <article className='grid grid-cols-12'>
-                            <h1 className="big-title col-span-12">
+                
+                    <div className="grid items-start mt-16 lg:mt-36">
+                        <article className='grid grid-cols-12 '>
+                            <h3 className='title-h3 col-span-3 col-start-2 lg:col-start-9 row-start-1 
+                                whitespace-nowrap '>
+                                Graphic
+                                <span className='title-h3-thin ml-3 '>designer</span> &</h3>
+                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16">
                                 frontend developer 
                             </h1>
                         </article>
@@ -84,9 +88,13 @@ const Hero = () => {
 
             <article className="mt-auto w-full lg:h-[3rem] pb-6 flex items-center">
                 <div className="grid grid-cols-12 w-full place-content-center lg:place-content-between">
-                    <div className="text-xxsmall col-span-2 col-start-1 row-start-1  flex items-center">
+                    <div className="hidden lg:flex text-xxsmall col-span-2 col-start-1 row-start-1  items-center">
                         portfolio
-                        <span className='text-xxsmall-white ml-1.5'> &copy;{new Date().getFullYear()}</span>
+                        <span className=' text-xxsmall-white ml-1.5'> &copy;{new Date().getFullYear()}</span>
+                    </div>
+                    <div className="flex lg:hidden text-xxsmall-white col-span-2 col-start-1 row-start-1 
+                        items-center whitespace-nowrap">
+                        folio &copy; {new Date().getFullYear()}
                     </div>
                     <div className="text-xxsmall col-span-2 col-start-6 row-start-4 lg:row-start-1 mt-32 lg:mt-0 
                         mb-2 lg:mb-0 flex items-center justify-center">

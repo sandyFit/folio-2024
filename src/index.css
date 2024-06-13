@@ -197,7 +197,7 @@
 }
 
 .project-content.expanded {
-    max-height: 1000px; /* A large enough value to ensure content fits */
+    max-height: 800px; /* A large enough value to ensure content fits */
     opacity: 1;
 }
 
@@ -358,8 +358,21 @@
       @apply morganite-bold text-[2.8rem] lg:text-[5.5rem] font-[600] uppercase tracking-wide  text-cyan-300 leading-[88%]
     }
 
+    .title-h4-min {
+      @apply morganite-bold text-[2.8rem] lg:text-[5.5rem] font-[600] tracking-wide  text-cyan-300 leading-[88%]
+    }
+
+    .title-h4-dark {
+      @apply morganite-bold text-[2.5rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
+    }
+
+    .title-h5 {
+      @apply text-zinc-50 font-inter text-[1rem] 
+        2xl:text-[1.2rem] font-[400] uppercase tracking-wider
+    }
+
     .btn-title {
-      @apply font-inter text-cyan-300 uppercase text-[.7rem] font-[400] tracking-wider
+      @apply font-inter text-cyan-300 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
     }
 
     .xsm-title {
@@ -371,15 +384,6 @@
       @apply morganite-bold text-[2.18rem] lg:text-[4.7rem] font-[400] uppercase tracking-wide  text-cyan-300 leading-[88%]
     }
 
-    .xsm-title-d {
-      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
-
-    }
-
-    .xsm-title-w {
-      @apply morganite-bold text-[2rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-500
-
-    }
     
   
     .med-title {

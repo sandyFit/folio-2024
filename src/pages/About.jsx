@@ -50,13 +50,15 @@ const About = () => {
 
                     <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
                         <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
-                            My love for design fuels my holistic approach, ensuring creativity and precision shine
-                            through every project, while navigating the complexities of web development.
-
+                            
+                            I'm a dedicated, self-taught front-end developer specializing in React.
+                            I love creating smooth animations, engaging transitions, and tackling complex
+                            layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />
-                            As a dedicated, self-taught frontend developer specializing in React, I strive to craft
-                            smooth animations, engaging transitions, and solve complex layout challenges to create
-                            visually stunning and engaging interfaces.
+                            As both a designer and developer, I take a holistic approach to my work. I appreciate
+                            what goes into crafting beautiful, polished user experiences while navigating the
+                            complexities of web development.
+
                             <br /><br />
                             When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic typography
                             and web animations.

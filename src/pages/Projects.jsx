@@ -31,10 +31,11 @@ const Projects = () => {
     return (
         <section id='projects' className='w-full min-h-screen flex flex-col justify-center items-start 
             bg-zinc-950 relative'>
+            
             <button
                 onClick={scrollToTop}
                 corner-cut="top-right"
-                className={`fixed hidden lg:flex xsm-title-d bg-cyan-300  justify-center items-center right-2 
+                className={`fixed hidden lg:flex title-h4-dark bg-cyan-300  justify-center items-center right-2 
                     bottom-16 w-12 h-16 z-40 ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
                 <span>UP</span>
@@ -44,23 +45,29 @@ const Projects = () => {
                 <Header title='projects' />
                 <div className="w flex justify-center relative mt-0 lg:mt-12">
                     <div className='title-h2 relative hidden lg:block'>
-                        Crafted with Care & a
+                        ⋙ Crafted with Care & a
                         <span className="title-h2-thin ml-4">
                             Dash of Flair.
                         </span><br />
-                        ∎ My aim is to design every detail to <br />
-                        <span className="title-h2-thin mr-4">
-                            function smoothly & leave a
+                        ∎ 
+                        <span className="title-h2-thin ml-4">
+                             Designing every detail 
                         </span>
-                        lasting impression.
+                        <span className="title-h2 ml-4">
+                            to function smoothly & leave a 
+                        </span>
+                        <span className="title-h2-thin ml-4">
+                            lasting impression.
+                        </span>
                     </div>
+                        
 
                     <div className='title-h2-mobile relative block lg:hidden whitespace-nowrap'>
                         Crafted with Care & a<br />
                         <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
                             Dash of Flair.
                         </span><br />
-                        ∎ My aim is to design every<br /> detail to 
+                        ∎ designing every<br /> detail to 
                         <span className="title-h2-mobile italic font-[100] ml-2">
                             function<br /> smoothly & leave a<br />
                         </span>
@@ -74,14 +81,14 @@ const Projects = () => {
                         <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
                             Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />
                             Built with the latest web technologies like CSS, JavaScript, ReactJS, NextJS, and APIs.
-                            <br />
+                            <br /><br />
                             While I'm still early in my career journey, I'm eager to share what I've built so far and continue growing in the field.
-                            <br />
-                            Check out my projects below.
+                            
+                            Explore my projects below and see my passion in action!
                         </p>
                     </div>
                 </div>
-                <div className="w-full flex justify-end lg:mt-8">
+                <div className="w-full flex justify-end ">
                     <ProjectsList />
                 </div>
             </div>

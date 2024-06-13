@@ -17,9 +17,9 @@ const SeeMoreSmall = ({ isOpen, handleToggle }) => {
                     fill="#F1EEE9"
                 ></path>
             </svg>
-            <div className='rounded text-violet-500 relative'>
+            <div className='rounded text-cyan-300 relative'>
                 {isOpen ? (
-                    <span className='text-[2.9rem] absolute right-[.4rem] -bottom-[1rem]'>-</span> 
+                    <span className='text-[2.2rem] absolute right-[.4rem] -bottom-[.8rem]'>-</span> 
                 ) : (
                         <span className='text-[1.5rem] absolute right-[.4rem] -bottom-[.2rem]'>+</span>
                 )

@@ -42,49 +42,51 @@ const TextNav = () => {
                 
                     <div className="flex flex-col items-start">
                         <article className='grid place-content-start'>
-                            <div className="hidden lg:grid grid-cols-12 relative ">
-                                <span className='title-h2 col-span-12 col-start-1 row-start-1  whitespace-nowrap'>
-                                    ⋙ Whether you're looking for someone<br/> 
-                                                
+                            <div className="hidden lg:grid grid-cols-12 relative">
+                                <span className="title-h2 col-span-12 col-start-1 row-start-1 whitespace-nowrap">
+                                    ⋙ wheather you need a full-time team
                                 </span>
-                                <span className='title-h2-thin col-span-12 col-start-1 row-start-2 whitespace-nowrap'>
-                                    to join your team full-time or just
-                                    
+                                <span className="title-h2-thin col-span-12 col-start-1 row-start-2 whitespace-nowrap">
+                                    member or just an extra pair of
                                 </span>
-                                <span className='title-h2 col-span-12 col-start-1 row-start-3 whitespace-nowrap'>
-                                    need an extra pair of creative hands for
+                                <span className="title-h2 col-span-12 col-start-1 row-start-3 whitespace-nowrap">
+                                    creative hands for a project — I'm all
                                 </span>
-                                <span className='title-h2-thin col-span-12 col-start-1 row-start-4 whitespace-nowrap'>
-                                    a project — I'm all ears and hands!
-                                </span>
-                                <span className='title-h2 col-span-12 col-start-1 row-start-5 z-20 whitespace-nowrap'>
-                                    <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
-                                        after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full 
-                                        after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
-                                        after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] 
-                                        hover:after:origin-bottom hover:after:scale-x-100">
+                                <span className="title-h2-thin col-span-12 col-start-1 row-start-4 whitespace-nowrap">
+                                    ears & hands! 
+                                    <a href="mailto:sandy07r@gmail.com"
+                                        className="relative text-cyan-300 font-[400] after:absolute after:bottom-0 
+                                        after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom
+                                        after:scale-x-0 after:bg-cyan-300 after:transition-transform
+                                        after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]
+                                        hover:after:origin-bottom hover:after:scale-x-100 not-italic
+                                        ml-4">
                                         Let's connect
                                     </a>.
                                 </span>
                             </div>
 
+
                             <div className="grid lg:hidden grid-cols-12 relative">
                                 <span className='title-h2-mobile col-span-12 col-start-1 row-start-1  
                                     whitespace-nowrap'>
-                                    ⋙ Whether you're looking<br/> for someone to join your                                              
+                                    ⋙ wheather you need a                                          
                                 </span>
                                 <span className='title-h2-mobile font-[100] italic col-span-12 
                                     row-start-2 whitespace-nowrap'>
-                                    team full-time or just
+                                    full-time team member 
                                     
                                 </span>
                                 <span className='title-h2-mobile col-span-12 col-start-1 row-start-3 whitespace-nowrap'>
-                                    need an extra pair of <br/>creative hands for a
+                                   or just an extra pair of <br/>
                                 </span>
                                 <span className='title-h2-mobile font-[100] italic col-span-12 col-start-1 row-start-4 whitespace-nowrap'>
-                                    project — I'm all ears and <br/>hands!
+                                    creative hands for a
                                 </span>
-                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-5 z-20 whitespace-nowrap'>
+                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-5 whitespace-nowrap'>
+                                   project — I'm all ears!<br/>
+                                </span>
+                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-7 z-20 whitespace-nowrap'>
                                     <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
                                         after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full 
                                         after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
@@ -94,17 +96,17 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='col-span-8 col-start-1 row-start-4 mt-16 z-30 whitespace-nowrap'>
+                            <span className='col-span-8 row-start-4 mt-24 lg:mt-16 z-30 flex lg:justify-center whitespace-nowrap'>
                                 {/* <span className='hidden lg:block'>copy email</span> */}
                                 <span className='ml- relative'>
                                     <button onClick={handleCopiedText}>
-                                        <div id='emailAddress' className='title-h4 flex whitespace-nowrap justify-center'>
+                                        <div id='emailAddress' className='title-h4-min flex whitespace-nowrap justify-center'>
                                             info@trishramos.com
                                             {isCopied ?
                                                 <BsCheck2 className='flex text-cyan-300 text-2xl lg:text-[2.8rem] 
-                                                    mt-3 lg:mt-5 ml-2 lg:ml-4' />
+                                                    mt-3 lg:mt-6 ml-2 lg:ml-4' />
                                                 :
-                                                <BsCopy className='ml-2 lg:ml-5 mt-2 lg:mt-4 text-2xl lg:text-[2.6rem]' />
+                                                <BsCopy className='ml-2 lg:ml-5 mt-3 lg:mt-[1.6rem] text-2xl lg:text-[2.6rem]' />
                                             }
                                         </div>
                                     </button>
@@ -119,7 +121,7 @@ const TextNav = () => {
 
             <article className="mt-auto w-full h-[7.5rem] lg:h-[3rem] bg-zinc-900 px-6 lg:px-16 flex items-center">
                 <div className="grid grid-cols-12 w-full place-content-between gap-2 lg:gap-0">
-                    <div className="col-span-12 lg:col-span-3 col-start-1 flex items-center">
+                    <div className="col-span-12 lg:col-span-3 col-start-1 row-start-3 lg:row-start-1 flex items-center">
                         <Socials />
                     </div>
                     
@@ -131,7 +133,7 @@ const TextNav = () => {
                             yours truly
                         </a>
                     </div>
-                    <div className="col-span-8 lg:col-span-2 col-start-3 lg:col-start-11 flex 
+                    <div className="col-span-8 lg:col-span-3 col-start-1 lg:col-start-11 row-start-1  flex 
                     items-center  justify-center lg:justify-end">
                         <Sitemap />
                     </div>

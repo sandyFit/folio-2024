@@ -36,8 +36,8 @@ const Sitemap = () => {
 
 
     return (
-        <div className="flex w-full">
-            <ul className="w-full flex uppercase justify-between items-start  gap-2"
+        <div className="flex w-[30vw]">
+            <ul className="w-full flex uppercase justify-between gap-3"
             >
                 {links.map(({ name }) => (
                     <li key={name} className=''>

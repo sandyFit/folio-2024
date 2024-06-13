@@ -15,7 +15,7 @@ function ToolTable() {
         <div className='w-full'>
       {tools.map((tool, index) => (
           <div key={index} className='flex flex-col lg:flex-row border-t-[1px]  border-zinc-500 py-[.4rem]'>
-          <div className='title-xsmall border-r-none lg:border-r-[1px] border-zinc-500 w-full lg:w-[20%] 
+          <div className='title-h5 border-r-none lg:border-r-[1px] border-zinc-500 w-full lg:w-[20%] 
             flex items-center ml-4'>
             {tool.name}
           </div>
