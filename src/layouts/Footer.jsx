@@ -28,8 +28,6 @@ const TextNav = () => {
         });
     }
 
-    
-
     return (
         <section id="contact" 
             className='w-full h-screen bg-zinc-950 relative flex flex-col'>
@@ -38,8 +36,7 @@ const TextNav = () => {
                 className="flex flex-col px-6 sm:px-8 2xl:px-16">
                 <Header title='contact'/>
 
-                <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">
-                
+                <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">               
                     <div className="flex flex-col items-start">
                         <article className='grid place-content-start'>
                             <div className="hidden lg:grid grid-cols-12 relative">
@@ -66,7 +63,6 @@ const TextNav = () => {
                                 </span>
                             </div>
 
-
                             <div className="grid lg:hidden grid-cols-12 relative">
                                 <span className='title-h2-mobile col-span-12 col-start-1 row-start-1  
                                     whitespace-nowrap'>
@@ -80,15 +76,18 @@ const TextNav = () => {
                                 <span className='title-h2-mobile col-span-12 col-start-1 row-start-3 whitespace-nowrap'>
                                    or just an extra pair of <br/>
                                 </span>
-                                <span className='title-h2-mobile font-[100] italic col-span-12 col-start-1 row-start-4 whitespace-nowrap'>
+                                <span className='title-h2-mobile font-[100] italic col-span-12 col-start-1 
+                                    row-start-4 whitespace-nowrap'>
                                     creative hands for a
                                 </span>
-                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-5 whitespace-nowrap'>
+                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-5 
+                                    whitespace-nowrap'>
                                    project — I'm all ears!<br/>
                                 </span>
                                 <span className='title-h2-mobile col-span-12 col-start-1 row-start-7 z-20 whitespace-nowrap'>
                                     <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
-                                        after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full 
+                                        after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] 
+                                        after:w-full 
                                         after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
                                         after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] 
                                         hover:after:origin-bottom hover:after:scale-x-100">
@@ -100,20 +99,20 @@ const TextNav = () => {
                                 {/* <span className='hidden lg:block'>copy email</span> */}
                                 <span className='ml- relative'>
                                     <button onClick={handleCopiedText}>
-                                        <div id='emailAddress' className='title-h4-min flex whitespace-nowrap justify-center'>
-                                            info@trishramos.com
+                                        <div id='emailAddress' className='title-h4-min flex whitespace-nowrap 
+                                            justify-center'>
+                                            {`info{@}trishramos.com`}
                                             {isCopied ?
                                                 <BsCheck2 className='flex text-cyan-300 text-2xl lg:text-[2.8rem] 
                                                     mt-3 lg:mt-6 ml-2 lg:ml-4' />
                                                 :
-                                                <BsCopy className='ml-2 lg:ml-5 mt-3 lg:mt-[1.6rem] text-2xl lg:text-[2.6rem]' />
+                                                <BsCopy className='ml-2 lg:ml-5 mt-3 lg:mt-[1.6rem] text-2xl 
+                                                    lg:text-[2.6rem]' />
                                             }
                                         </div>
                                     </button>
                                 </span>
-                            </span>
-                            
-                                                     
+                            </span>                                                    
                         </article>
                     </div>
                 </div>
@@ -125,8 +124,8 @@ const TextNav = () => {
                         <Socials />
                     </div>
                     
-                    <div className="col-span-12 lg:col-span-3 col-start-1 lg:col-start-6 flex items-center justify-center 
-                        text-xxsmall whitespace-nowrap">
+                    <div className="col-span-12 lg:col-span-3 col-start-1 lg:col-start-6 flex items-center 
+                        justify-center text-xxsmall whitespace-nowrap">
                         crafted with <HiOutlineHeart className='mx-1 mt-[1px]' /> by
                         <a href="#"
                             className='text-xxsmall-white ml-1 underline'>                           

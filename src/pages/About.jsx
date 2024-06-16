@@ -51,7 +51,7 @@ const About = () => {
                     <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
                         <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
                             
-                            I'm a dedicated, self-taught front-end developer specializing in React.
+                            I'm a self-taught front-end developer specializing.<br /> in React.<br />
                             I love creating smooth animations, engaging transitions, and tackling complex
                             layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />

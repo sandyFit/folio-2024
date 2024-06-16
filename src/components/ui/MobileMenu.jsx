@@ -4,6 +4,8 @@ import { Link } from 'react-scroll';
 const MobileMenu = () => {
     return (
         <div className='flex lg:hidden w-1/2 h-1/2 bg-cyan-300 absolute inset-0'>
+
+            
             <article 
                 className="w-full grid grid-cols-2 place-content-start relative">                         
                 <ul className='w-[68%] col-span-1 2xl:w-full flex flex-col justify-between gap-2 2xl:gap-2

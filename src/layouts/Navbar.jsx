@@ -54,8 +54,7 @@ const TextNav = () => {
                                     <span className="duration-700 [transition-delay:0.08s] 
                                     group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-50">
                                         s
-                                    </span>
-                                    
+                                    </span>                                    
                                     ,
                                 </span>
                             </Link>

@@ -86,21 +86,23 @@ const Hero = () => {
                 </div>
             </div>
 
-            <article className="mt-auto w-full lg:h-[3rem] pb-6 flex items-center">
-                <div className="grid grid-cols-12 w-full place-content-center lg:place-content-between">
-                    <div className="hidden lg:flex text-xxsmall col-span-2 col-start-1 row-start-1  items-center">
+            <article className="mt-auto w-full mb-6 flex items-center">
+                <div className="grid grid-cols-12 w-full place-content-center lg:place-content-between whitespace-nowrap">
+                    <div className="hidden lg:inline-flex text-xxsmall col-span-3 col-start-1 row-start-1 mt-6 lg:mt-0">
                         portfolio
-                        <span className=' text-xxsmall-white ml-1.5'> &copy;{new Date().getFullYear()}</span>
+                        <span className=' text-xxsmall-white ml-1.5'>
+                            &copy;{new Date().getFullYear()}
+                        </span>
                     </div>
-                    <div className="flex lg:hidden text-xxsmall-white col-span-2 col-start-1 row-start-1 
+                    <div className="flex lg:hidden text-xxsmall-white col-span-2 col-start-6 row-start-1 justify-center
                         items-center whitespace-nowrap">
                         folio &copy; {new Date().getFullYear()}
                     </div>
-                    <div className="text-xxsmall col-span-2 col-start-6 row-start-4 lg:row-start-1 mt-32 lg:mt-0 
+                    <div className="text-xxsmall col-span-2 col-start-6 row-start-3 lg:row-start-1 mt-16 lg:mt-0 
                         mb-2 lg:mb-0 flex items-center justify-center">
                         [<ScrollBtn />]
                     </div>
-                    <div className="col-span-3 col-start-10 row-start-1 flex items-center 
+                    <div className="col-span-3 col-start-6 lg:col-start-10 row-start-2 lg:row-start-1 flex items-center 
                         justify-end text-xxsmall">
                         <TimeZone/>
                     </div>
