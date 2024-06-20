@@ -73,13 +73,23 @@ const Hero = () => {
                     </div>
                 
                     <div className="grid items-start mt-16 lg:mt-36">
-                        <article className='grid grid-cols-12 '>
+                        <article className='hidden lg:grid grid-cols-12 '>
                             <h3 className='title-h3 col-span-3 col-start-2 lg:col-start-9 row-start-1 
                                 whitespace-nowrap '>
                                 Graphic
                                 <span className='title-h3-thin ml-3 '>designer</span> &</h3>
                             <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16">
                                 frontend developer 
+                            </h1>
+                        </article>
+
+                        <article className='grid grid-cols-12 lg:hidden'>
+                            <h3 className='title-h3 col-span-3 col-start-2 lg:col-start-9 row-start-1 flex items-center
+                                whitespace-nowrap '>
+                                Graphic
+                                <span className='title-h3-thin ml-3 '>designer</span> &</h3>
+                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16 grid place-items-center">
+                                frontend <span>developer</span> 
                             </h1>
                         </article>
                     </div>
