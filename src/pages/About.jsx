@@ -75,24 +75,32 @@ const About = () => {
                 </article>
 
                 <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-12 lg:ml-auto relative">
-                    <div border-cut="frame-toolkit" className="flex justify-center w-full h-[8%] py-4">
+                    <div className="flex justify-start w-full h-[8%] py-4">
                         <span className='title-h2-mobile lg:title-h2 tracking-widest uppercase'>
-                            core 
+                            ∎ core 
                             <span className="title-h2-mobile lg:title-h2-thin font-[100] italic ml-2">
                                 tools
                             </span>
                         </span>
                     </div>
-                    <div className="flex w-full border-[1px] border-cyan-300 bg-cyan-300">
-                        <p className='text-xxxsmall-black pl-3 pr-2 lg:px-8 py-3'>
-                            I value the fundamentals of web development, yet I remain eager to explore new
-                            frameworks and solutions that can boost efficiency and productivity. <br />
-                            My current toolkit, which is centered around the JAMstack architecture, includes:
-                        </p>
+                    <div className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
+                        <span className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
+                            I value the fundamentals of web development, yet my aim for clean, efficient,
+                            and responsive design drives me to remain eager for the latest advancements and
+                            technologies that boost productivity and enhance processes.<br />
+                            
+
+                            <p >
+                                My current toolkit is centered around the JAMstack architecture, which stands for
+                                JavaScript, APIs, and Markup. This modern web development architecture allows me to
+                                create fast, secure, and scalable websites and applications. This toolkit includes:
+                            </p>
+                        </span>
+
                     </div>
 
-                    <div className="flex">
-                        <Tools/>
+                    <div className="flex mt-10">
+                        <ToolTable/>
                     </div>
                 </article>
             </div>

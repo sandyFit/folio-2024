@@ -226,22 +226,12 @@
 }
 
 /* ============ tOOLS BALLS BOUNCING EFFECT ============= */
-@keyframes bounce {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-100px);
-    }
-}
 
-.ball {
-    position: absolute;
-    animation: bounce 1s infinite alternate;
-}
-
-.ball.animate-bounce {
-    animation: bounce 1s infinite alternate;
+.c-image img {
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transform-origin: center left;
+  transform: scale3d(1.2, 1.2, 1.2);
 }
 
 /* === CSS FOR 'COPIED' TEXT VISIBILITY IN CONTACT SECTION === */
@@ -309,7 +299,7 @@
     }
    
     .text-xxsmall-min {
-      @apply font-inter text-zinc-400 text-[.78rem] lg:text-[.88rem] font-[300] tracking-wider
+      @apply font-inter text-zinc-400  text-[.78rem] lg:text-[.88rem] font-[300] tracking-wider
     }
 
     .text-xxsmall-black {
@@ -391,8 +381,7 @@
     }
 
     .title-h5 {
-      @apply text-zinc-50 font-inter text-[1rem] 
-        2xl:text-[1.2rem] font-[400] uppercase tracking-wider
+      @apply  font-inter text-zinc-50 text-[1rem] 2xl:text-[1.1rem] font-[400] uppercase tracking-wider 
     }
 
     .btn-title {

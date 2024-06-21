@@ -34,9 +34,9 @@ const Projects = () => {
             
             <button
                 onClick={scrollToTop}
-                corner-cut="top-right"
-                className={`fixed hidden lg:flex title-h4-dark bg-cyan-300  justify-center items-center right-2 
-                    bottom-16 w-12 h-16 z-[40] ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
+                
+                className={`fixed hidden lg:flex title-h4-dark top-left-btn justify-center items-center right-2 
+                    bottom-16 w-12 h-[4.5rem] pt-1 z-[40] ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
                 <span>UP</span>
             </button>

@@ -24,21 +24,26 @@ const Tools = () => {
     };
 
     return (
-        <div className='relative ml-4 mb-10 flex justify-center'>
-            <div className='flex flex-wrap justify-items-center relative mt-28 gap-x-4 gap-y-2'>
+        <div className='relative  mb-5 flex justify-center'>
+            <div className='flex flex-wrap justify-center relative mt-28 gap-x-3 gap-y-2'>
                 {tools.map((tool, index) => (
-                    <div key={index} className='text-xxsmall-min'>
-                        <button
+                    <div key={index} className='text-xxsmall-min flex justify-center items-center'>
+
+                        <ul>
+                            
+                        </ul>
+                        {/* <button
                             onClick={() => handleClick(index)}
                             className={`text-xsmall-dark bg-cyan-300 w-[11rem] py-3 flex justify-center 
                             items-center hover:bg-zinc-50 whitespace-nowrap
-                            ${index % 2 === 0 ? 'next-btn' : 'main-btn'}`}
+                            ${index === 0 ? 'top-left-btn' : ''} 
+                            ${index === 11 ? 'bottom-right-btn' : ''}`}
                         >
                             {tool.name}
-                        </button>
+                        </button> */}
                         {clickedToolIndex === index && (
-                            <div className="w-full text-xsmall absolute left-1 -top-20 pr-3">
-                               {` ${tool.name } is ${tool.description}`}
+                            <div className="w-full text-xxsmall-white absolute left-5 -top-20 pr-3">
+                            {` ${tool.name } is ${tool.description}`}
                             </div>
                         )}
                     </div>
@@ -46,6 +51,7 @@ const Tools = () => {
             </div>
         </div>
     );
+
 };
 
 export default Tools;
