@@ -225,6 +225,25 @@
   }
 }
 
+/* ============ tOOLS BALLS BOUNCING EFFECT ============= */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+.ball {
+    position: absolute;
+    animation: bounce 1s infinite alternate;
+}
+
+.ball.animate-bounce {
+    animation: bounce 1s infinite alternate;
+}
+
 /* === CSS FOR 'COPIED' TEXT VISIBILITY IN CONTACT SECTION === */
 .copiedTextVisible {
   visibility: visible;
@@ -273,11 +292,16 @@
 
 
     .text-xsmall-white {
-      @apply font-inter text-cyan-300 text-[.8rem]  lg:text-[1rem] font-[400] uppercase
+      @apply font-inter text-zinc-300 text-[.8rem]  lg:text-[1rem] font-[400] uppercase
     }
 
-    .text-xsmall-purple {
+    .text-xsmall-cyan {
       @apply font-inter text-cyan-300 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
+    }
+
+    .text-xsmall-dark {
+      @apply font-inter text-zinc-950 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[500] leading-[18px] 
+        hover:font-[600] uppercase
     }
 
     .text-xxsmall {

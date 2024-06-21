@@ -291,6 +291,8 @@
   clip-path: polygon(0px 2.25em, 2.25em 0px, 100% 0px, 100.00% 498px, 392px 100%, 0px 100%, 0px 2.25em, 1px calc(2.25em + 0.41px), 1px calc(100% - 1px), calc(100% - 2.25em - 0.41px) calc(100% - 1px), calc(100% - 1px) calc(100% - 2.25em - 0.41px), calc(100% - 1px) 1px, calc(2.25em + 0.41px) 1px, 1px calc(2.25em + 0.41px));
 }
 
+
+
   
   [border-cut="footer-btm"]::before{
     content: "";
@@ -300,10 +302,10 @@
     clip-path: polygon(0 0,calc(100% - 2.00em) 
     0,100% 2.00em,100% 100%,2.00em 100%,0 
     calc(100% - 2.00em),0 0,1px  1px ,1px 
-    calc(100% - 2.00em - 0.41px),calc(2.00em + 0.41px) 
+    calc(100% - 2.00em - 0.60px),calc(2.00em + 0.60px) 
     calc(100% - 1px),calc(100% - 1px) 
     calc(100% - 1px),calc(100% - 1px) 
-    calc(2.00em + 0.41px),calc(100% - 2.00em - 0.41px) 1px,1px 1px);
+    calc(2.00em + 0.60px),calc(100% - 2.00em - 0.60px) 1px,1px 1px);
 
   }
 
@@ -354,7 +356,7 @@
 
 .main-btn {
     /*-webkit-clip-path: polygon(0 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%);*/
-    -webkit-clip-path: polygon(0 0em,0em 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%);
+    /* -webkit-clip-path: polygon(0 0em,0em 0,100% 0,100% calc(100% - 0.80em),calc(100% - 0.80em) 100%,0 100%); */
     transition: 0.6s cubic-bezier(.19, 1, .22, 1);
   }
   
@@ -364,7 +366,7 @@
 
 .next-btn {
     /* Simple rectangle by default */
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0.80em 100%, 0 calc(100% - 0.80em));
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0.80em 100%, 0 calc(100% - 0.80em)); */
     transition: -webkit-clip-path 0.6s cubic-bezier(.19, 1, .22, 1);
 }
 

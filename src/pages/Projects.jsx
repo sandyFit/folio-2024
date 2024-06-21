@@ -30,13 +30,13 @@ const Projects = () => {
 
     return (
         <section id='projects' className='w-full min-h-screen flex flex-col justify-center items-start 
-            bg-zinc-950 relative'>
+            relative'>
             
             <button
                 onClick={scrollToTop}
                 corner-cut="top-right"
                 className={`fixed hidden lg:flex title-h4-dark bg-cyan-300  justify-center items-center right-2 
-                    bottom-16 w-12 h-16 z-40 ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
+                    bottom-16 w-12 h-16 z-[40] ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
                 <span>UP</span>
             </button>

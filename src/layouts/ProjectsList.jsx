@@ -17,8 +17,7 @@ const ProjectsList = () => {
     return (
         <section
             id="projects-list"
-            data-cursor-color="#d946ef"
-            className="w-full mt-12 lg:mt-8 flex bg-zinc-950 relative"
+            className="w-full mt-12 lg:mt-8 flex  relative"
         >
             <div className="w-full flex justify-start lg:justify-end gap-0 lg:gap-52 pb-12 lg:pb-16">
                 <ul className="flex flex-col items-start lg:items-end relative w-[40%] lg:w-[40vw] projects">

@@ -4,6 +4,7 @@ import '../assets/css/borders.css';
 import ToolTable from '../components/ui/ToolTable';
 import CodeIcon from '../components/ui/CodeIcon';
 import Header from '../components/ui/Header';
+import Tools from '../components/ui/Tools';
 
 
 const About = () => {
@@ -91,7 +92,7 @@ const About = () => {
                     </div>
 
                     <div className="flex">
-                        <ToolTable />
+                        <Tools/>
                     </div>
                 </article>
             </div>
