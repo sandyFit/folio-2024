@@ -12,24 +12,31 @@ function ToolTable() {
     { name: 'Deployment and Hosting', description: 'Utilizing platforms like Netlify, Vercel, and AWS, I deploy and host applications with ease, ensuring they are performant and highly available.' },
     { name: 'Content Management Systems (CMS)', description: ' Worked with headless CMS solutions like Prismic, allowing for flexible content management and delivery.' },
     { name: 'Performance Optimization', description: 'Focused on optimizing web performance through lazy loading, code splitting, and image optimization techniques.' }
-  ];
-
+    ];
   return (
-        <div className='w-full'>
+        <ul className='w-full'>
           {tools.map((tool, index) => (
-              <div key={index}  className={`border-t-2 border-cyan-300 flex flex-col w-full overflow-hidden
-                relative cursor-pointer py-4 px-1 hover:bg-cyan-950 hover:bg-opacity-45
-                `}>
-                            
-                <div className='title-h5 z-[10] w-full flex items-center '>
-                  {`[${index + 1}]`} &nbsp; {tool.name}
-                </div>
-                <div className='text-xxsmall-min z-[10] flex justify-start items-center w-full pb-1 lg:pb-0'>
-                  {tool.description}
-                </div>
-            </div>
+              <li key={index}  className={`border-t-2 border-cyan-300 flex flex-col w-full overflow-hidden
+                relative cursor-pointer py-4 hover:bg-cyan-950 hover:bg-opacity-45`}>                            
+                <div className='w-full grid grid-cols-3'>
+                <button class="group relative inline-flex overflow-hidden duration-1000 out-expo 
+                    col-span-2 col-start-1 title-h5-inter">
+                    <div class="translate-y-0 transition out-expo group-hover:-translate-y-[150%]">
+                      &nbsp; {tool.name}
+                    </div>
+                    <div class="absolute translate-y-[150%] transition out-expo group-hover:translate-y-0">
+                      &nbsp; {tool.name}
+                    </div>
+                  </button>
+
+                  
+                  <div className='text-xxsmall uppercase col-span-1 col-start-3 flex justify-end items-center text-right mt-2 pb-1 lg:pb-0'>
+                    {tool.description}
+                  </div>
+              </div> 
+            </li>
           ))}
-      </div>
+      </ul>
   );
 }
 

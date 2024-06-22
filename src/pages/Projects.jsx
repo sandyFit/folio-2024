@@ -36,10 +36,15 @@ const Projects = () => {
                 onClick={scrollToTop}
                 
                 className={`fixed hidden lg:flex title-h4-dark top-left-btn justify-center items-center right-2 
-                    bottom-16 w-12 h-[4.5rem] pt-1 z-[40] ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
+                    bottom-80 w-12 h-[4.5rem] pt-1 z-[40] group 
+                    ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
-                <span>UP</span>
+                <span className={`duration-700 [transition-delay:.02] group-hover:[transform:rotateY(360deg)] 
+                        group-hover:text-cyan-900`}>U</span>
+                <span className={`duration-700 [transition-delay:.04] group-hover:[transform:rotateY(360deg)] 
+                        group-hover:text-cyan-900`}>P</span>
             </button>
+
             <div border-cut="footer-btm"
                 className="w-full flex flex-col items-start px-6 sm:px-8 2xl:px-16">
                 <Header title='projects' />
@@ -63,7 +68,7 @@ const Projects = () => {
                         
 
                     <div className='title-h2-mobile relative block lg:hidden whitespace-nowrap'>
-                        Crafted with Care & a<br />
+                        ⋙ Crafted with Care & a<br />
                         <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
                             Dash of Flair.
                         </span><br />
@@ -78,7 +83,7 @@ const Projects = () => {
                 </div>
                 <div className="flex justify-end">
                     <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
-                        <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
+                        <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 '>
                             Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />
                             Built with the latest web technologies like CSS, JavaScript, ReactJS, NextJS, and APIs.
                             <br /><br />

@@ -1,57 +1,78 @@
-import React, { useState } from 'react';
-import '../../assets/css/borders.css';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const tools = [
-    { name: 'Figma', description: 'a collaborative interface design tool that enables teams to create, test, and ship better designs from start to finish.' },
-    { name: 'Sass/SCSS', description: 'a preprocessor scripting language that is interpreted or compiled into CSS, allowing for more efficient and reusable styles.' },
-    { name: 'JavaScript', description: 'a versatile programming language that allows you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.' },
-    { name: 'TypeScript', description: 'a superset of JavaScript that adds static typing, making it easier to catch errors early and improve code quality.' },
-    { name: 'React.js', description: 'a JavaScript library for building user interfaces, especially single-page applications where you need a fast, interactive user experience.' },
-    { name: 'Next.js', description: 'a React framework that enables server-side rendering and static site generation for building highly optimized, SEO-friendly web applications.' },
-    { name: 'GSAP', description: 'a high-performance JavaScript library for creating complex animations and transitions with ease and precision.' },
-    { name: 'WebGL', description: 'a JavaScript API for rendering 2D and 3D graphics within any compatible web browser without the use of plug-ins.' },
-    { name: 'Prismic', description: 'a headless CMS that allows you to manage your content in a repository and distribute it via an API to any platform.' },
-    { name: 'AWS/Vercel', description: 'Amazon Web Services, a comprehensive and widely adopted cloud platform offering over 200 fully featured services from data centers globally.' },
-    { name: 'Webflow', description: 'a visual web development platform that allows users to design, build, and launch responsive websites without writing code. It includes built-in hosting, CMS, and e-commerce functionalities.' },
-    { name: 'After Effects', description: 'a digital visual effects, motion graphics, and compositing application used for creating cinematic movie titles, intros, and transitions.' }
-];
+gsap.registerPlugin(ScrollTrigger);
 
-const Tools = () => {
-    const [clickedToolIndex, setClickedToolIndex] = useState(null);
+function Tools() {
+    const tools = [
+        { name: 'JavaScript Frameworks & Libraries', description: '∎ React.js ∎ Next.js ' },
+        { name: 'Application Programming Interface (APIs)', description: '∎ RESTful ∎ GraphQL ' },
+        { name: 'Markup & Static Site Generators', description: '∎ HTML5 ∎ CSS3 ∎ SASS ∎ Hugo ' },
+        { name: 'Version Control', description: '∎ Git ∎ GitHub ' },
+        { name: 'Build Tools & Package Managers', description: '∎ Webpack ∎ Vite ∎ npm ∎ yarn' },
+        { name: 'Design Systems & UI Frameworks', description: '∎ Material-UI ∎ Tailwind CSS' },
+        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ Cypress' },
+        { name: 'Deployment & Hosting', description: '∎ Netlify ∎ Vercel ∎ AWS' },
+        { name: 'Content Management Systems (CMS)', description: '∎ Prismic ∎ Contentful' },
+        { name: 'Performance Optimization', description: '∎ lazy loading  ∎ image opt' }
+    ];
 
-    const handleClick = (index) => {
-        setClickedToolIndex(index);
-    };
+    const toolsRef = useRef([]);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        toolsRef.current.forEach((tool, index) => {
+            gsap.fromTo(
+                tool,
+                { x: 300, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: .6,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: tool,
+                        start: 'center bottom',
+                        toggleActions: 'play none none none',
+                    },
+                    delay: index * 0.2  // Apply a delay based on the index of each item
+                }
+            );
+        });
+    }, []);
 
     return (
-        <div className='relative  mb-5 flex justify-center'>
-            <div className='flex flex-wrap justify-center relative mt-28 gap-x-3 gap-y-2'>
-                {tools.map((tool, index) => (
-                    <div key={index} className='text-xxsmall-min flex justify-center items-center'>
+        <ul className='w-full'>
+        {tools.map((tool, index) => (
+            <li
+            key={index}
+            ref={el => toolsRef.current[index] = el}
+                className={`border-t-[1px] border-cyan-300 flex flex-col w-full overflow-hidden relative 
+                    cursor-pointer py-2 hover:bg-cyan-950 hover:bg-opacity-85
+                    ${index === 9 ? 'border-b-[1px]' : ''}`} >
+                <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
+                    <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
+                        col-span-1 lg:col-span-2 col-start-1 row-start-1 title-h5-inter">
+                        <div className={`-translate-x-0 transition ease-in-out group-hover:translate-x-[380%]`}>
+                            &nbsp; {tool.name}
+                        </div>
+                        <div className="absolute -translate-x-[380%] transition ease-in-out group-hover:translate-x-0">
+                            &nbsp; {tool.name}
+                        </div>
+                    </button>
 
-                        <ul>
-                            
-                        </ul>
-                        {/* <button
-                            onClick={() => handleClick(index)}
-                            className={`text-xsmall-dark bg-cyan-300 w-[11rem] py-3 flex justify-center 
-                            items-center hover:bg-zinc-50 whitespace-nowrap
-                            ${index === 0 ? 'top-left-btn' : ''} 
-                            ${index === 11 ? 'bottom-right-btn' : ''}`}
-                        >
-                            {tool.name}
-                        </button> */}
-                        {clickedToolIndex === index && (
-                            <div className="w-full text-xxsmall-white absolute left-5 -top-20 pr-3">
-                            {` ${tool.name } is ${tool.description}`}
-                            </div>
-                        )}
-                    </div>
-                ))}
+                    <div className='text-xxsmall-cyan uppercase col-span-1 col-start-1 lg:col-start-3 row-start-2
+                        lg:row-start-1 flex justify-end text-right mt-2 pb-1 lg:pb-0'>
+                    {tool.description}
+                </div>
             </div>
-        </div>
-    );
 
-};
+            </li>
+        ))}
+        </ul>
+    );
+}
 
 export default Tools;

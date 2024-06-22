@@ -10,6 +10,7 @@ import SplitType from 'split-type';
 
 import Header from '../components/ui/Header';
 import { HiOutlineHeart } from 'react-icons/hi2';
+import EmailBtn from '../components/buttons/EmailBtn';
 
 
 const TextNav = () => {
@@ -98,7 +99,9 @@ const TextNav = () => {
                             <span className='col-span-8 row-start-4 mt-24 lg:mt-16 z-30 flex lg:justify-center whitespace-nowrap'>
                                 {/* <span className='hidden lg:block'>copy email</span> */}
                                 <span className='ml- relative'>
-                                    <button onClick={handleCopiedText}>
+                                    <EmailBtn/>
+
+                                    {/* <button onClick={handleCopiedText}>
                                         <div id='emailAddress' className='title-h4-min flex whitespace-nowrap 
                                             justify-center'>
                                             {`info{@}trishramos.com`}
@@ -110,7 +113,7 @@ const TextNav = () => {
                                                     lg:text-[2.6rem]' />
                                             }
                                         </div>
-                                    </button>
+                                    </button> */}
                                 </span>
                             </span>                                                    
                         </article>

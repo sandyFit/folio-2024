@@ -98,9 +98,9 @@ const Hero = () => {
 
             <article className="mt-auto w-full mb-6 flex items-center">
                 <div className="grid grid-cols-12 w-full place-content-center lg:place-content-between whitespace-nowrap">
-                    <div className="hidden lg:inline-flex text-xxsmall col-span-3 col-start-1 row-start-1 mt-6 lg:mt-0">
+                    <div className="hidden lg:inline-flex text-xxsmall-cyan col-span-3 col-start-1 row-start-1 mt-6 lg:mt-0">
                         portfolio
-                        <span className=' text-xxsmall-white ml-1.5'>
+                        <span className='text-xxsmall-white ml-1.5'>
                             &copy;{new Date().getFullYear()}
                         </span>
                     </div>
@@ -108,9 +108,9 @@ const Hero = () => {
                         items-center whitespace-nowrap">
                         folio &copy; {new Date().getFullYear()}
                     </div>
-                    <div className="text-xxsmall col-span-2 col-start-6 row-start-3 lg:row-start-1 mt-16 lg:mt-0 
+                    <div className="text-xxsmall-cyan col-span-2 col-start-6 row-start-3 lg:row-start-1 mt-16 lg:mt-0 
                         mb-2 lg:mb-0 flex items-center justify-center">
-                        [<ScrollBtn />]
+                        [ &nbsp;<ScrollBtn />]
                     </div>
                     <div className="col-span-3 col-start-6 lg:col-start-10 row-start-2 lg:row-start-1 flex items-center 
                         justify-end text-xxsmall">

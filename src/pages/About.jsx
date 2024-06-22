@@ -24,7 +24,7 @@ const About = () => {
                             <span className="title-h2-thin">
                                 frontend developer. <br/>
                             </span>
-                            ∎ keenly focused on translating <br/>
+                            ∎ focused on translating <br/>
                             <span className="title-h2-thin">
                                 design into code.
                             </span>
@@ -35,9 +35,9 @@ const About = () => {
                             <span className="title-h2-mobile italic font-[100]">
                                 frontend developer. <br/>
                             </span>
-                            ∎ keenly focused on<br/> translating 
-                            <span className="title-h2-mobile italic font-[100] ml-2">
-                                design into<br/> code.
+                            ∎ focused on translating <br/>
+                            <span className="title-h2-mobile italic font-[100]">
+                                design into code.
                             </span>
                         </div>
 
@@ -52,7 +52,7 @@ const About = () => {
                     <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
                         <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
                             
-                            I'm a self-taught front-end developer specializing.<br /> in React.<br />
+                            I'm a self-taught frontend developer specializing<br /> in the React ecosystem.<br />
                             I love creating smooth animations, engaging transitions, and tackling complex
                             layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />
@@ -66,7 +66,7 @@ const About = () => {
                             <br />
                             Offline, I'm often doodling, baking yum yums or pumping iron at the gym.
                             <br /><br />
-                            Freelancing since 2019, I'm now eager to find full-time dev roles or exciting project collaborations.
+                            Freelancing since 2019, I'm now looking for full-time dev roles or exciting project collaborations.
                             <br />
                             For inquiries or opportunities, please contact me at
                             <a href='mailto:sandy07r@gmail.com' className='text-zinc-50 ml-1'>info@trishramos.com</a>.
@@ -74,33 +74,29 @@ const About = () => {
                     </div>
                 </article>
 
-                <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-12 lg:ml-auto relative">
+                <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
                     <div className="flex justify-start w-full h-[8%] py-4">
-                        <span className='title-h2-mobile lg:title-h2 tracking-widest uppercase'>
-                            ∎ core 
-                            <span className="title-h2-mobile lg:title-h2-thin font-[100] italic ml-2">
-                                tools
-                            </span>
+                        <span className='title-h4 tracking-widest uppercase'>
+                            My Toolkit
                         </span>
                     </div>
                     <div className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
-                        <span className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
-                            I value the fundamentals of web development, yet my aim for clean, efficient,
-                            and responsive design drives me to remain eager for the latest advancements and
-                            technologies that boost productivity and enhance processes.<br />
+                        <span className='text-xsmall w-full columns-1 lg:columns-2'>
+                            I value the fundamentals of web development, yet my focus on clean, efficient,
+                            and responsive design drives me to stay eager for the latest 
+                            technologies that boost productivity and enhance processes.<br /><br />
                             
-
                             <p >
-                                My current toolkit is centered around the JAMstack architecture, which stands for
-                                JavaScript, APIs, and Markup. This modern web development architecture allows me to
-                                create fast, secure, and scalable websites and applications. This toolkit includes:
+                                My current toolkit is centered around the JAMstack architecture (JavaScript, APIs, Markup),
+                                enabling the creation of fast, secure, and scalable websites and applications.
+                                These are the core tools I use:
                             </p>
                         </span>
 
                     </div>
 
-                    <div className="flex mt-10">
-                        <ToolTable/>
+                    <div className="flex mt-8 lg:mt-2">
+                        <Tools/>
                     </div>
                 </article>
             </div>
