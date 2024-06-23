@@ -26,7 +26,7 @@ const ProjectsList = () => {
                             ${openProjectIndex === index ? 'expanded' : ''}`}>
                             <div className="absolute left-0 top-0 w-full h-[1px] bg-cyan-300 transition-all 
                                 duration-[var(--duration)] ease-[var(--ease)]"></div>
-                            <div className="flex w-full cursor-pointer">
+                            <div className="flex w-full">
                                 <div className="flex relative">
                                     <svg width="6rem" height="5rem" viewBox="0 0 60 50"
                                         xmlns="http://www.w3.org/2000/svg"

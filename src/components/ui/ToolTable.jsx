@@ -32,10 +32,18 @@ function ToolTable() {
                   
                   <div className='text-xxsmall uppercase col-span-1 col-start-3 flex justify-end items-center text-right mt-2 pb-1 lg:pb-0'>
                     {tool.description}
-                  </div>
+                </div>
+               
+                
+
+
               </div> 
             </li>
           ))}
+      
+      <div className="flex w-30 h-30">
+        <img src="/brackets-corners.svg" alt="" />
+      </div>
       </ul>
   );
 }

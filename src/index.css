@@ -305,7 +305,8 @@
     }
 
     .text-xxsmall {
-      @apply font-inter text-zinc-400 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] tracking-wider uppercase
+      @apply font-inter text-zinc-400 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] 
+      uppercase
     }
    
     .text-xxsmall-min {
@@ -316,11 +317,11 @@
       @apply font-inter text-zinc-950 text-[.7rem] font-[500] tracking-wider uppercase
     }
     .text-xxsmall-cyan {
-      @apply font-inter text-cyan-300 text-[.7rem] lg:text-[.9rem] font-[400] tracking-wider uppercase
+      @apply font-inter text-cyan-300 text-[.7rem] lg:text-[.9rem] font-[400]  uppercase
     }
 
     .text-xxsmall-white {
-      @apply font-inter text-zinc-50 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] tracking-wider uppercase
+      @apply font-inter text-zinc-50 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] uppercase
     }
    
 

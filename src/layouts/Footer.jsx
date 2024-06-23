@@ -128,14 +128,14 @@ const TextNav = () => {
                     </div>
                     
                     <div className="col-span-12 lg:col-span-3 col-start-1 lg:col-start-6 flex items-center 
-                        justify-center text-xxsmall whitespace-nowrap">
-                        crafted with <HiOutlineHeart className='mx-1 mt-[1px]' /> by
+                        justify-start text-xxsmall-cyan tracking-[.15rem] whitespace-nowrap">
+                        crafted with <HiOutlineHeart className='mx-1 mt-[.5px]' /> by
                         <a href="#"
-                            className='text-xxsmall-white ml-1 underline'>                           
+                            className='text-xxsmall-white tracking-[.15rem] ml-1 underline underline-offset-4'>                           
                             yours truly
                         </a>
                     </div>
-                    <div className="col-span-8 lg:col-span-3 col-start-1 lg:col-start-11 row-start-1  flex 
+                    <div className="col-span-8 lg:col-span-3 col-start-1 lg:col-start-11 row-start-1  flex
                     items-center  justify-center lg:justify-end">
                         <Sitemap />
                     </div>

@@ -87,7 +87,7 @@ const Hero = () => {
                             <h3 className='title-h3 col-span-3 col-start-2 lg:col-start-9 row-start-1 flex items-center
                                 whitespace-nowrap '>
                                 Graphic
-                                <span className='title-h3-thin ml-3 '>designer</span> &</h3>
+                                <span className='title-h3-thin mx-3 '>designer</span > &</h3>
                             <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16 grid place-items-center">
                                 frontend <span>developer</span> 
                             </h1>
@@ -108,9 +108,9 @@ const Hero = () => {
                         items-center whitespace-nowrap">
                         folio &copy; {new Date().getFullYear()}
                     </div>
-                    <div className="text-xxsmall-cyan col-span-2 col-start-6 row-start-3 lg:row-start-1 mt-16 lg:mt-0 
-                        mb-2 lg:mb-0 flex items-center justify-center">
-                        [ &nbsp;<ScrollBtn />]
+                    <div className="text-xxsmall-cyan col-span-2 col-start-6 row-start-3 lg:row-start-1 
+                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex items-center justify-center">
+                        [ &nbsp; &nbsp;&nbsp; <ScrollBtn /> &nbsp;&nbsp;]
                     </div>
                     <div className="col-span-3 col-start-6 lg:col-start-10 row-start-2 lg:row-start-1 flex items-center 
                         justify-end text-xxsmall">

@@ -5,7 +5,7 @@ const links = [
     { name: 'index' },
     { name: 'projects' },
     { name: "info" },
-    { name: "cv" },
+    { name: "read cv" },
     
 ];
 
@@ -37,7 +37,7 @@ const Sitemap = () => {
 
     return (
         <div className="flex w-[30vw]">
-            <ul className="w-full flex uppercase justify-between gap-3"
+            <ul className="w-full flex uppercase justify-between gap-4"
             >
                 {links.map(({ name }) => (
                     <li key={name} className=''>
