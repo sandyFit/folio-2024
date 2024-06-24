@@ -225,13 +225,25 @@
   }
 }
 
-/* ============ tOOLS BALLS BOUNCING EFFECT ============= */
+/* ============ TOOLS BALLS BOUNCING EFFECT ============= */
 
 .c-image img {
   -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
           clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
   transform-origin: center left;
   transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.menu-open {
+    opacity: 1;
+    transform: translate3d(0vw, 0, 0);
+    transition: opacity 0.5s ease, transform 0.8s cubic-bezier(0, .52, 0, 1);
+}
+
+.menu-closed {
+    opacity: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: opacity 0.5s ease, transform 0.8s cubic-bezier(.23,1,.32,1);
 }
 
 /* === CSS FOR 'COPIED' TEXT VISIBILITY IN CONTACT SECTION === */
@@ -406,8 +418,11 @@
     }
 
     .xsm-title {
-      @apply morganite-bold text-[2.5rem] lg:text-[4rem] font-[500] uppercase  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[3rem] lg:text-[4rem] font-[500] uppercase  text-cyan-300 leading-[88%]
+    }
 
+    .xsm-title-dark {
+      @apply morganite-bold text-[4rem] font-[500] uppercase  text-zinc-950 leading-[88%]
     }
 
     .sm-title {
@@ -430,6 +445,27 @@
         2xl:leading-[160px] tracking-[3px] uppercase 
         text-cyan-300
 
+    }
+
+    /* =========== MENU BTN =========== */
+
+    .line {
+      @apply w-[1.35rem] h-[.8px] bg-cyan-300 transition-all duration-300 ease-out-expo
+    }
+    
+    .line-box.active {
+      @apply gap-0
+    }
+    .line-1.active {
+        @apply transform rotate-[-405deg] -translate-x-[0px] translate-y-[6px] w-[1.35rem];
+    }
+
+    .line-2.active {
+        @apply opacity-0;
+    }
+
+    .line-3.active {
+        @apply transform rotate-[405deg] -translate-x-[0px] -translate-y-[7px] w-[1.35rem];
     }
     
    

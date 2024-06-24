@@ -3,12 +3,8 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import '../assets/css/borders.css';
-import HeroBtn from '../components/buttons/HeroBtn';
 import ScrollBtn from '../components/buttons/ScrollBtn';
-import TextShimmerHero from '../components/featured/TextShimmerHero';
 import TimeZone from '../components/ui/TimeZone';
-import Sitemap from '../components/ui/Sitemap';
-import { HiOutlineHeart } from 'react-icons/hi2';
 
 const Hero = () => {
     useEffect(() => {
