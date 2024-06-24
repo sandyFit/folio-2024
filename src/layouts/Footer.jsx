@@ -28,7 +28,7 @@ const TextNav = () => {
             className='w-full h-screen bg-zinc-950 relative flex flex-col'>
             
             <div border-cut="top-right-black"
-                className="flex flex-col px-6 sm:px-8 2xl:px-16">
+                className="flex flex-col px-6 lg:px-16">
                 <Header title='contact'/>
 
                 <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">               
@@ -58,28 +58,31 @@ const TextNav = () => {
                                 </span>
                             </div>
 
-                            <div className="grid lg:hidden grid-cols-12 relative">
-                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-1  
+                            <div className="grid lg:hidden grid-cols-1 relative title-h2-mobile">
+                                <span className='title-h2-mobile col-span-1 col-start-1
                                     whitespace-nowrap'>
-                                    ⋙ wheather you need a                                          
+                                    ⋙ wheather you need                                           
                                 </span>
-                                <span className='title-h2-mobile font-[100] italic col-span-12 
-                                    row-start-2 whitespace-nowrap'>
-                                    full-time team member 
+                                <span className='title-h2-mobile font-[100] italic col-span-1 whitespace-nowrap'>
+                                    a full-time team <br/> 
                                     
                                 </span>
-                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-3 whitespace-nowrap'>
-                                   or just an extra pair of <br/>
+                                <span className='title-h2-mobile col-span-1 whitespace-nowrap'>
+                                    member or just an <br/> 
+                               </span>    
+
+                                <span className='title-h2-mobile col-span-1 col-start-1  whitespace-nowrap'>
+                                   extra pair of <br/>
                                 </span>
-                                <span className='title-h2-mobile font-[100] italic col-span-12 col-start-1 
-                                    row-start-4 whitespace-nowrap'>
+                                <span className='title-h2-mobile font-[100] italic col-span-1 col-start-1 
+                                     whitespace-nowrap'>
                                     creative hands for a
                                 </span>
-                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-5 
+                                <span className='title-h2-mobile col-span-1 col-start-1 
                                     whitespace-nowrap'>
                                    project — I'm all ears!<br/>
                                 </span>
-                                <span className='title-h2-mobile col-span-12 col-start-1 row-start-7 z-20 whitespace-nowrap'>
+                                <span className='title-h2-mobile col-span-12col-start-1 z-20 whitespace-nowrap'>
                                     <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
                                         after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] 
                                         after:w-full 
@@ -90,9 +93,9 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='col-span-8 row-start-4 mt-24 lg:mt-16 z-30 flex lg:justify-center 
+                            <span className='col-span-8 row-start-4 mt-16 z-30 flex lg:justify-center 
                                 whitespace-nowrap'>
-                                {/* <span className='hidden lg:block'>copy email</span> */}
+
                                 <span className='ml- relative'>
                                     <EmailBtn/>                                   
                                 </span>

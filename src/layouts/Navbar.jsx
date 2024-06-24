@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-        <section className='w-full h-[80px] absolute top-0 z-20 flex justify-between px-6 sm:px-8 md:px-12 2xl:px-16'>
+        <section className='w-full h-[80px] absolute top-0 z-20 flex justify-between px-6 md:px-12 2xl:px-16'>
             <div className="w-full grid grid-cols-1 place-content-between mt-9 lg:mt-12">
                 <div className="grid grid-cols-12 place-content-between items-center w-full relative ">
                     <h3 className='xsm-title col-span-6 lg:col-span-3 col-start-1 row-start-1'>

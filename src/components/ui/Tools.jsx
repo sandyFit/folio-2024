@@ -46,7 +46,7 @@ function Tools() {
     }, []);
 
     return (
-        <ul className='w-full'>
+        <ul className='lg:w-full'>
         {tools.map((tool, index) => (
             <li
             key={index}

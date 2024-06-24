@@ -121,8 +121,7 @@ export default {
       },
 
       screens: {
-        'xs': '320px',
-        'sm': '380px',
+        'sm': '320px',
         'md': '420px',
         'base': '500px',
         'lg': '650px',

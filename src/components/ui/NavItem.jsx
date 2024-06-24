@@ -12,7 +12,7 @@ const NavItem = ({ to, children }) => {
                     <span
                         key={index}
                         className={`duration-700 [transition-delay:${index * 0.02}s] 
-                        group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-300`}
+                        group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-50`}
                     >
                         {char}
                     </span>

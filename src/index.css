@@ -317,7 +317,7 @@
     }
 
     .text-xxsmall {
-      @apply font-inter text-zinc-400 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] 
+      @apply font-inter text-zinc-400 text-[.72rem] md:text-[.9rem] 2xl:text-[.9rem] font-[400] 
       uppercase
     }
    
@@ -333,7 +333,7 @@
     }
 
     .text-xxsmall-white {
-      @apply font-inter text-zinc-50 text-[.75rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] uppercase
+      @apply font-inter text-zinc-50 text-[.72rem] md:text-[.9rem] 2xl:text-[.9rem]  uppercase
     }
    
 
@@ -349,44 +349,44 @@
     /* ====== TITLES ====== */
 
     .title-h1 {
-      @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
+      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
         2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
     }
     .title-h1-w {
-      @apply text-zinc-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
+      @apply text-zinc-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
         2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
     }
 
     .title-h1-thin {
-      @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[120px]
+      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
         2xl:text-[9.5rem] italic font-[200] uppercase -tracking-[.3rem]
     }
 
     .title-h2{
-      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem]  lg:leading-[60px]
+      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem]  lg:leading-[60px]
         2xl:text-[3.6rem] font-[400] uppercase tracking-wider
     }
 
    .title-h2-mobile {
-      @apply text-[1.2rem] text-zinc-300 uppercase
+      @apply text-[1.35rem] text-zinc-300 uppercase
    }
 
     .title-thin {
-      @apply text-cyan-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
+      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[60px]
         2xl:text-[4.102rem] font-[100] italic uppercase tracking-wider
     }
     
     .title-h2-thin {
-      @apply text-zinc-300 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[60px]
+      @apply text-zinc-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[60px]
         2xl:text-[3.6rem] font-[100] italic uppercase tracking-wider
     }
 
      .title-h3 {
-      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[45px]
+      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[45px]
         2xl:text-[2.5rem] font-[400] uppercase tracking-wider
     }
     .title-h3-thin {
-      @apply text-zinc-50 font-inter text-[1.24rem] sm:text-[1.48rem] md:text-[1.5rem] leading-[45px]
+      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[45px]
         2xl:text-[2.5rem] font-[100] italic uppercase tracking-wider
     }
 

@@ -40,7 +40,7 @@ const ScrollBtn = () => {
     }, []);
 
     return (
-        <button className="w-[42vw] sm:w-[36vw] 2xl:w-[11vw] group relative">
+        <button className="group relative">
             <Link to="work" className="group relative overflow-hidden text-xxsmall-white tracking-widest">
                 <span className="text-xxsmall-white flex whitespace-nowrap justify-center items-center group">
                     {/* Animated text */}

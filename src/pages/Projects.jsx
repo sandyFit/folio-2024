@@ -46,7 +46,7 @@ const Projects = () => {
             </button>
 
             <div border-cut="footer-btm"
-                className="w-full flex flex-col items-start px-6 sm:px-8 2xl:px-16">
+                className="w-full flex flex-col items-start px-6 2xl:px-16">
                 <Header title='projects' />
                 <div className="w flex justify-center relative mt-0 lg:mt-12">
                     <div className='title-h2 relative hidden lg:block'>
@@ -68,9 +68,9 @@ const Projects = () => {
                         
 
                     <div className='title-h2-mobile relative block lg:hidden whitespace-nowrap'>
-                        ⋙ Crafted with Care & a<br />
+                        ⋙ Crafted with Care <br />
                         <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
-                            Dash of Flair.
+                            & a Dash of Flair.
                         </span><br />
                         ∎ designing every<br /> detail to 
                         <span className="title-h2-mobile italic font-[100] ml-2">

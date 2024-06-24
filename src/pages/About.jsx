@@ -11,16 +11,16 @@ const About = () => {
     return (
         <section
             id="info"
-            className='w-full min-h-screen flex flex-col justify-center items-start bg-zinc-950 relative pb-20'
-        >
-            <div className="flex flex-col px-6 sm:px-8 2xl:px-16"
+            className='w-full min-h-screen flex flex-col justify-center items-start 
+            relative'>
+            <div className="w-full flex flex-col items-start px-6 2xl:px-16"
                 border-cut="top-and-bottom-about">
                 
                  <Header title='info' />
                 <article className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative hidden lg:block'>
-                            ⋙ graphic designer turned <br/>
+                            ⋙ graphic designer turned <br/> 
                             <span className="title-h2-thin">
                                 frontend developer. <br/>
                             </span>
@@ -31,14 +31,15 @@ const About = () => {
                         </div>
 
                         <div className='title-h2-mobile  relative block lg:hidden whitespace-nowrap'>
-                            ⋙ graphic designer turned <br/>
-                            <span className="title-h2-mobile italic font-[100]">
-                                frontend developer. <br/>
+                            ⋙ graphic designer<br/> turned 
+                            <span className="title-h2-mobile italic font-[100] ml-2 whitespace-nowrap">
+                                frontend <br/>developer. <br/>
                             </span>
-                            ∎ focused on translating <br/>
+                            ∎ focused on <br/> 
                             <span className="title-h2-mobile italic font-[100]">
-                                design into code.
+                                translating design <br/> 
                             </span>
+                            into code.
                         </div>
 
                         <span className="hidden lg:absolute top-[8.5rem] left-[23.5rem] text-zinc-50 text-8xl">
@@ -95,7 +96,7 @@ const About = () => {
 
                     </div>
 
-                    <div className="flex mt-8">
+                    <div className="w-full flex mt-8">
                         <Tools/>
                     </div>
                 </article>
