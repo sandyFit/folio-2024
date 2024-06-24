@@ -13,7 +13,7 @@ const About = () => {
             id="info"
             className='w-full min-h-screen flex flex-col justify-center items-start 
             relative'>
-            <div className="w-full flex flex-col items-start px-6 md:px-10 2xl:px-16"
+            <div className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 2xl:px-16"
                 border-cut="top-and-bottom-about">
                 
                  <Header title='info' />

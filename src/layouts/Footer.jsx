@@ -28,7 +28,7 @@ const TextNav = () => {
             className='w-full h-screen bg-zinc-950 relative flex flex-col'>
             
             <div border-cut="top-right-black"
-                className="flex flex-col px-6 lg:px-16">
+                className="flex flex-col px-6 md:px-10 base:px-12 lg:px-16">
                 <Header title='contact'/>
 
                 <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">               

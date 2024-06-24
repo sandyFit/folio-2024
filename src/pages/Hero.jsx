@@ -42,7 +42,7 @@ const Hero = () => {
 
     return (
         <section id="index"
-            className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 
+            className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 base:px-12
                 2xl:px-16'>
 
             <div
@@ -72,7 +72,7 @@ const Hero = () => {
                         </div>
                     </div>                
                 
-                    <div className="grid items-start mt-16 md:mt-10 lg:mt-36 text-center">
+                    <div className="grid items-start mt-16 md:mt-10 base:mt-16 lg:mt-36 text-center">
                         <article className='hidden lg:grid grid-cols-12 '>
                             <h3 className='title-h3 col-span-3 col-start-9 row-start-1 
                                 whitespace-nowrap text-center'>
