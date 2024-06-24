@@ -93,10 +93,10 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='col-span-8 row-start-4 mt-16 z-30 flex lg:justify-center 
+                            <span className='col-span-8 row-start-4 mt-16 md:mt-10 lg:mt-16 z-30 flex md:justify-center 
                                 whitespace-nowrap'>
 
-                                <span className='ml- relative'>
+                                <span className='relative'>
                                     <EmailBtn/>                                   
                                 </span>
                             </span>                                                    

@@ -317,7 +317,7 @@
     }
 
     .text-xxsmall {
-      @apply font-inter text-zinc-400 text-[.72rem] md:text-[.9rem] 2xl:text-[.9rem] font-[400] 
+      @apply font-inter text-zinc-400 text-[.72rem] md:text-[.78rem] 2xl:text-[.9rem] font-[400] 
       uppercase
     }
    
@@ -329,11 +329,11 @@
       @apply font-inter text-zinc-950 text-[.7rem] font-[500] tracking-wider uppercase
     }
     .text-xxsmall-cyan {
-      @apply font-inter text-cyan-300 text-[.7rem] lg:text-[.9rem] font-[400]  uppercase
+      @apply font-inter text-cyan-300 text-[.7rem] md:text-[.78rem] lg:text-[.9rem] font-[400]  uppercase
     }
 
     .text-xxsmall-white {
-      @apply font-inter text-zinc-50 text-[.72rem] md:text-[.9rem] 2xl:text-[.9rem]  uppercase
+      @apply font-inter text-zinc-50 text-[.72rem] md:text-[.78rem] 2xl:text-[.9rem]  uppercase
     }
    
 
@@ -368,7 +368,7 @@
     }
 
    .title-h2-mobile {
-      @apply text-[1.35rem] text-zinc-300 uppercase
+      @apply text-[1.35rem] md:text-[2rem] leading-[30px] md:leading-[40px] text-zinc-300 uppercase
    }
 
     .title-thin {
@@ -395,11 +395,11 @@
     }
 
     .title-h4-min {
-      @apply morganite-bold text-[2.8rem] lg:text-[5.5rem] font-[600] tracking-wide  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[2.8rem] md:text-[3.2rem] lg:text-[5.5rem] font-[600] tracking-wide  text-cyan-300 leading-[88%]
     }
 
     .title-h4-dark {
-      @apply morganite-bold text-[2.5rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
+      @apply morganite-bold text-[2.2rem] md:text-[3rem] lg:text-[4.7rem] leading-[88%] font-[900] uppercase  text-zinc-950
     }
 
     .title-h5-inter {
@@ -426,7 +426,8 @@
     }
 
     .sm-title {
-      @apply morganite-bold text-[2.18rem] lg:text-[4.7rem] font-[400] uppercase tracking-wide  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[2rem] md:text-[2.8rem] lg:text-[4.7rem] font-[400] uppercase tracking-wide  
+          text-cyan-300 leading-[88%]
     }
 
     
@@ -441,7 +442,7 @@
     }
     
     .big-title {
-      @apply morganite-bold text-[7.8rem]  md:text-[9.15rem] 2xl:text-[22.24vw] font-[100] leading-[98px] 
+      @apply morganite-bold text-[7.8rem]  md:text-[10rem] 2xl:text-[22.24vw] font-[100] leading-[98px] md:leading-[120px]
         2xl:leading-[160px] tracking-[3px] uppercase 
         text-cyan-300
 

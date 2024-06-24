@@ -42,10 +42,12 @@ const Hero = () => {
 
     return (
         <section id="index"
-            className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-12 
+            className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 
                 2xl:px-16'>
 
-            <div border-cut="bottom-right-black" className="grid">
+            <div
+                border-cut="bottom-right-black" 
+                className="grid">
                 <div className="flex flex-col mt-1 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-12">
                         <article className="w-full col-span-5 lg:col-span-3 row-start-2 col-start-1 flex flex-col 
@@ -70,7 +72,7 @@ const Hero = () => {
                         </div>
                     </div>                
                 
-                    <div className="grid items-start mt-16 lg:mt-36 text-center">
+                    <div className="grid items-start mt-16 md:mt-10 lg:mt-36 text-center">
                         <article className='hidden lg:grid grid-cols-12 '>
                             <h3 className='title-h3 col-span-3 col-start-9 row-start-1 
                                 whitespace-nowrap text-center'>
@@ -101,7 +103,7 @@ const Hero = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:place-content-between 
                     whitespace-nowrap">
                     <div className="hidden lg:inline-flex text-xxsmall-cyan col-span-1 col-start-1 
-                        row-start-1 mt-6 lg:mt-0">
+                        row-start-1 mt-6 md:mt-3 lg:mt-0">
                         portfolio
                         <span className='text-xxsmall-white ml-1.5'>
                             &copy;{new Date().getFullYear()}

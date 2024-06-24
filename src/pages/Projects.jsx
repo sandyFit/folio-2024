@@ -29,8 +29,8 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id='projects' className='w-full min-h-screen flex flex-col justify-center items-start 
-            relative'>
+        <section id='projects'
+            className='w-full min-h-screen flex flex-col justify-center items-start relative'>
             
             <button
                 onClick={scrollToTop}
@@ -46,7 +46,7 @@ const Projects = () => {
             </button>
 
             <div border-cut="footer-btm"
-                className="w-full flex flex-col items-start px-6 2xl:px-16">
+                className="w-full flex flex-col items-start px-6 md:px-10 2xl:px-16">
                 <Header title='projects' />
                 <div className="w flex justify-center relative mt-0 lg:mt-12">
                     <div className='title-h2 relative hidden lg:block'>

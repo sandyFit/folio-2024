@@ -46,14 +46,13 @@ function Tools() {
     }, []);
 
     return (
-        <ul className='lg:w-full'>
+        <ul className='w-full'>
         {tools.map((tool, index) => (
             <li
             key={index}
             ref={el => toolsRef.current[index] = el}
-                className={`border-t-[1px] border-cyan-300 flex flex-col w-full overflow-hidden relative 
-                    cursor-pointer py-2 hover:bg-cyan-950 hover:bg-opacity-85
-                    ${index === 11 ? 'border-b-[1px]' : ''}`} >
+                className='border-t-[1px] border-cyan-300 flex flex-col w-full overflow-hidden relative 
+                    cursor-pointer py-2 hover:bg-cyan-950 hover:bg-opacity-85 last:border-b-[1px]' >
                 <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
                     <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
                         col-span-1 lg:col-span-2 col-start-1 row-start-1 title-h5-inter">
