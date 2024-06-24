@@ -50,27 +50,36 @@ const Hero = () => {
                 2xl:px-16'>
 
             <div border-cut="bottom-right-black" className="grid">
-
-                <div className="flex flex-col mt-1 lg:mt-40 relative flex-grow">
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-12 place-content-between ">
-                                                
+                <div className="flex flex-col mt-1 lg:mt-[8rem] relative flex-grow">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-12">
                         <article className="w-full col-span-5 lg:col-span-3 row-start-2 col-start-1 flex flex-col 
-                            mr-12 items-center uppercase text-zinc-300 mt-24 lg:mt-[-1.8rem]">
-                            <span className='w-full text-[.72rem] lg:text-[.8rem]  uppercase text-zinc-400 
+                            mr-12 uppercase text-zinc-300 mt-24 lg:mt-[-1.8rem] relative">
+                            <span className='w-full text-[.72rem] lg:text-[.8rem] uppercase text-zinc-400 
                                 text-justify'>
-                                Designer & Developer based in colombia. Currently
-                                seeking roles or opportunities to innovate & collaborate on web development projects.
-                                <br/>
-                                <a href='mailto:sandy07r@gmail.com' className="relative text-zinc-50 font-[400]
+                                Designer & Developer based in Colombia. Currently seeking roles or opportunities to
+                                innovate & collaborate on web development projects.
+                                <br />
+                                <a href='mailto:sandy07r@gmail.com' className="relative text-zinc-50 font-[400] 
                                     after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px] after:w-full 
                                     after:origin-bottom after:scale-x-0 after:bg-zinc-50 after:transition-transform 
-                                    after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
+                                    after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
                                     hover:after:scale-x-100">
                                     Let's connect
                                 </a>.
                             </span>
                         </article>
+
+                        <div className="hidden lg:flex col-span-1 col-start-12">
+                            <span className='w-[1rem] h-[1.1rem] rounded bg-cyan-300 ml-[5.65rem] mt-2'></span>
+                            <img src="/big-brackets.svg" alt="Big Brackets" className='absolute -right-10' />
+                        </div>
                     </div>
+
+                    {/* <button className="hidden lg:block ml-12">
+                                <img src="/big-brackets.svg" alt="" className='absolute bottom-2 right-5' />
+                                <span className='w-[1rem] h-[1.1rem] rounded bg-cyan-300 absolute 
+                                    right-[1.9rem] 2xl:right-[4.376rem] top-[2.7rem] 2xl:top-[1.4rem]'></span>
+                            </button> */}
                 
                     <div className="grid items-start mt-16 lg:mt-36">
                         <article className='hidden lg:grid grid-cols-12 '>
@@ -79,7 +88,7 @@ const Hero = () => {
                                 Graphic
                                 <span className='title-h3-thin ml-3 '>designer</span> &</h3>
                             <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16">
-                                frontend developer 
+                                frontend developer
                             </h1>
                         </article>
 
@@ -88,32 +97,37 @@ const Hero = () => {
                                 whitespace-nowrap '>
                                 Graphic
                                 <span className='title-h3-thin mx-3 '>designer</span > &</h3>
-                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16 grid place-items-center">
-                                frontend <span>developer</span> 
+                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16 grid 
+                                place-items-center whitespace-nowrap">
+                                frontend <span>developer</span>
                             </h1>
                         </article>
                     </div>
                 </div>
             </div>
 
-            <article className="mt-auto w-full mb-6 flex items-center">
-                <div className="grid grid-cols-12 w-full place-content-center lg:place-content-between whitespace-nowrap">
-                    <div className="hidden lg:inline-flex text-xxsmall-cyan col-span-3 col-start-1 row-start-1 mt-6 lg:mt-0">
+            <article className="mt-auto w-full mb-6">
+                <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:place-content-between 
+                    whitespace-nowrap">
+                    <div className="hidden lg:inline-flex text-xxsmall-cyan col-span-1 col-start-1 
+                        row-start-1 mt-6 lg:mt-0">
                         portfolio
                         <span className='text-xxsmall-white ml-1.5'>
                             &copy;{new Date().getFullYear()}
                         </span>
                     </div>
-                    <div className="flex lg:hidden text-xxsmall-white col-span-2 col-start-6 row-start-1 justify-center
-                        items-center whitespace-nowrap">
+
+                    <div className="flex lg:hidden text-xxsmall-white col-span-1 col-start-1 row-start-1 w-full
+                         whitespace-nowrap justify-center">
                         folio &copy; {new Date().getFullYear()}
                     </div>
-                    <div className="text-xxsmall-cyan col-span-2 col-start-6 row-start-3 lg:row-start-1 
-                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex items-center justify-center">
+                    <div className="text-xxsmall-cyan col-span-1 col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 
+                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex justify-center">
                         [ &nbsp; &nbsp;&nbsp; <ScrollBtn /> &nbsp;&nbsp;]
                     </div>
-                    <div className="col-span-3 col-start-6 lg:col-start-10 row-start-2 lg:row-start-1 flex items-center 
-                        justify-end text-xxsmall">
+                    <div className="col-span-1 col-start-1 lg:col-start-3 row-start-2 lg:row-start-1 
+                        flex
+                        items-center justify-center lg:justify-end text-xxsmall">
                         <TimeZone/>
                     </div>
                 </div>

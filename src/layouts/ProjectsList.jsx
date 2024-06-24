@@ -1,18 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import projects from '../data/projects';
 import '../assets/css/borders.css';
 import SeeMore from '../components/buttons/SeeMore';
 import BottomLeftOutlineBtn from '../components/buttons/BottomLeftOutlineBtn';
 import TopRightOutline from '../components/buttons/TopRightOutline';
 import SeeMoreSmall from '../components/buttons/SeeMoreSmall';
-
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
 const ProjectsList = () => {
+
     const [openProjectIndex, setOpenProjectIndex] = useState(null);
 
     const handleToggle = (index) => {
         setOpenProjectIndex(openProjectIndex === index ? null : index);
     };
+
+    const projectsRef = useRef([]);
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        projectsRef.current.forEach((project, index) => {
+            gsap.fromTo(
+                project,
+                { x: 300, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: .6,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: project,
+                        start: 'center bottom',
+                        toggleActions: 'play none none none',
+                    },
+                    delay: index * 0.2  // Apply a delay based on the index of each item
+                }
+            );
+        });
+    }, [])
 
     return (
         <section
@@ -22,7 +48,9 @@ const ProjectsList = () => {
             <div className="w-full flex justify-start lg:justify-end gap-0 lg:gap-52 pb-12 lg:pb-16">
                 <ul className="flex flex-col items-start lg:items-end relative w-[40%] lg:w-[40vw] projects">
                     {projects.map((project, index) => (
-                        <li key={index} className={`flex flex-grow relative pb-12 
+                        <li key={index}
+                            ref={el => projectsRef.current[index] = el}
+                            className={`flex flex-grow relative pb-12 
                             ${openProjectIndex === index ? 'expanded' : ''}`}>
                             <div className="absolute left-0 top-0 w-full h-[1px] bg-cyan-300 transition-all 
                                 duration-[var(--duration)] ease-[var(--ease)]"></div>

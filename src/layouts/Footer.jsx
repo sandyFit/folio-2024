@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/borders.css';
 import Socials from '../components/ui/Socials';
-import { BsCheck, BsCheck2, BsCopy } from 'react-icons/bs';
 import Sitemap from '../components/ui/Sitemap';
-import TimeZone from '../components/ui/TimeZone';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-import SplitType from 'split-type';
-
 import Header from '../components/ui/Header';
 import { HiOutlineHeart } from 'react-icons/hi2';
 import EmailBtn from '../components/buttons/EmailBtn';
@@ -96,24 +90,11 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='col-span-8 row-start-4 mt-24 lg:mt-16 z-30 flex lg:justify-center whitespace-nowrap'>
+                            <span className='col-span-8 row-start-4 mt-24 lg:mt-16 z-30 flex lg:justify-center 
+                                whitespace-nowrap'>
                                 {/* <span className='hidden lg:block'>copy email</span> */}
                                 <span className='ml- relative'>
-                                    <EmailBtn/>
-
-                                    {/* <button onClick={handleCopiedText}>
-                                        <div id='emailAddress' className='title-h4-min flex whitespace-nowrap 
-                                            justify-center'>
-                                            {`info{@}trishramos.com`}
-                                            {isCopied ?
-                                                <BsCheck2 className='flex text-cyan-300 text-2xl lg:text-[2.8rem] 
-                                                    mt-3 lg:mt-6 ml-2 lg:ml-4' />
-                                                :
-                                                <BsCopy className='ml-2 lg:ml-5 mt-3 lg:mt-[1.6rem] text-2xl 
-                                                    lg:text-[2.6rem]' />
-                                            }
-                                        </div>
-                                    </button> */}
+                                    <EmailBtn/>                                   
                                 </span>
                             </span>                                                    
                         </article>
@@ -121,22 +102,25 @@ const TextNav = () => {
                 </div>
             </div>
 
-            <article className="mt-auto w-full h-[7.5rem] lg:h-[3rem] bg-zinc-900 px-6 lg:px-16 flex items-center">
-                <div className="grid grid-cols-12 w-full place-content-between gap-2 lg:gap-0">
-                    <div className="col-span-12 lg:col-span-3 col-start-1 row-start-3 lg:row-start-1 flex items-center">
+            <article className="mt-auto w-full h-[7.5rem] lg:h-[3rem] bg-zinc-900 px-6 lg:px-16 
+                grid place-content-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 w-full place-content-between gap-2 lg:gap-0">
+                    <div className="col-span-1 lg:col-span-3 col-start-1 row-start-3 lg:row-start-1 flex 
+                        justify-start">
                         <Socials />
                     </div>
                     
-                    <div className="col-span-12 lg:col-span-3 col-start-1 lg:col-start-6 flex items-center 
-                        justify-start text-xxsmall-cyan tracking-[.15rem] whitespace-nowrap">
+                    <div className="col-span-1 lg:col-span-3 col-start-1 lg:col-start-6 flex items-center 
+                        justify-center lg:justify-start text-xxsmall-cyan tracking-[.15rem] whitespace-nowrap">
                         crafted with <HiOutlineHeart className='mx-1 mt-[.5px]' /> by
                         <a href="#"
-                            className='text-xxsmall-white tracking-[.15rem] ml-1 underline underline-offset-4'>                           
+                            className='text-xxsmall-white tracking-wide lg:tracking-[.15rem] ml-1 underline 
+                                underline-offset-4'>                           
                             yours truly
                         </a>
                     </div>
-                    <div className="col-span-8 lg:col-span-3 col-start-1 lg:col-start-11 row-start-1  flex
-                    items-center  justify-center lg:justify-end">
+                    <div className="col-span-1 lg:col-span-3 col-start-1 lg:col-start-11 row-start-1 flex
+                        justify-start lg:justify-end ml-6 ">
                         <Sitemap />
                     </div>
                 </div>

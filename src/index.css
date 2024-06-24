@@ -321,7 +321,7 @@
     }
 
     .text-xxsmall-white {
-      @apply font-inter text-zinc-50 text-[.7rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] uppercase
+      @apply font-inter text-zinc-50 text-[.75rem] sm:text-[.9rem] 2xl:text-[.9rem] font-[400] uppercase
     }
    
 
@@ -334,10 +334,6 @@
 
     
 
-    .text-small-purple {
-      @apply font-inter text-violet-500 text-lg font-[500]  tracking-wide uppercase
-    }
-    
     /* ====== TITLES ====== */
 
     .title-h1 {
@@ -430,7 +426,7 @@
     }
     
     .big-title {
-      @apply morganite-bold text-[7.8rem]  md:text-[9.15rem] 2xl:text-[22.2vw] font-[100] leading-[98px] 
+      @apply morganite-bold text-[7.8rem]  md:text-[9.15rem] 2xl:text-[22.24vw] font-[100] leading-[98px] 
         2xl:leading-[160px] tracking-[3px] uppercase 
         text-cyan-300
 

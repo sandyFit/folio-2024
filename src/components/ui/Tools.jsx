@@ -15,7 +15,9 @@ function Tools() {
         { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ Cypress' },
         { name: 'Deployment & Hosting', description: '∎ Netlify ∎ Vercel ∎ AWS' },
         { name: 'Content Management Systems (CMS)', description: '∎ Prismic ∎ Contentful' },
-        { name: 'Performance Optimization', description: '∎ lazy loading  ∎ image opt' }
+        { name: 'Performance Optimization', description: '∎ lazy loading  ∎ image opt' },
+        { name: 'Design tools', description: '∎ Figma  ∎ Adobe Suite' },
+        { name: 'No code tools', description: '∎ Framer  ∎ Webflow' }
     ];
 
     const toolsRef = useRef([]);
@@ -37,7 +39,7 @@ function Tools() {
                         start: 'center bottom',
                         toggleActions: 'play none none none',
                     },
-                    delay: index * 0.2  // Apply a delay based on the index of each item
+                    delay: index * 0.1  // Apply a delay based on the index of each item
                 }
             );
         });
@@ -51,11 +53,11 @@ function Tools() {
             ref={el => toolsRef.current[index] = el}
                 className={`border-t-[1px] border-cyan-300 flex flex-col w-full overflow-hidden relative 
                     cursor-pointer py-2 hover:bg-cyan-950 hover:bg-opacity-85
-                    ${index === 9 ? 'border-b-[1px]' : ''}`} >
+                    ${index === 11 ? 'border-b-[1px]' : ''}`} >
                 <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
                     <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
                         col-span-1 lg:col-span-2 col-start-1 row-start-1 title-h5-inter">
-                        <div className={`-translate-x-0 transition ease-in-out group-hover:translate-x-[380%]`}>
+                        <div className={`-translate-x-0 transition ease-in-out group-hover:translate-x-[410%]`}>
                             &nbsp; {tool.name}
                         </div>
                         <div className="absolute -translate-x-[380%] transition ease-in-out group-hover:translate-x-0">
@@ -63,10 +65,10 @@ function Tools() {
                         </div>
                     </button>
 
-                    <div className='text-xxsmall-cyan uppercase col-span-1 col-start-1 lg:col-start-3 row-start-2
+                    <p className='text-xxsmall-cyan uppercase col-span-1 col-start-1 lg:col-start-3 row-start-2
                         lg:row-start-1 flex justify-end text-right mt-2 pb-1 lg:pb-0'>
-                    {tool.description}
-                </div>
+                        {tool.description}
+                    </p>
             </div>
 
             </li>

@@ -81,21 +81,21 @@ const About = () => {
                         </span>
                     </div>
                     <div className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
-                        <span className='text-xsmall w-full columns-1 lg:columns-2'>
-                            I value the fundamentals of web development, yet my focus on clean, efficient,
-                            and responsive design drives me to stay eager for the latest 
-                            technologies that boost productivity and enhance processes.<br /><br />
-                            
-                            <p >
-                                My current toolkit is centered around the JAMstack architecture (JavaScript, APIs, Markup),
-                                enabling the creation of fast, secure, and scalable websites and applications.
-                                These are the core tools I use:
-                            </p>
-                        </span>
+                        <p className='text-xsmall w-full columns-1 lg:columns-2'>
+                            I prioritize foundational web development principles while maintaining a keen
+                            interest in cutting-edge technologies that improve efficiency and productivity.
+                            <br /><br />
+                            My toolkit revolves around the JAMstack architecture (JavaScript, APIs, Markup),
+                            enabling me to build websites and applications that are fast, secure, and scalable.<br />
+                            Additionally, I leverage design, prototyping tools, and no-code solutions to streamline
+                            development processes effectively. <br />
+                            These are the core tools I use:
+
+                        </p>
 
                     </div>
 
-                    <div className="flex mt-8 lg:mt-2">
+                    <div className="flex mt-8">
                         <Tools/>
                     </div>
                 </article>

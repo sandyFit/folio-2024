@@ -22,8 +22,8 @@ const SiteLink = ({ name }) => (
             {formatLinkName(name).split('').map((char, index) => (
                 <span
                     key={index}
-                    className={`duration-700 [transition-delay:${index * 0.02}s] group-hover:[transform:rotateY(360deg)] 
-                    group-hover:text-cyan-300`}
+                    className={`duration-700 [transition-delay:${index * 0.02}s] 
+                    group-hover:[transform:rotateY(360deg)] group-hover:text-cyan-300`}
                 >
                     {char === ' ' ? '\u00A0' : char}
                 </span>
