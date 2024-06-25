@@ -49,9 +49,9 @@ const Hero = () => {
                 border-cut="bottom-right-black" 
                 className="grid">
                 <div className="flex flex-col mt-1 lg:mt-[8rem] relative flex-grow">
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-12">
-                        <article className="w-full col-span-5 lg:col-span-3 row-start-2 col-start-1 flex flex-col 
-                            mr-12 uppercase text-zinc-300 mt-24 lg:mt-[-1.8rem] relative">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-6 xl:grid-cols-12">
+                        <article className="w-full col-span-1 lg:col-span-3 xl:col-span-3 row-start-2 col-start-1 
+                            flex flex-col mr-12 uppercase text-zinc-300 mt-24 lg:mt-0 xl:mt-[-1.8rem] relative">
                             <span className='w-full text-xxsmall text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking roles or opportunities to
                                 innovate & collaborate on web development projects.
@@ -66,21 +66,21 @@ const Hero = () => {
                             </span>
                         </article>
 
-                        <div className="hidden lg:flex col-span-1 col-start-12">
+                        <div className="hidden xl:flex col-span-1 col-start-12">
                             <span className='w-[1rem] h-[1.1rem] rounded bg-cyan-300 ml-[5.65rem] mt-2'></span>
                             <img src="/big-brackets.svg" alt="Big Brackets" className='absolute -right-10' />
                         </div>
                     </div>                
                 
-                    <div className="grid items-start mt-16 md:mt-10 base:mt-16 lg:mt-36 text-center">
-                        <article className='hidden lg:grid grid-cols-12 '>
-                            <h3 className='title-h3 col-span-3 col-start-9 row-start-1 
-                                whitespace-nowrap text-center'>
+                    <div className="grid items-start mt-16 md:mt-10 base:mt-16 lg:mt-20 xl:mt-36 text-center">
+                        <article className='hidden lg:grid lg:grid-cols-1 xl:grid-cols-12 '>
+                            <h3 className='title-h3 col-span-6 col-start-1 lg:col-start-9 row-start-1 
+                                whitespace-nowrap '>
                                 Graphic
                                 <span className='title-h3-thin mx-3 '>designer</span>
                                 &
                             </h3>
-                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-16">
+                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg:mt-[-1rem] xl:mt-16 whitespace-nowrap">
                                 frontend developer
                             </h1>
                         </article>

@@ -418,7 +418,7 @@
     }
 
     .xsm-title {
-      @apply morganite-bold text-[3rem] lg:text-[4rem] font-[500] uppercase  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-[500] uppercase  text-cyan-300 leading-[88%]
     }
 
     .xsm-title-dark {
@@ -442,7 +442,7 @@
     }
     
     .big-title {
-      @apply morganite-bold text-[7.8rem]  md:text-[10rem] 2xl:text-[22.24vw] font-[100] leading-[98px] md:leading-[120px]
+      @apply morganite-bold text-[7.8rem] md:text-[10rem] lg:text-[8rem] 2xl:text-[22.24vw] font-[100] leading-[98px] md:leading-[120px]
         2xl:leading-[160px] tracking-[3px] uppercase 
         text-cyan-300
 

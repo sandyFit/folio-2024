@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 const NavItem = ({ to, children }) => {
-    // Function to generate unique transition delay for each character
-    const generateTransitionDelay = (index) => `${index * 0.02}s`;
+    
 
     return (
         <Link to={to} className="group relative overflow-hidden nav-item">
