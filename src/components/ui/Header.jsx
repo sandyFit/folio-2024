@@ -11,7 +11,8 @@ const Header = ({title}) => {
                             {title}
                         </h3>
                     <p className='xsm-title col-span-1 col-start-2 lg:col-start-12 grid place-content-end'>
-                        &copy;{new Date().getFullYear()}
+                        2&copy;{new Date().getFullYear().toString().slice(-2)}
+
                     </p>               
                 </div>
             </div>

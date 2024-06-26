@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import React from 'react';
 
 const NavItem = ({ to, children }) => {
