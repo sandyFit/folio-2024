@@ -45,11 +45,12 @@ const Projects = () => {
                         group-hover:text-cyan-900`}>P</span>
             </button>
 
-            <div border-cut="footer-btm"
+            <div
+                border-cut="footer-btm"
                 className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 2xl:px-16">
                 <Header title='projects' />
                 <div className="w flex justify-center relative mt-0 lg:mt-12">
-                    <div className='title-h2 relative hidden lg:block'>
+                    <div className='title-h2 relative hidden xl:block'>
                         ⋙ Crafted with Care & a
                         <span className="title-h2-thin ml-4">
                             Dash of Flair.
@@ -67,7 +68,7 @@ const Projects = () => {
                     </div>
                         
 
-                    <div className='title-h2-mobile relative block lg:hidden whitespace-nowrap'>
+                    <div className='title-h2-mobile relative block xl:hidden whitespace-nowrap'>
                         ⋙ Crafted with Care <br />
                         <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
                             & a Dash of Flair.

@@ -317,7 +317,7 @@
     }
 
     .text-xxsmall {
-      @apply font-inter text-zinc-400 text-[.72rem] md:text-[.78rem] 2xl:text-[.9rem] font-[400] 
+      @apply font-inter text-zinc-400 text-[.72rem] md:text-[.78rem] lg:text-[.75rem] 2xl:text-[.9rem] font-[400] 
       uppercase
     }
    
@@ -363,23 +363,28 @@
     }
 
     .title-h2{
-      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem]  lg:leading-[60px]
+      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] lg:text-[1.55rem] lg:leading-[32px]
+      xl:leading-[60px]
         2xl:text-[3.6rem] font-[400] uppercase tracking-wider
     }
 
-   .title-h2-mobile {
-      @apply text-[1.35rem] md:text-[2rem] leading-[30px] md:leading-[40px] text-zinc-300 uppercase
-   }
-
-    .title-thin {
-      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[60px]
-        2xl:text-[4.102rem] font-[100] italic uppercase tracking-wider
-    }
-    
     .title-h2-thin {
-      @apply text-zinc-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[60px]
+      @apply text-zinc-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] lg:text-[1.55rem] lg:leading-[32px]
+      xl:leading-[60px]
         2xl:text-[3.6rem] font-[100] italic uppercase tracking-wider
     }
+    
+    
+    .title-h2-mobile {
+      @apply text-[1.35rem] md:text-[1.8rem] base:text-[2.16rem] lg:text-[2.4rem] leading-[30px] md:leading-[35px] base:leading-[40px]
+      text-zinc-300 uppercase
+    }
+    
+    .title-thin {
+      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] lg:text-[2.4rem] leading-[60px]
+      2xl:text-[4.102rem] font-[100] italic uppercase tracking-wider
+    }
+    
 
      .title-h3 {
       @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[45px]
@@ -395,7 +400,8 @@
     }
 
     .title-h4-min {
-      @apply morganite-bold text-[2.8rem] md:text-[3.2rem] lg:text-[5.5rem] font-[600] tracking-wide  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[2.7rem] md:text-[3.4rem] base:text-[4rem]  xl:text-[5.5rem] 
+      font-[600] tracking-wide  text-cyan-300 leading-[88%]
     }
 
     .title-h4-dark {
@@ -442,7 +448,7 @@
     }
     
     .big-title {
-      @apply morganite-bold text-[7.8rem] md:text-[10rem] lg:text-[8rem] 2xl:text-[22.24vw] font-[100] leading-[98px] md:leading-[120px]
+      @apply morganite-bold text-[7.8rem] md:text-[10rem] lg:text-[8.06rem] 2xl:text-[22.24vw] font-[100] leading-[98px] md:leading-[120px]
         2xl:leading-[160px] tracking-[3px] uppercase 
         text-cyan-300
 

@@ -48,7 +48,7 @@ const Hero = () => {
             <div
                 border-cut="bottom-right-black" 
                 className="grid">
-                <div className="flex flex-col mt-1 lg:mt-[8rem] relative flex-grow">
+                <div className="flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-6 xl:grid-cols-12">
                         <article className="w-full col-span-1 lg:col-span-3 xl:col-span-3 row-start-2 col-start-1 
                             flex flex-col mr-12 uppercase text-zinc-300 mt-24 lg:mt-0 xl:mt-[-1.8rem] relative">
@@ -72,7 +72,7 @@ const Hero = () => {
                         </div>
                     </div>                
                 
-                    <div className="grid items-start mt-16 md:mt-10 base:mt-16 lg:mt-20 xl:mt-36 text-center">
+                    <div className="grid items-start mt-16 md:mt-10 base:mt-16 lg:mt-24 xl:mt-36 text-center">
                         <article className='hidden lg:grid lg:grid-cols-1 xl:grid-cols-12 '>
                             <h3 className='title-h3 col-span-6 col-start-1 lg:col-start-9 row-start-1 
                                 whitespace-nowrap '>
@@ -99,7 +99,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <article className="mt-auto w-full mb-6">
+            <article className="mt-auto w-full mb-6 lg:mb-10">
                 <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:place-content-between 
                     whitespace-nowrap">
                     <div className="hidden lg:inline-flex text-xxsmall-cyan col-span-1 col-start-1 

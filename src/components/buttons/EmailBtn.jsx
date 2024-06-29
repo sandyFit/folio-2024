@@ -55,23 +55,25 @@ const EmailBtn = () => {
         >
             {/* Animated characters */}
             <span className="relative inline-flex items-center">
-                {['i', 'n', 'f', 'o', '{', '@', '}', 't', 'r', 'i', 's', 'h', 'r', 'a', 'm', 'o', 's', '.', 'c', 'o', 'm']
+                {['i', 'n', 'f', 'o', '{', '@', '}', 't', 'r', 'i', 's', 'h', 'r', 'a', 'm',
+                    'o', 's', '.', 'c', 'o', 'm']
                     .map((char, index) => (
-                <span
-                    key={index}
-                    className={`duration-700 [transition-delay:${index * 0.02}s] group-hover:[transform:rotateY(360deg)] 
-                                group-hover:text-zinc-300`}
-                >
-                    {char}
-                </span>
+                    <span
+                        key={index}
+                            className={`duration-700 [transition-delay:${index * 0.02}s] 
+                            group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-300`}>
+                        {char}
+                    </span>
                 ))}
             </span>
             {/* Icon for copy feedback */}
-           <span className="icon-transition ml-2 mt-3">
+           <span className="icon-transition ml-2 mt-3 md:mt-2 base:mt-3 ">
                 {isCopied ? (
-                    <BsCheck2 className="text-cyan-300 text-2xl lg:text-[2.8rem]" />
+                    <BsCheck2 className="text-cyan-300 text-2xl md:text-[2.2rem] base:text-[2.5rem] 
+                        xl:text-[2.8rem] " />
                 ) : (
-                    <BsCopy className="text-2xl lg:text-[2.8rem] " />
+                    <BsCopy className="text-2xl md:text-[1.8rem] base:text-[2rem] 
+                        xl:text-[2.8rem] " />
                 )}
             </span>
         </button>

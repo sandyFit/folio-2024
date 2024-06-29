@@ -13,8 +13,9 @@ const About = () => {
             id="info"
             className='w-full min-h-screen flex flex-col justify-center items-start 
             relative'>
-            <div className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 2xl:px-16"
-                border-cut="top-and-bottom-about">
+            <div
+                border-cut="top-and-bottom-about"
+                className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 2xl:px-16">
                 
                  <Header title='info' />
                 <article className="flex flex-col items-start mt-2 lg:mt-12">
@@ -24,9 +25,9 @@ const About = () => {
                             <span className="title-h2-thin">
                                 frontend developer. <br/>
                             </span>
-                            ∎ focused on translating <br/>
+                            ∎ transforming design<br/>
                             <span className="title-h2-thin">
-                                design into code.
+                                into digital experiences.
                             </span>
                         </div>
 
@@ -35,11 +36,11 @@ const About = () => {
                             <span className="title-h2-mobile italic font-[100] ml-2 whitespace-nowrap">
                                 frontend <br/>developer. <br/>
                             </span>
-                            ∎ focused on <br/> 
+                            ∎ transforming  <br/> 
                             <span className="title-h2-mobile italic font-[100]">
-                                translating design <br/> 
+                                 design into digital <br/> 
                             </span>
-                            into code.
+                             experiences.
                         </div>
 
                         <span className="hidden lg:absolute top-[8.5rem] left-[23.5rem] text-zinc-50 text-8xl">

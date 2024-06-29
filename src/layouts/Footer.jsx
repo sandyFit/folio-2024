@@ -28,7 +28,7 @@ const TextNav = () => {
             className='w-full h-screen bg-zinc-950 relative flex flex-col'>
             
             <div border-cut="top-right-black"
-                className="flex flex-col px-6 md:px-10 base:px-12 lg:px-16">
+                className="flex flex-col px-6 md:px-10 base:px-12 xl:px-16">
                 <Header title='contact'/>
 
                 <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">               
@@ -93,7 +93,7 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='col-span-8 row-start-4 mt-16 md:mt-10 lg:mt-16 z-30 flex md:justify-center 
+                            <span className='col-span-8 row-start-4 mt-20 md:mt-16 base:mt-12 lg:mt-16 z-30 flex md:justify-center 
                                 whitespace-nowrap'>
 
                                 <span className='relative'>
@@ -105,24 +105,24 @@ const TextNav = () => {
                 </div>
             </div>
 
-            <article className="mt-auto w-full h-[7.5rem] lg:h-[3rem] bg-zinc-900 px-6 lg:px-16 
+            <article className="mt-auto w-full h-[6rem] lg:h-[7rem] xl:h-[3rem] bg-zinc-900 px-6 xl:px-16 py-4
                 grid place-content-center">
-                <div className="grid grid-cols-1 lg:grid-cols-12 w-full place-content-between gap-2 lg:gap-0">
-                    <div className="col-span-1 lg:col-span-3 col-start-1 row-start-3 lg:row-start-1 flex 
+                <div className="grid grid-cols-1 xl:grid-cols-12 w-full place-content-between gap-2 xl:gap-0">
+                    <div className="col-span-1 xl:col-span-3 col-start-1 row-start-3 xl:row-start-1 flex 
                         justify-start">
                         <Socials />
                     </div>
                     
-                    <div className="col-span-1 lg:col-span-3 col-start-1 lg:col-start-6 flex items-center 
-                        justify-center lg:justify-start text-xxsmall-cyan tracking-[.15rem] whitespace-nowrap">
+                    <div className="col-span-1 xl:col-span-3 col-start-1 xl:col-start-6 flex items-center 
+                        justify-center xl:justify-start text-xxsmall-cyan tracking-[.15rem] whitespace-nowrap">
                         crafted with <HiOutlineHeart className='mx-1 mt-[.5px]' /> by
                         <a href="#"
-                            className='text-xxsmall-white tracking-wide lg:tracking-[.15rem] ml-1 underline 
+                            className='text-xxsmall-white tracking-wide xl:tracking-[.15rem] ml-1 underline 
                                 underline-offset-4'>                           
                             yours truly
                         </a>
                     </div>
-                    <div className="col-span-1 lg:col-span-3 col-start-1 lg:col-start-11 row-start-1 flex
+                    <div className="hidden xl:flex xl:col-span-3 col-start-1 xl:col-start-11 row-start-1
                         justify-start lg:justify-end ml-6 ">
                         <Sitemap />
                     </div>

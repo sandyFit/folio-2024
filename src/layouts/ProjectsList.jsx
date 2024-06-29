@@ -31,10 +31,10 @@ const ProjectsList = () => {
                     ease: 'power3.out',
                     scrollTrigger: {
                         trigger: project,
-                        start: 'center bottom',
+                        start: 'top top+=90%',
                         toggleActions: 'play none none none',
                     },
-                    delay: index * 0.2  // Apply a delay based on the index of each item
+                    delay: index * 0.1  // Apply a delay based on the index of each item
                 }
             );
         });
