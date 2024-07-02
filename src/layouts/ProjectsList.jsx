@@ -44,9 +44,9 @@ const ProjectsList = () => {
         <section
             id="projects-list"
             className="w-full mt-12 lg:mt-8 flex relative">
-            <div className="w-full flex justify-start lg:justify-end pb-12 lg:pb-16">
-                <ul className="flex flex-col items-start lg:items-end relative w-[40%] md:w-[90vw] lg:w-[40vw] 
-                    projects">
+            <div className="w-full flex justify-start xl:justify-end pb-12 xl:pb-16">
+                <ul className="flex flex-col items-start xl:items-end relative w-[40%] md:w-[90vw] lg:w-full
+                    xl:w-[40vw] projects">
                     {projects.map((project, index) => (
                         <li key={index}
                             ref={el => projectsRef.current[index] = el}
@@ -58,14 +58,15 @@ const ProjectsList = () => {
                                 <div className="flex relative">
                                     <svg width="6rem" height="5rem" viewBox="0 0 60 50"
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className='hidden lg:block' preserveAspectRatio="xMidYMid meet">
+                                        className='hidden xl:block' preserveAspectRatio="xMidYMid meet">
                                         <polygon points="0,0 60,0 60,50 15,50 0,34"
                                             style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
                                     </svg>
 
                                     <svg width="3.2rem" height="2.3rem" viewBox="0 0 60 45"
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className='block lg:hidden w-[3.2rem] h-[2.3rem] md:w-[4rem] md:h-[3rem] '
+                                        className='block xl:hidden w-[3.2rem] h-[2.3rem] md:w-[4rem] md:h-[3rem] 
+                                            lg:w-[5rem] lg:h-[3.8rem]'
                                         preserveAspectRatio="xMidYMid meet">
                                         <polygon points="0,0 60,0 60,45 15,45 0,30"
                                             style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
@@ -78,25 +79,26 @@ const ProjectsList = () => {
                                             style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
                                     </svg> */}
 
-                                    <div className="flex title-h4-dark absolute left-4 md:left-5  lg:left-[2.2rem] 
-                                        top-1 lg:top-2 ">
+                                    <div className="flex title-h4-dark absolute left-4 md:left-5 lg:left-[1.8rem]  
+                                        xl:left-[2.2rem] top-1 lg:top-2 ">
                                         {`00${index + 1}`}
                                     </div>
                                 </div>
-                                <div className="w-[65vw] lg:w-[44.6vw] flex flex-col items-start pt-3 lg:pt-5">
+                                <div className="w-[65vw] lg:w-[71vw] xl:w-[44.6vw] flex flex-col items-start pt-3 
+                                    xl:pt-5">
                                     <div className="w-full flex justify-between items-center">
-                                        <div className="w-full flex pl-1.5 md:pl-2.5 lg:pl-6">
+                                        <div className="w-full flex pl-1.5 md:pl-2.5 xl:pl-6">
                                             <div className="flex w-full sm-title z-[3] whitespace-nowrap">
                                                 {project.title}
                                             </div>
                                         </div>
-                                        <div className="hidden lg:flex">
+                                        <div className="hidden xl:flex">
                                             <SeeMore
                                                 isOpen={openProjectIndex === index}
                                                 handleToggle={() => handleToggle(index)}
                                             />
                                         </div>
-                                        <div className="flex lg:hidden">
+                                        <div className="flex xl:hidden">
                                             <SeeMoreSmall
                                                 isOpen={openProjectIndex === index}
                                                 handleToggle={() => handleToggle(index)}

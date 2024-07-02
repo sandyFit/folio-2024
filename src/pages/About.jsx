@@ -20,7 +20,7 @@ const About = () => {
                  <Header title='info' />
                 <article className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
-                        <div className='title-h2 relative hidden lg:block'>
+                        <div className='title-h2 relative hidden xl:block'>
                             ⋙ graphic designer turned <br/> 
                             <span className="title-h2-thin">
                                 frontend developer. <br/>
@@ -31,16 +31,16 @@ const About = () => {
                             </span>
                         </div>
 
-                        <div className='title-h2-mobile  relative block lg:hidden whitespace-nowrap'>
-                            ⋙ graphic designer<br/> turned 
-                            <span className="title-h2-mobile italic font-[100] ml-2 whitespace-nowrap">
-                                frontend <br/>developer. <br/>
+                        <div className='title-h2-mobile relative block xl:hidden whitespace-nowrap'>
+                            ⋙ graphic designer turned <br/>
+                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
+                                frontend developer. <br/>
                             </span>
-                            ∎ transforming  <br/> 
+                            ∎ transforming  design into<br/> 
                             <span className="title-h2-mobile italic font-[100]">
-                                 design into digital <br/> 
+                                  digital experiences.<br/> 
                             </span>
-                             experiences.
+                             
                         </div>
 
                         <span className="hidden lg:absolute top-[8.5rem] left-[23.5rem] text-zinc-50 text-8xl">
@@ -51,10 +51,10 @@ const About = () => {
                         </span>                   
                     </div>
 
-                    <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
-                        <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
+                    <div className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
+                        <p className='text-xsmall w-full xl:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
                             
-                            I'm a self-taught frontend developer specializing<br /> in the React ecosystem.<br />
+                            I'm a self-taught frontend developer specializing in the React ecosystem.<br />
                             I love creating smooth animations, engaging transitions, and tackling complex
                             layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />
@@ -76,7 +76,7 @@ const About = () => {
                     </div>
                 </article>
 
-                <article className="flex flex-col w-full lg:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
+                <article className="flex flex-col w-full xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
                     <div className="flex justify-start w-full h-[8%] py-4">
                         <span className='title-h4 tracking-widest uppercase'>
                             My Toolkit

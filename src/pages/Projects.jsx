@@ -35,7 +35,7 @@ const Projects = () => {
             <button
                 onClick={scrollToTop}
                 
-                className={`fixed hidden lg:flex title-h4-dark top-left-btn justify-center items-center right-2 
+                className={`fixed hidden xl:flex title-h4-dark top-left-btn justify-center items-center right-2 
                     bottom-80 w-12 h-[4.5rem] pt-1 z-[40] group 
                     ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
@@ -69,22 +69,22 @@ const Projects = () => {
                         
 
                     <div className='title-h2-mobile relative block xl:hidden whitespace-nowrap'>
-                        ⋙ Crafted with Care <br />
+                        ⋙ Crafted with Care & a  <br />
                         <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
-                            & a Dash of Flair.
+                            Dash of Flair.
                         </span><br />
-                        ∎ designing every<br /> detail to 
-                        <span className="title-h2-mobile italic font-[100] ml-2">
-                            function<br /> smoothly & leave a<br />
+                        ∎ designing every detail to <br />
+                        <span className="title-h2-mobile italic font-[100]">
+                            function smoothly &<br />
                         </span>
-                        lasting impression.
+                         leave a lasting impression.
                     </div>
                     
                     
                 </div>
-                <div className="flex justify-end">
-                    <div className="flex gap-32 justyfy-start lg:justify-end mt-8 lg:mt-12">
-                        <p className='text-xsmall w-full lg:w-[56%] columns-1 lg:columns-2 '>
+                <div className="flex xl:justify-end">
+                    <div className="flex gap-32 justyfy-start xl:justify-end mt-8 lg:mt-12">
+                        <p className='text-xsmall w-full xl:w-[56%] columns-1 lg:columns-2 '>
                             Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />
                             Built with the latest web technologies like CSS, JavaScript, ReactJS, NextJS, and APIs.
                             <br /><br />
@@ -94,7 +94,7 @@ const Projects = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-full flex justify-end ">
+                <div className="w-full flex justify-start xl:justify-end ">
                     <ProjectsList />
                 </div>
             </div>
