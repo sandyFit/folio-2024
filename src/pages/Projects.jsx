@@ -29,7 +29,9 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id='projects' className='w-full min-h-screen flex flex-col relative'>
+        <section id='projects'
+            border-cut="footer-btm"
+            className='w-full min-h-screen flex flex-col relative'>
             <button
                 onClick={scrollToTop}
                 className={`fixed hidden xl-sm:flex title-h4-dark top-left-btn justify-center items-center right-2 
@@ -61,7 +63,9 @@ const Projects = () => {
                         leave a lasting impression.
                     </div>
                 </article>
-                <article className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-full xl-sm:w-[60vw] xl:w-[56%] lg-lg:ml-auto">
+
+                <article className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[57vw] 
+                    2xl:w-[56%] lg-lg:ml-auto">
                     <div className="flex gap-32 justify-start lg-lg:justify-end w-full">
                         <p className='text-xsmall w-full columns-1 lg:columns-2'>
                             Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />

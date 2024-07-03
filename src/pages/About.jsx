@@ -49,8 +49,12 @@ const About = () => {
                         </span>                   
                     </div>
 
+                    
+                </article>
+
+                <article className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
                     <div className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
-                        <p className='text-xsmall w-full xl:w-[56%] columns-1 lg:columns-2 gap-[2em]'>
+                        <p className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
                             
                             I'm a self-taught frontend developer specializing in the React ecosystem.<br />
                             I love creating smooth animations, engaging transitions, and tackling complex
@@ -72,9 +76,6 @@ const About = () => {
                             <a href='mailto:sandy07r@gmail.com' className='text-zinc-50 ml-1'>info@trishramos.com</a>.
                         </p>
                     </div>
-                </article>
-
-                <article className="flex flex-col w-full xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
                     <div className="flex justify-start w-full h-[8%] py-4">
                         <span className='title-h4 tracking-widest uppercase'>
                             My Toolkit

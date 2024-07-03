@@ -369,13 +369,19 @@
         base:text-[1.5rem] 
         lg:text-[1.55rem] 
         lg-md:text-[2rem]
+        lg-lg:text-[1.82rem]
+        lg-2xl:text-[2.1rem]
         xl-sm:text-[2.2rem]
-        xl-md:text-[2.5rem]
+        xl-md:text-[2.2rem]
+        xl:text-[2.38rem]
+        xl-lg:text-[2.5rem]
         2xl:text-[3.6rem]
         lg:leading-[32px]
         lg-md:leading-[38px]
+        lg-2xl:leading-[40px]     
         xl-md:leading-[43px]
-        xl:leading-[60px] 
+        xl:leading-[46px] 
+        2xl:leading-[60px] 
     }
 
     .title-h2-thin {
@@ -385,13 +391,17 @@
         base:text-[1.5rem] 
         lg:text-[1.55rem] 
         lg-md:text-[2rem]
+        lg-lg:text-[1.82rem]
+        lg-2xl:text-[2.1rem]
         xl-sm:text-[2.2rem]
         xl-md:text-[2.5rem]
         2xl:text-[3.6rem]
         lg:leading-[32px]
         lg-md:leading-[38px]
+        lg-2xl:leading-[40px]
         xl-md:leading-[43px]
-        xl:leading-[60px] 
+        xl:leading-[46px] 
+        2xl:leading-[60px] 
     }
     
     
@@ -444,7 +454,8 @@
         md:text-[3rem] 
         lg:text-[3.6rem] 
         xl-sm:text-[3.2rem]
-        xl:text-[4.7rem] 
+        xl:text-[3.8rem] 
+        2xl:text-[4.7rem] 
         leading-[88%] 
         
     }
@@ -473,8 +484,13 @@
     }
 
     .sm-title {
-      @apply morganite-bold text-[2rem] md:text-[2.8rem] lg:text-[3.6rem] xl:text-[4.7rem] font-[400] uppercase tracking-wide  
-          text-cyan-300 leading-[88%]
+      @apply morganite-bold text-cyan-300 leading-[88%] font-[400] uppercase tracking-wide 
+        text-[2rem] 
+        md:text-[2.8rem] 
+        lg:text-[3.6rem] 
+        xl:text-[3.8rem]  
+        2xl:text-[4.7rem]  
+          
     }
 
     
@@ -494,9 +510,13 @@
         md:text-[10rem] 
         lg:text-[8.06rem] 
         lg-md:text-[9.7rem]
-        lg-lg:text-[11.3rem]
-        xl-sm:text-[12.8rem]
-        xl:text-[15.5rem] 
+        lg-lg:text-[10.5rem]
+        lg-xl:text-[11.3rem]
+        lg-2xl:text-[12rem]
+        xl-sm:text-[12.3rem]
+        xl-md:text-[13.2rem]
+        xl:text-[14rem] 
+        xl-lg:text-[15.5rem] 
         2xl:text-[22.24vw] 
         leading-[98px] 
         md:leading-[120px]

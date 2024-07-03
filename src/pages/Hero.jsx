@@ -43,16 +43,16 @@ const Hero = () => {
     return (
         <section id="index"
             className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 base:px-12
-                lg-lg:px-16'>
+                xl-sm:px-16'>
 
             <div
                 border-cut="bottom-right-black" 
                 className="grid">
                 <div className="flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-6 lg-lg:grid-cols-12">
-                        <article className="w-full col-span-1 lg:col-span-3 lg-lg:col-span-4 xl:col-span-3 
-                            row-start-2 col-start-1 flex flex-col mr-12 uppercase text-zinc-300 mt-24
-                            lg:mt-0 xl:mt-[-1.8rem] relative">
+                        <article className="w-full col-span-1 lg:col-span-3 lg-lg:col-span-4 xl-lg:col-span-3 
+                            row-start-2 col-start-1 flex flex-col  uppercase text-zinc-300 mt-24
+                            lg:mt-[-1.2rem] xl:mt-[-1.8rem] relative">
                             <span className='w-full text-xxsmall text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking roles or opportunities to
                                 innovate & collaborate on web development projects.
@@ -73,11 +73,11 @@ const Hero = () => {
                         </div>
                     </div>                
                 
-                    <div className="grid items-start mt-16 md:mt-10 base:mt-16 lg:mt-24 lg-md:mt-56 xl-sm:mt-48
-                        xl:mt-28 2xl:mt-36 text-center">
+                    <div className="grid  mt-16 md:mt-10 base:mt-16 lg:mt-64 lg-md:mt-60 lg-lg:mt-52 lg-2xl:mt-56 
+                        xl-sm:mt-52 xl:mt-40 xl-lg:mt-28 2xl:mt-36 ">
                         <article className='hidden lg:grid lg:grid-cols-1 xl:grid-cols-12 '>
-                            <h3 className='title-h3 col-span-6 col-start-1 lg:col-start-9 row-start-1 
-                                whitespace-nowrap '>
+                            <h3 className='title-h3 col-span-6 col-start-1 lg:col-start-9 xl:col-start-8 row-start-1 
+                                whitespace-nowrap flex justify-end'>
                                 Graphic
                                 <span className='title-h3-thin mx-3 '>designer</span>
                                 &

@@ -124,20 +124,21 @@ export default {
       'sm': '320px',
       'md': '420px',
       'base': '500px',
+      'lg-sm': '600px',     
       'lg': '650px',
       'lg-md': '750px', 
-      'lg-lg': '850px', 
+      'lg-lg': '800px', 
+      'lg-xl': '850px', 
+      'lg-2xl': '900px', 
       'xl-sm': '950px', 
-      'xl-md': '1050px', 
-      'xl': '1100px',
+      'xl-md': '1000px', 
+      'xl': '1050px',
+      'xl-lg': '1100px',
       '2xl': '1300px',
       '3xl': '1500px',
     },
 
-      gridTemplateRows: {
-        'customHero': '1fr 1fr 1fr 1fr 1fr 1fr', // Default for smaller screens
-        'customHero-lg': '15vh 15vh 15vh 15vh 15vh 15vh', // For larger screens
-      },
+      
 
       fontFamily: {
         grotesk: ['Familjen Grotesk', 'sans-serif'],

@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <section className='w-full h-[80px] absolute top-0 z-20 flex justify-between px-6 md:px-10
-            base:px-12 2xl:px-16'>
+            base:px-12 xl-sm:px-16'>
             <div className="w-full grid grid-cols-1 place-content-between mt-9 xl:mt-12 relative">
                 <div className="grid grid-cols-12 place-content-between items-center w-full relative 
                     before:absolute before:h-[1px] before:bg-cyan-300 before:w-full before:top-12 
