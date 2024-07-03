@@ -44,9 +44,8 @@ const ProjectsList = () => {
         <section
             id="projects-list"
             className="w-full mt-12 lg:mt-8 flex relative">
-            <div className="w-full flex justify-start xl:justify-end pb-12 xl:pb-16">
-                <ul className="flex flex-col items-start xl:items-end relative w-[40%] md:w-[90vw] lg:w-full
-                    xl:w-[40vw] projects">
+            <div className="w-full flex justify-start lg-md:justify-end pb-12 xl:pb-16">
+                <ul className="w-full flex flex-col items-start lg-md:items-end relative projects">
                     {projects.map((project, index) => (
                         <li key={index}
                             ref={el => projectsRef.current[index] = el}
@@ -84,7 +83,7 @@ const ProjectsList = () => {
                                         {`00${index + 1}`}
                                     </div>
                                 </div>
-                                <div className="w-[65vw] lg:w-[71vw] xl:w-[44.6vw] flex flex-col items-start pt-3 
+                                <div className="w-full  flex flex-col items-start pt-3 
                                     xl:pt-5">
                                     <div className="w-full flex justify-between items-center">
                                         <div className="w-full flex pl-1.5 md:pl-2.5 xl:pl-6">

@@ -1,7 +1,5 @@
 import React from 'react';
-import TextShimmerEffect from '../components/featured/TextShimmerEffect';
 import '../assets/css/borders.css';
-import ToolTable from '../components/ui/ToolTable';
 import CodeIcon from '../components/ui/CodeIcon';
 import Header from '../components/ui/Header';
 import Tools from '../components/ui/Tools';
@@ -20,7 +18,7 @@ const About = () => {
                  <Header title='info' />
                 <article className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
-                        <div className='title-h2 relative hidden xl:block'>
+                        <div className='title-h2 relative hidden lg-lg:block'>
                             ⋙ graphic designer turned <br/> 
                             <span className="title-h2-thin">
                                 frontend developer. <br/>
@@ -31,7 +29,7 @@ const About = () => {
                             </span>
                         </div>
 
-                        <div className='title-h2-mobile relative block xl:hidden whitespace-nowrap'>
+                        <div className='title-h2-mobile relative block lg-lg:hidden whitespace-nowrap'>
                             ⋙ graphic designer turned <br/>
                             <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
                                 frontend developer. <br/>
@@ -58,7 +56,7 @@ const About = () => {
                             I love creating smooth animations, engaging transitions, and tackling complex
                             layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />
-                            As both a designer and developer, I take a holistic approach to my work. I appreciate
+                            With a background in design, I have a deep understanding on
                             what goes into crafting beautiful, polished user experiences while navigating the
                             complexities of web development.
 

@@ -30,7 +30,7 @@ const Navbar = () => {
                         Trish Ramos
                     </h3>
 
-                    <div className='hidden xl:flex col-span-5 col-start-9 w-full relative justify-end'>
+                    <div className='hidden lg-lg:flex col-span-5 col-start-9 w-full relative justify-end'>
                         <ul className="flex justify-between gap-2 xsm-title">
                             <NavItem to="projects">projects,</NavItem>
                             <NavItem to="info">info,</NavItem>
@@ -39,7 +39,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <div className="flex xl:hidden col-span-1 col-start-11 row-start-1 ">
+                    <div className="flex lg-lg:hidden col-span-1 col-start-11 row-start-1 ">
                         <MenuBtn onClick={handleClick} visible={visible} />
                         <div className="flex">
                             <MobileMenu isMenuOpen={visible} />

@@ -33,8 +33,8 @@ const TextNav = () => {
 
                 <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">               
                     <div className="flex flex-col items-start">
-                        <article className='grid place-content-start'>
-                            <div className="hidden xl:grid grid-cols-12 relative">
+                        <article className='w-full grid place-content-start'>
+                            <div className="hidden lg-lg:grid grid-cols-12 relative">
                                 <span className="title-h2 col-span-12 col-start-1 row-start-1 whitespace-nowrap">
                                     ⋙ wheather you need a full-time team
                                 </span>
@@ -58,7 +58,7 @@ const TextNav = () => {
                                 </span>
                             </div>
 
-                            <div className="grid xl:hidden grid-cols-1 relative title-h2-mobile whitespace-nowrap">
+                            <div className="grid lg-lg:hidden grid-cols-1 relative title-h2-mobile whitespace-nowrap">
                                 <span className='title-h2-mobile col-span-1 col-start-1 row-start-1
                                     whitespace-nowrap'>
                                     ⋙ wheather you need a full <br/>                                        
@@ -77,7 +77,8 @@ const TextNav = () => {
                                     whitespace-nowrap'>
                                     all ears!
                                 </span>
-                                <span className='title-h2-mobile row-start-5 ml-20 md:ml-[6.5rem] lg:ml-2 z-20 whitespace-nowrap'>
+                                <span className='title-h2-mobile row-start-5 ml-20 md:ml-[6.5rem] lg:ml-2 lg-md:ml-[-6rem]
+                                    z-20 whitespace-nowrap'>
                                     <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
                                         after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] 
                                         after:w-full 
@@ -88,7 +89,7 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='col-span-8 row-start-4 mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 flex 
+                            <span className='w-full col-span-8 row-start-4 mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 flex 
                                 md:justify-center whitespace-nowrap'>
                                 <span className='relative'>
                                     <EmailBtn/>                                   

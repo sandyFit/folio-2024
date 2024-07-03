@@ -121,15 +121,18 @@ export default {
       },
 
       screens: {
-        'sm': '320px',
-        'md': '420px',
-        'base': '500px',
-        'lg': '650px',
-        'xl': '1100px',
-        '2xl': '1300px',
-        '3xl': '1500px',
-        
-      },
+      'sm': '320px',
+      'md': '420px',
+      'base': '500px',
+      'lg': '650px',
+      'lg-md': '750px', 
+      'lg-lg': '850px', 
+      'xl-sm': '950px', 
+      'xl-md': '1050px', 
+      'xl': '1100px',
+      '2xl': '1300px',
+      '3xl': '1500px',
+    },
 
       gridTemplateRows: {
         'customHero': '1fr 1fr 1fr 1fr 1fr 1fr', // Default for smaller screens

@@ -29,14 +29,11 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id='projects'
-            className='w-full min-h-screen flex flex-col justify-center items-start relative'>
-            
+        <section id='projects' className='w-full min-h-screen flex flex-col relative'>
             <button
                 onClick={scrollToTop}
-                
-                className={`fixed hidden xl:flex title-h4-dark top-left-btn justify-center items-center right-2 
-                    bottom-80 w-12 h-[4.5rem] pt-1 z-[40] group 
+                className={`fixed hidden xl-sm:flex title-h4-dark top-left-btn justify-center items-center right-2 
+                    bottom-80 w-10 h-[4rem] 2xl:w-12 2xl:h-[4.5rem] pt-1 z-[40] group 
                     ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
                 <span className={`duration-700 [transition-delay:.02] group-hover:[transform:rotateY(360deg)] 
@@ -45,60 +42,42 @@ const Projects = () => {
                         group-hover:text-cyan-900`}>P</span>
             </button>
 
-            <div
-                border-cut="footer-btm"
-                className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 2xl:px-16">
+            <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl-sm:px-16">
                 <Header title='projects' />
-                <div className="w flex justify-center relative mt-0 lg:mt-12">
-                    <div className='title-h2 relative hidden xl:block'>
+                <article className="w-full flex justify-start relative mt-0 lg:mt-12">
+                    <div className='title-h2 relative hidden lg-lg:block'>
                         ⋙ Crafted with Care & a
-                        <span className="title-h2-thin ml-4">
-                            Dash of Flair.
-                        </span><br />
+                        <span className="title-h2-thin ml-4">Dash of Flair.</span><br />
                         ∎ 
-                        <span className="title-h2-thin ml-4">
-                             Designing every detail 
-                        </span>
-                        <span className="title-h2 ml-4">
-                            to function smoothly & leave a 
-                        </span>
-                        <span className="title-h2-thin ml-4">
-                            lasting impression.
-                        </span>
+                        <span className="title-h2-thin ml-4">Designing every detail</span>
+                        <span className="title-h2 ml-2 2xl:ml-4 ">to function<br /> smoothly & leave a </span>
+                        <span className="title-h2-thin ml-2 2xl:ml-4">lasting impression.</span>
                     </div>
-                        
-
-                    <div className='title-h2-mobile relative block xl:hidden whitespace-nowrap'>
-                        ⋙ Crafted with Care & a  <br />
-                        <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
-                            Dash of Flair.
-                        </span><br />
+                    <div className='title-h2-mobile relative block lg-lg:hidden whitespace-nowrap'>
+                        ⋙ Crafted with Care & a <br />
+                        <span className="title-h2-mobile italic font-[100] whitespace-nowrap">Dash of Flair.</span><br />
                         ∎ designing every detail to <br />
-                        <span className="title-h2-mobile italic font-[100]">
-                            function smoothly &<br />
-                        </span>
-                         leave a lasting impression.
+                        <span className="title-h2-mobile italic font-[100]">function smoothly &<br /></span>
+                        leave a lasting impression.
                     </div>
-                    
-                    
-                </div>
-                <div className="flex xl:justify-end">
-                    <div className="flex gap-32 justyfy-start xl:justify-end mt-8 lg:mt-12">
-                        <p className='text-xsmall w-full xl:w-[56%] columns-1 lg:columns-2 '>
+                </article>
+                <article className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-full xl-sm:w-[60vw] xl:w-[56%] lg-lg:ml-auto">
+                    <div className="flex gap-32 justify-start lg-lg:justify-end w-full">
+                        <p className='text-xsmall w-full columns-1 lg:columns-2'>
                             Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />
                             Built with the latest web technologies like CSS, JavaScript, ReactJS, NextJS, and APIs.
                             <br /><br />
                             While I'm still early in my career journey, I'm eager to share what I've built so far and continue growing in the field.
-                            
                             Explore my projects below and see my passion in action!
                         </p>
                     </div>
-                </div>
-                <div className="w-full flex justify-start xl:justify-end ">
-                    <ProjectsList />
-                </div>
+                    <div className="w-full">
+                        <ProjectsList />
+                    </div>
+                </article>
             </div>
         </section>
+
     );
 }
 

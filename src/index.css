@@ -363,13 +363,35 @@
     }
 
     .title-h2{
-      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] lg:text-[1.55rem] lg:leading-[32px]
-        xl:leading-[60px] 2xl:text-[3.6rem] font-[400] uppercase tracking-wider
+      @apply text-zinc-50 font-inter font-[400] uppercase tracking-wider 
+        text-[1.24rem] 
+        md:text-[1.48rem] 
+        base:text-[1.5rem] 
+        lg:text-[1.55rem] 
+        lg-md:text-[2rem]
+        xl-sm:text-[2.2rem]
+        xl-md:text-[2.5rem]
+        2xl:text-[3.6rem]
+        lg:leading-[32px]
+        lg-md:leading-[38px]
+        xl-md:leading-[43px]
+        xl:leading-[60px] 
     }
 
     .title-h2-thin {
-      @apply text-zinc-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] lg:text-[1.55rem] 
-        lg:leading-[32px] xl:leading-[60px] 2xl:text-[3.6rem] font-[100] italic uppercase tracking-wider
+      @apply text-zinc-50 font-inter font-[100] italic uppercase tracking-wider 
+        text-[1.24rem] 
+        md:text-[1.48rem] 
+        base:text-[1.5rem] 
+        lg:text-[1.55rem] 
+        lg-md:text-[2rem]
+        xl-sm:text-[2.2rem]
+        xl-md:text-[2.5rem]
+        2xl:text-[3.6rem]
+        lg:leading-[32px]
+        lg-md:leading-[38px]
+        xl-md:leading-[43px]
+        xl:leading-[60px] 
     }
     
     
@@ -385,12 +407,26 @@
     
 
      .title-h3 {
-      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[45px]
-        2xl:text-[2.5rem] font-[400] uppercase tracking-wider
+      @apply text-zinc-50 font-inter font-[400] uppercase tracking-wider 
+        text-[1.24rem] 
+        md:text-[1.48rem] 
+        base:text-[1.5rem] 
+        lg-md:text-[1.7rem]
+        xl-sm:text-[2rem]
+        xl:text-[2rem] 
+        2xl:text-[2.5rem] 
+        leading-[45px]
     }
     .title-h3-thin {
-      @apply text-zinc-50 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[45px]
-        2xl:text-[2.5rem] font-[100] italic uppercase tracking-wider
+      @apply text-zinc-50 font-inter font-[100] italic uppercase tracking-wider 
+        text-[1.24rem] 
+        md:text-[1.48rem] 
+        base:text-[1.5rem] 
+        lg-md:text-[1.7rem]
+        xl-sm:text-[2rem]
+        xl:text-[2rem] 
+        2xl:text-[2.5rem] 
+        leading-[45px]
     }
 
     .title-h4 {
@@ -403,8 +439,14 @@
     }
 
     .title-h4-dark {
-      @apply morganite-bold text-[2.2rem] md:text-[3rem] lg:text-[3.6rem] xl:text-[4.7rem] leading-[88%] 
-        font-[900] uppercase text-zinc-950
+      @apply morganite-bold font-[900] uppercase text-zinc-950 
+        text-[2.2rem] 
+        md:text-[3rem] 
+        lg:text-[3.6rem] 
+        xl-sm:text-[3.2rem]
+        xl:text-[4.7rem] 
+        leading-[88%] 
+        
     }
 
     .title-h5-inter {
@@ -447,10 +489,18 @@
     }
     
     .big-title {
-      @apply morganite-bold text-[7.8rem] md:text-[10rem] lg:text-[8.06rem] 2xl:text-[22.24vw] font-[100] leading-[98px] md:leading-[120px]
-        2xl:leading-[160px] tracking-[3px] uppercase 
-        text-cyan-300
-
+      @apply morganite-bold font-[100]  tracking-[3px] uppercase  text-cyan-300 
+        text-[7.8rem] 
+        md:text-[10rem] 
+        lg:text-[8.06rem] 
+        lg-md:text-[9.7rem]
+        lg-lg:text-[11.3rem]
+        xl-sm:text-[12.8rem]
+        xl:text-[15.5rem] 
+        2xl:text-[22.24vw] 
+        leading-[98px] 
+        md:leading-[120px]
+        2xl:leading-[160px] 
     }
 
     /* =========== MENU BTN =========== */

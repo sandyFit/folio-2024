@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import MobileHeader from './MobileHeader';
 
 const Header = ({ title }) => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 950);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 1100);
+            setIsMobile(window.innerWidth < 950);
         };
 
         window.addEventListener('resize', handleResize);
