@@ -13,9 +13,9 @@ const About = () => {
             relative'>
             <div
                 border-cut="top-and-bottom-about"
-                className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 2xl:px-16">
+                className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 xl-sm:px-16">
                 
-                 <Header title='info' />
+                <Header title='info' />
                 <article className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative hidden lg-lg:block'>
@@ -52,7 +52,8 @@ const About = () => {
                     
                 </article>
 
-                <article className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
+                <article className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 2xl-sm:w-[52vw] 
+                    2xl-xl:w-[50vw] 3xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
                     <div className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
                         <p className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
                             

@@ -299,7 +299,8 @@
     }
 
     .text-xsmall {
-      @apply font-inter text-zinc-400 text-[.8rem] md:text-[1rem] lg:text-[.8rem] xl:text-[1rem] font-[300] 
+      @apply font-inter text-zinc-400 text-[.8rem] md:text-[1rem] lg:text-[.8rem] xl:text-[.9rem] 2xl:text-[1rem]
+        font-[300] 
     }
 
 
@@ -317,8 +318,13 @@
     }
 
     .text-xxsmall {
-      @apply font-inter text-zinc-400 text-[.72rem] md:text-[.78rem] lg:text-[.75rem] 2xl:text-[.9rem] font-[400] 
-      uppercase
+      @apply font-inter text-zinc-400 font-[400] uppercase
+      text-[.72rem] 
+      md:text-[.78rem] 
+      lg:text-[.75rem]  
+      xl-2xl:text-[.8rem]
+      2xl:text-[.9rem] 
+      
     }
    
     .text-xxsmall-min {
@@ -374,13 +380,21 @@
         xl-sm:text-[2.2rem]
         xl-md:text-[2.2rem]
         xl:text-[2.38rem]
-        xl-lg:text-[2.5rem]
-        2xl:text-[3.6rem]
+        xl-lg:text-[2.6rem]
+        xl-2xl:text-[2.8rem]
+        2xl-sm:text-[3rem]
+        2xl-lg:text-[3.2rem]
+        2xl-xl:text-[3.4rem]
+        3xl:text-[3.6rem]
         lg:leading-[32px]
         lg-md:leading-[38px]
         lg-2xl:leading-[40px]     
         xl-md:leading-[43px]
         xl:leading-[46px] 
+        xl-2xl:leading-[48px]
+        2xl-sm:leading-[50px]
+        2xl-lg:leading-[54px]
+        2xl-xl:leading-[58px]
         2xl:leading-[60px] 
     }
 
@@ -395,13 +409,23 @@
         lg-2xl:text-[2.1rem]
         xl-sm:text-[2.2rem]
         xl-md:text-[2.5rem]
-        2xl:text-[3.6rem]
+        xl:text-[2.38rem]
+        xl-lg:text-[2.6rem]
+        xl-2xl:text-[2.8rem]
+        2xl-sm:text-[3rem]
+        2xl-lg:text-[3.2rem]
+        2xl-xl:text-[3.4rem]
+        3xl:text-[3.6rem]
         lg:leading-[32px]
         lg-md:leading-[38px]
         lg-2xl:leading-[40px]
         xl-md:leading-[43px]
         xl:leading-[46px] 
-        2xl:leading-[60px] 
+        xl-2xl:leading-[48px]
+        2xl-sm:leading-[50px]
+        2xl-lg:leading-[54px]
+        2xl-xl:leading-[58px]
+        3xl:leading-[60px] 
     }
     
     
@@ -455,13 +479,13 @@
         lg:text-[3.6rem] 
         xl-sm:text-[3.2rem]
         xl:text-[3.8rem] 
-        2xl:text-[4.7rem] 
+        2xl-xl:text-[4.7rem] 
         leading-[88%] 
         
     }
 
     .title-h5-inter {
-      @apply  font-inter text-zinc-50 text-[.7rem] 2xl:text-[1rem] font-[400] uppercase tracking-wider 
+      @apply  font-inter text-zinc-50 text-[.7rem] 2xl-sm:text-[1rem] font-[400] uppercase tracking-wider 
     }
 
     .title-h5 {
@@ -489,7 +513,7 @@
         md:text-[2.8rem] 
         lg:text-[3.6rem] 
         xl:text-[3.8rem]  
-        2xl:text-[4.7rem]  
+        2xl-xl:text-[4.7rem]  
           
     }
 
@@ -516,8 +540,15 @@
         xl-sm:text-[12.3rem]
         xl-md:text-[13.2rem]
         xl:text-[14rem] 
-        xl-lg:text-[15.5rem] 
-        2xl:text-[22.24vw] 
+        xl-lg:text-[14.8rem] 
+        xl-xl:text-[15.6rem]
+        xl-2xl:text-[16.4rem]
+        2xl-sm:text-[17.2rem]
+        2xl-md:text-[18rem]
+        2xl-lg:text-[18.8rem]
+        2xl-xl:text-[19.6rem]
+        3xl-sm:text-[20.3rem]
+        3xl:text-[22.24vw] 
         leading-[98px] 
         md:leading-[120px]
         2xl:leading-[160px] 

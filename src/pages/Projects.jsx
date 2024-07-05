@@ -35,7 +35,7 @@ const Projects = () => {
             <button
                 onClick={scrollToTop}
                 className={`fixed hidden xl-sm:flex title-h4-dark top-left-btn justify-center items-center right-2 
-                    bottom-80 w-10 h-[4rem] 2xl:w-12 2xl:h-[4.5rem] pt-1 z-[40] group 
+                    bottom-80 w-10 h-[4rem] 2xl-xl:w-12 2xl-xl:h-[4.5rem] pt-1 z-[40] group 
                     ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
                 <span className={`duration-700 [transition-delay:.02] group-hover:[transform:rotateY(360deg)] 
@@ -64,8 +64,8 @@ const Projects = () => {
                     </div>
                 </article>
 
-                <article className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[57vw] 
-                    2xl:w-[56%] lg-lg:ml-auto">
+                <article className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 
+                    2xl-sm:w-[52vw] 2xl-xl:w-[50vw] 3xl:w-[56%] lg-lg:ml-auto">
                     <div className="flex gap-32 justify-start lg-lg:justify-end w-full">
                         <p className='text-xsmall w-full columns-1 lg:columns-2'>
                             Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />

@@ -57,14 +57,14 @@ const ProjectsList = () => {
                                 <div className="flex relative">
                                     <svg width="6rem" height="5rem" viewBox="0 0 60 50"
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className='hidden 2xl:block' preserveAspectRatio="xMidYMid meet">
+                                        className='hidden 2xl-xl:block' preserveAspectRatio="xMidYMid meet">
                                         <polygon points="0,0 60,0 60,50 15,50 0,34"
                                             style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
                                     </svg>
 
                                     <svg width="3.2rem" height="2.3rem" viewBox="0 0 60 45"
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className='block 2xl:hidden w-[3.2rem] h-[2.3rem] md:w-[4rem] md:h-[3rem] 
+                                        className='block 2xl-xl:hidden w-[3.2rem] h-[2.3rem] md:w-[4rem] md:h-[3rem] 
                                             lg:w-[5rem] lg:h-[3.8rem]'
                                         preserveAspectRatio="xMidYMid meet">
                                         <polygon points="0,0 60,0 60,45 15,45 0,30"
@@ -79,25 +79,25 @@ const ProjectsList = () => {
                                     </svg> */}
 
                                     <div className="flex title-h4-dark absolute left-4 md:left-5 lg:left-[1.8rem]  
-                                        2xl:left-[2.2rem] top-1 lg:top-2 ">
+                                        2xl-xl:left-[2.2rem] top-1 lg:top-2 ">
                                         {`00${index + 1}`}
                                     </div>
                                 </div>
                                 <div className="w-full  flex flex-col items-start pt-3 
-                                    2xl:pt-5">
+                                    2xl-xl:pt-5">
                                     <div className="w-full flex justify-between items-center">
                                         <div className="w-full flex pl-1.5 md:pl-2.5 xl:pl-6">
                                             <div className="flex w-full sm-title z-[3] whitespace-nowrap">
                                                 {project.title}
                                             </div>
                                         </div>
-                                        <div className="hidden 2xl:flex">
+                                        <div className="hidden 2xl-xl:flex">
                                             <SeeMore
                                                 isOpen={openProjectIndex === index}
                                                 handleToggle={() => handleToggle(index)}
                                             />
                                         </div>
-                                        <div className="flex 2xl:hidden">
+                                        <div className="flex 2xl-xl:hidden">
                                             <SeeMoreSmall
                                                 isOpen={openProjectIndex === index}
                                                 handleToggle={() => handleToggle(index)}
@@ -110,7 +110,8 @@ const ProjectsList = () => {
                                                 <img
                                                     src="/img/hero.png"
                                                     alt="Radiant Website"
-                                                    className='w-full bg-cover sticky top-16 left-[10%] py-[1.375rem] z-[5]'
+                                                    className='w-full bg-cover sticky top-16 left-[10%] py-[1.375rem] 
+                                                    z-[5]'
                                                 />
                                             </div>
                                             <div className="flex flex-col justify-end w-full mt-auto">

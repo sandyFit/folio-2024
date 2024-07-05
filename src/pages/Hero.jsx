@@ -50,7 +50,7 @@ const Hero = () => {
                 className="grid">
                 <div className="flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-6 lg-lg:grid-cols-12">
-                        <article className="w-full col-span-1 lg:col-span-3 lg-lg:col-span-4 xl-lg:col-span-3 
+                        <article className="w-full col-span-1 lg:col-span-3 lg-lg:col-span-4 2xl-md:col-span-3 
                             row-start-2 col-start-1 flex flex-col  uppercase text-zinc-300 mt-24
                             lg:mt-[-1.2rem] xl:mt-[-1.8rem] relative">
                             <span className='w-full text-xxsmall text-justify'>
@@ -74,7 +74,7 @@ const Hero = () => {
                     </div>                
                 
                     <div className="grid  mt-16 md:mt-10 base:mt-16 lg:mt-64 lg-md:mt-60 lg-lg:mt-52 lg-2xl:mt-56 
-                        xl-sm:mt-52 xl:mt-40 xl-lg:mt-28 2xl:mt-36 ">
+                        xl-sm:mt-52 xl:mt-40 2xl-sm:mt-32 2xl-xl:mt-28">
                         <article className='hidden lg:grid lg:grid-cols-1 xl:grid-cols-12 '>
                             <h3 className='title-h3 col-span-6 col-start-1 lg:col-start-9 xl:col-start-8 row-start-1 
                                 whitespace-nowrap flex justify-end'>
@@ -83,7 +83,7 @@ const Hero = () => {
                                 &
                             </h3>
                             <h1 className="big-title col-span-12 col-start-1 row-start-2 lg-lg:mt-3 xl-sm:mt-5 xl:mt-10 
-                                2xl:mt-16 whitespace-nowrap">
+                                2xl-sm:mt-12 2xl-md:mt-[3.2rem] 2xl-xl:mt-[3.8rem] whitespace-nowrap">
                                 frontend developer
                             </h1>
                         </article>
