@@ -110,7 +110,7 @@ const Hero = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg-md:place-content-between 
                     whitespace-nowrap">
                     <div className="hidden lg-lg:flex text-xxsmall-cyan col-span-1 col-start-1 
-                        row-start-1 mt-6 md:mt-3 ">
+                        row-start-1 justify-start items-center">
                         portfolio
                         <span className='text-xxsmall-white ml-1.5'>
                             &copy;{new Date().getFullYear()}
@@ -126,8 +126,7 @@ const Hero = () => {
                         [ &nbsp; &nbsp;<ScrollBtn /> &nbsp;]
                     </div>
                     <div className="col-span-1 col-start-1 lg:col-start-3 row-start-2 lg:row-start-1 
-                        flex
-                        items-center justify-center lg:justify-end text-xxsmall ">
+                        flex items-center justify-center lg:justify-end text-xxsmall ">
                         <TimeZone/>
                     </div>
                 </div>

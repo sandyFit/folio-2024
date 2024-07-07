@@ -20,7 +20,7 @@ const About = () => {
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative hidden lg-lg:block'>
                             ⋙ graphic designer turned <br/> 
-                            <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full">
+                            <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
                                 frontend  
                             </span>
                             <span className="title-h2-thin ml-2">
@@ -30,26 +30,26 @@ const About = () => {
                             <span className="title-h2-thin">
                                 into digital 
                             </span>
-                            <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full">
+                            <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
                                 experiences.  
                             </span>
                         </div>
 
-                        <div className='title-h2-mobile relative block lg-lg:hidden whitespace-nowrap'>
+                        <div className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
                             ⋙ graphic designer turned <br />
-                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap 
-                                border-[1px] border-zinc-50 rounded-full">
+                            <span className="title-h2-thin whitespace-nowrap 
+                                border-[1px] border-zinc-50 px-2 rounded-full">
                                 frontend  
                             </span>
-                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap ml-3">
+                            <span className="title-h2-thin whitespace-nowrap ml-2">
                                 developer. <br/>
                             </span>
                             ∎ transforming  design into<br/> 
-                            <span className="title-h2-mobile italic font-[100]">
+                            <span className="title-h2-thin">
                                   digital 
                             </span>
-                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap 
-                                border-[1px] border-zinc-50 rounded-full ml-3">
+                            <span className="title-h2-thin whitespace-nowrap 
+                                border-[1px] border-zinc-50 px-2 rounded-full ml-2">
                                 experiences.<br/> 
                             </span>
                              

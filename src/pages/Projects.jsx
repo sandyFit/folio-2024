@@ -51,24 +51,27 @@ const Projects = () => {
                         ⋙ Crafted with Care & a
                         <span className="title-h2-thin ml-4">Dash of Flair.</span><br />
                         ∎ 
-                        <span className="title-h2-thin ml-4">Designing </span>
-                        <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full">
+                        <span className="title-h2-thin">Designing </span>
+                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
                                 every detail
                             </span>
-                        <span className="title-h2 ml-2 2xl:ml-4 ">to function<br /> smoothly & leave a </span>
-                        <span className="title-h2-thin ml-2 2xl:ml-4">lasting impression.</span>
+                        <span className="title-h2 lg-lg:ml-1 lg-xl:ml-2">to function<br /> smoothly & leave a </span>
+                        <span className="title-h2-thin ml-1">lasting impression.</span>
                     </div>
 
-                    <div className='title-h2-mobile relative block lg-lg:hidden whitespace-nowrap'>
+                    <div className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
                         ⋙ Crafted with Care & a <br />
-                        <span className="title-h2-mobile italic font-[100] whitespace-nowrap">Dash of Flair.</span><br />
+                        <span className="title-h2-thin italic font-[100] whitespace-nowrap">
+                            Dash of Flair.
+                        </span><br />
                         ∎ designing every detail to <br />
-                        <span className="title-h2-mobile italic font-[100] whitespace-nowrap">function</span>
-                        <span className="title-h2-mobile italic font-[100] border-[1px] border-zinc-50 
-                            whitespace-nowrap rounded-full ml-3">
-                                 smoothly <br/>
+                        <span className="title-h2-thin italic font-[100] whitespace-nowrap">function</span>
+                        <span className="title-h2-thin italic font-[100] border-[1px] border-zinc-50 px-2
+                            whitespace-nowrap rounded-full ml-2">
+                                 smoothly
                         </span>
-                        <span>& leave a lasting impression.</span>
+                            <span className="title-h2-thin italic font-[100] whitespace-nowrap ml-1">&</span><br />
+                        <span>leave a lasting impression.</span>
                        
                     </div>
                 </article>

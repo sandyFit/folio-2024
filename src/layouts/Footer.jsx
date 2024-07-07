@@ -38,24 +38,24 @@ const TextNav = () => {
                                 <span className="title-h2  whitespace-nowrap">
                                     ⋙ wheather you need a full-time <br/>
                                 </span>
-                                <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full whitespace-nowrap ">
+                                <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full 
+                                    whitespace-nowrap ">
                                     team member
                                 </span>
-                                <span className="title-h2-thin whitespace-nowrap ml-3">
+                                <span className="title-h2-thin whitespace-nowrap lg-lg:ml-1 lg-xl:ml-2">
                                      or just an 
                                 </span>
                                 of
-                                <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full whitespace-nowrap ">
-                                    extra pair
+                                <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full 
+                                    whitespace-nowrap ">
+                                    extra pair <br/>
                                 </span>
-                                <span className="title-h2-thin whitespace-nowrap ml-2">
-                                    of <br/>
-                                </span>
-                                <span className="title-h2  whitespace-nowrap">
-                                    creative hands for a project — I'm all<br/>
+                                
+                                <span className="title-h2 whitespace-nowrap">
+                                    of creative hands for a project — I'm <br/>
                                 </span>
                                 <span className="title-h2-thin  whitespace-nowrap">
-                                    ears & hands! 
+                                    all ears & hands! 
                                     <a href="mailto:sandy07r@gmail.com"
                                         className="relative text-cyan-300 font-[400] after:absolute after:bottom-0 
                                         after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom
@@ -69,35 +69,36 @@ const TextNav = () => {
                             </div>
 
                             <div className="flex lg-lg:hidden relative flex-col">
-                                <div className="title-h2-mobile">
+                                <div className="title-h2">
                                     ⋙ whether you need a full
                                 </div>
-                                <div className=" title-h2-mobile font-[100] italic whitespace-nowrap">
+                                <div className=" title-h2-thin whitespace-nowrap">
                                     time
-                                    <span className="whitespace-nowrap title-h2-mobile italic font-[100] border-[1px] 
-                                        border-zinc-50 rounded-full ml-3">
+                                    <span className="whitespace-nowrap title-h2-thin border-[1px] 
+                                        border-zinc-50 px-2 rounded-full ml-1">
                                         team member
                                     </span>
-                                    <span className="whitespace-nowrap title-h2-mobile font-[100] italic ml-3">
+                                    <span className="whitespace-nowrap title-h2-thin ml-1">
                                         or just
                                     </span>
                                 </div>
-                                <div className="whitespace-nowrap title-h2-mobile">
+                                <div className="whitespace-nowrap title-h2">
                                     an extra pair of creative
                                 </div>
-                                <div className="whitespace-nowrap title-h2-mobile font-[100] italic">
+                                <div className="whitespace-nowrap title-h2-thin">
                                     hands for a 
-                                    <span className="whitespace-nowrap title-h2-mobile italic font-[100] border-[1px] 
-                                        border-zinc-50 rounded-full ml-3">
+                                    <span className="whitespace-nowrap title-h2-thin border-[1px] 
+                                        border-zinc-50 px-2 rounded-full ml-1">
                                         project
                                     </span>
-                                    <span className="whitespace-nowrap title-h2-mobile ml-3">
+                                    <span className="whitespace-nowrap title-h2 ml-1">
                                          — I'm
                                     </span>
                                 </div>
-                                <div className="whitespace-nowrap title-h2-mobile">
+                                <div className="whitespace-nowrap title-h2">
                                     all ears!
-                                    <span className="whitespace-nowrap title-h2-mobile row-start-5 ml-20 md:ml-[6.5rem] lg:ml-3 lg-md:ml-[-6rem] z-20">
+                                    <span className="whitespace-nowrap title-h2 row-start-5 ml-3 md:ml-[1.2rem] 
+                                        lg:ml-3 lg-md:ml-[1rem] z-20">
                                         <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
                                             after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] 
                                             after:w-full after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
