@@ -1,5 +1,7 @@
 import React from 'react';
 import NavItem from './NavItem';
+import ColorBtn from '../buttons/ColorBtn';
+import MobileColorBtn from '../buttons/MobileColorBtn';
 
 const MobileMenu = ({ isMenuOpen }) => {
     return (
@@ -11,7 +13,10 @@ const MobileMenu = ({ isMenuOpen }) => {
                     <NavItem to="projects">projects</NavItem>
                     <NavItem to="info">info</NavItem>
                     <NavItem to="contact">contact</NavItem>
-                    <NavItem to="cv">CV</NavItem>                       
+                    <NavItem to="cv">CV</NavItem>  
+                    <div className="flex">
+                        <MobileColorBtn/>
+                    </div>
                 </ul>
             </article>
         </div>

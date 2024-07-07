@@ -468,7 +468,8 @@
     }
 
     .title-h4-min {
-      @apply morganite-bold text-[2.7rem] md:text-[3.4rem] base:text-[4rem]  xl:text-[5.5rem] 
+      @apply morganite-bold text-[2.7rem] md:text-[3.4rem] base:text-[4rem] lg:text-[4.3rem] xl:text-[4.5rem] 
+        2xl:text-[5rem] 3xl:text-[5.5rem] 
       font-[600] tracking-wide  text-cyan-300 leading-[88%]
     }
 
@@ -532,7 +533,8 @@
       @apply morganite-bold font-[100]  tracking-[3px] uppercase  text-cyan-300 
         text-[7.8rem] 
         md:text-[10rem] 
-        lg:text-[8.06rem] 
+        lg:text-[8.08rem]
+        lg-sm:text-[8.8rem] 
         lg-md:text-[9.7rem]
         lg-lg:text-[10.5rem]
         lg-xl:text-[11.3rem]

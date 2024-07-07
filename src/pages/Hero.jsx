@@ -5,6 +5,7 @@ import SplitType from 'split-type';
 import '../assets/css/borders.css';
 import ScrollBtn from '../components/buttons/ScrollBtn';
 import TimeZone from '../components/ui/TimeZone';
+import ColorBtn from '../components/buttons/ColorBtn';
 
 const Hero = () => {
     useEffect(() => {
@@ -49,33 +50,34 @@ const Hero = () => {
                 border-cut="bottom-right-black" 
                 className="grid">
                 <div className="flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-6 lg-lg:grid-cols-12">
-                        <article className="w-full col-span-1 lg:col-span-3 lg-lg:col-span-4 xl-lg:col-span-3 
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-3 lg-xl:grid-cols-4 xl:grid-cols-12">
+                        <article className="w-full col-span-1 lg:col-span-2  xl:col-span-4 2xl-xl:col-span-3
                             row-start-2 col-start-1 flex flex-col  uppercase text-zinc-300 mt-24
-                            lg:mt-[-1.2rem] xl:mt-[-1.8rem] relative">
+                            lg:mt-[-1.2rem] lg-lg:mt-[-2.2rem] xl:mt-[-1.8rem] relative">
                             <span className='w-full text-xxsmall text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking roles or opportunities to
                                 innovate & collaborate on web development projects.
-
+                                <br/>
                                 <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[500] 
                                     after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px] after:w-full 
                                     after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
                                     after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
-                                    hover:after:scale-x-100 ml-2 ">
+                                    hover:after:scale-x-100 ">
                                     Let's connect
                                 </a>.
                             </span>
                         </article>
 
-                        <div className="hidden xl:flex col-span-1 col-start-12">
-                            <span className='w-[1rem] h-[1.1rem] rounded bg-cyan-300 ml-[5.65rem] mt-2'></span>
-                            <img src="/big-brackets.svg" alt="Big Brackets" className='absolute -right-10' />
+                        <div className="w-full hidden lg-lg:flex col-span-1 col-start-12 justify-end 
+                            ml-12">
+                            <ColorBtn/>
                         </div>
                     </div>                
                 
-                    <div className="grid mt-16 md:mt-10 base:mt-16 lg:mt-64 lg-md:mt-60 lg-lg:mt-52 lg-2xl:mt-56 
-                        xl-sm:mt-52 xl:mt-40 xl-lg:mt-36 xl-2xl:mt-32 2xl-sm:mt-28 2xl-md:mt-32 2xl-xl:mt-28 3xl:mt-32">
-                        <article className='hidden lg:grid lg:grid-cols-1 xl:grid-cols-12 '>
+                    <div className="grid mt-16 md:mt-10 lg:mt-64 lg-lg:mt-52 lg-2xl:mt-52
+                        xl-sm:mt-48 xl:mt-36 xl-lg:mt-36 xl-2xl:mt-32  2xl-md:mt-28
+                        2xl-xl:mt-20 3xl:mt-28">
+                        <article className='hidden lg:grid grid-cols-1 xl:grid-cols-12 '>
                             <h3 className='title-h3 col-span-6 col-start-1 lg:col-start-9 xl:col-start-8 row-start-1 
                                 whitespace-nowrap flex justify-end 3xl:mr-6'>
                                 Graphic
@@ -93,7 +95,7 @@ const Hero = () => {
                                 whitespace-nowrap text-center'>
                                 Graphic
                                 <span className='title-h3-thin mx-1'>designer</span > &</h3>
-                            <h1 className="big-title col-span-1 col-start-1 row-start-2 lg:mt-16 grid 
+                            <h1 className="big-title col-span-1 col-start-1 row-start-2  grid 
                                 place-items-center whitespace-nowrap">
                                 frontend <span>developer</span>
                             </h1>
@@ -102,28 +104,28 @@ const Hero = () => {
                 </div>
             </div>
 
-            <article className="mt-auto w-full mb-6 lg:mb-10">
-                <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:place-content-between 
+            <article className="mt-auto w-full mb-6 ">
+                <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg-md:place-content-between 
                     whitespace-nowrap">
-                    <div className="hidden lg:inline-flex text-xxsmall-cyan col-span-1 col-start-1 
-                        row-start-1 mt-6 md:mt-3 lg:mt-0">
+                    <div className="hidden lg-lg:inline-flex text-xxsmall-cyan col-span-1 col-start-1 
+                        row-start-1 mt-6 md:mt-3 ">
                         portfolio
                         <span className='text-xxsmall-white ml-1.5'>
                             &copy;{new Date().getFullYear()}
                         </span>
                     </div>
 
-                    <div className="flex lg:hidden text-xxsmall-white col-span-1 col-start-1 row-start-1 w-full
-                         whitespace-nowrap justify-center">
+                    <div className="flex lg-lg:hidden text-xxsmall-white col-span-1 col-start-1 row-start-1 w-full
+                         whitespace-nowrap justify-center lg:justify-start ">
                         folio &copy; {new Date().getFullYear()}
                     </div>
                     <div className="text-xxsmall-cyan col-span-1 col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 
-                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex justify-center">
+                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex justify-center ">
                         [ &nbsp; &nbsp;<ScrollBtn /> &nbsp;]
                     </div>
                     <div className="col-span-1 col-start-1 lg:col-start-3 row-start-2 lg:row-start-1 
                         flex
-                        items-center justify-center lg:justify-end text-xxsmall">
+                        items-center justify-center lg:justify-end text-xxsmall ">
                         <TimeZone/>
                     </div>
                 </div>

@@ -89,8 +89,8 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='w-full col-span-8 row-start-4 mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 flex 
-                                md:justify-center whitespace-nowrap'>
+                            <span className='w-full col-span-8 row-start-4 mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 
+                                flex md:justify-center whitespace-nowrap'>
                                 <span className='relative'>
                                     <EmailBtn/>                                   
                                 </span>
