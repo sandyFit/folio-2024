@@ -58,12 +58,18 @@ const Projects = () => {
                         <span className="title-h2 ml-2 2xl:ml-4 ">to function<br /> smoothly & leave a </span>
                         <span className="title-h2-thin ml-2 2xl:ml-4">lasting impression.</span>
                     </div>
+
                     <div className='title-h2-mobile relative block lg-lg:hidden whitespace-nowrap'>
                         ⋙ Crafted with Care & a <br />
                         <span className="title-h2-mobile italic font-[100] whitespace-nowrap">Dash of Flair.</span><br />
                         ∎ designing every detail to <br />
-                        <span className="title-h2-mobile italic font-[100]">function smoothly &<br /></span>
-                        leave a lasting impression.
+                        <span className="title-h2-mobile italic font-[100] whitespace-nowrap">function</span>
+                        <span className="title-h2-mobile italic font-[100] border-[1px] border-zinc-50 
+                            whitespace-nowrap rounded-full ml-3">
+                                 smoothly <br/>
+                        </span>
+                        <span>& leave a lasting impression.</span>
+                       
                     </div>
                 </article>
 

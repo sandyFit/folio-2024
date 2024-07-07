@@ -39,18 +39,18 @@ const TextNav = () => {
                                     ⋙ wheather you need a full-time <br/>
                                 </span>
                                 <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full whitespace-nowrap ">
-                                team member
-                            </span>
+                                    team member
+                                </span>
                                 <span className="title-h2-thin whitespace-nowrap ml-3">
                                      or just an 
                                 </span>
                                 of
                                 <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full whitespace-nowrap ">
-                                extra pair
-                            </span>
+                                    extra pair
+                                </span>
                                 <span className="title-h2-thin whitespace-nowrap ml-2">
-                                of <br/>
-                            </span>
+                                    of <br/>
+                                </span>
                                 <span className="title-h2  whitespace-nowrap">
                                     creative hands for a project — I'm all<br/>
                                 </span>
@@ -68,37 +68,47 @@ const TextNav = () => {
                                 </span>
                             </div>
 
-                            <div className="grid lg-lg:hidden grid-cols-1 relative title-h2-mobile whitespace-nowrap">
-                                <span className='title-h2-mobile col-span-1 col-start-1 row-start-1
-                                    whitespace-nowrap'>
-                                    ⋙ wheather you need a full <br/>                                        
-                                </span>
-                                <span className='title-h2-mobile font-[100] italic col-span-1 row-start-2 whitespace-nowrap'>
-                                    time team member or just                                
-                                </span>                              
-                                <span className='title-h2-mobile col-span-1 row-start-3 whitespace-nowrap'>
-                                      an extra pair of creative <br/> 
-                               </span>    
-                                <span className='title-h2-mobile font-[100] italic col-span-1 col-start-1 row-start-4
-                                     whitespace-nowrap'>
-                                    hands for a project —  I'm
-                                </span>
-                                <span className='title-h2-mobile col-span-1 col-start-1 row-start-5
-                                    whitespace-nowrap'>
+                            <div className="flex lg-lg:hidden relative flex-col">
+                                <div className="title-h2-mobile">
+                                    ⋙ whether you need a full
+                                </div>
+                                <div className=" title-h2-mobile font-[100] italic whitespace-nowrap">
+                                    time
+                                    <span className="whitespace-nowrap title-h2-mobile italic font-[100] border-[1px] 
+                                        border-zinc-50 rounded-full ml-3">
+                                        team member
+                                    </span>
+                                    <span className="whitespace-nowrap title-h2-mobile font-[100] italic ml-3">
+                                        or just
+                                    </span>
+                                </div>
+                                <div className="whitespace-nowrap title-h2-mobile">
+                                    an extra pair of creative
+                                </div>
+                                <div className="whitespace-nowrap title-h2-mobile font-[100] italic">
+                                    hands for a 
+                                    <span className="whitespace-nowrap title-h2-mobile italic font-[100] border-[1px] 
+                                        border-zinc-50 rounded-full ml-3">
+                                        project
+                                    </span>
+                                    <span className="whitespace-nowrap title-h2-mobile ml-3">
+                                         — I'm
+                                    </span>
+                                </div>
+                                <div className="whitespace-nowrap title-h2-mobile">
                                     all ears!
-                                </span>
-                                <span className='title-h2-mobile row-start-5 ml-20 md:ml-[6.5rem] lg:ml-2 lg-md:ml-[-6rem]
-                                    z-20 whitespace-nowrap'>
-                                    <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
-                                        after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] 
-                                        after:w-full 
-                                        after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
-                                        after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] 
-                                        hover:after:origin-bottom hover:after:scale-x-100">
-                                        Let's connect
-                                    </a>.
-                                </span>
+                                    <span className="whitespace-nowrap title-h2-mobile row-start-5 ml-20 md:ml-[6.5rem] lg:ml-3 lg-md:ml-[-6rem] z-20">
+                                        <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[400]
+                                            after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] 
+                                            after:w-full after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
+                                            after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] 
+                                            hover:after:origin-bottom hover:after:scale-x-100">
+                                            Let's connect
+                                        </a>.
+                                    </span>
+                                </div>
                             </div>
+
                             <span className='w-full mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 whitespace-nowrap'>
                                 <span className='flex justify-center w-full text-center'>
                                     <EmailBtn/>                                   

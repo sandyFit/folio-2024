@@ -36,13 +36,21 @@ const About = () => {
                         </div>
 
                         <div className='title-h2-mobile relative block lg-lg:hidden whitespace-nowrap'>
-                            ⋙ graphic designer turned <br/>
-                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap">
-                                frontend developer. <br/>
+                            ⋙ graphic designer turned <br />
+                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap 
+                                border-[1px] border-zinc-50 rounded-full">
+                                frontend  
+                            </span>
+                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap ml-3">
+                                developer. <br/>
                             </span>
                             ∎ transforming  design into<br/> 
                             <span className="title-h2-mobile italic font-[100]">
-                                  digital experiences.<br/> 
+                                  digital 
+                            </span>
+                            <span className="title-h2-mobile italic font-[100] whitespace-nowrap 
+                                border-[1px] border-zinc-50 rounded-full ml-3">
+                                experiences.<br/> 
                             </span>
                              
                         </div>
