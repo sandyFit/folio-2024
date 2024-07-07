@@ -20,12 +20,18 @@ const About = () => {
                     <div className="flex justify-between relative">
                         <div className='title-h2 relative hidden lg-lg:block'>
                             ⋙ graphic designer turned <br/> 
-                            <span className="title-h2-thin">
-                                frontend developer. <br/>
+                            <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full">
+                                frontend  
+                            </span>
+                            <span className="title-h2-thin ml-2">
+                                developer.  <br/>
                             </span>
                             ∎ transforming design<br/>
                             <span className="title-h2-thin">
-                                into digital experiences.
+                                into digital 
+                            </span>
+                            <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full">
+                                experiences.  
                             </span>
                         </div>
 

@@ -28,23 +28,33 @@ const TextNav = () => {
             className='w-full h-screen bg-zinc-950 relative flex flex-col'>
             
             <div border-cut="top-right-black"
-                className="flex flex-col px-6 md:px-10 base:px-12 xl:px-16">
+                className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16">
                 <Header title='contact'/>
 
-                <div className="flex flex-col mt-1 lg:mt-12 relative flex-grow">               
-                    <div className="flex flex-col items-start">
-                        <article className='w-full grid place-content-start'>
-                            <div className="hidden lg-lg:grid grid-cols-12 relative">
-                                <span className="title-h2 col-span-12 col-start-1 row-start-1 whitespace-nowrap">
-                                    ⋙ wheather you need a full-time team
+                <div className="w-full flex flex-col mt-1 lg:mt-12 relative flex-grow">               
+                    <div className="w-full flex flex-col items-start">
+                        <article className='w-full grid'>
+                            <div className="w-full hidden lg-lg:block relative">
+                                <span className="title-h2  whitespace-nowrap">
+                                    ⋙ wheather you need a full-time <br/>
                                 </span>
-                                <span className="title-h2-thin col-span-12 col-start-1 row-start-2 whitespace-nowrap">
-                                    member or just an extra pair of
+                                <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full whitespace-nowrap ">
+                                team member
+                            </span>
+                                <span className="title-h2-thin whitespace-nowrap ml-3">
+                                     or just an 
                                 </span>
-                                <span className="title-h2 col-span-12 col-start-1 row-start-3 whitespace-nowrap">
-                                    creative hands for a project — I'm all
+                                of
+                                <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full whitespace-nowrap ">
+                                extra pair
+                            </span>
+                                <span className="title-h2-thin whitespace-nowrap ml-2">
+                                of <br/>
+                            </span>
+                                <span className="title-h2  whitespace-nowrap">
+                                    creative hands for a project — I'm all<br/>
                                 </span>
-                                <span className="title-h2-thin col-span-12 col-start-1 row-start-4 whitespace-nowrap">
+                                <span className="title-h2-thin  whitespace-nowrap">
                                     ears & hands! 
                                     <a href="mailto:sandy07r@gmail.com"
                                         className="relative text-cyan-300 font-[400] after:absolute after:bottom-0 
@@ -89,9 +99,8 @@ const TextNav = () => {
                                     </a>.
                                 </span>
                             </div>
-                            <span className='w-full col-span-8 row-start-4 mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 
-                                flex md:justify-center whitespace-nowrap'>
-                                <span className='relative'>
+                            <span className='w-full mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 whitespace-nowrap'>
+                                <span className='flex justify-center w-full text-center'>
                                     <EmailBtn/>                                   
                                 </span>
                             </span>                                                    

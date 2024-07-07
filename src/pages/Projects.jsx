@@ -51,7 +51,10 @@ const Projects = () => {
                         ⋙ Crafted with Care & a
                         <span className="title-h2-thin ml-4">Dash of Flair.</span><br />
                         ∎ 
-                        <span className="title-h2-thin ml-4">Designing every detail</span>
+                        <span className="title-h2-thin ml-4">Designing </span>
+                        <span className="title-h2-thin border-[1px] border-zinc-50 rounded-full">
+                                every detail
+                            </span>
                         <span className="title-h2 ml-2 2xl:ml-4 ">to function<br /> smoothly & leave a </span>
                         <span className="title-h2-thin ml-2 2xl:ml-4">lasting impression.</span>
                     </div>
