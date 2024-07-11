@@ -57,14 +57,14 @@ const Hero = () => {
                             row-start-2 col-start-1 flex flex-col  uppercase text-zinc-300 mt-24
                             lg:mt-[-1.2rem] lg-lg:mt-[-2.6rem] xl:mt-[-1.8rem] relative">
                             <span className='w-full text-xxsmall text-justify'>
-                                Designer & Developer based in Colombia. Currently seeking  opportunities to
-                                innovate & collaborate on web development projects.
-                                <br/>
+                                Designer & Developer based in Colombia. Currently seeking  dev roles to
+                                collaborate with creative minds & contribute to innovative projects.
+                                
                                 <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[500] 
                                     after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px] after:w-full 
                                     after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform 
                                     after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom 
-                                    hover:after:scale-x-100 ">
+                                    hover:after:scale-x-100 ml-2">
                                     Let's connect
                                 </a>.
                             </span>

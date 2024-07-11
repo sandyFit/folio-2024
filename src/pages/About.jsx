@@ -26,7 +26,7 @@ const About = () => {
                             <span className="title-h2-thin ml-2">
                                 developer.  <br/>
                             </span>
-                            ∎ transforming design<br/>
+                            ∎ transforming design <br/>
                             <span className="title-h2-thin">
                                 into digital 
                             </span>
@@ -44,7 +44,7 @@ const About = () => {
                             <span className="title-h2-thin whitespace-nowrap ml-2">
                                 developer. <br/>
                             </span>
-                            ∎ transforming  design into<br/> 
+                            ∎ transforming design into<br/> 
                             <span className="title-h2-thin">
                                   digital 
                             </span>
