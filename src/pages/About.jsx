@@ -26,13 +26,14 @@ const About = () => {
                             <span className="title-h2-thin ml-2">
                                 developer.  <br/>
                             </span>
-                            ∎ transforming design <br/>
+                            ∎ transforming design into <br/>
                             <span className="title-h2-thin">
-                                into digital 
+                                 interactive
                             </span>
-                            <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
-                                experiences.  
+                            <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mx-3">
+                               experiences
                             </span>
+                            
                         </div>
 
                         <div className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
@@ -46,11 +47,11 @@ const About = () => {
                             </span>
                             ∎ transforming design into<br/> 
                             <span className="title-h2-thin">
-                                  digital 
+                                  interactive 
                             </span>
                             <span className="title-h2-thin whitespace-nowrap 
                                 border-[1px] border-zinc-50 px-2 rounded-full ml-2">
-                                experiences.<br/> 
+                                experiences<br/> 
                             </span>
                              
                         </div>
