@@ -84,7 +84,7 @@ const Projects = () => {
                             Built with the latest web technologies like CSS, JavaScript, ReactJS, NextJS, and APIs.
                             <br /><br />
                             While I'm still early in my career journey, I'm eager to share what I've built so far and continue growing in the field.
-                            Explore my projects below and see my passion in action!
+                            Explore my work below and see how I bring design concepts to life through code.
                         </p>
                     </div>
                     <div className="w-full">
