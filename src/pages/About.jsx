@@ -84,7 +84,7 @@ const About = () => {
                             When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic typography
                             and web animations.
                             <br />
-                            Offline, I'm often doodling, baking yum yums or pumping iron at the gym.
+                            Offline, I'm honing my craft in handmade soap and staying strong by pumping iron.
                             <br /><br />
                             Freelancing since 2019, I'm now looking for full-time dev roles or exciting project collaborations.
                             <br />
@@ -94,7 +94,7 @@ const About = () => {
                     </div>
                     <div className="flex justify-start w-full h-[8%] py-4">
                         <span className='title-h4 tracking-widest uppercase'>
-                            My Toolkit
+                            My Skillset
                         </span>
                     </div>
                     <div className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">

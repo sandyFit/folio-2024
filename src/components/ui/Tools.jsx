@@ -8,11 +8,11 @@ function Tools() {
     const tools = [
         { name: 'JavaScript Frameworks & Libraries', description: '∎ React.js ∎ Next.js ' },
         { name: 'Application Programming Interface (APIs)', description: '∎ RESTful ∎ GraphQL ' },
-        { name: 'Markup & Static Site Generators', description: '∎ HTML5 ∎ CSS3 ∎ SASS ∎ Hugo ' },
+        { name: 'Markup & Static Site Generators', description: '∎ HTML5 ∎ CSS3 ∎ SASS ∎ Gatsby ' },
         { name: 'Version Control', description: '∎ Git ∎ GitHub ' },
         { name: 'Build Tools & Package Managers', description: '∎ Webpack ∎ Vite ∎ npm ∎ yarn' },
         { name: 'Design Systems & UI Frameworks', description: '∎ Material-UI ∎ Tailwind CSS' },
-        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ Cypress' },
+        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ Vitest' },
         { name: 'Deployment & Hosting', description: '∎ Netlify ∎ Vercel ∎ AWS' },
         { name: 'Content Management Systems (CMS)', description: '∎ Prismic ∎ Contentful' },
         { name: 'Performance Optimization', description: '∎ lazy loading  ∎ image opt' },
