@@ -70,8 +70,10 @@ const Hero = () => {
                             </span>
                         </article>
 
-                        <div className="w-full hidden lg-lg:flex col-span-1 col-start-12 justify-end 
-                            ml-12">
+                        <div className="hidden lg-lg:flex col-span-2 col-start-11 ml-[5rem] items-center ">
+                            <span className='text-[.8rem] font-100 text-zinc-600 tracking-widest uppercase'>
+                                preferences
+                            </span>
                             <ColorBtn/>
                         </div>
                     </div>                

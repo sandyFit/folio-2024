@@ -2,14 +2,30 @@ import React from 'react'
 
 const ColorBtn = () => {
     return (
-        <button className='grid grid-cols-1 w-16 xl:w-20 '>
-            <img src="/big-brackets.svg" alt="square brackets" className='col-span-1 col-start-1
-                 row-start-1 flex justify-end items-end '/>
-            <div className="flex col-span-1 col-start-1 row-start-1 ml-[.66rem] mt-2">
-                <span className='w-[1rem] h-[1.1rem] rounded bg-cyan-300 '></span>
+        <button className="relative">
+            <svg
+                className="item__icon-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="77"
+                height="34"
+                viewBox="0 0 37 34"
+                fill="none"
+                role="presentation"
+            >
+                <path
+                    d="M6.1 2.2H2.9V31.8H6.1V33.4H0.9V0.599998H6.1V2.2ZM36.4594 0.599998V33.4H31.2594V31.8H34.4594V2.2H31.2594V0.599998H36.4594Z"
+                    fill="#F1EEE9"
+                ></path>
+            </svg>
+            <div className='rounded'>
+                
+                    <span className='w-4 h-4 bg-cyan-400 absolute right-[1.9rem] bottom-[.6rem] rounded-[1px]'></span> 
+                
+                
             </div>
         </button>
-    )
+    );
 }
+
 
 export default ColorBtn
