@@ -7,7 +7,7 @@ import { HiOutlineHeart } from 'react-icons/hi2';
 import EmailBtn from '../components/buttons/EmailBtn';
 
 
-const TextNav = () => {
+const Footer = () => {
     const [isCopied, setIsCopied] = useState(false);
 
     const handleCopiedText = () => {
@@ -24,7 +24,7 @@ const TextNav = () => {
     }
 
     return (
-        <section id="contact" 
+        <footer id="contact" 
             className='w-full h-screen bg-zinc-950 relative flex flex-col'>
             
             <div border-cut="top-right-black"
@@ -33,8 +33,8 @@ const TextNav = () => {
 
                 <div className="w-full flex flex-col mt-1 lg:mt-12 relative flex-grow">               
                     <div className="w-full flex flex-col items-start">
-                        <article className='w-full grid'>
-                            <div className="w-full hidden lg-lg:block relative">
+                        <section className='w-full grid'>
+                            <h2 className="w-full hidden lg-lg:block relative">
                                 <span className="title-h2  whitespace-nowrap">
                                     ⋙ wheather you need a full-time <br/>
                                 </span>
@@ -66,9 +66,9 @@ const TextNav = () => {
                                         Let's connect
                                     </a>.
                                 </span>
-                            </div>
+                            </h2>
 
-                            <div className="flex lg-lg:hidden relative flex-col">
+                            <h2 className="flex lg-lg:hidden relative flex-col">
                                 <div className="title-h2">
                                     ⋙ whether you need a full
                                 </div>
@@ -108,14 +108,14 @@ const TextNav = () => {
                                         </a>.
                                     </span>
                                 </div>
-                            </div>
+                            </h2>
 
-                            <span className='w-full mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 whitespace-nowrap'>
-                                <span className='flex justify-center w-full text-center'>
+                            <div className='w-full mt-20 md:mt-16 base:mt-12 xl:mt-16 z-30 whitespace-nowrap'>
+                                <div className='flex justify-center w-full text-center'>
                                     <EmailBtn/>                                   
-                                </span>
-                            </span>                                                    
-                        </article>
+                                </div>
+                            </div>                                                    
+                        </section>
                     </div>
                 </div>
             </div>
@@ -143,9 +143,9 @@ const TextNav = () => {
                     </div>
                 </div>
             </article>
-        </section>
+        </footer>
     );
 }
 
-export default TextNav;
+export default Footer;
 

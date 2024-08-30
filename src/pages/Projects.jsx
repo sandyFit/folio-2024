@@ -46,8 +46,8 @@ const Projects = () => {
 
             <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl-sm:px-16">
                 <Header title='projects' />
-                <article className="w-full flex justify-start relative mt-0 lg:mt-12">
-                    <div className='title-h2 relative hidden lg-lg:block'>
+                <header className="w-full flex justify-start relative mt-0 lg:mt-12">
+                    <h2 className='title-h2 relative hidden lg-lg:block'>
                         ⋙ Crafted with Care & a
                         <span className="title-h2-thin ml-4">Dash of Flair.</span><br />
                         ∎ 
@@ -57,9 +57,9 @@ const Projects = () => {
                             </span>
                         <span className="title-h2 lg-lg:ml-1 lg-xl:ml-2">to function<br /> smoothly & leave a </span>
                         <span className="title-h2-thin ml-1">lasting impression.</span>
-                    </div>
+                    </h2>
 
-                    <div className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
+                    <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
                         ⋙ Crafted with Care & a <br />
                         <span className="title-h2-thin italic font-[100] whitespace-nowrap">
                             Dash of Flair.
@@ -73,10 +73,10 @@ const Projects = () => {
                             <span className="title-h2-thin italic font-[100] whitespace-nowrap ml-1">&</span><br />
                         <span>leave a lasting impression.</span>
                        
-                    </div>
-                </article>
+                    </h2>
+                </header>
 
-                <article className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 
+                <section className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 
                     2xl-sm:w-[52vw] 2xl-xl:w-[50vw] 3xl:w-[56%] lg-lg:ml-auto">
                     <div className="flex gap-32 justify-start lg-lg:justify-end w-full">
                         <p className='text-xsmall w-full columns-1 lg:columns-2'>
@@ -90,7 +90,7 @@ const Projects = () => {
                     <div className="w-full">
                         <ProjectsList />
                     </div>
-                </article>
+                </section>
             </div>
         </section>
 

@@ -16,9 +16,9 @@ const About = () => {
                 className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 xl-sm:px-16">
                 
                 <Header title='info' />
-                <article className="flex flex-col items-start mt-2 lg:mt-12">
+                <header className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
-                        <div className='title-h2 relative hidden lg-lg:block'>
+                        <h2 className='title-h2 relative hidden lg-lg:block'>
                             ⋙ graphic designer turned <br/> 
                             <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
                                 frontend  
@@ -34,9 +34,9 @@ const About = () => {
                                experiences
                             </span>
                             
-                        </div>
+                        </h2>
 
-                        <div className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
+                        <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
                             ⋙ graphic designer turned <br />
                             <span className="title-h2-thin whitespace-nowrap 
                                 border-[1px] border-zinc-50 px-2 rounded-full">
@@ -54,7 +54,7 @@ const About = () => {
                                 experiences<br/> 
                             </span>
                              
-                        </div>
+                        </h2>
 
                         <span className="hidden lg:absolute top-[8.5rem] left-[23.5rem] text-zinc-50 text-8xl">
                             <CodeIcon />
@@ -65,11 +65,11 @@ const About = () => {
                     </div>
 
                     
-                </article>
+                </header>
 
-                <article className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 2xl-sm:w-[52vw] 
+                <section className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 2xl-sm:w-[52vw] 
                     2xl-xl:w-[50vw] 3xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
-                    <div className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
+                    <article className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
                         <p className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
                             
                             I'm a self-taught frontend developer specializing in the React ecosystem.<br />
@@ -81,23 +81,27 @@ const About = () => {
                             complexities of web development.
 
                             <br /><br />
-                            When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic typography
-                            and web animations.
+                            When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic
+                            typography and web animations.
                             <br />
                             Offline, I'm honing my craft in handmade soap and staying strong by pumping iron.
                             <br /><br />
-                            Freelancing since 2019, I'm now looking for full-time dev roles or exciting project collaborations.
+                            Freelancing since 2019, I'm now looking for full-time dev roles or exciting project
+                            collaborations.
                             <br />
                             For inquiries or opportunities, please contact me at
-                            <a href='mailto:sandy07r@gmail.com' className='text-zinc-50 ml-1'>info@trishramos.com</a>.
+                            <a href='mailto:sandy07r@gmail.com' className='text-zinc-50 ml-1'>
+                                info@trishramos.com
+                            </a>.
                         </p>
-                    </div>
+                    </article>
+
                     <div className="flex justify-start w-full h-[8%] py-4">
-                        <span className='title-h4 tracking-widest uppercase'>
+                        <h3 className='title-h4 tracking-widest uppercase'>
                             My Skillset
-                        </span>
+                        </h3>
                     </div>
-                    <div className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
+                    <article className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
                         <p className='text-xsmall w-full columns-1 lg:columns-2'>
                             I prioritize foundational web development principles while maintaining a keen
                             interest in cutting-edge technologies that improve efficiency and productivity.
@@ -110,12 +114,12 @@ const About = () => {
 
                         </p>
 
-                    </div>
+                    </article>
 
                     <div className="w-full flex mt-8 pb-24">
                         <Tools/>
                     </div>
-                </article>
+                </section>
             </div>
         </section>
     );
