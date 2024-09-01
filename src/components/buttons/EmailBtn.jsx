@@ -51,7 +51,7 @@ const EmailBtn = () => {
     return (
         <button
             onClick={handleCopiedText}
-            className="title-h4-min flex whitespace-nowrap justify-center items-center group"
+            className="reg-title flex whitespace-nowrap justify-center items-center group"
         >
             {/* Animated characters */}
             <span className="relative inline-flex items-center">
@@ -67,13 +67,13 @@ const EmailBtn = () => {
                 ))}
             </span>
             {/* Icon for copy feedback */}
-           <span className="icon-transition ml-2 mt-3 md:mt-2 base:mt-3 ">
+           <span className="icon-transition ml-2 3xl:ml-5 mt-3 md:mt-2 base:mt-10">
                 {isCopied ? (
                     <BsCheck2 className="text-cyan-300 text-2xl md:text-[2.2rem] base:text-[2.5rem] 
-                        xl:text-[2.8rem] " />
+                        xl:text-[8rem] " />
                 ) : (
                     <BsCopy className="text-2xl md:text-[1.8rem] base:text-[2rem] 
-                        xl:text-[2.8rem] " />
+                        xl:text-[8rem] " />
                 )}
             </span>
         </button>

@@ -538,8 +538,9 @@
 
     }
     .reg-title {
-      @apply morganite-bold text-[12rem] font-[600] leading-[130px]  text-violet-500
-
+      @apply morganite-bold  font-[600] leading-[130px]  text-cyan-300 
+        text-[3rem]
+        3xl:text-[16rem]
     }
     
     .big-title {

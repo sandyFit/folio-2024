@@ -51,7 +51,7 @@ const Hero = () => {
                     <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg-xl:grid-cols-5 2xl-sm:grid-cols-8 
                         2xl-xl:grid-cols-12">
                         <article className="w-full col-span-1 lg:col-span-2 lg-xl:col-span-2 xl:col-span-2 
-                            2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col uppercase text-zinc-300 mt-24
+                            2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col  mt-24
                             lg:mt-[-1.2rem] lg-lg:mt-[-2.6rem] xl:mt-[-1.8rem] relative">
                             <p className='w-full text-xxsmall text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking dev roles to
