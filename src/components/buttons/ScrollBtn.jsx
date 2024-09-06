@@ -33,7 +33,7 @@ const ScrollBtn = () => {
             );
         };
 
-        const interval = setInterval(animateText, 10000); // Start animation interval
+        const interval = setInterval(animateText, 6000); // Start animation interval
         animateText(); // Initial animation
 
         return () => clearInterval(interval); // Clean up interval on component unmount

@@ -350,6 +350,9 @@
       @apply font-inter text-zinc-950 text-[.7rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
     }
 
+    .ghost-text {
+      @apply text-[.8rem] font-[500] text-zinc-600 tracking-widest uppercase
+    }
     
 
     /* ====== TITLES ====== */

@@ -9,42 +9,34 @@ import TimeZone from '../components/ui/TimeZone';
 
 
 const Footer = () => {
-    const [isCopied, setIsCopied] = useState(false);
+    const [showCopiedText, setShowCopiedText] = useState(false);
 
     const handleCopiedText = () => {
-        const emailAddress = 'hello@trishramos.com';
+        const emailAddress = 'info@trishramos.com';
+
         navigator.clipboard.writeText(emailAddress).then(() => {
             console.log('Email address copied to clipboard!');
-            setIsCopied(true);
+            setShowCopiedText(true); // Show "email copied" text
             setTimeout(() => {
-                setIsCopied(false);
+                setShowCopiedText(false); // Hide after 1.5 seconds
             }, 1500);
         }).catch(err => {
             console.error('Failed to copy email address to clipboard:', err);
         });
-    }
+    };
 
     return (
         <footer id="contact" className='w-full min-h-screen bg-zinc-950 relative flex flex-col'>
-            
-            <div border-cut="top-right-black"
-                className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16 flex-grow">
+            <div border-cut="top-right-black" className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16 flex-grow">
                 <Header title='contact'/>
 
                 <div className="w-full flex flex-col relative flex-grow">               
                     <div className="w-full flex flex-col items-start flex-grow">
                         <section className='w-full grid grid-rows-2 flex-grow'>                           
-                            <h2 className="w-full xl:w-[35%] text-xxsmall relative row-start-2 xl:row-start-1
-                                text-justify mt-[-4rem] xl:mt-0">
-                                Whether you need a full-time team member or an extra pair of creative hands
-                                for a project, I'm all ears & hands!
+                            <h2 className="w-full xl:w-[35%] text-xxsmall relative row-start-2 xl:row-start-1 text-justify mt-[-4rem] xl:mt-0">
+                                Whether you need a full-time team member or an extra pair of creative hands for a project, I'm all ears & hands!
                                 <span className="whitespace-nowrap row-start-5 z-20">
-                                    <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[500] 
-                                        after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px]
-                                        after:w-full after:origin-bottom after:scale-x-0 after:bg-cyan-300
-                                        after:transition-transform after:duration-300
-                                        after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
-                                        hover:after:scale-x-100 xl:ml-2">
+                                    <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[500] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom after:scale-x-0 after:bg-cyan-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100 xl:ml-2">
                                         Let's connect
                                     </a>.
                                 </span>
@@ -54,11 +46,23 @@ const Footer = () => {
                                 <Socials />
                             </div>
                         </section>
-                        <div className='w-full whitespace-nowrap'>
+
+                        <div className='w-full whitespace-nowrap flex flex-col items-center gap-12'>
+                            {showCopiedText ? (
+                                <p className='ghost-text'>
+                                    Email copied!
+                                </p>
+                            ) : (
+                                    <p className='ghost-text'>
+                                    Copy Email
+                                </p>
+                            )
+                        }
+
                             <div className='flex justify-center w-full text-center mb-20'>
-                                <EmailBtn />                                   
+                                <EmailBtn handleCopiedText={handleCopiedText} />
                             </div>
-                        </div>                                                    
+                        </div>                                               
                     </div>
                 </div>
             </div>
@@ -73,12 +77,9 @@ const Footer = () => {
                         <Sitemap />
                     </div>
 
-                    <div className="col-span-1 flex justify-center xl:justify-end text-xxsmall-cyan 
-                        tracking-[.15rem] whitespace-nowrap">
+                    <div className="col-span-1 flex justify-center xl:justify-end text-xxsmall-cyan tracking-[.15rem] whitespace-nowrap">
                         crafted with <HiOutlineHeart className='mx-1 mt-1' /> by
-                        <a href="#"
-                            className='text-xxsmall-white tracking-wide xl:tracking-[.15rem] ml-1 underline 
-                                underline-offset-4 '>                           
+                        <a href="#" className='text-xxsmall-white tracking-wide xl:tracking-[.15rem] ml-1 underline underline-offset-4'>                           
                             Trish R
                         </a>.
                     </div>                  
@@ -89,4 +90,3 @@ const Footer = () => {
 }
 
 export default Footer;
-

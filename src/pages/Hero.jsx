@@ -124,7 +124,7 @@ const Hero = () => {
 
                         <aside className="w-full hidden lg-lg:flex col-span-2 col-start-11 ml-[5.4rem] items-center 
                             color__switch">
-                            <p className='text-[.8rem] font-100 text-zinc-600 tracking-widest uppercase'>
+                            <p className='ghost-text'>
                                 color shift
                             </p>
                             <ColorBtn/>
