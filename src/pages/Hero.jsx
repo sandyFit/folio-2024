@@ -24,7 +24,7 @@ const Hero = () => {
             })
 
             gsap.set(chars, {
-                y: 100,
+                y: 20,
                 autoAlpha: 0
             });
 
@@ -98,7 +98,7 @@ const Hero = () => {
     return (
         <section id="index"
             className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 base:px-12 
-                xl-sm:px-16 hero-content'>
+                xl-sm:px-16'>
 
             <div border-cut="bottom-right-black" className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
