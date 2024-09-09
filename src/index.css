@@ -9,6 +9,7 @@
     --duration: 0.4s;
     --transition: var(--duration) var(--ease);
     --transition-slow: 0.7s var(--ease);
+
 }
 
 @font-face {
@@ -517,7 +518,7 @@
     }
 
     .xsm-title {
-      @apply morganite-bold text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-[500] uppercase  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-[500] uppercase   leading-[88%]
     }
 
     .xsm-title-dark {
@@ -547,7 +548,7 @@
     }
     
     .big-title {
-      @apply morganite-bold font-[100]  tracking-[3px] uppercase  text-cyan-300 
+      @apply morganite-bold font-[100]  tracking-[3px] uppercase  
         text-[7.8rem] 
         md:text-[10rem] 
         lg:text-[8.08rem]

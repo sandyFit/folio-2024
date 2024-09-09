@@ -62,12 +62,12 @@ const Navbar = () => {
                 <div className="grid grid-cols-12 place-content-between items-center w-full relative 
                     before:absolute before:h-[1px] before:bg-cyan-300 before:w-full before:top-12 
                     before:lg:top-[3.6rem] before:xl:top-16">
-                    <h3 className='xsm-title col-span-6 xl:col-span-3 col-start-1 row-start-1 logo'>
+                    <h3 className='xsm-title col-span-6 xl:col-span-3 col-start-1 row-start-1 logo text-cyan-300'>
                         Trish Ramos
                     </h3>
 
                     <div className='hidden lg-lg:flex col-span-5 col-start-9 w-full relative justify-end'>
-                        <ul className="flex justify-between gap-2 xsm-title ">
+                        <ul className="flex justify-between gap-2 xsm-title text-cyan-300 ">
                             <span className='nav__item'>
                                 <NavItem to="projects">projects,</NavItem>
                             </span>

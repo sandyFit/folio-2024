@@ -24,11 +24,11 @@ const Header = ({ title }) => {
                         relative before:absolute before:h-[1px] before:bg-cyan-300 before:w-full before:top-12
                         before:lg:top-16">
                     
-                        <h3 className='xsm-title col-span-1 lg:col-span-3 col-start-1'>
+                        <h3 className='xsm-title text-cyan-300 col-span-1 lg:col-span-3 col-start-1'>
                             {title}
                         </h3>
 
-                        <p className='xsm-title col-span-1 col-start-2 lg:col-start-12 grid place-content-end'>
+                        <p className='xsm-title text-cyan-300 col-span-1 col-start-2 lg:col-start-12 grid place-content-end'>
                             2&copy;{new Date().getFullYear().toString().slice(-2)}
                         </p>
                     </div>
