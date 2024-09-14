@@ -88,10 +88,14 @@ const Footer = () => {
                     <div className="col-span-1 flex justify-center xl:justify-end text-xxsmall-cyan tracking-[.15rem] 
                         whitespace-nowrap text-[var(--secondary)]">
                         crafted with <HiOutlineHeart className='mx-1 mt-1' /> by
-                        <a href="#" className='text-xxsmall-white tracking-wide xl:tracking-[.15rem] ml-1 underline 
-                            underline-offset-4 '>                           
-                            Trish R
-                        </a>.
+                        <a href="#" className="relative text-zinc-200 font-[500] 
+                                    after:absolute after:bottom-1 after:left-0 after:right-0 after:h-[1px]
+                                    after:w-full after:origin-bottom after:scale-x-0 after:bg-zinc-200
+                                    after:transition-transform after:duration-300
+                                    after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
+                                    hover:after:scale-x-100 ml-1">                         
+                            Trish 
+                        </a>
                     </div>                  
                 </div>
             </article>

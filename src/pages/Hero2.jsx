@@ -41,7 +41,7 @@ const Hero = () => {
         const titleAnimation = () => {
             const tl = gsap.timeline({
                 defaults: {
-                    ease: "power3.out",
+                    ease: "power2.inOut",
 
                 }
             });
@@ -49,7 +49,7 @@ const Hero = () => {
             tl.to('.title', {
                 y: 0,
                 autoAlpha: 1,
-                stagger: 0.1,
+                stagger: 0.5,
                 duration: 1,
             })
                 .to('.small__text', {
