@@ -59,7 +59,7 @@ const ProjectsList = () => {
                                         xmlns="http://www.w3.org/2000/svg"
                                         className='hidden 2xl-xl:block' preserveAspectRatio="xMidYMid meet">
                                         <polygon points="0,0 60,0 60,50 15,50 0,34"
-                                            style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
+                                            style={{ fill: 'var(--secondary)', stroke: 'none', strokeWidth: 1 }} />
                                     </svg>
 
                                     <svg width="3.2rem" height="2.3rem" viewBox="0 0 60 45"
@@ -68,18 +68,12 @@ const ProjectsList = () => {
                                             lg:w-[5rem] lg:h-[3.8rem]'
                                         preserveAspectRatio="xMidYMid meet">
                                         <polygon points="0,0 60,0 60,45 15,45 0,30"
-                                            style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
+                                            style={{ fill: 'var(--secondary)', stroke: 'none', strokeWidth: 1 }} />
                                     </svg>
+                           
 
-                                    {/* <svg width="4rem" height="3rem" viewBox="0 0 60 45"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className='block lg:hidden ' preserveAspectRatio="xMidYMid meet">
-                                        <polygon points="0,0 60,0 60,45 15,45 0,30"
-                                            style={{ fill: '#67e8f9', stroke: 'none', strokeWidth: 1 }} />
-                                    </svg> */}
-
-                                    <div className="flex title-h4-dark absolute left-4 md:left-5 lg:left-[1.8rem]  
-                                        2xl-xl:left-[2.2rem] top-1 lg:top-2 ">
+                                    <div className="flex title-h4-xs text-[var(--primary)] absolute left-4 md:left-5 
+                                        lg:left-[1.8rem] 2xl-xl:left-[2.2rem] top-1 lg:top-2 ">
                                         {`00${index + 1}`}
                                     </div>
                                 </div>
@@ -116,9 +110,11 @@ const ProjectsList = () => {
                                                 />
                                             </div>
                                             <div className="flex flex-col justify-end w-full mt-auto">
-                                                <p className="w-full text-xsmall" dangerouslySetInnerHTML={{ __html: project.description }} />
+                                                <p className="w-full text-xsmall" d
+                                                    angerouslySetInnerHTML={{ __html: project.description }} />
                                                 <h4 className="text-xsmall-white mt-6">Technologies:</h4>
-                                                <p className="text-xsmall" dangerouslySetInnerHTML={{ __html: project.technologies }} />
+                                                <p className="text-xsmall"
+                                                    dangerouslySetInnerHTML={{ __html: project.technologies }} />
                                             </div>
                                             <div className="w-full flex justify-end relative gap-1">
                                                 <BottomLeftOutlineBtn />

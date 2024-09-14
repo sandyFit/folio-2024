@@ -1,21 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
 import '../assets/css/borders.css';
 import ScrollBtn from '../components/buttons/ScrollBtn';
 import TimeZone from '../components/ui/TimeZone';
 import ColorBtn from '../components/buttons/ColorBtn';
+import { GlobalContext } from '../utils/globalContext';
 
 
 const Hero = () => {
+    const { theme, switchTheme } = useContext(GlobalContext);
+
+
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
         const master = gsap.timeline();
-        // const heroTitle = new SplitType('.hero-title', { types: 'chars' });
-        // const chars = heroTitle.chars;
 
         const setInitialState = () => {
             
@@ -131,7 +132,7 @@ const Hero = () => {
                             <p className='ghost-text'>
                                 color shift
                             </p>
-                            <ColorBtn/>
+                            <ColorBtn onClick={switchTheme}/>
                         </aside>
                     </div>                  
 

@@ -34,14 +34,14 @@ const Projects = () => {
             className='w-full min-h-screen flex flex-col relative'>
             <button
                 onClick={scrollToTop}
-                className={`fixed hidden xl-sm:flex title-h4-dark top-left-btn justify-center items-center right-2 
+                className={`fixed hidden xl-sm:flex title-h4-xs top-left-btn justify-center items-center right-2 
                     bottom-80 w-10 h-[4rem] 2xl-xl:w-12 2xl-xl:h-[4.5rem] pt-1 z-[40] bg-[var(--secondary)] group 
                     ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
-                <span className={`duration-700 [transition-delay:.02] group-hover:[transform:rotateY(360deg)] 
-                        group-hover:text-cyan-900`}>U</span>
-                <span className={`duration-700 [transition-delay:.04] group-hover:[transform:rotateY(360deg)] 
-                        group-hover:text-cyan-900`}>P</span>
+                <span className={`duration-700 [transition-delay:.02] text-[var(--primary)] group-hover:[transform:rotateY(360deg)] 
+                        group-hover:text-[var(--primaryHover)]`}>U</span>
+                <span className={`duration-700 [transition-delay:.04] text-[var(--primary)] group-hover:[transform:rotateY(360deg)] 
+                        group-hover:text-[var(--primaryHover)]`}>P</span>
             </button>
 
             <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl-sm:px-16">

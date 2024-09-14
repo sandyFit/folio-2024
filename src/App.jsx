@@ -3,16 +3,17 @@ import Navbar from './layouts/Navbar';
 import Home from './pages/Home';
 import Footer from './layouts/Footer';
 import Test from './layouts/Test'
+import { ContextProvider } from './utils/globalContext';
 
 const App = () => {
 
     
     return (
-        <div>
+        <ContextProvider>
             <Navbar />
             <Home />
             <Footer/>
-        </div>
+        </ContextProvider>
     )
 }
 
