@@ -14,8 +14,8 @@ const Hero = () => {
         gsap.registerPlugin(ScrollTrigger);
 
         const master = gsap.timeline();
-        const heroTitle = new SplitType('.hero-title', { types: 'chars' });
-        const chars = heroTitle.chars;
+        // const heroTitle = new SplitType('.hero-title', { types: 'chars' });
+        // const chars = heroTitle.chars;
 
         const setInitialState = () => {
             
@@ -23,13 +23,17 @@ const Hero = () => {
                 autoAlpha: 0
             })
 
-            gsap.set(chars, {
-                y: 20,
+            gsap.set('.title', {
+                y: 200,
                 autoAlpha: 0
             });
 
-            gsap.set(['.small__text', '.small__title' ], {
+            gsap.set('.small__text' , {
                 yPercent: 100,
+                autoAlpha: 0
+            });
+            gsap.set('.small__title', {
+                yPercent: -100,
                 autoAlpha: 0
             });
         };
@@ -42,7 +46,7 @@ const Hero = () => {
                 }
             });
 
-            tl.to(chars, {
+            tl.to('.title', {
                 y: 0,
                 autoAlpha: 1,
                 stagger: 0.1,
@@ -59,7 +63,7 @@ const Hero = () => {
                     yPercent: 0,
                     autoAlpha: 1,
                     stagger: 0.1,
-                    delay: 1
+                    
                 }, '<')
 
                 .to(['.description', '.color__switch'], {
@@ -97,7 +101,7 @@ const Hero = () => {
 
     return (
         <section id="index"
-            className='w-full min-h-screen flex flex-col bg-rose-950 relative px-6 md:px-10 base:px-12 
+            className='w-full min-h-screen flex flex-col relative px-6 md:px-10 base:px-12 
                 xl-sm:px-16'>
 
             <div border-cut="bottom-right-black" className="grid w-full">
@@ -111,9 +115,9 @@ const Hero = () => {
                                 Designer & Developer based in Colombia. Currently seeking dev roles to
                                 collaborate with creative minds & contribute to innovative projects.
                                 
-                                <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[500] 
+                                <a href='mailto:sandy07r@gmail.com' className="relative text-[var(--secondary)] font-[500] 
                                     after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px]
-                                    after:w-full after:origin-bottom after:scale-x-0 after:bg-cyan-300
+                                    after:w-full after:origin-bottom after:scale-x-0 after:bg-[var(--secondary)]
                                     after:transition-transform after:duration-300
                                     after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
                                     hover:after:scale-x-100 ml-2">
@@ -141,8 +145,10 @@ const Hero = () => {
                                 <span className='title-h3-thin mx-3 '>designer</span>
                                 &
                             </h3>
-                            <h1 className="big-title text-yellow-100 col-span-12 col-start-1 row-start-2 lg-lg:mt-3 xl-sm:mt-5 xl:mt-10 
-                                2xl-sm:mt-12 2xl-md:mt-[3.2rem] 2xl-xl:mt-[3.8rem] text-center whitespace-nowrap hero-title">
+                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg-lg:mt-3 
+                                xl-sm:mt-5 xl:mt-10 2xl-sm:mt-12 2xl-md:mt-[3.2rem] 2xl-xl:mt-[3.8rem] text-center 
+                                whitespace-nowrap text-[var(--secondary)] title
+                                hero-title">
                                 frontend developer
                             </h1>
                         </div>
@@ -153,7 +159,7 @@ const Hero = () => {
                                 Graphic
                                 <span className='title-h3-thin mx-1'>designer</span > &</h3>
                             <h1 className="big-title col-span-1 col-start-1 row-start-2  grid 
-                                place-items-center whitespace-nowrap">
+                                place-items-center whitespace-nowrap text-[var(--secondary)]">
                                 frontend <span>developer</span>
                             </h1>
                         </div>
@@ -162,25 +168,26 @@ const Hero = () => {
             </div>
 
             <footer className="mt-auto w-full mb-6">
-                <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg-md:place-content-between whitespace-nowrap">
+                <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg-md:place-content-between whitespace-nowrap 
+                    small__text">
                     <div className="hidden lg-lg:flex text-xxsmall-cyan col-span-1 col-start-1 row-start-1 
-                        justify-start items-center small__text">
+                        justify-start items-center text-[var(--secondary)]">
                         portfolio
-                        <span className='text-xxsmall-white ml-1.5'>
+                        <span className='text-xxsmall-white ml-1.5 '>
                             &copy;{new Date().getFullYear()}
                         </span>
                     </div>
 
                     <div className="flex lg-lg:hidden text-xxsmall-white col-span-1 col-start-1 row-start-1 w-full 
-                        whitespace-nowrap justify-center lg:justify-start small__text">
+                        whitespace-nowrap justify-center lg:justify-start ">
                         folio &copy; {new Date().getFullYear()}
                     </div>
                     <div className="text-xxsmall-cyan col-span-1 col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 
-                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex justify-center items-center small__text">
+                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex justify-center items-center text-[var(--secondary)]">
                         [ &nbsp; &nbsp;<ScrollBtn /> &nbsp;]
                     </div>
                     <div className="col-span-1 col-start-1 lg:col-start-3 row-start-2 lg:row-start-1 flex items-center 
-                        justify-center lg:justify-end text-xxsmall small__text">
+                        justify-center lg:justify-end text-xxsmall ">
                         <TimeZone/>
                     </div>
                 </div>

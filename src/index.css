@@ -9,7 +9,22 @@
     --duration: 0.4s;
     --transition: var(--duration) var(--ease);
     --transition-slow: 0.7s var(--ease);
+    --primary: #09090b;
+    --secondary: #67e8f9;
 
+}
+
+:root .pallete-1 {
+  --primary: #052e16;
+  --secondary: #d8b4fe;
+}
+:root .pallete-2 {
+  --primary: #172554;
+  --secondary: #fda4af;
+}
+:root .pallete-3 {
+  --primary: #4c0519;
+  --secondary: #fef9c3;
 }
 
 @font-face {
@@ -274,7 +289,7 @@
 
 @layer base {
     body {
-        @apply w-full m-0 p-0 box-border rounded-2xl bg-zinc-950 font-inter overflow-x-hidden
+        @apply w-full m-0 p-0 box-border rounded-2xl bg-[var(--primary)] font-inter overflow-x-hidden
       }
 
     a {
@@ -310,7 +325,7 @@
     }
 
     .text-xsmall-cyan {
-      @apply font-inter text-cyan-300 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
+      @apply font-inter  text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
     }
 
     .text-xsmall-dark {
@@ -336,7 +351,7 @@
       @apply font-inter text-zinc-950 text-[.7rem] font-[500] tracking-wider uppercase
     }
     .text-xxsmall-cyan {
-      @apply font-inter text-cyan-300 text-[.7rem] md:text-[.78rem] lg:text-[.9rem] font-[400]  uppercase
+      @apply font-inter  text-[.7rem] md:text-[.78rem] lg:text-[.9rem] font-[400]  uppercase
     }
 
     .text-xxsmall-white {
@@ -359,7 +374,7 @@
     /* ====== TITLES ====== */
 
     .title-h1 {
-      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
+      @apply  font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
         2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
     }
     .title-h1-w {
@@ -368,7 +383,7 @@
     }
 
     .title-h1-thin {
-      @apply text-cyan-300 font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
+      @apply  font-inter text-[1.24rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
         2xl:text-[9.5rem] italic font-[200] uppercase -tracking-[.3rem]
     }
 
@@ -476,7 +491,7 @@
     }
 
     .title-h4 {
-      @apply morganite-bold text-[2.8rem] lg:text-[5.5rem] font-[600] uppercase tracking-wide  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[2.8rem] lg:text-[5.5rem] font-[600] uppercase tracking-wide   leading-[88%]
     }
 
     .title-h4-min {
@@ -487,7 +502,7 @@
         xl:text-[4.5rem] 
         2xl:text-[5rem] 
         3xl:text-[5.5rem] 
-      font-[600] tracking-wide  text-cyan-300 leading-[88%]
+      font-[600] tracking-wide   leading-[88%]
     }
 
     .title-h4-dark {
@@ -511,10 +526,10 @@
     }
 
     .title-h5-m {
-      @apply morganite-bold text-[2.5rem] lg:text-[3rem] font-[300] uppercase  text-cyan-300 leading-[88%]
+      @apply morganite-bold text-[2.5rem] lg:text-[3rem] font-[300] uppercase   leading-[88%]
     }
     .btn-title {
-      @apply font-inter text-cyan-300 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
+      @apply font-inter  text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
     }
 
     .xsm-title {
@@ -526,7 +541,7 @@
     }
 
     .sm-title {
-      @apply morganite-bold text-cyan-300 leading-[88%] font-[400] uppercase tracking-wide 
+      @apply morganite-bold  leading-[88%] font-[400] uppercase tracking-wide 
         text-[2rem] 
         md:text-[2.8rem] 
         lg:text-[3.6rem] 
@@ -542,7 +557,7 @@
 
     }
     .reg-title {
-      @apply morganite-bold  font-[600] leading-[130px]  text-cyan-300 
+      @apply morganite-bold  font-[600] leading-[130px]   
         text-[3rem]
         3xl:text-[16rem]
     }

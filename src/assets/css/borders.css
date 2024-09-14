@@ -369,8 +369,7 @@
   -webkit-clip-path: polygon(12px 0, 100% 0, 100% calc(100% + 1px), 12px calc(100% + 1px), 0 calc(100% + 13px), 0 12px);
           clip-path: polygon(12px 0, 100% 0, 100% calc(100% + 1px), 12px calc(100% + 1px), 0 calc(100% + 13px), 0 12px);
   width: 12rem;
-  background-color: #67e8f9;
-  color: #09090b;
+
 }
 
 .top-right-btn {

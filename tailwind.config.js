@@ -5,8 +5,29 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
+    extend: {     
       colors: {
+
+        'palette-1': {
+          primary: '#09090b',
+          secondary: '#67e8f9',
+          
+        },
+        'palette-2': {
+          primary: '#052e16',
+          secondary: ' #d8b4fe',
+        },
+        'palette-3': {
+          primary: '#172554',
+          secondary: '#fda4af',
+
+        },
+        'palette-4': {
+          primary: '#4c0519',
+          secondary: '#fef9c3',
+
+        },
+
         textLight: '#36332d',
         skyIce: {
           100: '#9d9efc',

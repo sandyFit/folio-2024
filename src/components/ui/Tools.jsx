@@ -51,7 +51,7 @@ function Tools() {
             <li
             key={index}
             ref={el => toolsRef.current[index] = el}
-                className='border-t-[1px] border-cyan-300 flex flex-col w-full overflow-hidden relative 
+                className='border-t-[1px] border-[var(--secondary)] flex flex-col w-full overflow-hidden relative 
                     cursor-pointer py-2 hover:bg-gradient-to-l from-zinc-950 to-cyan-950 last:border-b-[1px]' >
                 <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
                     <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
@@ -64,8 +64,8 @@ function Tools() {
                         </div>
                     </button>
 
-                    <p className='text-xxsmall-cyan uppercase col-span-1 col-start-1 lg:col-start-3 row-start-2
-                        lg:row-start-1 flex justify-end text-right mt-2 pb-1 lg:pb-0'>
+                    <p className='text-xxsmall-cyan text-[var(--secondary)] uppercase col-span-1 col-start-1 
+                        lg:col-start-3 row-start-2 lg:row-start-1 flex justify-end text-right mt-2 pb-1 lg:pb-0'>
                         {tool.description}
                     </p>
             </div>

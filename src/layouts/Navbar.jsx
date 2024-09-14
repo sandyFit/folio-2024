@@ -60,14 +60,14 @@ const Navbar = () => {
             base:px-12 xl-sm:px-16'>
             <div className="w-full grid grid-cols-1 place-content-between mt-9 xl:mt-12 relative">
                 <div className="grid grid-cols-12 place-content-between items-center w-full relative 
-                    before:absolute before:h-[1px] before:bg-cyan-300 before:w-full before:top-12 
+                    before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:top-12 
                     before:lg:top-[3.6rem] before:xl:top-16">
-                    <h3 className='xsm-title col-span-6 xl:col-span-3 col-start-1 row-start-1 logo text-cyan-300'>
+                    <h3 className='xsm-title col-span-6 xl:col-span-3 col-start-1 row-start-1 logo text-[var(--secondary)]'>
                         Trish Ramos
                     </h3>
 
                     <div className='hidden lg-lg:flex col-span-5 col-start-9 w-full relative justify-end'>
-                        <ul className="flex justify-between gap-2 xsm-title text-cyan-300 ">
+                        <ul className="flex justify-between gap-2 xsm-title text-[var(--secondary)] ">
                             <span className='nav__item'>
                                 <NavItem to="projects">projects,</NavItem>
                             </span>

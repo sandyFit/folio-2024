@@ -51,7 +51,7 @@ const ProjectsList = () => {
                             ref={el => projectsRef.current[index] = el}
                             className={`flex flex-grow relative pb-12 
                             ${openProjectIndex === index ? 'expanded' : ''}`}>
-                            <div className="absolute left-0 top-0 w-full h-[1px] bg-cyan-300 transition-all 
+                            <div className="absolute left-0 top-0 w-full h-[1px] bg-[var(--secondary)] transition-all 
                                 duration-[var(--duration)] ease-[var(--ease)]"></div>
                             <div className="flex w-full">
                                 <div className="flex relative">
@@ -87,7 +87,8 @@ const ProjectsList = () => {
                                     2xl-xl:pt-5">
                                     <div className="w-full flex justify-between items-center">
                                         <div className="w-full flex pl-1.5 md:pl-2.5 xl:pl-6">
-                                            <div className="flex w-full sm-title z-[3] whitespace-nowrap">
+                                            <div className="flex w-full sm-title text-[var(--secondary)] z-[3] 
+                                                whitespace-nowrap">
                                                 {project.title}
                                             </div>
                                         </div>

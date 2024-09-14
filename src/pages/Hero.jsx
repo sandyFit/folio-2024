@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
@@ -7,8 +7,26 @@ import ScrollBtn from '../components/buttons/ScrollBtn';
 import TimeZone from '../components/ui/TimeZone';
 import ColorBtn from '../components/buttons/ColorBtn';
 
+const palettes = [
+    'palette-1', 
+    'palette-2', 
+    'palette-3', 
+    'palette-4', 
+]
+
 
 const Hero = () => {
+
+    const [paletteIndex, setPaletteIndex] = useState(0);
+    const currentPalette = palettes[paletteIndex];
+    const bgColorClass = `bg-${currentPalette}-primary`; 
+    const textColorClass = `text-${currentPalette}-secondary`; 
+
+    
+    const switchPallete = () => {
+        setPaletteIndex((prevIndex) => (prevIndex + 1) % palettes.length);
+    }
+
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -96,10 +114,9 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="index"
-            className='w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 base:px-12 
-                xl-sm:px-16'>
-
+        <section id="index"            
+            className={`w-full min-h-screen flex flex-col bg-zinc-950 relative px-6 md:px-10 base:px-12 
+                xl-sm:px-16 ${bgColorClass} transition-all`}>
             <div border-cut="bottom-right-black" className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg-xl:grid-cols-5 2xl-sm:grid-cols-8 
@@ -111,13 +128,13 @@ const Hero = () => {
                                 Designer & Developer based in Colombia. Currently seeking dev roles to
                                 collaborate with creative minds & contribute to innovative projects.
                                 
-                                <a href='mailto:sandy07r@gmail.com' className="relative text-cyan-300 font-[500] 
+                                    Let's connect
+                                <a href='mailto:sandy07r@gmail.com' className={`relative ${textColorClass} font-[500] 
                                     after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1px]
                                     after:w-full after:origin-bottom after:scale-x-0 after:bg-cyan-300
                                     after:transition-transform after:duration-300
                                     after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom
-                                    hover:after:scale-x-100 ml-2">
-                                    Let's connect
+                                    hover:after:scale-x-100 ml-2 `}>
                                 </a>.
                             </p>
                         </article>
@@ -127,7 +144,7 @@ const Hero = () => {
                             <p className='ghost-text'>
                                 color shift
                             </p>
-                            <ColorBtn/>
+                            <ColorBtn onClick={switchPallete}/>
                         </aside>
                     </div>                  
 
@@ -141,9 +158,9 @@ const Hero = () => {
                                 <span className='title-h3-thin mx-3 '>designer</span>
                                 &
                             </h3>
-                            <h1 className="big-title col-span-12 col-start-1 row-start-2 lg-lg:mt-3 xl-sm:mt-5 
+                            <h1 className={`big-title col-span-12 col-start-1 row-start-2 lg-lg:mt-3 xl-sm:mt-5 
                                 xl:mt-10 2xl-sm:mt-12 2xl-md:mt-[3.2rem] 2xl-xl:mt-[3.8rem] text-center
-                                text-cyan-300 whitespace-nowrap hero-title">
+                                ${textColorClass} whitespace-nowrap hero-title`}>
                                 frontend developer
                             </h1>
                         </div>

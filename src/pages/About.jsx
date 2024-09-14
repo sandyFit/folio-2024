@@ -96,7 +96,7 @@ const About = () => {
                     </article>
 
                     <div className="flex justify-start w-full h-[8%] py-4">
-                        <h3 className='title-h4 tracking-widest uppercase'>
+                        <h3 className='title-h4 text-[var(--secondary)] tracking-widest uppercase'>
                             My Skillset
                         </h3>
                     </div>

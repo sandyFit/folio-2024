@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ColorBtn = () => {
+const ColorBtn = ({ onClick }) => {
     return (
-        <button className="relative">
+        <button className="relative" onClick={onClick}>
             <svg
                 className="item__icon-svg"
                 xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const ColorBtn = () => {
             </svg>
             <div className='rounded'>
                 
-                    <span className='w-4 h-4 bg-cyan-400 absolute right-[1.9rem] bottom-[.6rem] rounded-[1px]'></span> 
+                    <span className='w-4 h-4 bg-[var(--secondary)] absolute right-[1.9rem] bottom-[.6rem] rounded-[1px]'></span> 
                 
                 
             </div>
@@ -28,4 +28,4 @@ const ColorBtn = () => {
 }
 
 
-export default ColorBtn
+export default ColorBtn;
