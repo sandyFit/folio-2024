@@ -26,14 +26,14 @@ const ScrollBtn = () => {
 
                     ease: 'power3.inOut',
                     duration: 0.01,
-                    stagger: 0.1,
-                    delay: 0.2,
+                    stagger: 0.2,
+                    delay: 0.5,
                     onComplete: () => gsap.set('.turning-text', { rotateY: '0deg' }),
                 }
             );
         };
 
-        const interval = setInterval(animateText, 6000); // Start animation interval
+        const interval = setInterval(animateText, 7000); // Start animation interval
         animateText(); // Initial animation
 
         return () => clearInterval(interval); // Clean up interval on component unmount

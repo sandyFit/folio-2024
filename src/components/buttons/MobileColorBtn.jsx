@@ -6,7 +6,7 @@ const MobileColorBtn = () => {
             <img src="/square-brackets.svg" alt="square brackets" className='col-span-1 col-start-1
                  row-start-1 '/>
             <div className="flex col-span-1 col-start-1 row-start-1 ">
-                <span className='w-[.8rem] h-[.9rem] rounded bg-cyan-300 '></span>
+                <span className='w-[.8rem] h-[.9rem] rounded bg-[var(--secondary)] '></span>
             </div>
         </button>
     )

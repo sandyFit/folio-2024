@@ -14,8 +14,6 @@ const formatLinkName = (name) => name.replace(/-/g, ' ');
 const SiteLink = ({ name }) => (
     <Link
         to={name}
-        smooth={true}
-        duration={500}
         className="group relative overflow-hidden text-xxsmall-white cursor-pointer"
     >
         <span className="relative inline-flex">
@@ -23,7 +21,7 @@ const SiteLink = ({ name }) => (
                 <span
                     key={index}
                     className={`duration-700 [transition-delay:${index * 0.02}s] 
-                    group-hover:[transform:rotateY(360deg)] group-hover:text-cyan-300`}
+                    group-hover:[transform:rotateY(360deg)] group-hover:text-[var(--secondary)]`}
                 >
                     {char === ' ' ? '\u00A0' : char}
                 </span>

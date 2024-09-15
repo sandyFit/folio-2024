@@ -9,9 +9,8 @@ const About = () => {
     return (
         <section
             id="info"
-            className='w-full min-h-screen flex flex-col justify-center items-start relative'>
+            className='w-full min-h-screen flex flex-col justify-center items-start relative mb-20'>
             <div
-                border-cut="top-and-bottom-about"
                 className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 xl-sm:px-16">
                 
                 <Header title='info' />

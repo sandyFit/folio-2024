@@ -18,7 +18,7 @@ const SocialLink = ({ name, url }) => {
                     <span
                         key={index}
                         className={`duration-700 [transition-delay:${index * 0.02}s] 
-                        group-hover:[transform:rotateY(360deg)] group-hover:text-cyan-300`}
+                        group-hover:[transform:rotateY(360deg)] group-hover:text-[var(--secondary)]`}
                     >
                         {char}
                     </span>

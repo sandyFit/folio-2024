@@ -17,7 +17,7 @@ function ToolTable() {
         <ul className='w-full'>
           {tools.map((tool, index) => (
               <li key={index}  className={`border-t-2 border-cyan-300 flex flex-col w-full overflow-hidden
-                relative cursor-pointer py-4 hover:bg-cyan-950 hover:bg-opacity-45`}>                            
+                relative cursor-pointer py-4 hover:bg-[var(--gradientAccent)] hover:bg-opacity-45`}>                            
                 <div className='w-full grid grid-cols-3'>
                 <button class="group relative inline-flex overflow-hidden duration-1000 out-expo 
                     col-span-2 col-start-1 title-h5-inter">

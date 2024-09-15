@@ -52,7 +52,8 @@ function Tools() {
             key={index}
             ref={el => toolsRef.current[index] = el}
                 className='border-t-[1px] border-[var(--secondary)] flex flex-col w-full overflow-hidden relative 
-                    cursor-pointer py-2 hover:bg-gradient-to-l from-zinc-950 to-cyan-950 last:border-b-[1px]' >
+                    cursor-pointer py-2 hover:bg-gradient-to-l from-[var(--primary)] to-[var(--secondaryHover)]
+                    last:border-b-[1px]' >
                 <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
                     <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
                         col-span-1 lg:col-span-2 col-start-1 row-start-1 title-h5-inter">

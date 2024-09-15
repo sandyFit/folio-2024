@@ -29,9 +29,8 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id='projects'
-            border-cut="footer-btm"
-            className='w-full min-h-screen flex flex-col relative'>
+        <section id='projects'            
+            className='w-full min-h-screen flex flex-col relative mb-12'>
             <button
                 onClick={scrollToTop}
                 className={`fixed hidden xl-sm:flex title-h4-xs top-left-btn justify-center items-center right-2 

@@ -17,7 +17,7 @@ const SeeMore = ({ isOpen, handleToggle }) => {
                     fill="#F1EEE9"
                 ></path>
             </svg>
-            <div className='rounded text-cyan-300 '>
+            <div className='rounded text-[var(--secondary)] '>
                 {isOpen ? (
                     <span className='text-[3rem] absolute right-[1.78rem] -top-[1.4rem]'>-</span> 
                 ) : (

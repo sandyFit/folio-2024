@@ -9,9 +9,7 @@ import { GlobalContext } from '../utils/globalContext';
 
 
 const Hero = () => {
-    const { theme, switchTheme } = useContext(GlobalContext);
-
-
+    const { switchTheme } = useContext(GlobalContext);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +40,7 @@ const Hero = () => {
         const titleAnimation = () => {
             const tl = gsap.timeline({
                 defaults: {
-                    ease: "power2.inOut",
+                    ease: "power2.out",
 
                 }
             });
@@ -57,7 +55,7 @@ const Hero = () => {
                     yPercent: 0,
                     autoAlpha: 1,
                     stagger: 0.5,
-                    
+                    delay: .3
                 }, .5)
             
                 .to('.small__title', {
@@ -70,7 +68,7 @@ const Hero = () => {
                 .to(['.description', '.color__switch'], {
                     autoAlpha: 1,
                     stagger: 0.1,
-                    delay: .2
+                    delay: .3
                 }, '<');
             
             return tl;
@@ -103,9 +101,9 @@ const Hero = () => {
     return (
         <section id="index"
             className='w-full min-h-screen flex flex-col relative px-6 md:px-10 base:px-12 
-                xl-sm:px-16'>
+                xl-sm:px-16 mb-32'>
 
-            <div border-cut="bottom-right-black" className="grid w-full">
+            <div className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg-xl:grid-cols-5 2xl-sm:grid-cols-8 
                         2xl-xl:grid-cols-12">

@@ -27,7 +27,7 @@ const Footer = () => {
 
     return (
         <footer id="contact" className='w-full min-h-screen relative flex flex-col'>
-            <div border-cut="top-right-black" className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16 
+            <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16 
                 flex-grow">
                 <Header title='contact'/>
 
@@ -75,7 +75,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <article className="w-full h-[8rem] lg:h-[7rem] xl:h-[3.5rem] bg-zinc-900 px-6 xl:px-16 py-4">
+            <article className="w-full h-[8rem] lg:h-[7rem] xl:h-[3.5rem] bg-[var(--primaryHover)] px-6 xl:px-16 py-4">
                 <div className="grid grid-cols-1 xl:grid-cols-3 w-full gap-4 xl:gap-0 mt-2 xl:mt-0">
                     <div className="hidden xl:flex col-span-1 justify-start ">
                         <TimeZone />

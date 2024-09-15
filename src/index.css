@@ -12,36 +12,35 @@
     --primary: #09090b;
     --secondary: #67e8f9;
     --primaryHover: #18181b;
-    --secondaryHover: #22d3ee;
-
+    --secondaryHover: rgba(103, 232, 249, .6);
 }
 
 [data-theme='palette-1'] {
     --primary: #09090b;
     --secondary: #67e8f9;
     --primaryHover: #18181b;
-    --secondaryHover: #22d3ee;
+    --secondaryHover: rgba(103, 232, 249, .6);
 }
 
 [data-theme='palette-2'] {
    --primary: #172554;
   --secondary: #fda4af;
-  --primaryHover: #1e3a8a;
-  --secondaryHover: #f87171;
+  --primaryHover: #121f4a;
+  --secondaryHover: rgba(252, 165, 165, .6);
 }
 
 [data-theme='palette-3'] {
    --primary: #052e16;
   --secondary: #d8b4fe;
-  --primaryHover: #14532d;
-  --secondaryHover: #c084fc;
+  --primaryHover: #032410;
+  --secondaryHover: rgba(192, 132, 252, .6);
 }
 
 [data-theme='palette-4'] {
-  --primary: #4c0519;
+  --primary: #400314;
   --secondary: #fef9c3;
-  --primaryHover: #881337;
-  --secondaryHover: #fef08a;
+  --primaryHover: #4c0519;
+  --secondaryHover: rgba(254, 240, 138, .4);
 }
 
 
@@ -386,7 +385,7 @@
     }
 
     .ghost-text {
-      @apply text-[.8rem] font-[500] text-zinc-600 tracking-widest uppercase
+      @apply text-[.8rem] font-[500] text-zinc-500 tracking-widest uppercase
     }
     
 
