@@ -6,7 +6,7 @@ import Header from '../components/ui/Header';
 import { HiOutlineHeart } from 'react-icons/hi2';
 import EmailBtn from '../components/buttons/EmailBtn';
 import TimeZone from '../components/ui/TimeZone';
-
+import { GlobalContext } from '../utils/globalContext';
 
 const Footer = () => {
     const [showCopiedText, setShowCopiedText] = useState(false);
@@ -29,7 +29,8 @@ const Footer = () => {
         <footer id="contact" className='w-full min-h-screen relative flex flex-col'>
             <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16 
                 flex-grow">
-                <Header title='contact'/>
+                <Header title='contact' sectionId='contact'/>
+                
 
                 <div className="w-full flex flex-col relative flex-grow">               
                     <div className="w-full flex flex-col items-start flex-grow">

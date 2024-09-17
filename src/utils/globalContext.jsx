@@ -1,33 +1,42 @@
-import { createContext, useEffect, useRef, useState, useReducer } from "react";
+import React, { createContext, useEffect, useReducer } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import { reducer, palettes } from "./reducer";
 
-export const initialState =  {
-    theme: 'palette-1'
-}
+gsap.registerPlugin(ScrollTrigger);
+
+export const initialState = {
+    theme: 'palette-1', // default theme
+};
 
 export const GlobalContext = createContext(undefined);
 
-// ContextProvider component to provide global state and actions
 export const ContextProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, initialState)
-    const { theme } = state
+    const [state, dispatch] = useReducer(reducer, initialState);
+    const { theme } = state;
 
+    // Sync theme with the body data attribute
     useEffect(() => {
-        document.body.setAttribute('data-theme', theme)
-    }, [theme])
+        document.body.setAttribute('data-theme', theme);
+    }, [theme]);
 
+    // Function to switch to the next theme
     const switchTheme = () => {
+        const currentThemeIndex = palettes.indexOf(state.theme); // Get current index
+        const nextThemeIndex = (currentThemeIndex + 1) % palettes.length; // Get next theme index
+        const nextTheme = palettes[nextThemeIndex]; // Get the actual theme name
         dispatch({
             type: 'SWITCH_COLOR',
-            payload: (state.theme + 1) % palettes.length
+            payload: nextTheme,
         });
     };
 
+   
 
     const contextValue = {
-        theme, switchTheme,
-
-    }
+        theme,
+        switchTheme,
+    };
 
     return (
         <GlobalContext.Provider value={contextValue}>
@@ -35,4 +44,3 @@ export const ContextProvider = ({ children }) => {
         </GlobalContext.Provider>
     );
 };
-

@@ -110,11 +110,11 @@ const ProjectsList = () => {
                                                 />
                                             </div>
                                             <div className="flex flex-col justify-end w-full mt-auto">
-                                                <p className="w-full text-xsmall" d
-                                                    angerouslySetInnerHTML={{ __html: project.description }} />
-                                                <h4 className="text-xsmall-white mt-6">Technologies:</h4>
+                                                <p className="w-full text-xsmall"
+                                                    dangerouslySetInnerHTML={{ __html: project.description }} />
                                                 <p className="text-xsmall"
                                                     dangerouslySetInnerHTML={{ __html: project.technologies }} />
+
                                             </div>
                                             <div className="w-full flex justify-end relative gap-1">
                                                 <BottomLeftOutlineBtn />

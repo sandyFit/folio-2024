@@ -77,11 +77,11 @@ const Hero = () => {
         const scrollTimeline = () => {
             const st = gsap.timeline({
                 scrollTrigger: {
-                trigger: "#index",
-                start: "top top",
-                end: "bottom top",
-                scrub: true,
-                toggleActions: 'play none none reverse',
+                    trigger: "#index",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true,
+                    toggleActions: 'play none none reverse',
                 }
             });
                  
@@ -96,12 +96,17 @@ const Hero = () => {
             .add(titleAnimation(), '<')
             .add(scrollTimeline(), '<')
         
+        return () => {
+            console.log('Cleaning up ScrollTrigger');
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+        
     }, []);
 
     return (
         <section id="index"
             className='w-full min-h-screen flex flex-col relative px-6 md:px-10 base:px-12 
-                xl-sm:px-16 mb-32'>
+                xl-sm:px-16 mb-32 hero-content'>
 
             <div className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">

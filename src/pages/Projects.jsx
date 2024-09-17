@@ -44,7 +44,7 @@ const Projects = () => {
             </button>
 
             <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl-sm:px-16">
-                <Header title='projects' />
+                <Header title='projects' sectionId='projects'/>
                 <header className="w-full flex justify-start relative mt-0 lg:mt-12">
                     <h2 className='title-h2 relative hidden lg-lg:block'>
                         ⋙ Crafted with Care & a

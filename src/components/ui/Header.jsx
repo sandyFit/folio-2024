@@ -1,18 +1,61 @@
 import React, { useEffect, useState } from 'react';
 import MobileHeader from './MobileHeader';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
-const Header = ({ title }) => {
+gsap.registerPlugin(ScrollTrigger);
+
+const Header = ({ title, sectionId }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
 
     useEffect(() => {
+        let resizeTimeout;
+
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 850);
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                setIsMobile(window.innerWidth < 850);
+                ScrollTrigger.refresh();
+            }, 150);
         };
 
         window.addEventListener('resize', handleResize);
 
-        return () => window.removeEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
+
+    useEffect(() => {
+        // GSAP animation for each header
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: `#${sectionId}`,
+                start: 'top bottom',
+                end: 'top top+=60',
+                scrub: 1,
+                toggleActions: 'play none none reverse',
+                once: true
+            },
+        });
+
+        tl.fromTo(
+            `#${sectionId} .text`, 
+            { yPercent: -200, autoAlpha: 0 }, 
+            { yPercent: 0, autoAlpha: 1, duration: 1 }
+        )
+        .fromTo(
+            `#${sectionId} .date`, 
+            { yPercent: -200, autoAlpha: 0 }, 
+            { yPercent: 0, autoAlpha: 1, duration: 1 },
+            '<'
+        );
+
+        return () => {
+            // Clean up ScrollTrigger and animations
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, [sectionId]);
 
     return (
         <section className='w-full h-[80px] flex justify-between pb-32'>
@@ -22,13 +65,14 @@ const Header = ({ title }) => {
                 ) : (
                     <div className="grid grid-cols-2 lg:grid-cols-12 place-content-between items-center w-full 
                         relative before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:top-12
-                        before:lg:top-16">
+                        before:lg:top-16 animate-text">
                     
-                        <h3 className='xsm-title text-[var(--secondary)] col-span-1 lg:col-span-3 col-start-1'>
+                        <h3 className='xsm-title text-[var(--secondary)] col-span-1 lg:col-span-3 col-start-1 text'>
                             {title}
                         </h3>
 
-                        <p className='xsm-title text-[var(--secondary)] col-span-1 col-start-2 lg:col-start-12 grid place-content-end'>
+                        <p className='xsm-title text-[var(--secondary)] col-span-1 col-start-2 lg:col-start-12 
+                            grid place-content-end date'>
                             2&copy;{new Date().getFullYear().toString().slice(-2)}
                         </p>
                     </div>

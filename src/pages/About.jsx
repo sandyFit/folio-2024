@@ -5,6 +5,7 @@ import Header from '../components/ui/Header';
 import Tools from '../components/ui/Tools';
 
 
+
 const About = () => {
     return (
         <section
@@ -12,8 +13,8 @@ const About = () => {
             className='w-full min-h-screen flex flex-col justify-center items-start relative mb-20'>
             <div
                 className="w-full flex flex-col items-start px-6 md:px-10 base:px-12 xl-sm:px-16">
-                
-                <Header title='info' />
+                <Header title='info' sectionId='info'/>
+
                 <header className="flex flex-col items-start mt-2 lg:mt-12">
                     <div className="flex justify-between relative">
                         <h2 className='title-h2 relative hidden lg-lg:block'>
