@@ -33,7 +33,8 @@ const Projects = () => {
             className='w-full min-h-screen flex flex-col relative mb-12'>
             <button
                 onClick={scrollToTop}
-                className={`fixed hidden xl-sm:flex title-h4-xs top-left-btn justify-center items-center right-2 
+                className={`fixed hidden xl-sm:flex title-h4-xs top-left-btn justify-center items-center right-8 
+                    xl-2xl:right- 3xl:right-2
                     bottom-80 w-10 h-[4rem] 2xl-xl:w-12 2xl-xl:h-[4.5rem] pt-1 z-[40] bg-[var(--secondary)] group 
                     ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >

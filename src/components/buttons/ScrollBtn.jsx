@@ -41,8 +41,8 @@ const ScrollBtn = () => {
 
     return (
         <button className="group relative">
-            <Link to="work" className="group relative overflow-hidden text-xxsmall-white tracking-widest">
-                <span className="text-xxsmall-white flex whitespace-nowrap justify-center items-center group">
+            <Link to="work" className="group relative overflow-hidden text-xxsmall text-zinc-300 tracking-widest">
+                <span className=" flex whitespace-nowrap justify-center items-center group">
                     {/* Animated text */}
                     <span className="relative inline-flex items-center">
                         {/* Map words with spaces */}

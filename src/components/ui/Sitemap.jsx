@@ -14,7 +14,7 @@ const formatLinkName = (name) => name.replace(/-/g, ' ');
 const SiteLink = ({ name }) => (
     <Link
         to={name}
-        className="group relative overflow-hidden text-xxsmall-white cursor-pointer"
+        className="w-full group relative overflow-hidden text-xxsmall text-zinc-300 cursor-pointer"
     >
         <span className="relative inline-flex">
             {formatLinkName(name).split('').map((char, index) => (
@@ -34,8 +34,8 @@ const Sitemap = () => {
 
 
     return (
-        <div className="flex w-[30vw]">
-            <ul className="w-full flex uppercase justify-between gap-4"
+        <div className="w-full flex">
+            <ul className="w-full flex uppercase justify-between "
             >
                 {links.map(({ name }) => (
                     <li key={name} className=''>

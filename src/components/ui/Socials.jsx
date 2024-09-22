@@ -36,9 +36,8 @@ SocialLink.propTypes = {
 const Socials = () => {
 
     return (
-        <div className=" title-small">
-            <ul className="w-full flex justify-between text-xsmall-white uppercase gap-4"
-            >
+        <div className="w-full title-small">
+            <ul className="w-full flex justify-between text-xxsmall text-zinc-300 uppercase">
                 {socialLinks.map(({ name, url }) => (
                     <li key={name} className=''>
                         <SocialLink name={name} url={url}/>

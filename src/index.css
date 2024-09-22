@@ -324,70 +324,26 @@
       @apply text-zinc-50 text-[3.9rem] font-inter font-[400] tracking-wide uppercase
     }
 
-    .text-small {
-      @apply font-inter text-zinc-400 text-[1.2rem] font-[300]  tracking-wide
-    }
-
-    .text-small-darkx {
-      @apply font-inter text-zinc-950 text-[1.2rem] font-[500]  tracking-wide
-    }
+    
 
     .text-xsmall {
       @apply font-inter text-zinc-400 text-[.8rem] md:text-[1rem] lg:text-[.8rem] xl:text-[.9rem] 2xl:text-[1rem]
         font-[300] 
     }
 
-
-    .text-xsmall-white {
-      @apply font-inter text-zinc-300 text-[.8rem]  lg:text-[1rem] font-[400] uppercase
-    }
-
-    .text-xsmall-cyan {
-      @apply font-inter  text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[400] leading-[18px] uppercase
-    }
-
-    .text-xsmall-dark {
-      @apply font-inter text-zinc-950 text-[.8rem] sm:text-[.8rem]  lg:text-[1rem] font-[500] leading-[18px] 
-        hover:font-[600] uppercase
-    }
-
     .text-xxsmall {
-      @apply font-inter text-zinc-400 font-[400] uppercase
+      @apply font-inter font-[400] uppercase
       text-[.72rem] 
       md:text-[.78rem] 
-      lg:text-[.75rem]  
+      base:text-[.85rem]
+      base-sm:text-[.9rem]
+      lg:text-[.9rem]  
+      lg-sm:text-[.78rem]
       xl-2xl:text-[.8rem]
       2xl:text-[.9rem] 
       
     }
-   
-    .text-xxsmall-min {
-      @apply font-inter text-zinc-400  text-[.78rem] lg:text-[.88rem] font-[300] tracking-wider
-    }
-
-    .text-xxsmall-black {
-      @apply font-inter text-zinc-950 text-[.7rem] font-[500] tracking-wider uppercase
-    }
-    .text-xxsmall-cyan {
-      @apply font-inter  text-[.7rem] md:text-[.78rem] lg:text-[.9rem] font-[400]  uppercase
-    }
-
-    .text-xxsmall-white {
-      @apply font-inter text-zinc-50 text-[.72rem] md:text-[.78rem] 2xl:text-[.9rem]  uppercase
-    }
-   
-
-    .text-xxxsmall {
-      @apply font-inter text-zinc-50 text-[.7rem] font-[400] tracking-wider uppercase
-    }
-    .text-xxxsmall-black {
-      @apply font-inter text-zinc-950 text-[.7rem] lg:text-[.8rem] font-[500] tracking-wider uppercase
-    }
-
-    .ghost-text {
-      @apply text-[.8rem] font-[500] text-zinc-500 tracking-widest uppercase
-    }
-    
+  
 
     /* ====== TITLES ====== */
 
@@ -535,9 +491,7 @@
         
     }
 
-    .title-h5-inter {
-      @apply  font-inter text-zinc-50 text-[.7rem] 2xl-sm:text-[1rem] font-[400] uppercase tracking-wider 
-    }
+   
 
     .title-h5 {
       @apply  font-inter text-zinc-50 text-[1rem] 2xl:text-[1.1rem] font-[400] uppercase tracking-wider 
@@ -568,15 +522,25 @@
           
     }
 
-    
   
-    .med-title {
-      @apply morganite-bold text-[8rem] sm:text-[10rem] leading-[70px] sm:leading-[90px]  text-violet-500
-
-    }
     .reg-title {
       @apply morganite-bold  font-[600] leading-[130px]   
         text-[3rem]
+        md:text-[3.8rem]
+        base:text-[4.5rem]
+        base-sm:text-[5.8rem]
+        lg:text-[7rem]
+        lg-md:text-[7.8rem]
+        lg-lg:text-[8.5rem]
+        lg-xl:text-[9rem]
+        lg-2xl:text-[9.5rem]
+        xl-sm:text-[9.8rem]
+        xl-md:text-[10.5rem]
+        xl-xl:text-[12rem]
+        xl-2xl:text-[13rem]
+        2xl-md:text-[14rem]
+        2xl-lg:text-[14.5rem]
+        3xl-sm:text-[15.5rem]
         3xl:text-[16rem]
     }
     

@@ -119,10 +119,8 @@ const Hero = () => {
                 xl-sm:px-16 ${bgColorClass} transition-all`}>
             <div border-cut="bottom-right-black" className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg-xl:grid-cols-5 2xl-sm:grid-cols-8 
-                        2xl-xl:grid-cols-12">
-                        <article className="w-full col-span-1 lg:col-span-2 lg-xl:col-span-2 xl:col-span-2 
-                            2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col  mt-24 description
+                    <div className="w-full grid grid-cols-2 ">
+                        <article className="w-full lg:w-[45%] col-span-1  row-start-2 col-start-1 flex flex-col  mt-24 description
                             lg:mt-[-1.2rem] lg-lg:mt-[-2.6rem] xl:mt-[-1.8rem] relative">
                             <p className='w-full text-xxsmall text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking dev roles to

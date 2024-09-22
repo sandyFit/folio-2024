@@ -27,48 +27,56 @@ const Footer = () => {
 
     return (
         <footer id="contact" className='w-full min-h-screen relative flex flex-col'>
-            <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl:px-16 
+            <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl-sm:px-16 
                 flex-grow">
                 <Header title='contact' sectionId='contact'/>
                 
 
                 <div className="w-full flex flex-col relative flex-grow">               
                     <div className="w-full flex flex-col items-start flex-grow">
-                        <section className='w-full grid grid-rows-2 flex-grow'>                           
-                            <h2 className="w-full xl:w-[35%] text-xxsmall relative row-start-2 xl:row-start-1 
-                            text-justify mt-[-4rem] xl:mt-0">
-                                Whether you need a full-time team member or an extra pair of creative hands for
-                                a project, I'm all ears & hands!
-                                <span className="whitespace-nowrap row-start-5 z-20">
-                                    <a href='mailto:sandy07r@gmail.com'
-                                        className="relative text-[var(--secondary)] font-[500] after:absolute after:-bottom-1 
-                                            after:left-0 after:right-0 after:h-[1px] after:w-full after:origin-bottom
-                                            after:scale-x-0 after:bg-[var(--secondary)] after:transition-transform
-                                            after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]
-                                            hover:after:origin-bottom hover:after:scale-x-100 xl:ml-2">
-                                        Let's connect
-                                    </a>.
-                                </span>
-                            </h2>
+                        <section className='w-full grid grid-cols-1 lg-sm:grid-cols-2 grid-rows-2 place-content-center
+                             lg-sm:place-content-between flex-grow '>                           
+                            <div className="w-full col-start-1">
+                                <h2 className="w-full lg-xl:w-[80%] xl:w-[65%] 3xl-sm:w-[50%] text-xxsmall relative  
+                                    row-start-2 lg-sm:row-start-1 text-justify -mt-20 lg-sm:mt-0 text-zinc-300">
+                                    Whether you need a full-time team member or an extra pair of creative hands for
+                                    a project, I'm all ears & hands!
+                                    <span className="whitespace-nowrap z-20">
+                                        <a href='mailto:sandy07r@gmail.com'
+                                            className="relative text-[var(--secondary)] font-[500] after:absolute 
+                                                after:-bottom-1 
+                                                after:left-0  after:right-0 after:h-[1px] after:w-full after:origin-bottom
+                                                after:scale-x-0 after:bg-[var(--secondary)] after:transition-transform
+                                                after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]
+                                                hover:after:origin-bottom hover:after:scale-x-100 ml-2">
+                                            Let's connect
+                                        </a>.
+                                    </span>
+                                </h2>
+                            </div>
 
-                            <div className="w-full flex justify-center xl:justify-end row-start-1">
-                                <Socials />
+                            
+                            <div className="w-full lg-sm:col-start-2 row-start-1 flex justify-center lg-sm:justify-end ">
+                                <div className="w-full lg-sm:w-[80%] xl:w-[55%] 
+                                     mt-[-1.3rem] lg:mt-0 ">
+                                    <Socials />
+                                </div>
                             </div>
                         </section>
 
-                        <div className='w-full whitespace-nowrap flex flex-col items-center gap-12'>
+                        <div className='w-full whitespace-nowrap flex flex-col items-center gap-3 lg-sm:gap-12'>
                             {showCopiedText ? (
-                                <p className='ghost-text'>
+                                <p className='text-xxsmall text-zinc-500 tracking-widest'>
                                     Email copied!
                                 </p>
                             ) : (
-                                    <p className='ghost-text'>
+                                    <p className='text-xxsmall text-zinc-500 tracking-widest'>
                                     Copy Email
                                 </p>
                             )
                         }
 
-                            <div className='flex justify-center w-full text-center mb-20'>
+                            <div className='flex justify-center w-full text-center mb-12 lg-sm:mb-20'>
                                 <EmailBtn handleCopiedText={handleCopiedText} />
                             </div>
                         </div>                                               
@@ -76,18 +84,18 @@ const Footer = () => {
                 </div>
             </div>
 
-            <article className="w-full h-[8rem] lg:h-[7rem] xl:h-[3.5rem] bg-[var(--primaryHover)] px-6 xl:px-16 py-4">
-                <div className="grid grid-cols-1 xl:grid-cols-3 w-full gap-4 xl:gap-0 mt-2 xl:mt-0">
-                    <div className="hidden xl:flex col-span-1 justify-start ">
+            <article className="w-full h-[8rem] lg:h-[7rem] lg-xl:h-[3.5rem] bg-[var(--primaryHover)] px-6 base:px-12 xl:px-16 py-4">
+                <div className="grid grid-cols-1 lg-xl:grid-cols-3 w-full gap-4 xl:gap-0 mt-2 xl:mt-0">
+                    <div className="hidden lg-xl:flex col-span-1 justify-start items-center">
                         <TimeZone />
                     </div>
                         
-                    <div className="col-span-1 flex justify-center">
+                    <div className="flex justify-center ">
                         <Sitemap />
                     </div>
 
-                    <div className="col-span-1 flex justify-center xl:justify-end text-xxsmall-cyan tracking-[.15rem] 
-                        whitespace-nowrap text-[var(--secondary)]">
+                    <div className="col-span-1 flex justify-center lg-xl:justify-end text-xxsmall 
+                        tracking-[.15rem] whitespace-nowrap text-[var(--secondary)] items-center">
                         crafted with <HiOutlineHeart className='mx-1 mt-1' /> by
                         <a href="#" className="relative text-zinc-200 font-[500] 
                                     after:absolute after:bottom-1 after:left-0 after:right-0 after:h-[1px]

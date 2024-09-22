@@ -110,12 +110,11 @@ const Hero = () => {
 
             <div className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg-xl:grid-cols-5 2xl-sm:grid-cols-8 
-                        2xl-xl:grid-cols-12">
-                        <article className="w-full col-span-1 lg:col-span-2 lg-xl:col-span-2 xl:col-span-2 
+                    <div className="w-full grid grid-cols-2 ">
+                        <article className="w-full lg:w-[60%] 3xl:w-[32%] col-span-1 lg:col-span-2 lg-xl:col-span-2 xl:col-span-2 
                             2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col  mt-24 description
                             lg:mt-[-1.2rem] lg-lg:mt-[-2.6rem] xl:mt-[-1.8rem] relative">
-                            <p className='w-full text-xxsmall text-justify'>
+                            <p className='w-full text-xxsmall text-zinc-300 text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking dev roles to
                                 collaborate with creative minds & contribute to innovative projects.
                                 
@@ -132,7 +131,7 @@ const Hero = () => {
 
                         <aside className="w-full hidden lg-lg:flex col-span-2 col-start-11 ml-[5.4rem] items-center 
                             color__switch">
-                            <p className='ghost-text'>
+                            <p className='text-xxsmall text-zinc-500 tracking-widest'>
                                 color shift
                             </p>
                             <ColorBtn onClick={switchTheme}/>
@@ -174,15 +173,15 @@ const Hero = () => {
             <footer className="mt-auto w-full mb-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg-md:place-content-between whitespace-nowrap 
                     small__text">
-                    <div className="hidden lg-lg:flex text-xxsmall-cyan col-span-1 col-start-1 row-start-1 
+                    <div className="hidden lg-lg:flex text-xxsmall col-span-1 col-start-1 row-start-1 
                         justify-start items-center text-[var(--secondary)]">
                         portfolio
-                        <span className='text-xxsmall-white ml-1.5 '>
+                        <span className='text-xxsmall text-zinc-300 ml-1.5 '>
                             &copy;{new Date().getFullYear()}
                         </span>
                     </div>
 
-                    <div className="flex lg-lg:hidden text-xxsmall-white col-span-1 col-start-1 row-start-1 w-full 
+                    <div className="flex lg-lg:hidden text-xxsmall text-zinc-300 col-span-1 col-start-1 row-start-1 w-full 
                         whitespace-nowrap justify-center lg:justify-start ">
                         folio &copy; {new Date().getFullYear()}
                     </div>

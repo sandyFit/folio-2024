@@ -56,7 +56,7 @@ function Tools() {
                     last:border-b-[1px]' >
                 <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
                     <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
-                        col-span-1 lg:col-span-2 col-start-1 row-start-1 title-h5-inter">
+                        col-span-1 lg:col-span-2 col-start-1 row-start-1 text-xxsmall text-zinc-200">
                         <div className={`-translate-x-0 transition ease-in-out group-hover:translate-x-[410%]`}>
                             &nbsp; {tool.name}
                         </div>
@@ -65,7 +65,7 @@ function Tools() {
                         </div>
                     </button>
 
-                    <p className='text-xxsmall-cyan text-[var(--secondary)] uppercase col-span-1 col-start-1 
+                    <p className='text-xxsmall text-[var(--secondary)] uppercase col-span-1 col-start-1 
                         lg:col-start-3 row-start-2 lg:row-start-1 flex justify-end text-right mt-2 pb-1 lg:pb-0'>
                         {tool.description}
                     </p>
