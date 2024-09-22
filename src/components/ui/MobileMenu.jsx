@@ -1,11 +1,10 @@
 import React from 'react';
 import NavItem from './NavItem';
-import ColorBtn from '../buttons/ColorBtn';
 import MobileColorBtn from '../buttons/MobileColorBtn';
 
 const MobileMenu = ({ isMenuOpen }) => {
     return (
-        <div className={`flex xl:hidden w-full h-[67vh] bg-cyan-300 absolute top-20 left-0 px-8 z-[100]
+        <div className={`flex xl:hidden w-full h-[67vh] bg-[var(--secondary)] absolute top-20 left-0 px-8 z-[100]
             ${isMenuOpen ? 'menu-open' : 'menu-closed'}`}>           
             <article className="w-full relative flex">                         
                 <ul className='w-full flex flex-col justify-center items-center gap-2 xsm-title-dark '>                                  
