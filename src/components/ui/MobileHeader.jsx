@@ -31,7 +31,8 @@ const MobileHeader = ({ title }) => {
                             2&copy;{new Date().getFullYear().toString().slice(-2)}
                         </p>
                     ) : (
-                            <span className="w-full col-span-1 col-start-2 flex justify-end row-start-1 ml-8 mt-2 lg:mt-4">
+                            <span className="w-full col-span-1 col-start-2 flex justify-end row-start-1 ml-8 
+                                mt-2 lg:mt-4">
                                 <MenuBtn onClick={handleClick} visible={visible} />
                                 <MobileMenu isMenuOpen={visible} />
                             </span>

@@ -554,8 +554,8 @@
       @apply morganite-bold text-[3rem] lg:text-[3.5rem] xl:text-[4rem] font-[500] uppercase   leading-[88%]
     }
 
-    .xsm-title-dark {
-      @apply morganite-bold text-[4rem] font-[500] uppercase  text-zinc-950 leading-[88%]
+    .xsm-title-mobile {
+      @apply morganite-bold text-[4rem] font-[500] uppercase leading-[88%]
     }
 
     .sm-title {
@@ -610,7 +610,7 @@
     /* =========== MENU BTN =========== */
 
     .line {
-      @apply w-[1.18rem] h-[.8px] bg-cyan-300 transition-all duration-300 ease-out-expo
+      @apply w-[1.18rem] h-[.8px] bg-[var(--secondary)] transition-all duration-300 ease-out-expo
     }
     
     .line-box.active {
