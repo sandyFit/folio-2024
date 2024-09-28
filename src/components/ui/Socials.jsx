@@ -11,7 +11,7 @@ const SocialLink = ({ name, url }) => {
     // Check if name is a string and not undefined or null
     const splitName = typeof name === 'string' ? name.split('') : [];
     return (
-        <a href={url} className="group relative w-full overflow-hidden text-xxsmall-white">
+        <a href={url} className="group relative w-full overflow-hidden text-xxsmall text-zinc-300">
             <span className="relative inline-flex">
                 {splitName.map((char, index) => (
                     <span

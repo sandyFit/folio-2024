@@ -38,7 +38,7 @@ const Footer = () => {
                              lg-sm:place-content-between flex-grow '>                           
                             <div className="w-full col-start-1">
                                 <h2 className="w-full lg-xl:w-[80%] xl:w-[65%] 3xl-sm:w-[50%] text-xxsmall relative  
-                                    row-start-2 lg-sm:row-start-1 text-justify -mt-20 lg:-mt-12 lg-sm:mt-3 text-zinc-300">
+                                    row-start-2 lg-sm:row-start-1 text-justify -mt-20 lg:-mt-12 lg-sm:mt-3 3xl:mt-1 text-zinc-300">
                                     Whether you need a full-time team member or an extra pair of creative hands for
                                     a project, I'm all ears & hands!
                                     <span className="whitespace-nowrap z-20">
@@ -58,7 +58,7 @@ const Footer = () => {
                             
                             <div className="w-full lg-sm:col-start-2 row-start-1 flex justify-center lg-sm:justify-end ">
                                 <div className="w-full lg-sm:w-[65%] lg-xl:w-[52%] xl:w-[45%] 2xl-lg:w-[40%] :w-[35%] 
-                                     mt-[-1.2rem] lg:mt-3 ">
+                                     mt-[-1.2rem] lg:mt-3 3xl:mt-1">
                                     <Socials />
                                 </div>
                             </div>

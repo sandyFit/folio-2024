@@ -112,7 +112,7 @@ const Hero = () => {
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
                     <div className="w-full grid lg:grid-cols-2 ">
                         <article className="w-full lg:w-[60%] lg-lg:w-[65%] xl-md:w-[50%] xl:w-[46%] 2xl-sm:w-[38%] 
-                            2xl-md:w-[36%] 2xl-lg:w-[35%] 2xl-xl:w-[32%] col-span-1 lg:col-span-2 lg-xl:col-span-2 
+                            2xl-md:w-[36%] 2xl-lg:w-[35%] 2xl-xl:w-[32%] 3xl:w-[30%] col-span-1 lg:col-span-2 lg-xl:col-span-2 
                             xl:col-span-2 2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col  mt-24 description
                             lg:mt-[-1.2rem] lg-lg:mt-[-2.6rem] xl:mt-[-1.8rem] relative">
                             <p className='w-full text-xxsmall text-zinc-300 text-justify'>

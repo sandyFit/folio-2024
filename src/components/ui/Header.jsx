@@ -32,7 +32,7 @@ const Header = ({ title, sectionId }) => {
             scrollTrigger: {
                 trigger: `#${sectionId}`,
                 start: 'top bottom',
-                end: 'top top+=60',
+                end: 'top top+=80',
                 scrub: .6,
                 toggleActions: 'play none none reverse',
                 once: true
