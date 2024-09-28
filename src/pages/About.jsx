@@ -36,7 +36,7 @@ const About = () => {
                         </h2>
 
                         <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
-                            ⋙ graphic designer turned <br />
+                            graphic designer turned <br />
                             <span className="title-h2-thin whitespace-nowrap 
                                 border-[1px] border-zinc-50 px-2 rounded-full">
                                 frontend  
@@ -44,7 +44,7 @@ const About = () => {
                             <span className="title-h2-thin whitespace-nowrap ml-2">
                                 developer. <br/>
                             </span>
-                            ∎ transforming design into<br/> 
+                            transforming design into<br/> 
                             <span className="title-h2-thin">
                                   interactive 
                             </span>
@@ -68,7 +68,7 @@ const About = () => {
 
                 <section className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 2xl-sm:w-[52vw] 
                     2xl-xl:w-[50vw] 3xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
-                    <article className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
+                    <article className="flex gap-32 justyfy-start xl:justify-end mt-1 lg-lg:mt-8 xl:mt-12">
                         <p className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
                             
                             I'm a self-taught web developer specializing in the React ecosystem.<br />

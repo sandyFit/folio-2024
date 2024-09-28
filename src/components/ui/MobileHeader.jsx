@@ -17,12 +17,15 @@ const MobileHeader = ({ title }) => {
     };
 
     return (
-        <section className='w-full h-[80px] flex justify-between pb-32'>
-            <div className="w-full grid grid-cols-1 place-content-between mt-2 relative">
+        <section className='w-full h-[80px] pb-32'>
+            <div className="w-full grid grid-cols-1 mt-2 relative">
                 <div className="grid grid-cols-2 xl:grid-cols-12 place-content-between items-center w-full relative 
-                    before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:top-12 before:lg:top-16">
+                    before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:-top-2
+                        before:lg:-top-2 animate-text after:absolute after:h-[1px] after:bg-[var(--secondary)] 
+                        after:w-full after:top-12 after:lg:top-[3.5rem] animate-text">
                     
-                    <h3 className='xsm-title text-[var(--secondary)] col-span-1 xl:col-span-3 col-start-1 row-start-1'>
+                    <h3 className='xsm-title text-[var(--secondary)] col-span-1 xl:col-span-3 col-start-1 
+                        row-start-1'>
                         {title}
                     </h3>
 
@@ -32,7 +35,7 @@ const MobileHeader = ({ title }) => {
                         </p>
                     ) : (
                             <span className="w-full col-span-1 col-start-2 flex justify-end row-start-1 ml-8 
-                                mt-2 lg:mt-4">
+                                ">
                                 <MenuBtn onClick={handleClick} visible={visible} />
                                 <MobileMenu isMenuOpen={visible} />
                             </span>

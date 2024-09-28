@@ -33,8 +33,8 @@ const Projects = () => {
             className='w-full min-h-screen flex flex-col relative mb-12'>
             <button
                 onClick={scrollToTop}
-                className={`fixed hidden xl-sm:flex title-h4-xs top-left-btn justify-center items-center right-8 
-                    xl-2xl:right- 3xl:right-2
+                className={`fixed hidden xl-sm:flex title-h4-xs top-left-btn justify-center items-center right-4 
+                    2xl-xl:right-3 3xl:right-2
                     bottom-80 w-10 h-[4rem] 2xl-xl:w-12 2xl-xl:h-[4.5rem] pt-1 z-[40] bg-[var(--secondary)] group 
                     ${showFloatingBtn ? 'visible-btn' : 'hidden-btn'}`}
             >
@@ -47,9 +47,8 @@ const Projects = () => {
             <div className="w-full flex flex-col px-6 md:px-10 base:px-12 xl-sm:px-16">
                 <Header title='projects' sectionId='projects'/>
                 <header className="w-full flex justify-start relative mt-0 lg:mt-12">
-                    <h2 className='title-h2 relative '>
-                         {/* Crafted with Care & a
-                        <span className="title-h2-thin ml-4">Dash of Flair.</span><br /> */}
+                    <h2 className='title-h2 relative hidden lg-lg:block'>
+
                         ⋙ Each project reflects a <br/>
                         <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mr-2">
                             meticulous   
@@ -60,21 +59,19 @@ const Projects = () => {
                         <span className="title-h2">detail-oriented development.</span>
                     </h2>
 
-                    {/* <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
-                        ⋙ Crafted with Care & a <br />
-                        <span className="title-h2-thin italic font-[100] whitespace-nowrap">
-                            Dash of Flair.
-                        </span><br />
-                        ∎ Each project offer a meticulous approach to detail-oriented development.  <br />
-                        <span className="title-h2-thin italic font-[100] whitespace-nowrap">function</span>
-                        <span className="title-h2-thin italic font-[100] border-[1px] border-zinc-50 px-2
-                            whitespace-nowrap rounded-full ml-2">
-                                 smoothly
+                    <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
+                        Each project reflects a<br />                       
+                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mr-2">
+                             meticulous   
                         </span>
-                            <span className="title-h2-thin italic font-[100] whitespace-nowrap ml-1">&</span><br />
-                        <span>leave a lasting impression.</span>
-                       
-                    </h2> */}
+                        <span className="title-h2-thin ">
+                            approach 
+                        </span><br/>
+                        <p className="title-h2"> to detail-oriented </p>
+                       <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
+                            development  
+                        </span>.
+                    </h2>
                 </header>
 
                 <section className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 

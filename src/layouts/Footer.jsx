@@ -38,7 +38,7 @@ const Footer = () => {
                              lg-sm:place-content-between flex-grow '>                           
                             <div className="w-full col-start-1">
                                 <h2 className="w-full lg-xl:w-[80%] xl:w-[65%] 3xl-sm:w-[50%] text-xxsmall relative  
-                                    row-start-2 lg-sm:row-start-1 text-justify -mt-20 lg-sm:mt-0 text-zinc-300">
+                                    row-start-2 lg-sm:row-start-1 text-justify -mt-20 lg:-mt-12 lg-sm:mt-3 text-zinc-300">
                                     Whether you need a full-time team member or an extra pair of creative hands for
                                     a project, I'm all ears & hands!
                                     <span className="whitespace-nowrap z-20">
@@ -57,8 +57,8 @@ const Footer = () => {
 
                             
                             <div className="w-full lg-sm:col-start-2 row-start-1 flex justify-center lg-sm:justify-end ">
-                                <div className="w-full lg-sm:w-[80%] xl:w-[35%] 
-                                     mt-[-1.3rem] lg:mt-0 ">
+                                <div className="w-full lg-sm:w-[65%] lg-xl:w-[52%] xl:w-[45%] 2xl-lg:w-[40%] :w-[35%] 
+                                     mt-[-1.2rem] lg:mt-3 ">
                                     <Socials />
                                 </div>
                             </div>
@@ -84,17 +84,19 @@ const Footer = () => {
                 </div>
             </div>
 
-            <article className="w-full h-[8rem] lg:h-[7rem] lg-xl:h-[3.5rem] bg-[var(--primaryHover)] px-6 base:px-12 xl:px-16 py-4">
-                <div className="grid grid-cols-1 lg-xl:grid-cols-3 w-full gap-4 xl:gap-0 mt-2 xl:mt-0">
+            <article className="w-full flex items-center h-[8rem] lg:h-[7rem] lg-sm:h-[3.6rem] bg-[var(--primaryHover)] 
+                px-6 base:px-12 xl:px-16 py-4">
+                <div className="grid grid-cols-1 lg-sm:grid-cols-2 lg-xl:grid-cols-3  w-full gap-4 xl:gap-0 
+                    mt-2 xl:mt-0">
                     <div className="hidden lg-xl:flex col-span-1 justify-start items-center">
                         <TimeZone />
                     </div>
                         
-                    <div className="flex justify-center ">
+                    <div className="flex justify-center lg-sm:justify-start lg-xl:justify-center items-center">
                         <Sitemap />
                     </div>
 
-                    <div className="col-span-1 flex justify-center lg-xl:justify-end text-xxsmall 
+                    <div className="col-span-1 flex justify-center lg-sm:justify-end text-xxsmall w-full 
                         tracking-[.15rem] whitespace-nowrap text-[var(--secondary)] items-center">
                         crafted with <HiOutlineHeart className='mx-1' /> by
                         <a href="#" className="relative text-zinc-200 font-[500] 

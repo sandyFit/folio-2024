@@ -66,7 +66,7 @@ const Header = ({ title, sectionId }) => {
                     <div className="grid grid-cols-2 lg:grid-cols-12 place-content-between items-center w-full 
                         relative before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:top-1
                         before:lg:-top-2 animate-text after:absolute after:h-[1px] after:bg-[var(--secondary)] 
-                        after:w-full after:top-12 after:lg:top-16 animate-text ">
+                        after:w-full after:lg-xl:top-[3.5rem] after:xl:top-[3.9rem] animate-text ">
                     
                         <h3 className='xsm-title text-[var(--secondary)] col-span-1 lg:col-span-3 col-start-1 text'>
                             {title}

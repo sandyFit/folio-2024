@@ -34,8 +34,8 @@ const Sitemap = () => {
 
 
     return (
-        <div className="w-full 3xl-sm:w-[65%] flex">
-            <ul className="w-full flex uppercase justify-between "
+        <div className="w-full lg-sm:w-[80%] lg-xl:w-[85%] 3xl-sm:w-[65%] flex">
+            <ul className="w-full flex uppercase justify-between"
             >
                 {links.map(({ name }) => (
                     <li key={name} className=''>

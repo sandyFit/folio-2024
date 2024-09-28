@@ -17,11 +17,9 @@ const ColorBtn = ({ onClick }) => {
                     fill="#F1EEE9"
                 ></path>
             </svg>
-            <div className='rounded'>
-                
-                    <span className='w-4 h-4 bg-[var(--secondary)] absolute right-[1.9rem] bottom-[.6rem] rounded-[1px]'></span> 
-                
-                
+            <div className='rounded'>               
+                <span
+                    className='w-4 h-4 bg-[var(--secondary)] absolute right-[1.9rem] bottom-[.6rem] rounded-[1px]'></span>                 
             </div>
         </button>
     );
