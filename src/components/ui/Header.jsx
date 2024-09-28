@@ -33,7 +33,7 @@ const Header = ({ title, sectionId }) => {
                 trigger: `#${sectionId}`,
                 start: 'top bottom',
                 end: 'top top+=60',
-                scrub: 1,
+                scrub: .6,
                 toggleActions: 'play none none reverse',
                 once: true
             },
@@ -41,13 +41,13 @@ const Header = ({ title, sectionId }) => {
 
         tl.fromTo(
             `#${sectionId} .text`, 
-            { yPercent: -200, autoAlpha: 0 }, 
-            { yPercent: 0, autoAlpha: 1, duration: 1 }
+            { xPercent: -40, autoAlpha: 0 }, 
+            { xPercent: 0, autoAlpha: 1, duration: .5 }
         )
         .fromTo(
             `#${sectionId} .date`, 
-            { yPercent: -200, autoAlpha: 0 }, 
-            { yPercent: 0, autoAlpha: 1, duration: 1 },
+            { xPercent: 40, autoAlpha: 0 }, 
+            { xPercent: 0, autoAlpha: 1, duration: .5 },
             '<'
         );
 
@@ -64,8 +64,9 @@ const Header = ({ title, sectionId }) => {
                     <MobileHeader title={title} />
                 ) : (
                     <div className="grid grid-cols-2 lg:grid-cols-12 place-content-between items-center w-full 
-                        relative before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:top-12
-                        before:lg:top-16 animate-text">
+                        relative before:absolute before:h-[1px] before:bg-[var(--secondary)] before:w-full before:top-1
+                        before:lg:-top-2 animate-text after:absolute after:h-[1px] after:bg-[var(--secondary)] 
+                        after:w-full after:top-12 after:lg:top-16 animate-text ">
                     
                         <h3 className='xsm-title text-[var(--secondary)] col-span-1 lg:col-span-3 col-start-1 text'>
                             {title}

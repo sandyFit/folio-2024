@@ -20,10 +20,10 @@ const About = () => {
                         <h2 className='title-h2 relative hidden lg-lg:block'>
                             ⋙ graphic designer turned <br/> 
                             <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
-                                frontend  
+                               full stack   
                             </span>
                             <span className="title-h2-thin ml-2">
-                                developer.  <br/>
+                                web developer.  <br/>
                             </span>
                             ∎ transforming design into <br/>
                             <span className="title-h2-thin">
@@ -71,13 +71,14 @@ const About = () => {
                     <article className="flex gap-32 justyfy-start xl:justify-end mt-8 xl:mt-12">
                         <p className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
                             
-                            I'm a self-taught frontend developer specializing in the React ecosystem.<br />
+                            I'm a self-taught web developer specializing in the React ecosystem.<br />
                             I love creating smooth animations, engaging transitions, and tackling complex
                             layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />
-                            With a background in design, I have a deep understanding on
-                            what goes into crafting beautiful, polished user experiences while navigating the
-                            complexities of web development.
+                            With a background in design, I bring a strong understanding of crafting polished,
+                            user-centered experiences. This blend of design and development allows me to bridge
+                            the gap between aesthetics and functionality, delivering both beautiful and technically
+                            sound solutions across the stack.
 
                             <br /><br />
                             When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic
@@ -85,7 +86,7 @@ const About = () => {
                             <br />
                             Offline, I'm honing my craft in handmade soap and staying strong by pumping iron.
                             <br /><br />
-                            Freelancing since 2019, I'm now looking for full-time dev roles or exciting project
+                            Freelancing since 2021, I'm now looking for full-time dev roles or exciting project
                             collaborations.
                             <br />
                             For inquiries or opportunities, please contact me at
@@ -102,14 +103,15 @@ const About = () => {
                     </div>
                     <article className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
                         <p className='text-xsmall w-full columns-1 lg:columns-2'>
-                            I prioritize foundational web development principles while maintaining a keen
+                            I prioritize web development fundamentals while maintaining a keen
                             interest in cutting-edge technologies that improve efficiency and productivity.
+                            <br /> <br />
+                            My toolkit is grounded in Object-Oriented Programming (OOP) principles for the backend,
+                            integrated with component-based architecture for the frontend.
                             <br /><br />
-                            My toolkit revolves around the JAMstack architecture (JavaScript, APIs, Markup),
-                            enabling me to build websites and applications that are fast, secure, and scalable.<br />
-                            Additionally, I leverage design, prototyping tools, and no-code solutions to streamline
-                            development processes effectively. <br />
-                            These are the core tools I use:
+                            I also leverage design and prototyping tools, along with no-code solutions, to effectively
+                            streamline development processes. <br />
+
 
                         </p>
 

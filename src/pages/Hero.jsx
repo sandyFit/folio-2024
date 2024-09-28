@@ -159,7 +159,7 @@ const Hero = () => {
                             <h1 className={`big-title col-span-12 col-start-1 row-start-2 lg-lg:mt-3 xl-sm:mt-5 
                                 xl:mt-10 2xl-sm:mt-12 2xl-md:mt-[3.2rem] 2xl-xl:mt-[3.8rem] text-center
                                 ${textColorClass} whitespace-nowrap hero-title`}>
-                                frontend developer
+                                web developer
                             </h1>
                         </div>
 

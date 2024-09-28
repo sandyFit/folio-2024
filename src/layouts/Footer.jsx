@@ -57,7 +57,7 @@ const Footer = () => {
 
                             
                             <div className="w-full lg-sm:col-start-2 row-start-1 flex justify-center lg-sm:justify-end ">
-                                <div className="w-full lg-sm:w-[80%] xl:w-[55%] 
+                                <div className="w-full lg-sm:w-[80%] xl:w-[35%] 
                                      mt-[-1.3rem] lg:mt-0 ">
                                     <Socials />
                                 </div>
@@ -96,7 +96,7 @@ const Footer = () => {
 
                     <div className="col-span-1 flex justify-center lg-xl:justify-end text-xxsmall 
                         tracking-[.15rem] whitespace-nowrap text-[var(--secondary)] items-center">
-                        crafted with <HiOutlineHeart className='mx-1 mt-1' /> by
+                        crafted with <HiOutlineHeart className='mx-1' /> by
                         <a href="#" className="relative text-zinc-200 font-[500] 
                                     after:absolute after:bottom-1 after:left-0 after:right-0 after:h-[1px]
                                     after:w-full after:origin-bottom after:scale-x-0 after:bg-zinc-200

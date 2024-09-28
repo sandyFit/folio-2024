@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 const socialLinks = [
     { name: 'linkedin', url: 'https://www.linkedin.com/feed/' },
     { name: 'github', url: 'https://github.com/sandyFit' },
-    { name: 'instagram', url: 'https://instagram.com' },
-    { name: 'behance', url: 'https://behance.com' },
+    { name: 'codepen', url: 'https://codepen.io' },
 ];
 
 const SocialLink = ({ name, url }) => {
@@ -40,7 +39,9 @@ const Socials = () => {
             <ul className="w-full flex justify-between text-xxsmall text-zinc-300 uppercase">
                 {socialLinks.map(({ name, url }) => (
                     <li key={name} className=''>
-                        <SocialLink name={name} url={url}/>
+                        <a href={url} target='_blank'>
+                            <SocialLink name={name} />
+                        </a>
                     </li>
                 ))}
             </ul>

@@ -6,18 +6,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Tools() {
     const tools = [
-        { name: 'JavaScript Frameworks & Libraries', description: '∎ React.js ∎ Next.js ' },
-        { name: 'Application Programming Interface (APIs)', description: '∎ RESTful ∎ GraphQL ' },
-        { name: 'Markup & Static Site Generators', description: '∎ HTML5 ∎ CSS3 ∎ SASS ∎ Gatsby ' },
-        { name: 'Version Control', description: '∎ Git ∎ GitHub ' },
-        { name: 'Build Tools & Package Managers', description: '∎ Webpack ∎ Vite ∎ npm ∎ yarn' },
-        { name: 'Design Systems & UI Frameworks', description: '∎ Material-UI ∎ Tailwind CSS' },
-        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ Vitest' },
-        { name: 'Deployment & Hosting', description: '∎ Netlify ∎ Vercel ∎ AWS' },
-        { name: 'Content Management Systems (CMS)', description: '∎ Prismic ∎ Contentful' },
-        { name: 'Performance Optimization', description: '∎ lazy loading  ∎ image opt' },
-        { name: 'Design tools', description: '∎ Figma  ∎ Adobe Suite' },
-        { name: 'No code tools', description: '∎ Framer  ∎ Webflow' }
+        { name: 'Programming Languages', description: '∎ JavaScript ∎ Java ∎ Python' },
+        { name: 'Frameworks & Libraries', description: '∎ React.js ∎ Node.js ∎ Spring Boot' },
+        { name: 'Databases', description: '∎ MySQL ∎ PostgreSQL ∎ MongoDB' },
+        { name: 'Markup & Static Site Generators', description: '∎ HTML5 ∎ CSS3 ∎ SASS' },
+        { name: 'Design Systems & UI Frameworks', description: '∎ Bootstrap ∎ Tailwind CSS' },
+        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ JUnit' },
+        { name: 'Deployment, Hosting & DevOps', description: '∎ Docker ∎ Azure ∎ Vercel ∎ AWS' },
+        { name: 'Version Control', description: '∎ Git ∎ GitHub' },
+        { name: 'Documentation', description: '∎ Postman ∎ Swagger (OpenAPI)' },
+        { name: 'Design Tools & no-code', description: '∎ Figma ∎ Adobe Suite ∎ Webflow' },
+
+
+
     ];
 
     const toolsRef = useRef([]);
@@ -57,7 +58,7 @@ function Tools() {
                 <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
                     <button className="group relative inline-flex overflow-hidden duration-1000 ease-in-out 
                         col-span-1 lg:col-span-2 col-start-1 row-start-1 text-xxsmall text-zinc-200">
-                        <div className={`-translate-x-0 transition ease-in-out group-hover:translate-x-[410%]`}>
+                        <div className={`-translate-x-0 transition ease-in-out group-hover:translate-x-[660%]`}>
                             &nbsp; {tool.name}
                         </div>
                         <div className="absolute -translate-x-[380%] transition ease-in-out group-hover:translate-x-0">

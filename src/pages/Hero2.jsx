@@ -110,9 +110,9 @@ const Hero = () => {
 
             <div className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
-                    <div className="w-full grid grid-cols-2 ">
-                        <article className="w-full lg:w-[60%] 3xl:w-[32%] col-span-1 lg:col-span-2 lg-xl:col-span-2 xl:col-span-2 
-                            2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col  mt-24 description
+                    <div className="w-full grid lg:grid-cols-2 ">
+                        <article className="w-full lg:w-[60%] 3xl:w-[32%] col-span-1 lg:col-span-2 lg-xl:col-span-2 
+                            xl:col-span-2 2xl-sm:col-span-3 row-start-2 col-start-1 flex flex-col  mt-24 description
                             lg:mt-[-1.2rem] lg-lg:mt-[-2.6rem] xl:mt-[-1.8rem] relative">
                             <p className='w-full text-xxsmall text-zinc-300 text-justify'>
                                 Designer & Developer based in Colombia. Currently seeking dev roles to
@@ -152,7 +152,7 @@ const Hero = () => {
                                 xl-sm:mt-5 xl:mt-10 2xl-sm:mt-12 2xl-md:mt-[3.2rem] 2xl-xl:mt-[3.8rem] text-center 
                                 whitespace-nowrap text-[var(--secondary)] title
                                 hero-title">
-                                frontend developer
+                                full stack developer
                             </h1>
                         </div>
 
