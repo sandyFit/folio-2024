@@ -37,10 +37,10 @@
 }
 
 [data-theme='palette-4'] {
-  --primary: #400314;
-  --secondary: #fef9c3;
-  --primaryHover: #4c0519;
-  --secondaryHover: rgba(254, 240, 138, .4);
+  --primary: #381026;
+  --secondary: #86efac;
+  --primaryHover: #3e152c;
+  --secondaryHover: rgba(134, 239, 172, .3);
 }
 
 
