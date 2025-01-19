@@ -75,16 +75,14 @@ const About = () => {
                             I love creating smooth animations, engaging transitions, and tackling complex
                             layout challenges to build visually stunning and interactive interfaces.
                             <br /><br />
-                            With a background in design, I bring a strong understanding of crafting polished,
-                            user-centered experiences. This blend of design and development allows me to bridge
-                            the gap between aesthetics and functionality, delivering both beautiful and technically
-                            sound solutions across the stack.
-
+                            With a background in design, I bring a strong understanding of well crafted
+                            experiences that enhance usability. This blend of design and development allows me to bridge
+                            the gap between beautiful pixels and the constraints of code.
                             <br /><br />
                             When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic
                             typography and web animations.
                             <br />
-                            Offline, I'm honing my craft in handmade soap and staying strong by pumping iron.
+                            Offline, I'm honing my craft of baking yum yums and pumping iron at the gym.
                             <br /><br />
                             Freelancing since 2021, I'm now looking for full-time dev roles or exciting project
                             collaborations.
@@ -96,7 +94,7 @@ const About = () => {
                         </p>
                     </article>
 
-                    <div className="flex justify-start w-full h-[8%] py-4">
+                    <div className="flex justify-start w-full h-[8%] py-4 pt-16">
                         <h3 className='title-h4 text-[var(--secondary)] tracking-widest uppercase'>
                             My Skillset
                         </h3>

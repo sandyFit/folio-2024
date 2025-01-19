@@ -49,13 +49,14 @@ const Projects = () => {
                 <header className="w-full flex justify-start relative mt-0 lg:mt-12">
                     <h2 className='title-h2 relative hidden lg-lg:block'>
 
-                        ⋙ A curated collection of projects <br/>
-                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mr-2">
-                            I've designed
-                        </span>
+                        ⋙ A curated collection of projects <br />
                         <span className="title-h2-thin ">
-                            and successfully
+                            I've designed &
+                        </span>
+                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full ml-4">
+                            successfully
                         </span><br/>
+                        
                         <span className="title-h2">brought to life.</span>
                     </h2>
 
