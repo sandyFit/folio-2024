@@ -66,21 +66,37 @@ const About = () => {
                     
                 </header>
 
-                <section className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 2xl-sm:w-[52vw] 
-                    2xl-xl:w-[50vw] 3xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto relative">
+                <section className="flex flex-col w-full lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 
+                    2xl-sm:w-[52vw] 2xl-xl:w-[50vw] 3xl:w-[56%] justify-end mt-8 lg:mt-4 lg:ml-auto
+                    relative">
                     <article className="flex gap-32 justyfy-start xl:justify-end mt-1 lg-lg:mt-8 xl:mt-12">
-                        <p className='text-xsmall w-full columns-1 lg:columns-2 gap-[2em]'>
+                        <p className='text-xsmall w-full gap-[2em]'>
                             
-                            I'm a self-taught web developer specializing in the React ecosystem.<br />
-                            I love creating smooth animations, engaging transitions, and tackling complex
-                            layout challenges to build visually stunning and interactive interfaces.
+                            I'm a self-taught full stack developer with a soft spot for all things
+                            React — but honestly, I'm just as excited about what's happening behind
+                            the scenes as I am about what users see on screen.
                             <br /><br />
-                            With a background in design, I bring a strong understanding of well crafted
-                            experiences that enhance usability. This blend of design and development allows me to bridge
-                            the gap between beautiful pixels and the constraints of code.
+                            My creative side thrives in front-end design, where I get to craft visually
+                            stunning, user-friendly interfaces. But I also love rolling up my sleeves and
+                            diving into the logic, architecture, and data flow that make everything tick.
+                            To me, the real magic happens when beautiful design meets clean, functional
+                            code — that sweet spot where things look great and work flawlessly.
+                        
                             <br /><br />
-                            When I'm not coding, you'll find me bringing dynamic visuals to life with kinetic
-                            typography and web animations.
+                            On top of my dev skills, I bring a background in design, which means I
+                            naturally think about how users experience every interaction. I'm all about
+                            bridging the gap between pixel-perfect visuals and scalable, maintainable
+                            code, making sure every project not only works smoothly but feels amazing to
+                            use.
+                            <br /><br />
+                            Lately, I've also been exploring the world of Generative AI — looking at how
+                            tools like AI-powered personalization and automation can take user experiences
+                            (and developer productivity) to the next level. It's a whole new playground,
+                            and I'm here for it.
+                            <br /><br />
+                            When I'm not deep in code, you'll probably find me bringing dynamic
+                            visuals to life with kinetic typography, web animations, and of course,
+                            prompting cutting-edge visual AI tools to push creativity even further.
                             <br />
                             Offline, I'm honing my craft of baking yum yums and pumping iron at the gym.
                             <br /><br />
@@ -100,7 +116,7 @@ const About = () => {
                         </h3>
                     </div>
                     <article className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
-                        <p className='text-xsmall w-full columns-1 lg:columns-2'>
+                        <p className='text-xsmall w-full '>
                             I prioritize web development fundamentals while maintaining a keen
                             interest in cutting-edge technologies that improve efficiency and productivity.
                             <br /> <br />

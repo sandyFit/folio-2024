@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const socialLinks = [
-    { name: 'linkedin', url: 'https://www.linkedin.com/feed/' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/dev-trishramos/' },
     { name: 'github', url: 'https://github.com/sandyFit' },
     { name: 'codepen', url: 'https://codepen.io' },
 ];

@@ -78,10 +78,12 @@ const Projects = () => {
                 <section className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 
                     2xl-sm:w-[52vw] 2xl-xl:w-[50vw] 3xl:w-[56%] lg-lg:ml-auto">
                     <div className="flex gap-32 justify-start lg-lg:justify-end w-full">
-                        <p className='text-xsmall w-full columns-1 lg:columns-2'>
+                        <p className='text-xsmall w-full'>
                             {/* Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />
-                            While I'm still early in my career journey, I'm eager to share what I've built so far and continue growing in the field. 
-                            Explore my work below and see how I bring design concepts to life through code.*/}
+                            While I'm still early in my career journey, I'm eager to share what I've built so far and continue growing in the field.  */}
+                            With each project, my goal is to deliver applications that not only work
+                            great but also bring joy to the people using them.<br/>
+                            Explore my work below and see how I bring design concepts to life through code.
                         </p>
                     </div>
                     <div className="w-full">
