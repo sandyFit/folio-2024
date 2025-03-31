@@ -6,12 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Tools() {
     const tools = [
-        { name: 'Programming Languages', description: '∎ JavaScript ∎ Java ∎ Python' },
-        { name: 'Frameworks & Libraries', description: '∎ React.js ∎ Node.js ∎ Spring Boot' },
+        { name: 'Programming Languages', description: '∎ JavaScript ∎ Python' },
+        { name: 'Frameworks & Libraries', description: '∎ React.js ∎ Node.js ∎ FastAPI' },
         { name: 'Databases', description: '∎ MySQL ∎ PostgreSQL ∎ MongoDB' },
         { name: 'Markup & Static Site Generators', description: '∎ HTML5 ∎ CSS3 ∎ SASS' },
         { name: 'Design Systems & UI Frameworks', description: '∎ Bootstrap ∎ Tailwind CSS' },
-        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ JUnit' },
+        { name: 'Testing & Quality Assurance', description: '∎ Jest ∎ Pytest' },
         { name: 'Deployment, Hosting & DevOps', description: '∎ Docker ∎ Azure ∎ Vercel ∎ AWS' },
         { name: 'Version Control', description: '∎ Git ∎ GitHub' },
         { name: 'Documentation', description: '∎ Postman ∎ Swagger (OpenAPI)' },

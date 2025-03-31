@@ -27,10 +27,10 @@ const About = () => {
                             </span>
                             ∎ transforming design into <br/>
                             <span className="title-h2-thin">
-                                 interactive
+                                 things you can
                             </span>
                             <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mx-3">
-                               experiences
+                               click on
                             </span>
                             
                         </h2>
@@ -46,11 +46,11 @@ const About = () => {
                             </span>
                             transforming design into<br/> 
                             <span className="title-h2-thin">
-                                  interactive 
+                                  things you can 
                             </span>
                             <span className="title-h2-thin whitespace-nowrap 
                                 border-[1px] border-zinc-50 px-2 rounded-full ml-2">
-                                experiences<br/> 
+                                click on<br/> 
                             </span>
                              
                         </h2>
@@ -72,36 +72,29 @@ const About = () => {
                     <article className="flex gap-32 justyfy-start xl:justify-end mt-1 lg-lg:mt-8 xl:mt-12">
                         <p className='text-xsmall w-full gap-[2em]'>
                             
-                            I'm a self-taught full stack developer with a soft spot for all things
-                            React — but honestly, I'm just as excited about what's happening behind
-                            the scenes as I am about what users see on screen.
+                            I'm a self-taught full stack developer, with a soft spot for all things React.
+                            
+                            My design background means I'm a natural at making things look pretty on the
+                            frontend.
+                            But I also love diving into the logic, architecture, and data
+                            flow that make it all work behind the scenes.
+                            Basically, I'm all about making sure a project isn't just a pretty face,
+                            but actually works.                                                
+                            
                             <br /><br />
-                            My creative side thrives in front-end design, where I get to craft visually
-                            stunning, user-friendly interfaces. But I also love rolling up my sleeves and
-                            diving into the logic, architecture, and data flow that make everything tick.
-                            To me, the real magic happens when beautiful design meets clean, functional
-                            code — that sweet spot where things look great and work flawlessly.
-                        
+                            My current obssession? Generative AI. I'm all in trying to figure out if it 
+                            can actually improve UX and developer workflows.
+                            It's a whole new playground, and I'm here to see if I can break it
+                            (or maybe make something cool).
+
                             <br /><br />
-                            On top of my dev skills, I bring a background in design, which means I
-                            naturally think about how users experience every interaction. I'm all about
-                            bridging the gap between pixel-perfect visuals and scalable, maintainable
-                            code, making sure every project not only works smoothly but feels amazing to
-                            use.
+                            Off duty, I enjoy crafting micro-animations and sweet-talking AI into
+                            creating dystopian landscapes. Off-screen, I'm busy making sure my quads
+                            don't forget who's boss.
+                            
                             <br /><br />
-                            Lately, I've also been exploring the world of Generative AI — looking at how
-                            tools like AI-powered personalization and automation can take user experiences
-                            (and developer productivity) to the next level. It's a whole new playground,
-                            and I'm here for it.
-                            <br /><br />
-                            When I'm not deep in code, you'll probably find me bringing dynamic
-                            visuals to life with kinetic typography, web animations, and of course,
-                            prompting cutting-edge visual AI tools to push creativity even further.
-                            <br />
-                            Offline, I'm honing my craft of baking yum yums and pumping iron at the gym.
-                            <br /><br />
-                            Freelancing since 2021, I'm now looking for full-time dev roles or exciting project
-                            collaborations.
+                            Been freelancing since 2021, and now I'm on the hunt for a full-time dev gig
+                            or some projects that won't make me question my life choices.
                             <br />
                             For inquiries or opportunities, please contact me at
                             <a href='mailto:sandy07r@gmail.com' className='text-zinc-50 ml-1'>
@@ -117,15 +110,15 @@ const About = () => {
                     </div>
                     <article className="w-full flex flex-col gap-32 justyfy-start lg:justify-end ">
                         <p className='text-xsmall w-full '>
-                            I prioritize web development fundamentals while maintaining a keen
-                            interest in cutting-edge technologies that improve efficiency and productivity.
+                            Web development fundamentals are my jam. But I also keep up with
+                            state-of-the-art technologies that boost productivity and make life easier.
                             <br /> <br />
-                            My toolkit is grounded in Object-Oriented Programming (OOP) principles for the backend,
-                            integrated with component-based architecture for the frontend.
-                            <br /><br />
-                            I also leverage design and prototyping tools, along with no-code solutions, to effectively
-                            streamline development processes. <br />
-
+                            <span className='font-bold'>My Toolkit</span>:
+                            MVC-inspired backend (because legacy), component-driven frontend (because React), and
+                            no-code because deadlines are a thing.
+                            <br />
+                            Design tools? Sure. Cloud hosting? Obviously. Testing? Always. (Mostly.)
+                            <br />
 
                         </p>
 

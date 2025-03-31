@@ -133,7 +133,7 @@ const Hero = () => {
                         <aside className="w-full hidden lg-lg:flex col-span-2 col-start-12 justify-end items-center 
                             color__switch ml-6">
                             <p className='text-xxsmall text-zinc-500 tracking-widest'>
-                                color shift
+                                vibe shift
                             </p>
                             <ColorBtn onClick={switchTheme}/>
                         </aside>

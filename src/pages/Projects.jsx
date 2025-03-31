@@ -48,16 +48,16 @@ const Projects = () => {
                 <Header title='projects' sectionId='projects'/>
                 <header className="w-full flex justify-start relative mt-0 lg:mt-12">
                     <h2 className='title-h2 relative hidden lg-lg:block'>
-
-                        ⋙ A curated collection of projects <br />
+                        
+                        ⋙ A carefully curated collection of  <br />
                         <span className="title-h2-thin ">
-                            I've designed &
+                            projects I've managed to 
                         </span>
                         <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full ml-4">
-                            successfully
+                            build
                         </span><br/>
                         
-                        <span className="title-h2">brought to life.</span>
+                        <span className="title-h2">(And they might do something!)</span>
                     </h2>
 
                     <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
