@@ -88,9 +88,9 @@ const About = () => {
                             (or maybe make something cool).
 
                             <br /><br />
-                            Off duty, I enjoy crafting micro-animations and sweet-talking AI into
-                            creating dystopian landscapes. Off-screen, I'm busy making sure my quads
-                            don't forget who's boss.
+                            Off duty, I freely experiment with micro-animations and explore 
+                            human-AI collaboration to indulge my creativity.
+                            Off-screen, I'm busy making sure my quads don't forget who's boss.
                             
                             <br /><br />
                             Been freelancing since 2021, and now I'm on the hunt for a full-time dev gig

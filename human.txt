@@ -1,0 +1,51 @@
+                                                                         
+8888888 8888888888 8 888888888o.    8 8888    d888888o.   8 8888        8 
+      8 8888       8 8888    `88.   8 8888  .`8888:' `88. 8 8888        8 
+      8 8888       8 8888     `88   8 8888  8.`8888.   Y8 8 8888        8 
+      8 8888       8 8888     ,88   8 8888  `8.`8888.     8 8888        8 
+      8 8888       8 8888.   ,88'   8 8888   `8.`8888.    8 8888        8 
+      8 8888       8 888888888P'    8 8888    `8.`8888.   8 8888        8 
+      8 8888       8 8888`8b        8 8888     `8.`8888.  8 8888888888888 
+      8 8888       8 8888 `8b.      8 8888 8b   `8.`8888. 8 8888        8 
+      8 8888       8 8888   `8b.    8 8888 `8b.  ;8.`8888 8 8888        8 
+      8 8888       8 8888     `88.  8 8888  `Y8888P ,88P' 8 8888        8 
+______________________________________________________________________________________________________________________
+
+Hello, fellow human! This file (an initiative from humanstxt.org) is for those who love to dig deeper. 
+It offers a behind-the-scenes look at the author and tools that bring this portfolio to life.
+
+______________________________________________________________________________________________________________________
+
+AUTHOR: Trish Ramos
+FULL STACK DEVELOPER & DESIGNER
+linkedin.com/in/dev-trishramos/
+Colombia
+
+______________________________________________________________________________________________________________________
+
+SITE: Last update: 2025/04/01  
+v1.0
+
+DESIGN:
+- Handcrafted in Figma
+- Fonts:
+      - Morganite Bold
+      - Inter
+- Palettes: 
+      - Pallete 1: primary: '#09090b', secondary: '#67e8f9'
+      - Pallete 2: primary: '#052e16', secondary: '#d8b4fe'
+      - Pallete 3: primary: '#172554', secondary: '#fda4af'
+      - Pallete 4: primary: '#4c0519', secondary: '#fef9c3'
+
+STACK:
+- HTML5
+- TailwindCSS
+- React 18 (React Router DOM, Context API)
+- GSAP
+- Hosted on Netlify
+- Git version control
+
+LICENSE:
+- MIT License
+
+

@@ -15,7 +15,7 @@ export default {
         },
         'palette-2': {
           primary: '#052e16',
-          secondary: ' #d8b4fe',
+          secondary: '#d8b4fe',
         },
         'palette-3': {
           primary: '#172554',
