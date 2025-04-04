@@ -72,8 +72,9 @@ const About = () => {
                     <article className="flex gap-32 justyfy-start xl:justify-end mt-1 lg-lg:mt-8 xl:mt-12">
                         <p className='text-xsmall w-full gap-[2em]'>
                             
-                            I'm a self-taught full stack developer, with a soft spot for all things React.
-                            
+                            I'm a self-taught full stack developer and grapic designer, bringing the gap between perfect
+                            pixels and implementation.
+                            <br /><br />
                             My design background means I'm a natural at making things look pretty on the
                             frontend.
                             But I also love diving into the logic, architecture, and data
@@ -82,15 +83,16 @@ const About = () => {
                             but actually works.                                                
                             
                             <br /><br />
-                            My current obssession? Generative AI. I'm all in trying to figure out if it 
-                            can actually improve UX and developer workflows.
-                            It's a whole new playground, and I'm here to see if I can break it
-                            (or maybe make something cool).
+                            My current obssession? <strong>Generative AI</strong>.<br />
+                            I'm in for human-AI teamwork to quickly test and reshape ideas.
+                            It's a whole new playground, and I'm here to see if I can break assumptions
+                            (and maybe a few APIs).
 
                             <br /><br />
-                            Off duty, I freely experiment with micro-animations and explore 
-                            human-AI collaboration to indulge my creativity.
-                            Off-screen, I'm busy making sure my quads don't forget who's boss.
+                            Off duty, I freely experiment with micro-animations and dive into new web
+                            experiences with no-code tools.
+                            Off-screen, there's a good chance I'm either making sure my quads don't forget
+                            who's boss or perfecting the art of hammock relaxation, you know, life balance!
                             
                             <br /><br />
                             Been freelancing since 2021, and now I'm on the hunt for a full-time dev gig
