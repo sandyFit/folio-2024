@@ -72,27 +72,25 @@ const About = () => {
                     <article className="flex gap-32 justyfy-start xl:justify-end mt-1 lg-lg:mt-8 xl:mt-12">
                         <p className='text-xsmall w-full gap-[2em]'>
                             
-                            I'm a self-taught full stack developer and grapic designer, bringing the gap between perfect
+                            I'm a self-taught full stack developer and graphic designer, bringing the gap between perfect
                             pixels and implementation.
                             <br /><br />
-                            My design background means I'm a natural at making things look pretty on the
+                            My design background means I'm a natural at making things look great on the
                             frontend.
-                            But I also love diving into the logic, architecture, and data
-                            flow that make it all work behind the scenes.
-                            Basically, I'm all about making sure a project isn't just a pretty face,
-                            but actually works.                                                
-                            
-                            <br /><br />
-                            My current obssession? <strong>Generative AI</strong>.<br />
-                            I'm in for human-AI teamwork to quickly test and reshape ideas.
-                            It's a whole new playground, and I'm here to see if I can break assumptions
-                            (and maybe a few APIs).
+                            But I'm just as into the logic, architecture, and data flow that make all work
+                            behind the scenes. Pretty is nice. Functional is better. Both? That's when
+                            it really hits.
 
+                            <br /><br />                           
+                            Lately, I've been exploring human-AI teamwork as a creative superpower — testing and reshaping
+                            ideas before they get boring. 
+                            Building stuff one chat at a time is my new sandbox and I'm learning fast while
+                            breaking a few assumptions (or a couple APIs) along the way.
                             <br /><br />
-                            Off duty, I freely experiment with micro-animations and dive into new web
-                            experiences with no-code tools.
-                            Off-screen, there's a good chance I'm either making sure my quads don't forget
-                            who's boss or perfecting the art of hammock relaxation, you know, life balance!
+                            When I'm not building or prompting, you'll find me happily crafting
+                            micro-interactions pixel by pixel or going full explorer mode with no-code tools.
+                            <br />
+                            I balance work and life with deep squats and deeper hammock sessions.
                             
                             <br /><br />
                             Been freelancing since 2021, and now I'm on the hunt for a full-time dev gig

@@ -3,6 +3,10 @@ import ProjectsList from '../layouts/ProjectsList';
 import HappyFace from '../components/ui/HappyFace';
 import Header from '../components/ui/Header';
 import { animateScroll as scroll } from 'react-scroll';
+import SeeMore from '../components/buttons/SeeMore';
+import BottomLeftOutlineBtn from '../components/buttons/BottomLeftOutlineBtn';
+import TopRightOutline from '../components/buttons/TopRightOutline';
+import SeeMoreSmall from '../components/buttons/SeeMoreSmall';
 
 const Projects = () => {
     const [showFloatingBtn, setShowFloatingBtn] = useState(false);
@@ -74,21 +78,32 @@ const Projects = () => {
                         </span>.
                     </h2>
                 </header>
-
-                <section className="flex flex-col items-end mt-8 lg:mt-12 lg-lg:w-[70vw] xl-sm:w-[60vw] xl:w-[58vw] 
-                    2xl-sm:w-[52vw] 2xl-xl:w-[50vw] 3xl:w-[56%] lg-lg:ml-auto">
-                    <div className="flex gap-32 justify-start lg-lg:justify-end w-full">
-                        <p className='text-xsmall w-full'>
-                            {/* Each project is responsive, visually appealing, and optimized for SEO, performance and reliability. <br />
-                            While I'm still early in my career journey, I'm eager to share what I've built so far and continue growing in the field.  */}
-                            With each project, my goal is to deliver applications that not only work
-                            great but also bring joy to the people using them.<br/>
-                            Explore my work below and see how I bring design concepts to life through code.
+ 
+                <section className="w-full flex flex-col items-end mt-8 lg:mt-12 lg-lg:ml-auto">
+                   
+                    <div className="w-full relative flex items-end">
+                        <div className="flex w-full">                                                 
+                            <div className="w-full flex flex-col items-start pt-3 2xl-xl:pt-5">
+                                <div className="w-full flex justify-center">                                            
+                                    <video width='800' height='100%' controls className="w-full">
+                                        <source src="/videos/FoodSaver.mp4" type="video/mp4"></source>
+                                    </video>                                           
+                                </div>                                       
+                            </div>                        
+                        </div>
+                    </div>
+                    <aside className='w-full flex justify-between'>                       
+                        <p className='text-xxsmall text-white'>
+                            FoodSaver is a tool for managing household food inventory, making
+                            smarter meal choices, and reducing waste. This app helps you to take
+                            control of your pantry, making environmentally friendly and
+                            cost-effective decisions.
                         </p>
-                    </div>
-                    <div className="w-full">
-                        <ProjectsList />
-                    </div>
+                        <div className="w-full flex justify-end relative gap-1">
+                            <BottomLeftOutlineBtn />
+                            <TopRightOutline />
+                        </div> 
+                    </aside>
                 </section>
             </div>
         </section>

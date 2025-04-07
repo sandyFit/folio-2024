@@ -90,7 +90,7 @@ const Footer = () => {
                     mt-2 xl:mt-0">
                     
 
-                    <div className="col-span-1 flex justify-start  text-xxsmall w-full 
+                    <div className="col-span-1 flex justify-center lg:justify-start text-xxsmall w-full 
                         tracking-[.15rem] whitespace-nowrap text-[var(--secondary)] items-center">
                         crafted with <HiOutlineHeart className='mx-1' /> by
                         <a href="#info" className="relative text-zinc-200 font-[500] 
