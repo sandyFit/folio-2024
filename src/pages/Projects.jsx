@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import ProjectsList from '../layouts/ProjectsList';
-import HappyFace from '../components/ui/HappyFace';
 import Header from '../components/ui/Header';
 import { animateScroll as scroll } from 'react-scroll';
-import SeeMore from '../components/buttons/SeeMore';
 import BottomLeftOutlineBtn from '../components/buttons/BottomLeftOutlineBtn';
 import TopRightOutline from '../components/buttons/TopRightOutline';
-import SeeMoreSmall from '../components/buttons/SeeMoreSmall';
 
 const Projects = () => {
     const [showFloatingBtn, setShowFloatingBtn] = useState(false);

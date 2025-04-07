@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero2 from './Hero2'
+import Hero from './Hero'
 import About from './About'
 import Projects from './Projects'
 
@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <section id='index' className=''>
-                <Hero2 />                
+                <Hero />                
             </section>
             <section id='work' className=''>
                 <Projects />                
@@ -19,4 +19,5 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;
+
