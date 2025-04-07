@@ -72,19 +72,6 @@
           font-style: normal;
 }
 
-@font-face {
-    font-family: 'charlottenburg-circles';
-    src:  url('./assets/fonts/Charlottenburg_W-Circles.woff2') format('woff2');
-          font-weight: normal;
-          font-style: normal;
-}
-
-@font-face {
-    font-family: 'charlottenburg-classic';
-    src:  url('./assets/fonts/Charlottenburg_W-Classic.woff2') format('woff2');
-          font-weight: normal;
-          font-style: normal;
-}
 
 .morganite-med {
   font-family: 'morganite-med';
@@ -97,12 +84,6 @@
 }
 .morganite-extra-bold {
    font-family: 'morganite-ExtraBold';
-}
-.charlot-circles {
-   font-family: 'charlottenburg-circles';
-}
-.charlot-classic {
-   font-family: 'charlottenburg-classic';
 }
 
 /* ============= SCROLL BAR CUSTOMIZATION ============== */
@@ -291,12 +272,6 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity .5s ease-in-out; /* Delay hiding until after fade */
-}
-
-.app-title {
-    background: linear-gradient(135deg, rgba(252, 165, 165, 1) 0%, rgba(103, 232, 249, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 

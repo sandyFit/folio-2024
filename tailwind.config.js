@@ -59,43 +59,8 @@ export default {
       '3xl': '1500px',
     },
 
-      
-
-      fontFamily: {
-        grotesk: ['Familjen Grotesk', 'sans-serif'],
-        inter: ["Inter Tight", 'sans-serif'],
-        syne: ["Syne", 'sans-serif'],
-        changa: ["Changa", 'sans-serif'],
-        radio: ["Radio Canada", 'sans-serif'],
-        noto: ["Noto Sans Display", 'sans-serif'],
-        philo: ["Philosopher", 'sans-serif'],
-        abee: ["ABeeZee", 'sans-serif'],
-        mono: ["Space Mono", 'sans-serif'],
-        playfair: ["Playfair", 'serif'],
-        mono: ["Space Mono", 'sans-serif'],
-        choris: ["Charis SIL", 'serif'],
-        stick: ["Stick No Bills", 'sans-serif'],
-        train: ["Train One", 'system-ui'],
-        redres: ["Redressed", 'cursive'],
-        manuale: ["Manuale", 'serif'],
-        nova: ["Nova Round", 'system-ui'],
-        metamorphous: ["Metamorphous", 'serif'],
-        gugi: ["Gugi", 'sans-serif'],
-        prosto: ["Prosto On", 'sans-serif'],
-        arya: ["Arya", 'sans-serif'],
-        robotoSerif: ["Roboto Serif", 'serif'],
-        chivo: ["Chivo Mono", 'monospace'],
-        magra: ["Pragati Narrow", 'sans-serif'],
-        spaceGrotesk: ["Space Grotesk", 'sans-serif'],
-        ibm: ['IBM Plex Mono', 'monospace'],
-        marckScript: ["Marck Script", 'cursive'],
-        tangerine: ["Tangerine", 'cursive'],
-        allura: ["Allura", ' cursive'],
-        playfair: ["Playfair Display", 'serif'],
-        inspiration: ["Inspiration", 'cursive'],
-        robotoCondensed: ["Roboto Condensed", 'sans-serif'],
-        bitmap: ['BitxMap Font tfb', 'monospace'],
-        roboto: ["Roboto", 'sans-serif']
+      fontFamily: {       
+        inter: ["Inter Tight", 'sans-serif'],                     
       },
 
       gridTemplateColumns: {
@@ -107,10 +72,6 @@ export default {
         'out-expo': 'cubic-bezier(.23,1,.32,1)',
       },
 
-      backgroundImage: {
-        'circle-gradient': 'radial-gradient(circle, rgba(245,216,252,1) 0%, rgba(148,187,233,1) 100%);',
-        'font-gradient': 'linear-gradient(135deg, rgba(6,147,227,1) 0%, rgb(155,81,224) 100%)'
-      }
     },
   },
   plugins: [],

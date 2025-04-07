@@ -42,7 +42,7 @@ STACK:
 - TailwindCSS
 - React 18 (React Router DOM, Context API)
 - GSAP
-- Hosted on Netlify
+- Hosted on AWS
 - Git version control
 
 LICENSE:
