@@ -1,0 +1,17 @@
+{
+    "name": "folio",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^6.0.0",
+        "@pulumi/awsx": "^2.0.2",
+        "@pulumi/pulumi": "^3.113.0",
+        "@types/mime": "^3.0.4",
+        "aws-sdk": "^2.1692.0",
+        "folio": "file:",
+        "mime": "^2.4.6"
+    }
+}

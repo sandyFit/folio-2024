@@ -82,10 +82,10 @@ const About = () => {
                             it really hits.
 
                             <br /><br />                           
-                            Lately, I've been exploring human-AI teamwork as a creative superpower — testing and reshaping
-                            ideas before they get boring. 
-                            Building stuff one chat at a time is my new sandbox and I'm learning fast while
-                            breaking a few assumptions (or a couple APIs) along the way.
+                            Teaming up with AI to keep creativity spicy. I use AI to test and reshape ideas
+                            before they get boring. Relentlessly curious, building things one chat at a time,
+                            learning fast and breaking a few assumptions (and maybe an API or two).
+                            <br />I'm here to evolve not to be replaced!
                             <br /><br />
                             When I'm not building or prompting, you'll find me happily crafting
                             micro-interactions pixel by pixel or going full explorer mode with no-code tools.
