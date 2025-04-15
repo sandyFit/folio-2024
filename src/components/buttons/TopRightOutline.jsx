@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TopRightOutline = () => {
+const TopRightOutline = ({onClick}) => {
     return (
-        <button border-cut="top-right"
-            className="group relative px-[1.45rem] lg:px-10 h-7 lg:h-9 mt-6 flex items-center">
-            <a to={"work"}
+        <button border-cut="top-right" onClick={onClick}
+            className="group relative px-[1rem] lg:px-6 h-7 lg:h-9 mt-6 flex items-center">
+            <div 
                 className="group relative overflow-hidden btn-title lg:text-xsmall-purple tracking-widest
                 text-[var(--secondary)]">
                 <span className="relative inline-flex">
@@ -50,7 +50,7 @@ const TopRightOutline = () => {
                         o
                     </span>                    
                 </span>
-            </a>                  
+            </div>                  
 
         </button>
     )

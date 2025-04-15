@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const socialLinks = [
     { name: 'linkedin', url: 'https://www.linkedin.com/in/dev-trishramos/' },
     { name: 'github', url: 'https://github.com/sandyFit' },
-    { name: 'codepen', url: 'https://codepen.io' },
+    { name: 'dev.to', url: 'https://dev.to/patricia_ramos_80cd5e115e' },
 ];
 
 const SocialLink = ({ name, url }) => {

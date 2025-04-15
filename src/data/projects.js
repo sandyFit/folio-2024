@@ -1,22 +1,15 @@
 const projects = [
     {
         id: 'p1',
-        title: 'Radiant Dental Studio',
-        description: 'Designed and developed a clean, responsive website for a dental boutique studio. <br> Features include an online booking system, real-time appointment updates, and a user-friendly interface, that ensures seamless integration of design and functionality.',
-        technologies: 'JS &nbsp; / &nbsp; React &nbsp; / &nbsp; AOS JS &nbsp; / &nbsp; Tailwind CSS &nbsp; / &nbsp; Node JS &nbsp; / &nbsp; Unit &nbsp; / &nbsp; AWS'
-    },
-    {
-        id: 'p2',
-        title: 'Remanzzo Luxury Hotel',
-        description: 'Designed and developed a clean, responsive website for a dental boutique studio. <br> Features include an online booking system, real-time appointment updates, and a user-friendly interface, that ensures seamless integration of design and functionality.',
-        technologies: 'JS &nbsp; / &nbsp; React &nbsp; / &nbsp; AOS JS &nbsp; / &nbsp; Tailwind CSS &nbsp; / &nbsp; Node JS &nbsp; / &nbsp; Unit &nbsp; / &nbsp; AWS'
-    },
-    {
-        id: 'p3',
-        title: 'Dee App',
-        description: 'Designed and developed a clean, responsive website for a dental boutique studio. <br> Features include an online booking system, real-time appointment updates, and a user-friendly interface, that ensures seamless integration of design and functionality.',
-        technologies: 'JS &nbsp; / &nbsp; React &nbsp; / &nbsp; AOS JS &nbsp; / &nbsp; Tailwind CSS &nbsp; / &nbsp; Node JS &nbsp; / &nbsp; Unit &nbsp; / &nbsp; AWS'
-    },
+        title: 'FoodSaver App',
+        code: 'https://github.com/sandyFit/foodSaver.git',
+        link: 'https://www.foodsaver.io',
+        imgSrc: '/img/mockup-foodsaver.webp',
+        description: 'End-to-end design and development of a full-stack web app that empowers users to manage household food inventory, reduce waste, and make smarter meal decisions. Implemented personalized menu planning and expiration tracking features to enhance user engagement and sustainability impact.',
+        technologies: 'JavaScript &nbsp; / &nbsp; React &nbsp; / &nbsp; GSAP &nbsp; / &nbsp; Tailwind CSS &nbsp; / &nbsp; Node.js &nbsp; / &nbsp; Express &nbsp; / &nbsp; MongoDB'
+    }
+    
 ];
+
 
 export default projects;
