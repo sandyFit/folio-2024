@@ -571,6 +571,17 @@
         @apply transform rotate-[405deg] -translate-x-[1.5px] -translate-y-[7px] w-[1.35rem];
     }
     
+    
+
+    .react-pdf__Page {
+      margin-bottom: 1rem;
+    }
+
+    .react-pdf__Page__canvas {
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto !important;
+    }
 
 
 }

@@ -78,7 +78,10 @@ const Navbar = () => {
                                 <NavItem to="contact">contact,</NavItem>
                             </span>
                             <span className='nav__item'>
-                                <NavItem to="cv">CV</NavItem>
+                                <a href="/cv" target="_blank" rel="noopener noreferrer">
+                                    CV
+                                </a>
+
                             </span>
                             
                             
