@@ -276,16 +276,14 @@
 
     .text-xsmall {
       @apply font-inter text-zinc-400 
-        text-[.9rem] 
-        md:text-[1rem] 
-        lg:text-[.9rem] 
+        text-[1rem] 
         2xl:text-[1.2rem]
         font-[300] 
     }
 
     .text-xxsmall {
       @apply font-inter font-[400] uppercase
-      text-[.8rem] 
+      text-[.85rem] 
       2xl:text-[.9rem] 
       
     }
@@ -298,18 +296,18 @@
         2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
     }
     .title-h1-w {
-      @apply text-zinc-300 font-inter text-[1.4rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
+      @apply text-zinc-300 font-inter text-[1.5rem] leading-[125px]
         2xl:text-[9.5rem] font-[400] uppercase -tracking-[.3rem]
     }
 
     .title-h1-thin {
-      @apply  font-inter text-[1.4rem] md:text-[1.48rem] base:text-[1.5rem] leading-[120px]
+      @apply  font-inter text-[1.5rem] leading-[125px]
         2xl:text-[9.5rem] italic font-[200] uppercase -tracking-[.3rem]
     }
 
     .title-h2{
       @apply text-zinc-50 font-inter font-[400] uppercase tracking-wider 
-        text-[1.15rem] 
+        text-[1.3rem] 
         md:text-[1.45rem] 
         base:text-[1.6rem] 
         base-sm:text-[2rem] 
@@ -328,8 +326,7 @@
         2xl-xl:text-[3.4rem]
         3xl-sm:text-[3.6rem]
         3xl:text-[3.7rem]
-        leading-[25px] 
-        md:leading-[30px] 
+        leading-[30px] 
         base:leading-[35px] 
         base-sm:leading-[40px] 
         lg:leading-[42px] 
@@ -348,7 +345,7 @@
 
     .title-h2-thin {
       @apply text-zinc-50 font-inter font-[100] italic uppercase tracking-wider 
-        text-[1.15rem] 
+        text-[1.3rem] 
         md:text-[1.45rem] 
         base:text-[1.6rem] 
         base-sm:text-[2rem] 
@@ -368,8 +365,7 @@
         2xl-xl:text-[3.4rem]
         3xl-sm:text-[3.6rem]
         3xl:text-[3.7rem]
-        leading-[25px] 
-        md:leading-[30px] 
+        leading-[30px] 
         base:leading-[35px] 
         base-sm:leading-[40px] 
         lg:leading-[42px] 
@@ -388,7 +384,7 @@
     
      .title-h3 {
       @apply text-zinc-50 font-inter font-[400] uppercase tracking-wider 
-        text-[1.24rem] 
+        text-[1.3rem] 
         md:text-[1.48rem] 
         base:text-[1.5rem] 
         lg-md:text-[1.7rem]
@@ -399,7 +395,7 @@
     }
     .title-h3-thin {
       @apply text-zinc-50 font-inter font-[100] italic uppercase tracking-wider 
-        text-[1.24rem] 
+        text-[1.34rem] 
         md:text-[1.48rem] 
         base:text-[1.5rem] 
         lg-md:text-[1.7rem]
@@ -537,17 +533,17 @@
         @apply transform rotate-[405deg] -translate-x-[1.5px] -translate-y-[7px] w-[1.35rem];
     }
     
+    .pdf-container {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .pdf-container.fade-in {
+      opacity: 1;
+    }
     
 
-    .react-pdf__Page {
-      margin-bottom: 1rem;
-    }
-
-    .react-pdf__Page__canvas {
-      margin: 0 auto;
-      max-width: 100%;
-      height: auto !important;
-    }
+   
 
 
 }
