@@ -3,6 +3,7 @@ import React from 'react'
 const TopRightOutline = ({onClick}) => {
     return (
         <button border-cut="top-right" onClick={onClick}
+            
             className="group relative px-[1rem] lg:px-6 h-7 lg:h-9 mt-6 flex items-center">
             <div 
                 className="group relative overflow-hidden btn-title lg:text-xsmall-purple tracking-widest

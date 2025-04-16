@@ -2,7 +2,7 @@ import React from 'react'
 
 const BottomLeftOutlineBtn = ({btnHref}) => {
     return (
-        <button border-cut="bottom-left-cyan"
+        <button border-cut="bottom-left-cut"
             className="group relative px-[1.45rem] lg:px-10 h-7 lg:h-9 mt-6 flex items-center ">
             <a href={btnHref} target='_blank'
                 className="group relative overflow-hidden btn-title tracking-widest text-[var(--secondary)]">

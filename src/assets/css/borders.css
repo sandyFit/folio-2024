@@ -1,3 +1,21 @@
+[data-theme='palette-1'] {
+  --secondary: #67e8f9;
+
+}
+
+[data-theme='palette-2'] {
+  --secondary: #fda4af;
+
+}
+
+[data-theme='palette-3'] {
+  --secondary: #d8b4fe;
+}
+
+[data-theme='palette-4'] {
+  --secondary: #86efac;
+}
+
 [border-cut="nav-window"]::before{
     content: "";
     position: absolute;
@@ -29,7 +47,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: #67e8f9;
+    background: var(--secondary);
     clip-path: polygon(0 0,calc(100% - 0.80em) 
     0,100% 0.80em,100% 100%,0 100%,0 0,1px  1px ,1px 
     calc(100% - 1px),calc(100% - 1px) 
@@ -172,11 +190,11 @@
 }
 
 
-  [border-cut="bottom-left-cyan"]::before{
+  [border-cut="bottom-left-cut"]::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: #67e8f9;
+    background: var(--secondary);
     clip-path: polygon(0 0,100% 0,100% 100%,0.80em 100%,0 
     calc(100% - 0.80em),0 0,1px  1px ,1px 
     calc(100% - 0.80em - 0.83px),calc(0.80em + 0.83px) 

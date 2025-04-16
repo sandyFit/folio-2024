@@ -76,7 +76,7 @@ const Projects = () => {
                     </h2>
                 </header>
  
-                <section className="w-[60%] flex flex-col items-end mt-8 lg:mt-12 lg-lg:ml-auto">
+                <section className="w-full lg:w-[60%] flex flex-col items-end mt-8 lg:mt-12 lg-lg:ml-auto">
                    <ProjectsList/>
                 </section>
             </div>

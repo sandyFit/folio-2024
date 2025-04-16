@@ -38,7 +38,7 @@ const Footer = () => {
                              lg-sm:place-content-between flex-grow '>                           
                             <div className="w-full col-start-1">
                                 <h2 className="w-full lg-xl:w-[80%] xl:w-[65%] 3xl-sm:w-[50%] text-xxsmall relative  
-                                    row-start-2 lg-sm:row-start-1 text-justify -mt-20 lg:-mt-12 lg-sm:mt-3 3xl:mt-1 text-zinc-300">
+                                    row-start-2 lg-sm:row-start-1 text-justify -mt-16 lg:-mt-12 lg-sm:mt-3 3xl:mt-1 text-zinc-300">
                                     Whether you need a full-time team member, an extra pair of creative hands for
                                     a project, or just want to geek out over code and design, I'm all ears & hands!
                                     <span className="whitespace-nowrap z-20">
