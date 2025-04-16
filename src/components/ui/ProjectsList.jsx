@@ -18,11 +18,13 @@ const ProjectsList = () => {
                 <ul className="w-full flex flex-col items-start lg-md:items-end relative projects">
                     {projects.map((project, index) => (
                         <li key={index}
-                            className='flex flex-grow relative pb-12 w-full'> {/* Added w-full */}
-                            <div className="absolute left-0 top-0 w-full h-[1px] bg-[var(--secondary)] transition-all 
-                                duration-[var(--duration)] ease-[var(--ease)]"></div>
-                            <div className="flex w-full">
-                                <div className="flex-none"> {/* Changed to flex-none for SVG container */}
+                            className='w-full flex flex-grow relative pb-12'> 
+                            <div className="absolute left-0 top-0 w-full max-w-full block h-[1px] 
+                            bg-[var(--secondary)] transition-all duration-[var(--duration)]
+                            --ease)]"></div>
+
+                            <div className="flex w-full min-w-0">
+                                <div className="flex-none"> 
                                     <svg width="6rem" height="5rem" viewBox="0 0 60 50"
                                         xmlns="http://www.w3.org/2000/svg"
                                         className='hidden 2xl-xl:block' preserveAspectRatio="xMidYMid meet">
@@ -43,7 +45,7 @@ const ProjectsList = () => {
                                     </div>
                                 </div>
                                 <div className="flex-1 flex flex-col px-6 pt-3"> 
-                                    <div className="w-full flex justify-between items-center"> {/* Title and buttons row */}
+                                    <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center"> {/* Title and buttons row */}
                                         <p className="sm-title text-[var(--secondary)] z-[3]">
                                             {project.title}
                                         </p>
