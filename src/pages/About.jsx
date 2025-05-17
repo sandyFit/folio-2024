@@ -72,8 +72,8 @@ const About = () => {
                     <article className="flex gap-32 justyfy-start xl:justify-end mt-1 lg-lg:mt-8 xl:mt-12">
                         <p className='text-xsmall w-full gap-[2em]'>
                             
-                            I'm a self-taught full stack developer and graphic designer, bringing the gap between perfect
-                            pixels and implementation.
+                            I'm a self-taught full stack developer and graphic designer, connecting the dots
+                            between user needs, creative design and implementation. 
                             <br /><br />
                             My design background means I'm a natural at making things look great on the
                             frontend.

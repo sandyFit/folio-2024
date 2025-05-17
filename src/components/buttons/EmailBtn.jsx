@@ -36,17 +36,10 @@ const EmailBtn = ({ handleCopiedText }) => {
               setIsCopied(true);
               setTimeout(() => setIsCopied(false), 1500);
           }}
-          className="reg-title text-[var(--secondary)] flex whitespace-nowrap justify-center items-center group"
+          className="reg-title text-[var(--secondary)] flex whitespace-nowrap justify-center items-center 
+            group"
       >
-          {/* <span className="relative inline-flex items-center">
-              {['i', 'n', 'f', 'o', '{', '@', '}', 't', 'r', 'i', 's', 'h', 'r', 'a', 'm', 'o', 's', '.', 'c', 'o', 'm']
-                  .map((char, index) => (
-                      <span key={index} className={`duration-700 [transition-delay:${index * 0.02}s] 
-                    group-hover:[transform:rotateY(360deg)] group-hover:text-zinc-300`}>
-                      {char}
-                  </span>
-              ))}
-          </span> */}
+         
           <span className="relative text-[var(--secondary)] font-[500] 
                 after:absolute after:bottom-10 base:after:bottom-8 base-sm:after:bottom-6 lg-lg:after:bottom-2
                 lg-2xl:after:bottom-0

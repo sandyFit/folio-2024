@@ -275,15 +275,15 @@
     
 
     .text-xsmall {
-      @apply font-inter text-zinc-400 
-        text-[1rem] 
+      @apply font-inter text-zinc-300 xl:text-zinc-400
+        text-[1.05rem] 
         2xl:text-[1.2rem]
-        font-[300] 
+         
     }
 
     .text-xxsmall {
       @apply font-inter font-[400] uppercase
-      text-[.85rem] 
+      text-[.86rem] 
       2xl:text-[.9rem] 
       
     }
@@ -302,7 +302,7 @@
 
     .title-h1-thin {
       @apply  font-inter text-[1.5rem] leading-[125px]
-        2xl:text-[9.5rem] italic font-[200] uppercase -tracking-[.3rem]
+        2xl:text-[9.5rem] italic font-[300] uppercase -tracking-[.3rem]
     }
 
     .title-h2{
@@ -344,7 +344,7 @@
     }
 
     .title-h2-thin {
-      @apply text-zinc-50 font-inter font-[100] italic uppercase tracking-wider 
+      @apply text-zinc-50 font-inter font-[200] italic uppercase tracking-wider 
         text-[1.3rem] 
         md:text-[1.45rem] 
         base:text-[1.6rem] 
@@ -394,7 +394,7 @@
         leading-[45px]
     }
     .title-h3-thin {
-      @apply text-zinc-50 font-inter font-[100] italic uppercase tracking-wider 
+      @apply text-zinc-50 font-inter font-[200] italic uppercase tracking-wider 
         text-[1.34rem] 
         md:text-[1.48rem] 
         base:text-[1.5rem] 

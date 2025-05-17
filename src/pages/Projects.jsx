@@ -62,16 +62,18 @@ const Projects = () => {
                     </h2>
 
                     <h2 className='title-h2 relative block lg-lg:hidden whitespace-nowrap'>
-                        Each project reflects a<br />                       
-                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mr-2">
-                             meticulous   
-                        </span>
+                        A curated collection of<br />                       
+                        
                         <span className="title-h2-thin ">
-                            approach 
-                        </span><br/>
-                        <p className="title-h2"> to detail-oriented </p>
+                            projects I've 
+                        </span>
+                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full mr-2">
+                            built
+                        </span>
+                        <br />
+                        <p className="title-h2"> And they might do </p>
                        <span className="title-h2-thin border-[1px] border-zinc-50 px-3 rounded-full">
-                            development  
+                            something!
                         </span>.
                     </h2>
                 </header>

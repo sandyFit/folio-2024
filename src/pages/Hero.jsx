@@ -74,27 +74,11 @@ const Hero = () => {
             return tl;
         }
 
-        const scrollTimeline = () => {
-            const st = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#index",
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: true,
-                    toggleActions: 'play none none reverse',
-                }
-            });
-
-            st.to('.hero-content', {
-                autoAlpha: 0,
-                duration: 0.5
-            });
-            return st;
-        }
+        
         master
             .add(setInitialState())
             .add(titleAnimation(), '<')
-            .add(scrollTimeline(), '<')
+            
 
         return () => {
             console.log('Cleaning up ScrollTrigger');
@@ -106,7 +90,7 @@ const Hero = () => {
     return (
         <section id="index"
             className='w-full min-h-screen flex flex-col relative px-6 md:px-10 base:px-12 
-                xl-sm:px-16 mb-32 hero-content'>
+                xl-sm:px-16 mb-32 '>
 
             <div className="grid w-full">
                 <header className="w-full flex flex-col mt-5 lg:mt-[8rem] relative flex-grow">
@@ -132,14 +116,14 @@ const Hero = () => {
 
                         <aside className="w-full hidden lg-lg:flex col-span-2 col-start-12 justify-end items-center 
                             color__switch ml-6">
-                            <p className='text-xxsmall text-zinc-500 tracking-widest'>
+                            <p className='text-xxsmall text-zinc-400 tracking-widest'>
                                 vibe shift
                             </p>
                             <ColorBtn onClick={switchTheme} />
                         </aside>
                     </div>
 
-                    <section className="w-full grid mt-16 md:mt-10 lg:mt-64 lg-lg:mt-52 lg-2xl:mt-52
+                    <section className="w-full grid mt-12 md:mt-10 lg:mt-64 lg-lg:mt-52 lg-2xl:mt-52
                         xl-sm:mt-[12.4rem] xl:mt-[10.5rem] xl-lg:mt-40 xl-2xl:mt-[9.2rem] 2xl-sm:mt-36 
                         2xl-md:mt-[8rem] 2xl-lg:mt-32 2xl-xl:mt-28 3xl:mt-32">
                         <div className='w-full grid grid-cols-1 xl:grid-cols-12 '>
@@ -165,7 +149,7 @@ const Hero = () => {
                 </header>
             </div>
 
-            <footer className="mt-auto w-full mb-6 lg:mb-10 2xl-xl:mb-6">
+            <footer className="mt-auto w-full mb-10 2xl-xl:mb-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg-md:place-content-between whitespace-nowrap 
                     small__text">
                     <div className="hidden lg-lg:flex text-xxsmall col-span-1 col-start-1 row-start-1 
@@ -181,7 +165,7 @@ const Hero = () => {
                         folio &copy; {new Date().getFullYear()}
                     </div>
                     <div className="text-xxsmall-cyan col-span-1 col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 
-                        mt-16 lg:mt-0 mb-2 lg:mb-0 flex justify-center items-center text-[var(--secondary)]">
+                        mt-12 lg:mt-0 mb-2 lg:mb-0 flex justify-center items-center text-[var(--secondary)]">
                         [ &nbsp; &nbsp;<ScrollBtn /> &nbsp;]
                     </div>
                     <div className="col-span-1 col-start-1 lg:col-start-3 row-start-2 lg:row-start-1 flex items-center 

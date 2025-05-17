@@ -67,7 +67,7 @@ const ProjectsList = () => {
                                             <div className="flex flex-col justify-end w-full mt-auto">
                                                 <p className="w-full text-xsmall"
                                                     dangerouslySetInnerHTML={{ __html: project.description }} />
-                                                <p className="text-xxsmall text-white pt-2"
+                                                <p className="text-xxsmall text-white pt-4"
                                                     dangerouslySetInnerHTML={{ __html: project.technologies }} />
 
                                             </div>
